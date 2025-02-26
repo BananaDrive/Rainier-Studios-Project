@@ -9,14 +9,10 @@ public class Movement : MonoBehaviour
     [Header("Stats")]
     public float moveSpeed;
     public float acceleration;
-    public float drag;
+    public float deceleration;
 
     public float moveDirection;
 
-    void Start()
-    {
-        
-    }
 
     public void Update()
     {
@@ -25,9 +21,17 @@ public class Movement : MonoBehaviour
 
     public void FixedUpdate()
     {
-        rb.AddForce(moveDirection * moveSpeed * acceleration * transform.right, ForceMode2D.Force);
+        MovementHandle();
 
         SpeedLimit();
+    }
+
+    public void MovementHandle()
+    {
+        rb.AddForce(moveDirection * moveSpeed * acceleration * transform.right, ForceMode2D.Force);
+
+        if (moveDirection == 0)
+            rb.linearVelocityX *= (100 - deceleration) / 100; //decelerates the player when not moving
     }
 
 

@@ -28,7 +28,7 @@ public class Health : MonoBehaviour
         if (healthType == HealthType.player)
             return;
         else if (healthType == HealthType.enemy)
-            return;
+            gameObject.SetActive(false);
         else
             gameObject.SetActive(false);
     }

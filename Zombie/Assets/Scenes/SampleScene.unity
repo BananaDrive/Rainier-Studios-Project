@@ -579,6 +579,7 @@ GameObject:
   - component: {fileID: 1765040952}
   - component: {fileID: 1765040951}
   - component: {fileID: 1765040950}
+  - component: {fileID: 1765040955}
   m_Layer: 7
   m_Name: Zombie
   m_TagString: Untagged
@@ -748,6 +749,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1765040955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765040949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395e5741c5875884f80b3d3135a6a77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthType: 1
+  maxHealth: 100
+  currentHealth: 100
 --- !u!1 &1872817236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,6 +1199,10 @@ MonoBehaviour:
   fireRate: 0.1
   clipSize: 30
   bulletSpeed: 20
+  isRaycast: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

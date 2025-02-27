@@ -12,4 +12,9 @@ public class EnemyBehavior : Movement
         MovementHandle();
         SpeedLimit();
     }
+
+    public void Movement()
+    {
+        
+    }
 }

@@ -1,9 +1,8 @@
-using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class Movement : MonoBehaviour
 {
+    public SpriteRenderer sprite;
     public Rigidbody2D rb;
 
     [Header("Stats")]
@@ -13,22 +12,11 @@ public class Movement : MonoBehaviour
 
     public float moveDirection;
 
-
-    public void Update()
-    {
-        moveDirection = Input.GetAxisRaw("Horizontal");
-    }
-
-    public void FixedUpdate()
-    {
-        MovementHandle();
-
-        SpeedLimit();
-    }
-
     public void MovementHandle()
     {
         rb.AddForce(moveDirection * moveSpeed * acceleration * transform.right, ForceMode2D.Force);
+
+        sprite.flipX = moveDirection > 0 ? false : (moveDirection < 0 ? true : sprite.flipX); //flips the player's sprite based on their directional speed
 
         if (moveDirection == 0)
             rb.linearVelocityX *= (100 - deceleration) / 100; //decelerates the player when not moving

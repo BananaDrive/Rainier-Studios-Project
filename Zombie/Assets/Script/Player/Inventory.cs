@@ -6,14 +6,13 @@ public class Inventory : MonoBehaviour
 {
     public BaseItem foundItem;
     public LayerMask itemLayer;
-    public GameObject[] Items;
-    public int selectedItem;
+    public BaseItem[] Items;
 
     private bool itemfound;
 
     public void Start()
     {
-        Items = new GameObject[4];
+        Items = new BaseItem[4];
     }
 
     public void Update()
@@ -22,7 +21,7 @@ public class Inventory : MonoBehaviour
         {
             ItemDetection();
 
-            foreach (GameObject baseitem in Items)
+            foreach (BaseItem baseitem in Items)
             {
                 Debug.Log(baseitem);
             }
@@ -48,9 +47,11 @@ public class Inventory : MonoBehaviour
 
         if (foundItem != null)
         {
-            Items[CheckInventory()] = foundItem.gameObject;
-            Destroy(foundItem.gameObject);
+            foundItem.player = gameObject;
+            Items[CheckInventory()] = foundItem;
+            foundItem.gameObject.SetActive(false);
         }
+            
     }
 
     public int CheckInventory()
@@ -60,6 +61,6 @@ public class Inventory : MonoBehaviour
             if (Items[i] == null)
                 return i;
         }
-        return selectedItem;
+        return 3;
     }
 }

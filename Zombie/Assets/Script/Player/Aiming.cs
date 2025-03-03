@@ -4,6 +4,7 @@ public class Aiming : MonoBehaviour
 {
     public Transform weapon;
     public Movement movement;
+    public float verticalAimMax;
 
     // Update is called once per frame
     void Update()

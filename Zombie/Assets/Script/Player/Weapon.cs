@@ -1,19 +1,21 @@
 using System;
 using System.Collections;
-using System.Runtime.CompilerServices;
-using NUnit.Framework;
-using Unity.Burst;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-
     [Header("Stats")]
     public float damage;
     public float fireRate;
     public float clipSize;
     public float bulletSpeed;
     public bool isRaycast;
+
+    [Header("Buffs")]
+    public float damageBuff;
+    public float fireRateBuff;
+    public float clipSizeBuff;
+    public float bulletSpeedBuff;
 
     bool shootCooldown;
     public LayerMask playerLayer;
@@ -37,7 +39,7 @@ public class Weapon : MonoBehaviour
 
     public void ProjectileShoot()
     {
-        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject();
+        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(0);
 
         if (bullet == null)
             return;
@@ -66,7 +68,7 @@ public class Weapon : MonoBehaviour
 
     public IEnumerator ShootCD()
     {
-        yield return new WaitForSeconds(fireRate);
+        yield return new WaitForSeconds(1 / (fireRate + fireRateBuff));
         shootCooldown = false;
     }
 }

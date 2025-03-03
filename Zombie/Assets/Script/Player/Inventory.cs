@@ -26,6 +26,12 @@ public class Inventory : MonoBehaviour
                 Debug.Log(baseitem);
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.F) && Items[0] != null)
+        {
+            Items[0].UseItem();
+            Items[0] = null;
+        }
     }
 
     public void ItemDetection()

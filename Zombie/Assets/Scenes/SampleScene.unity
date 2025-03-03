@@ -516,8 +516,8 @@ GameObject:
   m_Component:
   - component: {fileID: 800129970}
   - component: {fileID: 800129969}
-  - component: {fileID: 800129968}
   - component: {fileID: 800129971}
+  - component: {fileID: 800129968}
   m_Layer: 8
   m_Name: Item Placeholder
   m_TagString: Untagged
@@ -537,6 +537,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85d3d59f8d5cb64c87cac0af5b0572b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  itemType: 0
+  potency: 20
+  duration: 0
+  itemName: hg
 --- !u!212 &800129969
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -683,8 +688,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82ec9a6f655873f4d863728a82be51de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pooledObjects: []
-  pooledObject: {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
+  objectPoolHolder: {fileID: 7127970030511796452, guid: 8b6bbb8eb9a66ee4ea5ff44aa50bac9f, type: 3}
+  objectsToPool:
+  - {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
+  - {fileID: 324154101}
   poolAmount: 20
 --- !u!4 &1424117462
 Transform:
@@ -923,6 +930,7 @@ GameObject:
   - component: {fileID: 1872817239}
   - component: {fileID: 1872817238}
   - component: {fileID: 1872817241}
+  - component: {fileID: 1872817245}
   - component: {fileID: 1872817243}
   - component: {fileID: 1872817242}
   - component: {fileID: 1872817244}
@@ -1127,7 +1135,21 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   Items: []
-  selectedItem: 0
+--- !u!114 &1872817245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872817236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4749212aab440ad44aeabdb710018660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthType: 0
+  maxHealth: 200
+  currentHealth: 200
 --- !u!1 &1879436124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,6 +1389,10 @@ MonoBehaviour:
   clipSize: 0
   bulletSpeed: 10
   isRaycast: 0
+  damageBuff: 0
+  fireRateBuff: 0
+  clipSizeBuff: 0
+  bulletSpeedBuff: 0
   playerLayer:
     serializedVersion: 2
     m_Bits: 64

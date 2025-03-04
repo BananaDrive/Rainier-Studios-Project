@@ -32,16 +32,18 @@ public class BaseItem : MonoBehaviour
         switch (itemType)
         {
             case ItemType.regen:
-                player.GetComponent<Health>().currentHealth += potency;
             break;
             case ItemType.damage:
-                StartCoroutine(BuffDuration(player.GetComponent<Weapon>(), nameof(Weapon.damageBuff)));
+                CoroutineHandler.Instance.StartCoroutine(BuffDuration(player.GetComponent<Inventory>(), nameof(Inventory.damageBuff)));
             break;
             case ItemType.fireRate:
+                CoroutineHandler.Instance.StartCoroutine(BuffDuration(player.GetComponent<Inventory>(), nameof(Inventory.fireRateBuff)));
             break;
             case ItemType.speed:
+                CoroutineHandler.Instance.StartCoroutine(BuffDuration(player.GetComponent<Movement>(), nameof(Movement.moveSpeedBuff)));
             break;
             case ItemType.health:
+                player.GetComponent<Health>().currentHealth += potency;
             break;
             case ItemType.accuracy:
             break;
@@ -50,9 +52,9 @@ public class BaseItem : MonoBehaviour
         
     }
 
-    public IEnumerator BuffDuration<T>(T script, string name)
+    public IEnumerator BuffDuration<T>(T script, string buffName)
     {
-        FieldInfo field = script.GetType().GetField(name, BindingFlags.Public);
+        FieldInfo field = script.GetType().GetField(buffName);
         field.SetValue(script, potency);
         yield return new WaitForSeconds(duration);
         field.SetValue(script, 0);

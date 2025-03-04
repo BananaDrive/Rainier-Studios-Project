@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    public GameObject weapon;
     public BaseItem foundItem;
     public LayerMask itemLayer;
     public BaseItem[] Items;
+
+    [Header("Buffs")]
+    public float damageBuff;
+    public float fireRateBuff;
+    public float clipSizeBuff;
+    public float bulletSpeedBuff;
 
     private bool itemfound;
 

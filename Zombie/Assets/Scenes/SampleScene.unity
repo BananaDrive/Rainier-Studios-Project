@@ -741,9 +741,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  itemType: 1
+  itemType: 0
   potency: 20
-  duration: 20
+  duration: 0
   itemName: hg
 --- !u!212 &800129969
 SpriteRenderer:
@@ -1271,7 +1271,6 @@ GameObject:
   - component: {fileID: 1424117462}
   - component: {fileID: 1424117460}
   - component: {fileID: 1424117463}
-  - component: {fileID: 1424117464}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -1323,23 +1322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70002aa622be4da48ab5f357d9d46a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
 --- !u!1 &1557832052
-=======
---- !u!114 &1424117464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424117459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d7e24b32580cce40b3a15187a7db322, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1543115993
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1347,7 +1330,6 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream
   - component: {fileID: 1557832053}
   - component: {fileID: 1557832055}
   - component: {fileID: 1557832054}
@@ -1359,26 +1341,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1557832053
-=======
-  - component: {fileID: 1543115994}
-  - component: {fileID: 1543115996}
-  - component: {fileID: 1543115995}
-  - component: {fileID: 1543115997}
-  m_Layer: 0
-  m_Name: Attack Hitbox
-  m_TagString: EnemyAttack
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1543115994
->>>>>>> Stashed changes
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 1557832052}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1435,28 +1402,12 @@ BoxCollider2D:
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1557832055
-=======
-  m_GameObject: {fileID: 1543115993}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1765040954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1543115995
->>>>>>> Stashed changes
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 1557832052}
-=======
-  m_GameObject: {fileID: 1543115993}
->>>>>>> Stashed changes
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -1494,11 +1445,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< Updated upstream
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-=======
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
->>>>>>> Stashed changes
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1509,59 +1456,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-=======
---- !u!70 &1543115996
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543115993}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
-  m_Direction: 1
---- !u!114 &1543115997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543115993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9a0b8e1266be04bb7fa21619669c88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyBehavior: {fileID: 1765040956}
->>>>>>> Stashed changes
 --- !u!1 &1765040949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,7 +1470,6 @@ GameObject:
   - component: {fileID: 1765040951}
   - component: {fileID: 1765040950}
   - component: {fileID: 1765040955}
-  - component: {fileID: 1765040956}
   m_Layer: 7
   m_Name: Zombie
   m_TagString: Untagged
@@ -1602,13 +1495,7 @@ MonoBehaviour:
   acceleration: 5
   deceleration: 20
   moveDirection: 0
-  moveSpeedBuff: 0
-  canMove: 1
-  player: {fileID: 0}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  detectRadius: 10
+  player: {fileID: 1872817240}
 --- !u!61 &1765040951
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1746,15 +1633,10 @@ Transform:
   m_GameObject: {fileID: 1765040949}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 5.939737, y: -3.29, z: 0}
-=======
-  m_LocalPosition: {x: 4.24, y: -3.29, z: 0}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1543115994}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1765040955
@@ -1772,26 +1654,6 @@ MonoBehaviour:
   healthType: 1
   maxHealth: 100
   currentHealth: 100
---- !u!114 &1765040956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1765040949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5e28e262acfaa74e924bebf94e7b29d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackHitBox: {fileID: 1543115993}
-  enemyMovement: {fileID: 1765040950}
-  damage: 2
-  attackRate: 0
-  speed: 0
-  canJump: 0
-  canSprint: 0
-  explodeOnDeath: 0
 --- !u!1 &1872817236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1811,7 +1673,7 @@ GameObject:
   - component: {fileID: 1872817246}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1993,8 +1855,6 @@ MonoBehaviour:
   acceleration: 20
   deceleration: 20
   moveDirection: 0
-  moveSpeedBuff: 0
-  canMove: 1
 --- !u!114 &1872817244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2007,16 +1867,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e472f6d51d87c42a558302b9431e86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 2033735853}
   foundItem: {fileID: 0}
   itemLayer:
     serializedVersion: 2
     m_Bits: 256
   Items: []
-  damageBuff: 0
-  fireRateBuff: 0
-  clipSizeBuff: 0
-  bulletSpeedBuff: 0
 --- !u!114 &1872817245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2319,12 +2174,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e0e03bd5a8af045affe3f4c136a1b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 1872817244}
   damage: 2
-  fireRate: 5
+  fireRate: 0.1
   clipSize: 0
   bulletSpeed: 10
   isRaycast: 0
+  damageBuff: 0
+  fireRateBuff: 0
+  clipSizeBuff: 0
+  bulletSpeedBuff: 0
   playerLayer:
     serializedVersion: 2
     m_Bits: 64

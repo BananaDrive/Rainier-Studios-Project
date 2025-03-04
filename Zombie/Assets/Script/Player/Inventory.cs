@@ -27,11 +27,6 @@ public class Inventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             ItemDetection();
-
-            foreach (BaseItem baseitem in Items)
-            {
-                Debug.Log(baseitem);
-            }
         }
 
         if (Input.GetKeyDown(KeyCode.F) && Items[0] != null)

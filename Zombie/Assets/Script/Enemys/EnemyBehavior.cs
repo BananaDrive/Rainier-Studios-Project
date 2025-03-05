@@ -1,5 +1,6 @@
 using System.Collections;
 using Unity.VisualScripting.FullSerializer;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
@@ -13,51 +14,27 @@ public class EnemyBehavior : MonoBehaviour
         soliderB
     }
     public EnemyType enemyType;
-    public GameObject attackHitBox;
     public EnemyMovement enemyMovement;
 
     [Header("Stats")]
     public float damage;
     public float attackRate;
     public float speed;
+    public float attackRange;
+    public float rangeToAttack;
 
     [Header("Traits")]
     public bool canJump;
     public bool canSprint, explodeOnDeath;
 
-    private bool hasAttacked;
+    public bool hasAttacked;
 
-    public void FixedUpdate()
+    public void InitializeStats(float speed, float attackRate, float attackRange, float damage)
     {
-        if (enemyMovement.player != null && Vector2.Distance(enemyMovement.player.position, transform.position) < 1f)
-        {
-            hasAttacked = true;
-
-            switch (enemyType)
-            {
-                case EnemyType.civilian:
-                    StartCoroutine(MeleeAttack());
-                break;
-                case EnemyType.crawly:
-                break;
-                case EnemyType.policeMan:
-                break;
-                case EnemyType.soldierA:
-                break;
-            }
-        }    
-    }
-
-    public IEnumerator MeleeAttack()
-    {
-        enemyMovement.rb.linearVelocityX = 0;
-        enemyMovement.canMove = false;
-        yield return new WaitForSeconds(1f);
-        attackHitBox.SetActive(true);
-        yield return new WaitForSeconds(0.25f);
-        attackHitBox.SetActive(false);
-        yield return new WaitForSeconds(1f);
-        enemyMovement.canMove = true;
-        hasAttacked = false;
+        this.speed = speed;
+        enemyMovement.moveSpeed = speed;
+        this.attackRate = attackRate;
+        this.attackRange = attackRange;
+        this.damage = damage;
     }
 }

@@ -18,44 +18,44 @@ public class BaseItem : MonoBehaviour
     }
 
     public SpriteRenderer sprite;
-    internal GameObject player;
-    public ItemType itemType;
-    public float potency;
+    internal BuffsHandler buffs;
+    public ItemType[] itemTypes;
+    public float[] potency;
     public float duration;
     public string itemName;
 
 
-
-
     public void UseItem()
     {
-        switch (itemType)
-        {
-            case ItemType.regen:
-            break;
-            case ItemType.damage:
-                CoroutineHandler.Instance.StartCoroutine(BuffDuration(player.GetComponent<Inventory>(), nameof(Inventory.damageBuff)));
-            break;
-            case ItemType.fireRate:
-                CoroutineHandler.Instance.StartCoroutine(BuffDuration(player.GetComponent<Inventory>(), nameof(Inventory.fireRateBuff)));
-            break;
-            case ItemType.speed:
-                CoroutineHandler.Instance.StartCoroutine(BuffDuration(player.GetComponent<Movement>(), nameof(Movement.moveSpeedBuff)));
-            break;
-            case ItemType.health:
-                player.GetComponent<Health>().currentHealth += potency;
-            break;
-            case ItemType.accuracy:
-            break;
-        }
-
-        
+        for (int i = 0; i < itemTypes.Length; i++)
+        {    
+            switch (itemTypes[i])
+            {
+                case ItemType.regen:
+                    CoroutineHandler.Instance.StartCoroutine(buffs.GetComponent<Health>().RegenerateHealth(potency[i], duration));
+                break;
+                case ItemType.damage:
+                    CoroutineHandler.Instance.StartCoroutine(BuffDuration(buffs, nameof(BuffsHandler.damageBuff), i));
+                break;
+                case ItemType.fireRate:
+                    CoroutineHandler.Instance.StartCoroutine(BuffDuration(buffs, nameof(BuffsHandler.fireRateBuff), i));
+                break;
+                case ItemType.speed:
+                    CoroutineHandler.Instance.StartCoroutine(BuffDuration(buffs.GetComponent<Movement>(), nameof(Movement.moveSpeedBuff), i));
+                break;
+                case ItemType.health:
+                    buffs.GetComponent<Health>().currentHealth += potency[i];
+                break;
+                case ItemType.accuracy:
+                break;
+            }
+        }  
     }
 
-    public IEnumerator BuffDuration<T>(T script, string buffName)
+    public IEnumerator BuffDuration<T>(T script, string buffName, int potencyCount)
     {
         FieldInfo field = script.GetType().GetField(buffName);
-        field.SetValue(script, potency);
+        field.SetValue(script, potency[potencyCount]);
         yield return new WaitForSeconds(duration);
         field.SetValue(script, 0);
     }

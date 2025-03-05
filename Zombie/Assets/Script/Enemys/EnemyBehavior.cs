@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
+    public enum EnemyType
+    {
+        civilian,
+        crawly,
+        policeMan,
+        soldierA,
+        soliderB
+    }
+    public EnemyType enemyType;
     public GameObject attackHitBox;
     public EnemyMovement enemyMovement;
 
@@ -13,20 +22,33 @@ public class EnemyBehavior : MonoBehaviour
     public float speed;
 
     [Header("Traits")]
-    public bool canJump, canSprint, explodeOnDeath;
+    public bool canJump;
+    public bool canSprint, explodeOnDeath;
 
     private bool hasAttacked;
 
     public void FixedUpdate()
     {
-        if (enemyMovement.player != null && Vector2.Distance(enemyMovement.player.position, transform.position) < 1f && !hasAttacked)
+        if (enemyMovement.player != null && Vector2.Distance(enemyMovement.player.position, transform.position) < 1f)
         {
             hasAttacked = true;
-            StartCoroutine(Attack());
+
+            switch (enemyType)
+            {
+                case EnemyType.civilian:
+                    StartCoroutine(MeleeAttack());
+                break;
+                case EnemyType.crawly:
+                break;
+                case EnemyType.policeMan:
+                break;
+                case EnemyType.soldierA:
+                break;
+            }
         }    
     }
 
-    public IEnumerator Attack()
+    public IEnumerator MeleeAttack()
     {
         enemyMovement.rb.linearVelocityX = 0;
         enemyMovement.canMove = false;

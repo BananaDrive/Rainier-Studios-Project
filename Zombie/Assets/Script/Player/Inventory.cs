@@ -51,7 +51,6 @@ public class Inventory : MonoBehaviour
             Items[CheckInventory()] = foundItem;
             foundItem.gameObject.SetActive(false);
         }
-            
     }
 
     public int CheckInventory()

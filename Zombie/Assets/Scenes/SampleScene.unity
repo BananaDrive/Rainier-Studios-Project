@@ -741,8 +741,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  itemType: 1
-  potency: 20
+  itemTypes: 0000000001000000
+  potency:
+  - 20
+  - 50
   duration: 20
   itemName: hg
 --- !u!212 &800129969
@@ -1472,6 +1474,7 @@ GameObject:
   - component: {fileID: 1872817243}
   - component: {fileID: 1872817242}
   - component: {fileID: 1872817244}
+  - component: {fileID: 1872817247}
   - component: {fileID: 1872817246}
   m_Layer: 6
   m_Name: Player
@@ -1672,15 +1675,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 0}
+  buffs: {fileID: 1872817247}
   foundItem: {fileID: 0}
   itemLayer:
     serializedVersion: 2
     m_Bits: 256
   Items: []
-  damageBuff: 0
-  fireRateBuff: 0
-  clipSizeBuff: 0
-  bulletSpeedBuff: 0
 --- !u!114 &1872817245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1695,7 +1695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthType: 0
   maxHealth: 200
-  currentHealth: 200
+  currentHealth: 50
 --- !u!114 &1872817246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1749,6 +1749,22 @@ MonoBehaviour:
     DissipationDistance: 100
     PropagationSpeed: 343
   DefaultVelocity: {x: 0, y: -1, z: 0}
+--- !u!114 &1872817247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872817236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24bdfaab441dd5c44b261f9e4c720913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageBuff: 0
+  fireRateBuff: 0
+  clipSizeBuff: 0
+  bulletSpeedBuff: 0
 --- !u!1 &1879436124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,7 +1999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e0e03bd5a8af045affe3f4c136a1b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 1872817244}
+  buffs: {fileID: 1872817247}
   damage: 2
   fireRate: 5
   clipSize: 0

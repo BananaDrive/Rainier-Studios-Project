@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public Inventory inventory;
+    public BuffsHandler buffs;
 
     [Header("Stats")]
     public float damage;
@@ -43,7 +43,7 @@ public class Weapon : MonoBehaviour
         bullet.SetActive(true);
         
         bullet.GetComponent<Transform>().position = transform.position;
-        bullet.GetComponent<Bullet>().damage = damage + (damage * inventory.damageBuff / 100);
+        bullet.GetComponent<Bullet>().damage = damage + (damage * buffs.damageBuff / 100);
         StartCoroutine(bullet.GetComponent<Bullet>().Despawn());
         bullet.GetComponent<Rigidbody2D>().AddForce(bulletSpeed * 10f * transform.right, ForceMode2D.Force);
 
@@ -57,14 +57,14 @@ public class Weapon : MonoBehaviour
         if (hit.collider != null)
         {
             if (hit.transform.TryGetComponent(out Health hitHealth))
-                hitHealth.TakeDamage(damage + (damage * inventory.damageBuff / 100));
+                hitHealth.TakeDamage(damage + (damage * buffs.damageBuff / 100));
         }
         StartCoroutine(ShootCD());
     }
 
     public IEnumerator ShootCD()
     {
-        yield return new WaitForSeconds(1 / (fireRate + (fireRate * inventory.fireRateBuff / 100)));
+        yield return new WaitForSeconds(1 / (fireRate + (fireRate * buffs.fireRateBuff / 100)));
         shootCooldown = false;
     }
 }

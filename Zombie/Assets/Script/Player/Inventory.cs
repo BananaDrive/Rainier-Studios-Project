@@ -5,17 +5,11 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public GameObject weapon;
+    public BuffsHandler buffs;
     public BaseItem foundItem;
     public LayerMask itemLayer;
     public BaseItem[] Items;
 
-    [Header("Buffs")]
-    public float damageBuff;
-    public float fireRateBuff;
-    public float clipSizeBuff;
-    public float bulletSpeedBuff;
-
-    private bool itemfound;
 
     public void Start()
     {
@@ -38,7 +32,6 @@ public class Inventory : MonoBehaviour
 
     public void ItemDetection()
     {
-        itemfound = false;
         foundItem = null;
         float minDistance = 2f;
         foreach (var collider in Physics2D.OverlapCircleAll(transform.position, 2f, itemLayer))
@@ -49,13 +42,12 @@ public class Inventory : MonoBehaviour
             {
                 foundItem = collider.GetComponent<BaseItem>();
                 minDistance = itemDistance;
-                itemfound = true;
             }
         }
 
         if (foundItem != null)
         {
-            foundItem.player = gameObject;
+            foundItem.buffs = buffs;
             Items[CheckInventory()] = foundItem;
             foundItem.gameObject.SetActive(false);
         }

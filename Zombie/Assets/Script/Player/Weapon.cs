@@ -42,9 +42,11 @@ public class Weapon : MonoBehaviour
 
         bullet.SetActive(true);
         
+        Bullet bulletScript = bullet.GetComponent<Bullet>();
         bullet.GetComponent<Transform>().position = transform.position;
-        bullet.GetComponent<Bullet>().damage = damage + (damage * buffs.damageBuff / 100);
-        StartCoroutine(bullet.GetComponent<Bullet>().Despawn());
+        bulletScript.damage = damage + (damage * buffs.damageBuff / 100);
+        bulletScript.layerToIgnore = playerLayer;
+        StartCoroutine(bulletScript.Despawn());
         bullet.GetComponent<Rigidbody2D>().AddForce(bulletSpeed * 10f * transform.right, ForceMode2D.Force);
 
         StartCoroutine(ShootCD());

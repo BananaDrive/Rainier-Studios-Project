@@ -6,9 +6,15 @@ public class ObjectPool : MonoBehaviour
 {
     public static ObjectPool SharedInstance;
     public GameObject objectPoolHolder;
+    
+    [Serializable]
+    public class ObjectsToPool
+    {
+        public GameObject pooledObj;
+        public int poolSize;
+    }
+    public ObjectsToPool[] objectsToPool;
     public List<GameObject>[] listOfPooledObjects;
-    public GameObject[] objectsToPool;
-    public int poolAmount;
 
     void Awake()
     {
@@ -32,12 +38,13 @@ public class ObjectPool : MonoBehaviour
 
     public void MakeObjectPool(int _i, Transform objectPoolTransform)
     {
-        objectPoolHolder.name = objectsToPool[_i].name + " pool " + _i;
-        listOfPooledObjects[_i] = new List<GameObject>();
         GameObject temp;
-        for (int i = 0; i < poolAmount; i++)
+        objectPoolTransform.name = objectsToPool[_i].pooledObj.name + " pool " + _i;
+        listOfPooledObjects[_i] = new List<GameObject>();
+
+        for (int i = 0; i < objectsToPool[_i].poolSize; i++)
         {
-            temp = Instantiate(objectsToPool[_i]);
+            temp = Instantiate(objectsToPool[_i].pooledObj);
             temp.transform.SetParent(objectPoolTransform);
             temp.SetActive(false);
             listOfPooledObjects[_i].Add(temp);
@@ -46,7 +53,7 @@ public class ObjectPool : MonoBehaviour
 
     public GameObject GetPooledObject(int number)
     {
-        for (int i = 0; i < poolAmount; i++)
+        for (int i = 0; i < objectsToPool[number].poolSize; i++)
         {
             if (!listOfPooledObjects[number][i].activeInHierarchy)
                 return listOfPooledObjects[number][i];

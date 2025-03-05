@@ -786,12 +786,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  itemTypes: 0000000001000000
-  potency:
-  - 20
-  - 50
-  duration: 20
-  itemName: hg
+  itemsStats:
+  - itemType: 0
+    potency: 20
+    duration: 10
+  - itemType: 1
+    potency: 20
+    duration: 10
 --- !u!212 &800129969
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1307,6 +1308,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1415166507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1415166509}
+  - component: {fileID: 1415166508}
+  m_Layer: 0
+  m_Name: ZombieSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1415166508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415166507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4bfd406e4419f4b857a973a92e6606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombieSpawnArea: {fileID: 1415166509}
+--- !u!4 &1415166509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415166507}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.75, y: 2.1, z: -0.062429525}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1424117459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,9 +1385,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPoolHolder: {fileID: 7127970030511796452, guid: 8b6bbb8eb9a66ee4ea5ff44aa50bac9f, type: 3}
   objectsToPool:
-  - {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
-  - {fileID: 324154101}
-  poolAmount: 20
+  - pooledObj: {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
+    poolSize: 50
+  - pooledObj: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
+    poolSize: 20
 --- !u!4 &1424117462
 Transform:
   m_ObjectHideFlags: 0
@@ -1380,7 +1427,7 @@ GameObject:
   - component: {fileID: 1557832053}
   - component: {fileID: 1557832055}
   - component: {fileID: 1557832054}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2079,7 +2126,7 @@ GameObject:
   - component: {fileID: 2033735855}
   - component: {fileID: 2033735856}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2168,7 +2215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffs: {fileID: 1872817247}
-  damage: 2
+  damage: 16
   fireRate: 5
   clipSize: 0
   bulletSpeed: 10
@@ -2184,10 +2231,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1644178122001065626, guid: b020c87128f6c0848b391845a86fca57, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1872817240}
     - target: {fileID: 2070405007123260652, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.939737
@@ -2250,4 +2293,4 @@ SceneRoots:
   - {fileID: 1424117462}
   - {fileID: 800129970}
   - {fileID: 1351151521}
-  - {fileID: 78536671}
+  - {fileID: 1415166509}

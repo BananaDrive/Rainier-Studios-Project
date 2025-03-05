@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1502711793703413486}
   - component: {fileID: 1644178122001065626}
   - component: {fileID: 3237866848122796507}
-  - component: {fileID: 5532922288040312820}
+  - component: {fileID: 8203910326083383789}
   m_Layer: 7
   m_Name: Zombie
   m_TagString: Untagged
@@ -186,10 +186,12 @@ MonoBehaviour:
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1
+  enemyBehavior: {fileID: 8203910326083383789}
   player: {fileID: 0}
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
+  distanceToStop: 0.5
   detectRadius: 10
 --- !u!114 &3237866848122796507
 MonoBehaviour:
@@ -206,7 +208,7 @@ MonoBehaviour:
   healthType: 1
   maxHealth: 100
   currentHealth: 100
---- !u!114 &5532922288040312820
+--- !u!114 &8203910326083383789
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -215,17 +217,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 5125834075557533559}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5e28e262acfaa74e924bebf94e7b29d, type: 3}
+  m_Script: {fileID: 11500000, guid: c18c68873094e6f4f82dd872dbb525c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyType: 0
   attackHitBox: {fileID: 5329007421078522183}
   enemyMovement: {fileID: 1644178122001065626}
-  damage: 2
-  attackRate: 0
-  speed: 0
+  damage: 5
+  attackRate: 5
+  speed: 2
+  attackRange: 2
+  rangeToAttack: 1
   canJump: 0
   canSprint: 0
   explodeOnDeath: 0
+  hasAttacked: 0
+  enemyAttackHitbox: {fileID: 0}
 --- !u!1 &5329007421078522183
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,4 +315,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae9a0b8e1266be04bb7fa21619669c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyBehavior: {fileID: 5532922288040312820}
+  enemyBehavior: {fileID: 8203910326083383789}
+  hasHit: 0

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a8019e13b74e1144d9972b8ea3e578a3
+guid: 05de89d99cbe16c44817133624a2ca94
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9026529318559189368
-    second: BasicFloorTiles48x48_0
+      213: -2368188822250776171
+    second: BackgroundTileset_1_48x48_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BasicFloorTiles48x48_0
+      name: BackgroundTileset_1_48x48_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8798e53379ca44d70800000000000000
-      internalID: 9026529318559189368
+      spriteID: 59911b830d0822fd0800000000000000
+      internalID: -2368188822250776171
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BackgroundTileset_1_48x48_0: -2368188822250776171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 99bd8b416eef30646b38b0d35da377a8
+guid: 1db74ab5145c5404cb2cadabed7bbace
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6344382160031087404
-    second: new lvl 1 concept_0
+      213: -4237356363802673821
+    second: BricksTileSet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: new lvl 1 concept_0
+      name: BricksTileSet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 5000
-        height: 5000
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c2b7af7e5f5cb0850800000000000000
-      internalID: 6344382160031087404
+      spriteID: 36dfccc66d2e135c0800000000000000
+      internalID: -4237356363802673821
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      new lvl 1 concept_0: 6344382160031087404
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,7 +13,7 @@ public class Aiming : MonoBehaviour
         float aimDirection = Input.GetAxisRaw("Vertical");
 
         weapon.rotation = Quaternion.Euler(weapon.rotation.x, movement.sprite.flipX ? 180 : 0, aimDirection * 60f); //determines the weapon direction from the player direction and its vertical input
-        Vector2 rotationDistance = new(0.5f * (aimSide - Mathf.Abs(aimDirection) * aimSide) + aimSide, aimDirection * 0.9f); //makes the weapon seem like its orbiting the player
+        Vector2 rotationDistance = new(0.25f * (aimSide - Mathf.Abs(aimDirection) * aimSide) + aimSide, aimDirection * 1.2f); //makes the weapon seem like its orbiting the player
         weapon.position = new(transform.position.x + rotationDistance.x, transform.position.y + rotationDistance.y);
     }
 }

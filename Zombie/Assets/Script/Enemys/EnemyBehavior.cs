@@ -15,6 +15,7 @@ public class EnemyBehavior : MonoBehaviour
     }
     public EnemyType enemyType;
     public EnemyMovement enemyMovement;
+    public LayerMask enemyLayer;
 
     [Header("Stats")]
     public float damage;
@@ -36,5 +37,23 @@ public class EnemyBehavior : MonoBehaviour
         this.attackRate = attackRate;
         this.attackRange = attackRange;
         this.damage = damage;
+    }
+
+    public void EnableClip<T>() where T : EnemyBehavior
+    {
+        foreach (var collider in Physics2D.OverlapCircleAll(transform.position, enemyMovement._collider.bounds.extents.x, enemyLayer))
+        {
+            if (collider.GetComponent<T>() != null && collider != enemyMovement._collider)
+            {
+                float distance = collider.transform.position.x - transform.position.x;
+                if (distance <= 0)
+                    distance = Mathf.Clamp(distance, -1f, -0.1f);
+                else
+                    distance = Mathf.Clamp(distance, 0.1f, 1f);
+                distance = 0.02f / distance;
+
+                collider.attachedRigidbody.AddForceX(distance / 350f, ForceMode2D.Impulse);
+            }
+        }
     }
 }

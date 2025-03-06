@@ -48,7 +48,7 @@ public class Health : MonoBehaviour
     public void HandleDeath()
     {
         if (healthType == HealthType.player)
-            return;
+            GameManager.Instance.GameOver();
         else if (healthType == HealthType.enemy)
             gameObject.SetActive(false);
         else

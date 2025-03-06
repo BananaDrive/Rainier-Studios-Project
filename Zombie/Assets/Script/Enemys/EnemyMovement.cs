@@ -58,7 +58,9 @@ public class EnemyMovement : Movement
     public IEnumerator Wander()
     {
         moveDirection = Random.Range(1f, -1f);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(Random.Range(1f, 3f));
+        moveDirection = 0;
+        yield return new WaitForSeconds(Random.Range(1f, 3f));
         hasWandered = false;
     }
 }

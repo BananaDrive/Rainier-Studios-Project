@@ -52,7 +52,7 @@ public class EnemyBehavior : MonoBehaviour
                     distance = Mathf.Clamp(distance, 0.1f, 1f);
                 distance = 0.02f / distance;
 
-                collider.attachedRigidbody.AddForceX(distance / 350f, ForceMode2D.Impulse);
+                collider.attachedRigidbody.AddForceX(distance / 2, ForceMode2D.Impulse);
             }
         }
     }

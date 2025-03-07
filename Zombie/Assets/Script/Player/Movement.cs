@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
     public SpriteRenderer sprite;
     public Rigidbody2D rb;
     public LayerMask ground;
+    public BuffsHandler buffsHandler;
 
     [Header("Stats")]
     public float moveSpeed;
@@ -29,7 +30,7 @@ public class Movement : MonoBehaviour
 
     public void MovementHandle()
     {
-        rb.AddForce(moveDirection * (moveSpeed + (moveSpeed * moveSpeedBuff / 100)) * acceleration * transform.right, ForceMode2D.Force);
+        rb.AddForce(moveDirection * (moveSpeed + (moveSpeed * buffsHandler.moveSpeedBuff / 100)) * acceleration * transform.right, ForceMode2D.Force);
 
         sprite.flipX = moveDirection > 0 ? false : (moveDirection < 0 ? true : sprite.flipX); //flips the player's sprite based on their directional speed
 

@@ -16,17 +16,18 @@ public class Inventory : MonoBehaviour
         Items = new BaseItem[4];
     }
 
+    public void FixedUpdate()
+    {
+        ItemDetection();
+    }
+
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            ItemDetection();
-        }
-
         if (Input.GetKeyDown(KeyCode.F) && Items[0] != null)
         {
             Items[0].UseItem();
             Items[0] = null;
+            SortInv();
         }
     }
 
@@ -45,10 +46,12 @@ public class Inventory : MonoBehaviour
             }
         }
 
-        if (foundItem != null)
+        int temp = CheckInventory();
+
+        if (foundItem != null && temp != 4)
         {
             foundItem.buffs = buffs;
-            Items[CheckInventory()] = foundItem;
+            Items[temp] = foundItem;
             foundItem.gameObject.SetActive(false);
         }
     }
@@ -60,6 +63,15 @@ public class Inventory : MonoBehaviour
             if (Items[i] == null)
                 return i;
         }
-        return 3;
+        return 4;
+    }
+
+    public void SortInv()
+    {
+        for (int i = 0; i < Items.Length - 1; i++)
+        {
+            Items[i] = Items[i + 1];
+            Items[i + 1] = null;
+        }
     }
 }

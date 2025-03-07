@@ -15,6 +15,7 @@ public class Weapon : MonoBehaviour
 
     bool shootCooldown;
     public LayerMask playerLayer;
+    public LayerMask hitLayer;
 
     void Update()
     {
@@ -45,7 +46,7 @@ public class Weapon : MonoBehaviour
         Bullet bulletScript = bullet.GetComponent<Bullet>();
         bullet.GetComponent<Transform>().position = transform.position;
         bulletScript.damage = damage + (damage * buffs.damageBuff / 100);
-        bulletScript.layerToIgnore = playerLayer;
+        bulletScript.layerToHit = hitLayer;
         StartCoroutine(bulletScript.Despawn());
         bullet.GetComponent<Rigidbody2D>().AddForce(bulletSpeed * 10f * transform.right, ForceMode2D.Force);
 

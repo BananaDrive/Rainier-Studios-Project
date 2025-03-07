@@ -1,6 +1,3 @@
-using System.Collections;
-using Unity.VisualScripting.FullSerializer;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour

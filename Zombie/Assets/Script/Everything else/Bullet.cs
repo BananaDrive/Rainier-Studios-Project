@@ -6,22 +6,22 @@ public class Bullet : MonoBehaviour
     public float damage;
     public float despawnTimer;
 
-    public LayerMask layerToIgnore;
+    public LayerMask layerToHit;
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if ((layerToIgnore & (1 << other.gameObject.layer)) != 0)
-            return;
-
-        if (other.TryGetComponent<Health>(out var health)) //checks if the collided object has a health script
+        if ((layerToHit & (1 << other.gameObject.layer)) != 0)
+        {
+            if (other.TryGetComponent<Health>(out var health)) //checks if the collided object has a health script
             health.TakeDamage(damage);
 
-        TurnOffObj();
+            TurnOffObj();
+        } 
     }
 
     void TurnOffObj()
     {
-        layerToIgnore = 0;
+        layerToHit = 0;
         damage = 0f;
         gameObject.SetActive(false);
     }

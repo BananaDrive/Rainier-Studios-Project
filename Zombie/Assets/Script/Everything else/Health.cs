@@ -50,7 +50,10 @@ public class Health : MonoBehaviour
         if (healthType == HealthType.player)
             GameManager.Instance.GameOver();
         else if (healthType == HealthType.enemy)
+        {
             gameObject.SetActive(false);
+            currentHealth = maxHealth;
+        }
         else
             gameObject.SetActive(false);
     }

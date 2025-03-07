@@ -151,7 +151,7 @@ MonoBehaviour:
   itemsStats:
   - itemType: 0
     potency: 20
-    duration: 10
+    duration: 2
   - itemType: 1
     potency: 20
-    duration: 10
+    duration: 2

@@ -1,6 +1,4 @@
 using System.Collections;
-using NUnit.Framework.Interfaces;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class EnemyMovement : Movement

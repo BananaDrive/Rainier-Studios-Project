@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1644178122001065626}
   - component: {fileID: 3237866848122796507}
   - component: {fileID: 8203910326083383789}
+  - component: {fileID: 1094899795330179939}
   m_Layer: 7
   m_Name: Zombie
   m_TagString: Untagged
@@ -184,6 +185,7 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 8
+  buffsHandler: {fileID: 1094899795330179939}
   moveSpeed: 1.5
   acceleration: 7
   deceleration: 30
@@ -243,6 +245,23 @@ MonoBehaviour:
   hasAttacked: 0
   attackHitBox: {fileID: 5329007421078522183}
   enemyAttackHitbox: {fileID: 3638005003921271216}
+--- !u!114 &1094899795330179939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125834075557533559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24bdfaab441dd5c44b261f9e4c720913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageBuff: 0
+  fireRateBuff: 0
+  clipSizeBuff: 0
+  bulletSpeedBuff: 0
+  moveSpeedBuff: 0
 --- !u!1 &5329007421078522183
 GameObject:
   m_ObjectHideFlags: 0

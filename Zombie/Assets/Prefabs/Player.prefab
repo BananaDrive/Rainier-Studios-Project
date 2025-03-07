@@ -201,6 +201,7 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 8
+  buffsHandler: {fileID: 2468556762478095798}
   moveSpeed: 5
   acceleration: 20
   deceleration: 23
@@ -260,6 +261,7 @@ MonoBehaviour:
   fireRateBuff: 0
   clipSizeBuff: 0
   bulletSpeedBuff: 0
+  moveSpeedBuff: 0
 --- !u!114 &7518800550083236168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,6 +424,9 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
+  hitLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &3270011203924545268
 GameObject:
   m_ObjectHideFlags: 0

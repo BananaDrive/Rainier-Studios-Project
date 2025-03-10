@@ -4,39 +4,35 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    public GameObject weapon;
+    public BuffsHandler buffs;
     public BaseItem foundItem;
     public LayerMask itemLayer;
     public BaseItem[] Items;
 
-    private bool itemfound;
 
     public void Start()
     {
         Items = new BaseItem[4];
     }
 
+    public void FixedUpdate()
+    {
+        ItemDetection();
+    }
+
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            ItemDetection();
-
-            foreach (BaseItem baseitem in Items)
-            {
-                Debug.Log(baseitem);
-            }
-        }
-
         if (Input.GetKeyDown(KeyCode.F) && Items[0] != null)
         {
             Items[0].UseItem();
             Items[0] = null;
+            SortInv();
         }
     }
 
     public void ItemDetection()
     {
-        itemfound = false;
         foundItem = null;
         float minDistance = 2f;
         foreach (var collider in Physics2D.OverlapCircleAll(transform.position, 2f, itemLayer))
@@ -47,17 +43,17 @@ public class Inventory : MonoBehaviour
             {
                 foundItem = collider.GetComponent<BaseItem>();
                 minDistance = itemDistance;
-                itemfound = true;
             }
         }
 
-        if (foundItem != null)
+        int temp = CheckInventory();
+
+        if (foundItem != null && temp != 4)
         {
-            foundItem.player = gameObject;
-            Items[CheckInventory()] = foundItem;
+            foundItem.buffs = buffs;
+            Items[temp] = foundItem;
             foundItem.gameObject.SetActive(false);
         }
-            
     }
 
     public int CheckInventory()
@@ -67,6 +63,15 @@ public class Inventory : MonoBehaviour
             if (Items[i] == null)
                 return i;
         }
-        return 3;
+        return 4;
+    }
+
+    public void SortInv()
+    {
+        for (int i = 0; i < Items.Length - 1; i++)
+        {
+            Items[i] = Items[i + 1];
+            Items[i + 1] = null;
+        }
     }
 }

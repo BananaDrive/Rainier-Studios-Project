@@ -2799,6 +2799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: File Cabinet
       objectReference: {fileID: 0}
+    - target: {fileID: 120661665046414930, guid: 29ab0d2bddf39904ea6c057d886f9e96, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3926570085013812648, guid: 29ab0d2bddf39904ea6c057d886f9e96, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.536072
@@ -3383,7 +3387,7 @@ GameObject:
   - component: {fileID: 1992667835}
   - component: {fileID: 1992667834}
   - component: {fileID: 1992667836}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}

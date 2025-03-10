@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Assertions.Must;
 
 public class Weapon : MonoBehaviour
 {
@@ -14,7 +13,7 @@ public class Weapon : MonoBehaviour
     public float bulletSpeed;
 
     bool shootCooldown;
-    public LayerMask playerLayer;
+    public LayerMask playerLayer, enemyLayer;
 
     void Update()
     {
@@ -65,7 +64,7 @@ public class Weapon : MonoBehaviour
         
         Bullet bulletScript = bullet.GetComponent<Bullet>();
         bulletScript.damage = BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff);
-        bulletScript.layerToIgnore = playerLayer;
+        bulletScript.layerToHit = enemyLayer;
 
         StartCoroutine(bulletScript.Despawn());
         bullet.GetComponent<Transform>().position = transform.position;
@@ -76,7 +75,7 @@ public class Weapon : MonoBehaviour
 
     public void RaycastShoot()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 30f, ~playerLayer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 30f, ~enemyLayer);
 
         if (hit.collider != null)
         {

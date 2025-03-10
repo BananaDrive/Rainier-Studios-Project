@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2034708263222113837}
   - component: {fileID: 4522761969310474493}
   - component: {fileID: 1280111084425450676}
-  - component: {fileID: 8633924499929980962}
+  - component: {fileID: 2468556762478095798}
   - component: {fileID: 7518800550083236168}
   m_Layer: 6
   m_Name: PlayerObj
@@ -35,7 +35,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6.2597756, y: 0.081608295, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 296464217773923605}
@@ -201,12 +201,12 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 8
-  buffsHandler: {fileID: 8633924499929980962}
+  buffsHandler: {fileID: 2468556762478095798}
   moveSpeed: 5
   acceleration: 20
   deceleration: 23
   jumpPower: 30
-  groundDistance: 1.02
+  groundDistance: 0.53
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapon: {fileID: 4705790274937366882}
   movement: {fileID: 2034708263222113837}
-  verticalAimMax: 0
+  verticalAimMax: 90
 --- !u!114 &1280111084425450676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,9 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 2797739084873007406}
-  buffs: {fileID: 8633924499929980962}
-  foundItem: {fileID: 0}
-  enhancer: {fileID: 0}
+  buffs: {fileID: 2468556762478095798}
   itemLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -249,7 +247,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   Items: []
-  enhancerList: []
 --- !u!114 &2468556762478095798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +263,7 @@ MonoBehaviour:
   fireRateBuff: 0
   clipSizeBuff: 0
   bulletSpeedBuff: 0
+  moveSpeedBuff: 0
   damageEnhance: 0
   fireRateEnhance: 0
   clipSizeEnhance: 0
@@ -429,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e0e03bd5a8af045affe3f4c136a1b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buffs: {fileID: 8633924499929980962}
+  buffs: {fileID: 2468556762478095798}
   damage: 16
   fireRate: 5
   clipSize: 0
@@ -437,7 +435,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
-  hitLayer:
+  enemyLayer:
     serializedVersion: 2
     m_Bits: 128
 --- !u!1 &3270011203924545268

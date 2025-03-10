@@ -6,11 +6,10 @@ public class Inventory : MonoBehaviour
 {
     public GameObject weapon;
     public BuffsHandler buffs;
-    public BaseItem foundItem;
-    public Enhancers enhancer;
+    internal BaseItem foundItem;
+    internal Enhancers enhancer;
     public LayerMask itemLayer, enhancerLayer;
     public BaseItem[] Items;
-    public List<Enhancers> enhancerList;
 
 
     public void Start()

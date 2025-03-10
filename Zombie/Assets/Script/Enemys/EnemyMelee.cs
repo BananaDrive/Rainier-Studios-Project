@@ -12,11 +12,10 @@ public class EnemyMelee : EnemyBehavior
         {
             hasAttacked = true;
             attackHitBox.transform.position = new(transform.position.x + (enemyMovement.sprite.flipX ? -0.2f : 0.2f), transform.position.y);
-            StartCoroutine(MeleeAttack());
+            CoroutineHandler.Instance.StartCoroutine(MeleeAttack());
         }
 
         EnableClip<EnemyMelee>();
-
     }
 
     public IEnumerator MeleeAttack()

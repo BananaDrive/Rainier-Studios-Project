@@ -240,10 +240,15 @@ MonoBehaviour:
   weapon: {fileID: 0}
   buffs: {fileID: 2468556762478095798}
   foundItem: {fileID: 0}
+  enhancer: {fileID: 0}
   itemLayer:
     serializedVersion: 2
     m_Bits: 256
+  enhancerLayer:
+    serializedVersion: 2
+    m_Bits: 512
   Items: []
+  enhancerList: []
 --- !u!114 &2468556762478095798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,6 +265,16 @@ MonoBehaviour:
   fireRateBuff: 0
   clipSizeBuff: 0
   bulletSpeedBuff: 0
+  damageEnhance: 0
+  fireRateEnhance: 0
+  clipSizeEnhance: 0
+  bulletSpeedEnhance: 0
+  accuracyEnhance: 0
+  reloadEnhance: 0
+  shotAmountEnhance: 0
+  allowRaycast: 0
+  allowPiercing: 0
+  allowAuto: 0
 --- !u!114 &7518800550083236168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,7 +433,6 @@ MonoBehaviour:
   fireRate: 5
   clipSize: 0
   bulletSpeed: 10
-  isRaycast: 0
   playerLayer:
     serializedVersion: 2
     m_Bits: 64

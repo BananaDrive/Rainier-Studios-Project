@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 public class Weapon : MonoBehaviour
 {
@@ -11,26 +12,46 @@ public class Weapon : MonoBehaviour
     public float fireRate;
     public float clipSize;
     public float bulletSpeed;
-    public bool isRaycast;
 
     bool shootCooldown;
     public LayerMask playerLayer;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !shootCooldown)
+        if (!buffs.allowAuto)
         {
-            if (isRaycast)
+            if (Input.GetKeyDown(KeyCode.E) && !shootCooldown)
             {
-                shootCooldown = true;
-                RaycastShoot();
+                if (buffs.allowRaycast)
+                {
+                    shootCooldown = true;
+                    RaycastShoot();
+                }
+                else
+                {
+                    shootCooldown = true;
+                    ProjectileShoot();
+                }
             }
-            else
+        }
+        else
+        {
+            if (Input.GetKey(KeyCode.E) && !shootCooldown)
             {
-                shootCooldown = true;
-                ProjectileShoot();
+                if (buffs.allowRaycast)
+                {
+                    shootCooldown = true;
+                    RaycastShoot();
+                }
+                else
+                {
+                    shootCooldown = true;
+                    ProjectileShoot();
+                }
             }
-        } 
+        }
+
+        Debug.DrawRay(transform.position, transform.right);
     }
 
     public void ProjectileShoot()
@@ -43,11 +64,12 @@ public class Weapon : MonoBehaviour
         bullet.SetActive(true);
         
         Bullet bulletScript = bullet.GetComponent<Bullet>();
-        bullet.GetComponent<Transform>().position = transform.position;
-        bulletScript.damage = damage + (damage * buffs.damageBuff / 100);
+        bulletScript.damage = BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff);
         bulletScript.layerToIgnore = playerLayer;
+
         StartCoroutine(bulletScript.Despawn());
-        bullet.GetComponent<Rigidbody2D>().AddForce(bulletSpeed * 10f * transform.right, ForceMode2D.Force);
+        bullet.GetComponent<Transform>().position = transform.position;
+        bullet.GetComponent<Rigidbody2D>().AddForce(BuffCalculation(bulletSpeed, buffs.bulletSpeedEnhance, buffs.bulletSpeedBuff) * 10f * transform.right, ForceMode2D.Force);
 
         StartCoroutine(ShootCD());
     }
@@ -59,14 +81,25 @@ public class Weapon : MonoBehaviour
         if (hit.collider != null)
         {
             if (hit.transform.TryGetComponent(out Health hitHealth))
-                hitHealth.TakeDamage(damage + (damage * buffs.damageBuff / 100));
+                {
+                    hitHealth.TakeDamage(BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff));
+                    Debug.Log("works");
+                }
         }
         StartCoroutine(ShootCD());
     }
 
     public IEnumerator ShootCD()
     {
-        yield return new WaitForSeconds(1 / (fireRate + (fireRate * buffs.fireRateBuff / 100)));
+        yield return new WaitForSeconds(1 / BuffCalculation(fireRate, buffs.fireRateEnhance, buffs.fireRateBuff));
         shootCooldown = false;
     }
+
+    public float BuffCalculation(float mainStat, float enhancer, float itemBuff)
+    {
+        float tempValue = mainStat + (mainStat * enhancer / 100);
+        return tempValue + (tempValue * itemBuff / 100);
+    }
+
+
 }

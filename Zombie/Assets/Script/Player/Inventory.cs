@@ -6,8 +6,9 @@ public class Inventory : MonoBehaviour
 {
     public GameObject weapon;
     public BuffsHandler buffs;
-    public BaseItem foundItem;
-    public LayerMask itemLayer;
+    internal BaseItem foundItem;
+    internal Enhancers enhancer;
+    public LayerMask itemLayer, enhancerLayer;
     public BaseItem[] Items;
 
 
@@ -19,16 +20,26 @@ public class Inventory : MonoBehaviour
     public void FixedUpdate()
     {
         ItemDetection();
+        EnhancerDetection();
     }
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && Items[0] != null)
+        if (Input.GetKeyDown(KeyCode.F) && enhancer != null)
+        {
+            Debug.Log("test");
+            ApplyEnhancer();
+            enhancer.gameObject.SetActive(false);
+            enhancer = null;
+        }
+        if (Input.GetKeyDown(KeyCode.F) && Items[0] != null && enhancer == null)
         {
             Items[0].UseItem();
             Items[0] = null;
             SortInv();
         }
+
+
     }
 
     public void ItemDetection()
@@ -54,6 +65,37 @@ public class Inventory : MonoBehaviour
             Items[temp] = foundItem;
             foundItem.gameObject.SetActive(false);
         }
+    }
+
+    public void EnhancerDetection()
+    {
+        enhancer = null;
+        float minDistance = 2f;
+        foreach (var collider in Physics2D.OverlapCircleAll(transform.position, 2f, enhancerLayer))
+        {
+            float itemDistance = Vector3.Distance(transform.position, collider.transform.position);
+
+            if (itemDistance < minDistance)
+            {
+                enhancer = collider.GetComponent<Enhancers>();
+                minDistance = itemDistance;
+            }
+        }
+    }
+
+    public void ApplyEnhancer()
+    {
+        buffs.damageEnhance += enhancer.damage;
+        buffs.fireRateBuff += enhancer.fireRate;
+        buffs.clipSizeEnhance += enhancer.clipSize;
+        buffs.bulletSpeedEnhance += enhancer.bulletSpeed;
+        buffs.reloadEnhance += enhancer.reloadSpeed;
+        buffs.accuracyEnhance += enhancer.accuracy;
+        buffs.shotAmountEnhance += enhancer.shotAmount;
+
+        buffs.allowAuto = !enhancer.disableAuto && (enhancer.allowAuto || buffs.allowAuto);
+        buffs.allowPiercing = !enhancer.disablePiercing && (enhancer.allowPiercing || buffs.allowPiercing);
+        buffs.allowRaycast = !enhancer.disableRaycast && (enhancer.allowRaycast || buffs.allowRaycast);
     }
 
     public int CheckInventory()

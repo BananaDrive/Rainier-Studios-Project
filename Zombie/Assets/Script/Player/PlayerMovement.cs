@@ -21,6 +21,7 @@ public class PlayerMovement : Movement
 
     public void FixedUpdate()
     {
+        Gravity();
         MovementHandle();
         SpeedLimit();
     }

@@ -262,6 +262,16 @@ MonoBehaviour:
   clipSizeBuff: 0
   bulletSpeedBuff: 0
   moveSpeedBuff: 0
+  damageEnhance: 0
+  fireRateEnhance: 0
+  clipSizeEnhance: 0
+  bulletSpeedEnhance: 0
+  accuracyEnhance: 0
+  reloadEnhance: 0
+  shotAmountEnhance: 0
+  allowRaycast: 0
+  allowPiercing: 0
+  allowAuto: 0
 --- !u!1 &5329007421078522183
 GameObject:
   m_ObjectHideFlags: 0

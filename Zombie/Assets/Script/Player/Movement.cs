@@ -50,6 +50,11 @@ public class Movement : MonoBehaviour
         }
     }
 
+    public void Gravity()
+    {
+        rb.AddForce(Physics.gravity*rb.mass);
+    }
+
     public void Jump()
     {
         rb.AddForceY(jumpPower * 10, ForceMode2D.Force);

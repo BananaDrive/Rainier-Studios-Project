@@ -69,6 +69,8 @@ public class Inventory : MonoBehaviour
 
     public void EnhancerDetection()
     {
+        if (enhancer != null)
+            enhancer.TogglePanel();
         enhancer = null;
         float minDistance = 2f;
         foreach (var collider in Physics2D.OverlapCircleAll(transform.position, 2f, enhancerLayer))
@@ -81,6 +83,9 @@ public class Inventory : MonoBehaviour
                 minDistance = itemDistance;
             }
         }
+
+        if (enhancer != null)
+            enhancer.TogglePanel();
     }
 
     public void ApplyEnhancer()

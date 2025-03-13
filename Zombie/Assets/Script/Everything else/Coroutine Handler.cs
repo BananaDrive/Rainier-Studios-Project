@@ -7,7 +7,7 @@ public class CoroutineHandler : MonoBehaviour
     {
         get
         {
-            if(instance == null)
+            if (instance == null)
             {
                 GameObject inst = new("CoroutineHandler");
                 DontDestroyOnLoad(inst);

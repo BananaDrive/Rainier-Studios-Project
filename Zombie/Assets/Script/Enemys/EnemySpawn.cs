@@ -26,7 +26,11 @@ public class EnemySpawn : MonoBehaviour
         if (temp == null)
             yield break;
         temp.SetActive(true);
-        temp.GetComponent<EnemyBehavior>().InitializeStats(Random.Range(10f, 20f) / 10f, Random.Range(3f, 6f), 0.5f, Random.Range(5f, 8f));
+
+        EnemyBehavior enemyBehavior = temp.GetComponent<EnemyBehavior>();
+        enemyBehavior.InitializeStats(Random.Range(10f, 20f) / 10f, Random.Range(3f, 6f), 0.5f, Random.Range(5f, 8f));
+        enemyBehavior.hasAttacked = false;
+        
         temp.transform.position = zombieSpawnArea.position;
         yield return new WaitForSeconds(spawnDelay);
         hasSpawned = false;

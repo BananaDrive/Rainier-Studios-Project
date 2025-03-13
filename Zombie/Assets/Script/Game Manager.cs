@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    public UIManager UIManager;
     public GameObject gameOverScreen;
     public GameObject pauseScreen;
     public bool isPaused;
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))  
         {
-            PauseTheScreen();
+            PauseScreen();
         } 
     }
 
@@ -37,7 +38,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void PauseTheScreen()
+    public void PauseScreen()
     {
         if (!isPaused && !gameOverScreen.activeInHierarchy)
         {

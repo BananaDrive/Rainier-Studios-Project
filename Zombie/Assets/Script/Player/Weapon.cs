@@ -80,10 +80,8 @@ public class Weapon : MonoBehaviour
         if (hit.collider != null)
         {
             if (hit.transform.TryGetComponent(out Health hitHealth))
-                {
-                    hitHealth.TakeDamage(BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff));
-                    Debug.Log("works");
-                }
+                hitHealth.TakeDamage(BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff));
+                
         }
         StartCoroutine(ShootCD());
     }
@@ -99,6 +97,4 @@ public class Weapon : MonoBehaviour
         float tempValue = mainStat + (mainStat * enhancer / 100);
         return tempValue + (tempValue * itemBuff / 100);
     }
-
-
 }

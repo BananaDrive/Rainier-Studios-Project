@@ -3,13 +3,19 @@ using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
+    public GameObject zombie;
     public Transform zombieSpawnArea;
-    public int objectPoolNum;
     public float spawnMax;
     public float currentSpawned;
     public float spawnDelay;
+    int objectPoolNum;
 
     public bool hasSpawned;
+
+    void Start()
+    {
+        objectPoolNum = ObjectPool.SharedInstance.GetObjectPoolNum(zombie);
+    }
 
     public void FixedUpdate()
     {

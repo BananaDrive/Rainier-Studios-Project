@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public GameObject bullet;
     public BuffsHandler buffs;
 
     [Header("Stats")]
@@ -12,8 +13,14 @@ public class Weapon : MonoBehaviour
     public float clipSize;
     public float bulletSpeed;
 
+    int bulletPoolIndex;
     bool shootCooldown;
     public LayerMask playerLayer, enemyLayer;
+
+    void Start()
+    {
+        bulletPoolIndex = ObjectPool.SharedInstance.GetObjectPoolNum(bullet);
+    }
 
     void Update()
     {
@@ -55,7 +62,7 @@ public class Weapon : MonoBehaviour
 
     public void ProjectileShoot()
     {
-        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(0);
+        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
 
         if (bullet == null)
             return;

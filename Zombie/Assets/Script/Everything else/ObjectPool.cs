@@ -22,9 +22,11 @@ public class ObjectPool : MonoBehaviour
             Destroy(this);
         else
             SharedInstance = this;   
+
+        InitializePool();
     }
 
-    void Start()
+    public void InitializePool()
     {
         listOfPooledObjects = new List<GameObject>[objectsToPool.Length];
 
@@ -59,5 +61,16 @@ public class ObjectPool : MonoBehaviour
                 return listOfPooledObjects[number][i];
         }
         return null;
+    }
+
+    public int GetObjectPoolNum(GameObject gameObject)
+    {
+        for (int i = 0; i < listOfPooledObjects.Length; i++)
+        {
+            if (gameObject.name + "(Clone)" == listOfPooledObjects[i][0].name)
+                return i;
+        }
+        Debug.Log("Object not found");
+        return 0;
     }
 }

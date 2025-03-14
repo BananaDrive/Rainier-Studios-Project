@@ -427,6 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e0e03bd5a8af045affe3f4c136a1b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
   buffs: {fileID: 2468556762478095798}
   damage: 16
   fireRate: 5

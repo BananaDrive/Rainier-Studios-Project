@@ -70,13 +70,15 @@ public class Weapon : MonoBehaviour
         bullet.SetActive(true);
         
         Bullet bulletScript = bullet.GetComponent<Bullet>();
+        Transform bulletTransform = bullet.GetComponent<Transform>();
         bulletScript.damage = BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff);
         bulletScript.layerToHit = enemyLayer;
 
-        StartCoroutine(bulletScript.Despawn());
-        bullet.GetComponent<Transform>().position = transform.position;
-        bullet.GetComponent<Rigidbody2D>().AddForce(BuffCalculation(bulletSpeed, buffs.bulletSpeedEnhance, buffs.bulletSpeedBuff) * 10f * transform.right, ForceMode2D.Force);
+        float spread = 22.5f - (22.5f * buffs.accuracyEnhance / 100f);
+        bulletTransform.SetPositionAndRotation(transform.position, Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z + UnityEngine.Random.Range(-spread, spread)));
+        bullet.GetComponent<Rigidbody2D>().AddForce(BuffCalculation(bulletSpeed, buffs.bulletSpeedEnhance, buffs.bulletSpeedBuff) * 10f * bullet.transform.right, ForceMode2D.Force);
 
+        StartCoroutine(bulletScript.Despawn());
         StartCoroutine(ShootCD());
     }
 

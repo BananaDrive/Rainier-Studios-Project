@@ -13,4 +13,9 @@ public class Enhancers : MonoBehaviour
     public bool allowRaycast;
     public bool allowPiercing, allowAuto;
     public bool disableRaycast, disablePiercing, disableAuto;
+
+    public void InitalizeDescription()
+    {
+        itemName += damage == 0 ? "": (damage < 0 ? "-Damage" : "+Damage");
+    }
 }

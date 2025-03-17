@@ -187,8 +187,8 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  damage: 10
-  attackRate: 0.2
+  damage: 1
+  attackRate: 1
   speed: 3
   attackRange: 10
   rangeToAttack: 10
@@ -196,6 +196,7 @@ MonoBehaviour:
   canSprint: 0
   explodeOnDeath: 0
   hasAttacked: 0
+  burstFireAmount: 3
 --- !u!114 &261682449 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1644178122001065626, guid: b020c87128f6c0848b391845a86fca57, type: 3}
@@ -5018,6 +5019,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6348377253694772264, guid: be6a202872ec08144ac72032635dad4d, type: 3}
+      propertyPath: damage
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8991184985484401020, guid: be6a202872ec08144ac72032635dad4d, type: 3}
       propertyPath: m_Name
       value: Enhancer
@@ -5143,6 +5148,10 @@ PrefabInstance:
     - target: {fileID: 2034708263222113837, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: jumpPower
       value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468556762478095798, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: accuracyEnhance
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3270011203924545268, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_Name

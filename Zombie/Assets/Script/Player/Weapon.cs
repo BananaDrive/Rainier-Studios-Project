@@ -12,73 +12,71 @@ public class Weapon : MonoBehaviour
     public float fireRate;
     public float clipSize;
     public float bulletSpeed;
+    public float shotAmount;
+    public float reloadTime;
+
+    public float clipAmount;
 
     int bulletPoolIndex;
+    bool isReloading;
     bool shootCooldown;
     public LayerMask playerLayer, enemyLayer;
 
     void Start()
     {
         bulletPoolIndex = ObjectPool.SharedInstance.GetObjectPoolNum(bullet);
+        clipAmount = clipSize;
     }
 
     void Update()
     {
-        if (!buffs.allowAuto)
+        if ((buffs.allowAuto && Input.GetKey(KeyCode.E) || !buffs.allowAuto && Input.GetKeyDown(KeyCode.E)) && !shootCooldown)
         {
-            if (Input.GetKeyDown(KeyCode.E) && !shootCooldown)
+            if (clipAmount > 0)
             {
+                shootCooldown = true;
                 if (buffs.allowRaycast)
                 {
-                    shootCooldown = true;
                     RaycastShoot();
                 }
                 else
                 {
-                    shootCooldown = true;
                     ProjectileShoot();
                 }
             }
-        }
-        else
-        {
-            if (Input.GetKey(KeyCode.E) && !shootCooldown)
+            else if (!isReloading)
             {
-                if (buffs.allowRaycast)
-                {
-                    shootCooldown = true;
-                    RaycastShoot();
-                }
-                else
-                {
-                    shootCooldown = true;
-                    ProjectileShoot();
-                }
+                isReloading = true;
+                StartCoroutine(Reload());
             }
         }
-
-        Debug.DrawRay(transform.position, transform.right);
     }
 
     public void ProjectileShoot()
     {
-        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
+        for (int i = 0; i < shotAmount + buffs.shotAmountEnhance; i++)
+        {
+            clipAmount--;
 
-        if (bullet == null)
-            return;
+            GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
 
-        bullet.SetActive(true);
-        
-        Bullet bulletScript = bullet.GetComponent<Bullet>();
-        Transform bulletTransform = bullet.GetComponent<Transform>();
-        bulletScript.damage = BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff);
-        bulletScript.layerToHit = enemyLayer;
+            if (bullet == null)
+                return;
 
-        float spread = 22.5f - (22.5f * buffs.accuracyEnhance / 100f);
-        bulletTransform.SetPositionAndRotation(transform.position, Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z + UnityEngine.Random.Range(-spread, spread)));
-        bullet.GetComponent<Rigidbody2D>().AddForce(BuffCalculation(bulletSpeed, buffs.bulletSpeedEnhance, buffs.bulletSpeedBuff) * 10f * bullet.transform.right, ForceMode2D.Force);
+            bullet.SetActive(true);
+            
+            Bullet bulletScript = bullet.GetComponent<Bullet>();
+            Transform bulletTransform = bullet.GetComponent<Transform>();
+            bulletScript.damage = BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff);
+            bulletScript.layerToHit = enemyLayer;
 
-        StartCoroutine(bulletScript.Despawn());
+            float spread = 22.5f - (22.5f * buffs.accuracyEnhance / 100f);
+            bulletTransform.SetPositionAndRotation(transform.position, Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z + UnityEngine.Random.Range(-spread, spread)));
+            bullet.GetComponent<Rigidbody2D>().AddForce(BuffCalculation(bulletSpeed, buffs.bulletSpeedEnhance, buffs.bulletSpeedBuff) * 10f * bullet.transform.right, ForceMode2D.Force);
+
+            StartCoroutine(bulletScript.Despawn());
+        }
+
         StartCoroutine(ShootCD());
     }
 
@@ -99,6 +97,13 @@ public class Weapon : MonoBehaviour
     {
         yield return new WaitForSeconds(1 / BuffCalculation(fireRate, buffs.fireRateEnhance, buffs.fireRateBuff));
         shootCooldown = false;
+    }
+
+    public IEnumerator Reload()
+    {
+        yield return new WaitForSeconds(reloadTime);
+        clipAmount = clipSize;
+        isReloading = false;
     }
 
     public float BuffCalculation(float mainStat, float enhancer, float itemBuff)

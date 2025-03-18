@@ -52,7 +52,7 @@ public class Movement : MonoBehaviour
 
     public void Gravity()
     {
-        rb.AddForce(Physics.gravity*rb.mass);
+        rb.AddForce(Physics.gravity*rb.mass*1.3f);
     }
 
     public void Jump()

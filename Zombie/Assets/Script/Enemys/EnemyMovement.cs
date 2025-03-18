@@ -20,6 +20,7 @@ public class EnemyMovement : Movement
 
     public void FixedUpdate()
     {
+        Gravity();
         if (canMove)
             MovementHandle();
         PlayerDetection();

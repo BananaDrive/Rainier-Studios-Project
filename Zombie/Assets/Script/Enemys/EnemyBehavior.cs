@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
@@ -34,6 +35,12 @@ public class EnemyBehavior : MonoBehaviour
         this.attackRate = attackRate;
         this.attackRange = attackRange;
         this.damage = damage;
+    }
+
+    public IEnumerator AttackCD()
+    {
+        yield return new WaitForSeconds(attackRate);
+        hasAttacked = false;
     }
 
     public void EnableClip<T>() where T : EnemyBehavior

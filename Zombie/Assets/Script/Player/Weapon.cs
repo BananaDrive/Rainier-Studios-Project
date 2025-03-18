@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public GameObject bullet;
     public BuffsHandler buffs;
 
     [Header("Stats")]
@@ -12,8 +13,14 @@ public class Weapon : MonoBehaviour
     public float clipSize;
     public float bulletSpeed;
 
+    int bulletPoolIndex;
     bool shootCooldown;
     public LayerMask playerLayer, enemyLayer;
+
+    void Start()
+    {
+        bulletPoolIndex = ObjectPool.SharedInstance.GetObjectPoolNum(bullet);
+    }
 
     void Update()
     {
@@ -55,7 +62,7 @@ public class Weapon : MonoBehaviour
 
     public void ProjectileShoot()
     {
-        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(0);
+        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
 
         if (bullet == null)
             return;
@@ -63,13 +70,15 @@ public class Weapon : MonoBehaviour
         bullet.SetActive(true);
         
         Bullet bulletScript = bullet.GetComponent<Bullet>();
+        Transform bulletTransform = bullet.GetComponent<Transform>();
         bulletScript.damage = BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff);
         bulletScript.layerToHit = enemyLayer;
 
-        StartCoroutine(bulletScript.Despawn());
-        bullet.GetComponent<Transform>().position = transform.position;
-        bullet.GetComponent<Rigidbody2D>().AddForce(BuffCalculation(bulletSpeed, buffs.bulletSpeedEnhance, buffs.bulletSpeedBuff) * 10f * transform.right, ForceMode2D.Force);
+        float spread = 22.5f - (22.5f * buffs.accuracyEnhance / 100f);
+        bulletTransform.SetPositionAndRotation(transform.position, Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z + UnityEngine.Random.Range(-spread, spread)));
+        bullet.GetComponent<Rigidbody2D>().AddForce(BuffCalculation(bulletSpeed, buffs.bulletSpeedEnhance, buffs.bulletSpeedBuff) * 10f * bullet.transform.right, ForceMode2D.Force);
 
+        StartCoroutine(bulletScript.Despawn());
         StartCoroutine(ShootCD());
     }
 
@@ -80,10 +89,8 @@ public class Weapon : MonoBehaviour
         if (hit.collider != null)
         {
             if (hit.transform.TryGetComponent(out Health hitHealth))
-                {
-                    hitHealth.TakeDamage(BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff));
-                    Debug.Log("works");
-                }
+                hitHealth.TakeDamage(BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff));
+                
         }
         StartCoroutine(ShootCD());
     }
@@ -99,6 +106,4 @@ public class Weapon : MonoBehaviour
         float tempValue = mainStat + (mainStat * enhancer / 100);
         return tempValue + (tempValue * itemBuff / 100);
     }
-
-
 }

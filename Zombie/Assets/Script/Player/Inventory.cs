@@ -27,7 +27,6 @@ public class Inventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && enhancer != null)
         {
-            Debug.Log("test");
             ApplyEnhancer();
             enhancer.gameObject.SetActive(false);
             enhancer = null;
@@ -69,6 +68,9 @@ public class Inventory : MonoBehaviour
 
     public void EnhancerDetection()
     {
+        if (enhancer == null)
+            GameManager.Instance.UIManager.itemStatsPanel.SetActive(false);
+
         enhancer = null;
         float minDistance = 2f;
         foreach (var collider in Physics2D.OverlapCircleAll(transform.position, 2f, enhancerLayer))
@@ -81,6 +83,9 @@ public class Inventory : MonoBehaviour
                 minDistance = itemDistance;
             }
         }
+
+        if (enhancer != null)
+            GameManager.Instance.UIManager.ChangeItemPanel(enhancer.itemName, enhancer.itemStats);
     }
 
     public void ApplyEnhancer()
@@ -92,6 +97,8 @@ public class Inventory : MonoBehaviour
         buffs.reloadEnhance += enhancer.reloadSpeed;
         buffs.accuracyEnhance += enhancer.accuracy;
         buffs.shotAmountEnhance += enhancer.shotAmount;
+
+        buffs.bulletSpeedEnhance = Mathf.Clamp(buffs.bulletSpeedEnhance, -80, 1000);
 
         buffs.allowAuto = !enhancer.disableAuto && (enhancer.allowAuto || buffs.allowAuto);
         buffs.allowPiercing = !enhancer.disablePiercing && (enhancer.allowPiercing || buffs.allowPiercing);

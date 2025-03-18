@@ -10,9 +10,9 @@ public class Weapon : MonoBehaviour
     [Header("Stats")]
     public float damage;
     public float fireRate;
-    public float clipSize;
     public float bulletSpeed;
     public float shotAmount;
+    public float clipSize;
     public float reloadTime;
 
     public float clipAmount;
@@ -61,7 +61,8 @@ public class Weapon : MonoBehaviour
             GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
 
             if (bullet == null)
-                return;
+                break;
+                
 
             bullet.SetActive(true);
             

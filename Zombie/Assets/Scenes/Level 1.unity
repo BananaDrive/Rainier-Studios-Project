@@ -5014,7 +5014,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2247784616421732137, guid: be6a202872ec08144ac72032635dad4d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.484
+      value: -12.72
       objectReference: {fileID: 0}
     - target: {fileID: 2247784616421732137, guid: be6a202872ec08144ac72032635dad4d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5182,14 +5182,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 5541577597093778254, guid: 44dab139bd7441c44bf76d1b62c5f3d6, type: 3}
-    - target: {fileID: 2034708263222113837, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: jumpPower
-      value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034708263222113837, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: groundDistance
-      value: 0.8
-      objectReference: {fileID: 0}
     - target: {fileID: 2138873031860661316, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_Size.x
       value: 0.6803303
@@ -5270,17 +5262,9 @@ PrefabInstance:
       propertyPath: m_Interpolate
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6121928685509098609, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: clipSize
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6121928685509098609, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: reloadTime
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6121928685509098609, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: shotAmount
-      value: 10
+    - target: {fileID: 6609305082871890903, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: buffs
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8243942417990441310, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_LocalScale.y

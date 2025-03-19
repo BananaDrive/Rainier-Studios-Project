@@ -2604,11 +2604,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29ab0d2bddf39904ea6c057d886f9e96, type: 3}
---- !u!4 &1074939736 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2341615639507034113, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-  m_PrefabInstance: {fileID: 5256327215516169874}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1314993478
 GameObject:
   m_ObjectHideFlags: 0
@@ -5178,121 +5173,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1863868727273682324, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 5541577597093778254, guid: 44dab139bd7441c44bf76d1b62c5f3d6, type: 3}
-    - target: {fileID: 2034708263222113837, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: jumpPower
-      value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034708263222113837, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: groundDistance
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2138873031860661316, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_Size.x
-      value: 0.6803303
-      objectReference: {fileID: 0}
-    - target: {fileID: 2138873031860661316, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_Size.y
-      value: 1.56985
-      objectReference: {fileID: 0}
-    - target: {fileID: 2138873031860661316, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0069494247
-      objectReference: {fileID: 0}
-    - target: {fileID: 2138873031860661316, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.0069494247
-      objectReference: {fileID: 0}
-    - target: {fileID: 2138873031860661316, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.59375
-      objectReference: {fileID: 0}
-    - target: {fileID: 2138873031860661316, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.515625
-      objectReference: {fileID: 0}
-    - target: {fileID: 2468556762478095798, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: accuracyEnhance
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2868238196331933399, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2868238196331933399, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_Size.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2868238196331933399, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-    - target: {fileID: 2868238196331933399, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2868238196331933399, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2868238196331933399, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_RenderingLayerMask
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3270011203924545268, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4522761969310474493, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: weapon
-      value: 
-      objectReference: {fileID: 1074939736}
-    - target: {fileID: 4705790274937366882, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6125
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705790274937366882, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: -0.075
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705790274937366882, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.272
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705790274937366882, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.058
-      objectReference: {fileID: 0}
-    - target: {fileID: 4984421565833763411, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6121928685509098609, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: clipSize
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6121928685509098609, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: reloadTime
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6121928685509098609, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: shotAmount
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8243942417990441310, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8243942417990441310, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8243942417990441310, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -34,8 +34,8 @@ Transform:
   m_GameObject: {fileID: 220368420181251730}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.2597756, y: 0.081608295, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 296464217773923605}
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 5541577597093778254, guid: 44dab139bd7441c44bf76d1b62c5f3d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -156,17 +156,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0069494247, y: 0.0069494247}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.59375, y: 1.515625}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6803303, y: 1.56985}
   m_EdgeRadius: 0
 --- !u!114 &1726971040654175341
 MonoBehaviour:
@@ -205,8 +205,8 @@ MonoBehaviour:
   moveSpeed: 5
   acceleration: 20
   deceleration: 23
-  jumpPower: 37.5
-  groundDistance: 0.53
+  jumpPower: 42
+  groundDistance: 0.8
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1
@@ -223,9 +223,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915933606aa1cdf44b4c580c55aad8c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 4705790274937366882}
+  weapon: {fileID: 2341615639507034113}
   movement: {fileID: 2034708263222113837}
-  verticalAimMax: 90
 --- !u!114 &1280111084425450676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,8 +441,8 @@ Transform:
   m_GameObject: {fileID: 2797739084873007406}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.109775, y: -0.21839172, z: 0}
-  m_LocalScale: {x: 0.818125, y: 0.161875, z: 1}
+  m_LocalPosition: {x: 0.272, y: 0.058, z: 0}
+  m_LocalScale: {x: 0.6125, y: -0.075, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2341615639507034113}
@@ -519,8 +518,11 @@ MonoBehaviour:
   buffs: {fileID: 2468556762478095798}
   damage: 16
   fireRate: 5
-  clipSize: 0
+  clipSize: 10
   bulletSpeed: 10
+  shotAmount: 10
+  reloadTime: 2
+  clipAmount: 0
   playerLayer:
     serializedVersion: 2
     m_Bits: 64

@@ -13041,6 +13041,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f394b24107f687c45802a08592a95a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: 
+  itemStats: 
   damage: 100
   fireRate: -30
   accuracy: 0
@@ -13380,6 +13382,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1628556631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
+  m_PrefabInstance: {fileID: 3216806463299503420}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1872817240 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8243942417990441310, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
@@ -24975,6 +24982,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1863868727273682324, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5541577597093778254, guid: 44dab139bd7441c44bf76d1b62c5f3d6, type: 3}
     - target: {fileID: 2034708263222113837, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: jumpPower
       value: 37.5
@@ -24983,13 +24994,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4705790274937366882, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705790274937366882, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4984421565833763411, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_Interpolate
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8243942417990441310, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25008,6 +25027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZombieSpawn
       objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombie
+      value: 
+      objectReference: {fileID: 1628556631}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.5

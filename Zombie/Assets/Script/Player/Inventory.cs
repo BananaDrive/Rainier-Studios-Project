@@ -30,6 +30,7 @@ public class Inventory : MonoBehaviour
             ApplyEnhancer();
             enhancer.gameObject.SetActive(false);
             enhancer = null;
+            return;
         }
         if (Input.GetKeyDown(KeyCode.F) && Items[0] != null && enhancer == null)
         {
@@ -37,8 +38,6 @@ public class Inventory : MonoBehaviour
             Items[0] = null;
             SortInv();
         }
-
-
     }
 
     public void ItemDetection()
@@ -58,7 +57,7 @@ public class Inventory : MonoBehaviour
 
         int temp = CheckInventory();
 
-        if (foundItem != null && temp != 4)
+        if (foundItem != null && foundItem.canPickUp && temp != 4)
         {
             foundItem.buffs = buffs;
             Items[temp] = foundItem;

@@ -10,11 +10,10 @@ public class Health : MonoBehaviour
         enemy,
         breakable
     }
-
     public HealthType healthType;
     public float maxHealth;
     public float currentHealth;
-
+    
 
     public void TakeDamage(float damage)
     {
@@ -42,7 +41,6 @@ public class Health : MonoBehaviour
             yield return new WaitForSeconds(1f);
             timer++;
         }
-
     }
 
     public void HandleDeath()

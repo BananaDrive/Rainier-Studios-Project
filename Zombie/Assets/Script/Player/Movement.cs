@@ -30,6 +30,8 @@ public class Movement : MonoBehaviour
 
     public void MovementHandle()
     {
+        if (!canMove)
+            return;
         rb.AddForce(moveDirection * (moveSpeed + (moveSpeed * buffsHandler.moveSpeedBuff / 100)) * acceleration * transform.right, ForceMode2D.Force);
 
         sprite.flipX = moveDirection > 0 ? false : (moveDirection < 0 ? true : sprite.flipX); //flips the player's sprite based on their directional speed
@@ -57,6 +59,8 @@ public class Movement : MonoBehaviour
 
     public void Jump()
     {
+        if (!canMove)
+            return;
         rb.AddForceY(jumpPower * 10, ForceMode2D.Force);
     }
 }

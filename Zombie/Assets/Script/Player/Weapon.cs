@@ -14,6 +14,7 @@ public class Weapon : MonoBehaviour
     public float shotAmount;
     public float clipSize;
     public float reloadTime;
+    public float spreadSize;
 
     public float clipAmount;
 
@@ -32,7 +33,7 @@ public class Weapon : MonoBehaviour
     {
         if ((buffs.allowAuto && Input.GetKey(KeyCode.E) || !buffs.allowAuto && Input.GetKeyDown(KeyCode.E)) && !shootCooldown)
         {
-            if (clipAmount > 0)
+            if (clipAmount + buffs.clipSizeBuff + buffs.clipSizeEnhance > 0)
             {
                 shootCooldown = true;
                 if (buffs.allowRaycast)
@@ -61,8 +62,7 @@ public class Weapon : MonoBehaviour
             GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
 
             if (bullet == null)
-                break;
-                
+                break; 
 
             bullet.SetActive(true);
             
@@ -71,13 +71,12 @@ public class Weapon : MonoBehaviour
             bulletScript.damage = BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff);
             bulletScript.layerToHit = enemyLayer;
 
-            float spread = 22.5f - (22.5f * buffs.accuracyEnhance / 100f);
+            float spread = spreadSize - (spreadSize * buffs.accuracyEnhance + buffs.accuracyBuff / 100f);
             bulletTransform.SetPositionAndRotation(transform.position, Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z + UnityEngine.Random.Range(-spread, spread)));
-            bullet.GetComponent<Rigidbody2D>().AddForce(BuffCalculation(bulletSpeed, buffs.bulletSpeedEnhance, buffs.bulletSpeedBuff) * 10f * bullet.transform.right, ForceMode2D.Force);
+            bullet.GetComponent<Rigidbody2D>().AddForce(BuffCalculation(bulletSpeed, buffs.bulletSpeedEnhance, buffs.bulletSpeedBuff) * UnityEngine.Random.Range(8f, 12f) * bullet.transform.right, ForceMode2D.Force);
 
             StartCoroutine(bulletScript.Despawn());
         }
-
         StartCoroutine(ShootCD());
     }
 
@@ -103,7 +102,7 @@ public class Weapon : MonoBehaviour
     public IEnumerator Reload()
     {
         yield return new WaitForSeconds(reloadTime);
-        clipAmount = clipSize;
+        clipAmount = clipSize + buffs.clipSizeBuff + buffs.clipSizeEnhance;
         isReloading = false;
     }
 

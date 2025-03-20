@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
         if ((layerToHit & (1 << other.gameObject.layer)) != 0)
         {
             if (other.TryGetComponent<Health>(out var health)) //checks if the collided object has a health script
-            health.TakeDamage(damage);
+                health.TakeDamage(damage);
 
             TurnOffObj();
         } 

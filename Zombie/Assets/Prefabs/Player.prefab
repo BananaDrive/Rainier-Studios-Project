@@ -257,6 +257,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24bdfaab441dd5c44b261f9e4c720913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement: {fileID: 2034708263222113837}
+  weapon: {fileID: 6121928685509098609}
+  buffList: []
   damageBuff: 0
   fireRateBuff: 0
   clipSizeBuff: 0
@@ -462,15 +465,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
-  buffs: {fileID: 7542725141134096413}
   damage: 16
   fireRate: 50
   bulletSpeed: 10
   shotAmount: 10
   clipSize: 1e+15
   reloadTime: 2
-  spreadSize: 0
+  accuracy: 0
   clipAmount: 0
+  allowAuto: 0
+  allowRaycast: 0
   playerLayer:
     serializedVersion: 2
     m_Bits: 64

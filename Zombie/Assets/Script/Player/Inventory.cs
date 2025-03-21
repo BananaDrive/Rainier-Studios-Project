@@ -27,7 +27,7 @@ public class Inventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && enhancer != null)
         {
-            ApplyEnhancer();
+            buffs.ApplyEnhancer(enhancer);
             enhancer.gameObject.SetActive(false);
             enhancer = null;
             return;
@@ -85,23 +85,6 @@ public class Inventory : MonoBehaviour
 
         if (enhancer != null)
             GameManager.Instance.UIManager.ChangeItemPanel(enhancer.itemName, enhancer.itemStats);
-    }
-
-    public void ApplyEnhancer()
-    {
-        buffs.damageEnhance += enhancer.damage;
-        buffs.fireRateBuff += enhancer.fireRate;
-        buffs.clipSizeEnhance += enhancer.clipSize;
-        buffs.bulletSpeedEnhance += enhancer.bulletSpeed;
-        buffs.reloadEnhance += enhancer.reloadSpeed;
-        buffs.accuracyEnhance += enhancer.accuracy;
-        buffs.shotAmountEnhance += enhancer.shotAmount;
-
-        buffs.bulletSpeedEnhance = Mathf.Clamp(buffs.bulletSpeedEnhance, -80, 1000);
-
-        buffs.allowAuto = !enhancer.disableAuto && (enhancer.allowAuto || buffs.allowAuto);
-        buffs.allowPiercing = !enhancer.disablePiercing && (enhancer.allowPiercing || buffs.allowPiercing);
-        buffs.allowRaycast = !enhancer.disableRaycast && (enhancer.allowRaycast || buffs.allowRaycast);
     }
 
     public int CheckInventory()

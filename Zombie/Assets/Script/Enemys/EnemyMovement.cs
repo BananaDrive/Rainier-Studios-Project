@@ -35,6 +35,8 @@ public class EnemyMovement : Movement
                 StartCoroutine(Wander());
             }
         }
+        else
+            moveSpeedBuff = 0f;
         SpeedLimit();
     }
 

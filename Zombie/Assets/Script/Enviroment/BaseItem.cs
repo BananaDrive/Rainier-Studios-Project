@@ -48,6 +48,8 @@ public class BaseItem : MonoBehaviour
                     gameObject.SetActive(true);
                 break;
                 default:
+                    if (items.itemType == ItemType.placeable)
+                        break;
                     buffs.AddBuff(items);
                 break;
             }

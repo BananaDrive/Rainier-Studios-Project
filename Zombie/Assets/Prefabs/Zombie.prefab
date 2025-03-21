@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 2070405007123260652}
   - component: {fileID: 4450570444474460765}
   - component: {fileID: 8559366492459221640}
-  - component: {fileID: 1502711793703413486}
+  - component: {fileID: 792959710959513520}
   - component: {fileID: 1644178122001065626}
   - component: {fileID: 3237866848122796507}
   - component: {fileID: 8203910326083383789}
-  - component: {fileID: 1094899795330179939}
   m_Layer: 7
   m_Name: Zombie
   m_TagString: Untagged
@@ -121,8 +120,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &1502711793703413486
-BoxCollider2D:
+--- !u!70 &792959710959513520
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -156,17 +155,8 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Direction: 0
 --- !u!114 &1644178122001065626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,13 +169,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b371dbeee7b2a45b4fbd0e15db7181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collider: {fileID: 1502711793703413486}
+  _collider: {fileID: 792959710959513520}
   sprite: {fileID: 4450570444474460765}
   rb: {fileID: 8559366492459221640}
   ground:
     serializedVersion: 2
     m_Bits: 8
-  buffsHandler: {fileID: 1094899795330179939}
   moveSpeed: 1.5
   acceleration: 7
   deceleration: 30
@@ -202,6 +191,7 @@ MonoBehaviour:
     m_Bits: 64
   distanceToStop: 0.5
   detectRadius: 10
+  canWander: 0
 --- !u!114 &3237866848122796507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,37 +235,6 @@ MonoBehaviour:
   hasAttacked: 0
   attackHitBox: {fileID: 5329007421078522183}
   enemyAttackHitbox: {fileID: 3638005003921271216}
---- !u!114 &1094899795330179939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5125834075557533559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24bdfaab441dd5c44b261f9e4c720913, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player:
-    serializedVersion: 2
-    m_Bits: 0
-  damageBuff: 0
-  fireRateBuff: 0
-  clipSizeBuff: 0
-  bulletSpeedBuff: 0
-  moveSpeedBuff: 0
-  accuracyBuff: 0
-  damageEnhance: 0
-  fireRateEnhance: 0
-  clipSizeEnhance: 0
-  bulletSpeedEnhance: 0
-  accuracyEnhance: 0
-  reloadEnhance: 0
-  shotAmountEnhance: 0
-  allowRaycast: 0
-  allowPiercing: 0
-  allowAuto: 0
 --- !u!1 &5329007421078522183
 GameObject:
   m_ObjectHideFlags: 0

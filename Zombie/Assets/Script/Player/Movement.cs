@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public BoxCollider2D _collider;
+    public Collider2D _collider;
     public SpriteRenderer sprite;
     public Rigidbody2D rb;
     public LayerMask ground;
@@ -42,6 +42,8 @@ public class Movement : MonoBehaviour
 
     public void SpeedLimit()
     {
+        if (!canMove)
+            return;
         Vector2 flatVel = new(rb.linearVelocityX, 0);
 
         if (Mathf.Abs(flatVel.magnitude) > moveSpeed)
@@ -53,6 +55,8 @@ public class Movement : MonoBehaviour
 
     public void Gravity()
     {
+        if (rb == null)
+            return;
         rb.AddForce(1.3f * rb.mass * Physics.gravity);
     }
 

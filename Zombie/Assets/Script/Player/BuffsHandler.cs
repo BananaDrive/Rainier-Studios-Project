@@ -48,11 +48,11 @@ public class BuffsHandler : MonoBehaviour
 
     public void ApplyBuffs()
     {
-        damageBuff = 1f;
-        fireRateBuff = 1f;
-        moveSpeedBuff = 1f;
-        accuracyBuff = 1f;
-        bulletSpeedBuff = 1f;
+        damageBuff = 0;
+        fireRateBuff = 0;
+        moveSpeedBuff = 0;
+        accuracyBuff = 0;
+        bulletSpeedBuff = 0;
         
         foreach (ItemStats activeBuffs in buffList)
         {
@@ -97,11 +97,11 @@ public class BuffsHandler : MonoBehaviour
 
     public void UpdateStats()
     {
-        weapon.damageBuff = damageEnhance / 100 * damageBuff;
-        weapon.fireRateBuff = fireRateEnhance / 100 * fireRateBuff;
-        movement.moveSpeedBuff = moveSpeedBuff;
-        weapon.accuracyBuff = accuracyEnhance / 100 * accuracyBuff;
-        weapon.bulletSpeedBuff = bulletSpeedEnhance / 100 * bulletSpeedBuff;
+        weapon.damageBuff = 1 + damageEnhance / 100 * damageBuff;
+        weapon.fireRateBuff = 1 + fireRateEnhance / 100 * fireRateBuff;
+        movement.moveSpeedBuff = 1 + moveSpeedBuff;
+        weapon.accuracyBuff = 1 + accuracyEnhance / 100 * accuracyBuff;
+        weapon.bulletSpeedBuff = 1 + bulletSpeedEnhance / 100 * bulletSpeedBuff;
 
         weapon.allowAuto = allowAuto;
         weapon.allowRaycast = allowRaycast;

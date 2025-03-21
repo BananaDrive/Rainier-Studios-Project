@@ -12,6 +12,7 @@ public class EnemyMovement : Movement
     public float detectRadius;
 
     bool hasWandered;
+    public bool canWander;
 
     public void Start()
     {
@@ -23,13 +24,13 @@ public class EnemyMovement : Movement
         Gravity();
         if (canMove)
             MovementHandle();
-        PlayerDetection();
+        Detection();
 
         if (player == null)
         {
             moveSpeedBuff = -50f;
 
-            if (hasWandered == false)
+            if (hasWandered == false && canWander)
             {
                 hasWandered = true;
                 StartCoroutine(Wander());
@@ -40,7 +41,7 @@ public class EnemyMovement : Movement
         SpeedLimit();
     }
 
-    public void PlayerDetection()
+    public void Detection()
     {
         player = null;
 

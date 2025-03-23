@@ -37,14 +37,16 @@ public class Weapon : MonoBehaviour
             if (clipAmount > 0)
             {
                 shootCooldown = true;
-                if (allowRaycast)
+                for (int i = 0; i < shotAmount; i++)
                 {
-                    RaycastShoot();
+                    if (allowRaycast)
+                        RaycastShoot();
+                    else
+                        ProjectileShoot();
+                    if (clipAmount <= 0)
+                        break;
                 }
-                else
-                {
-                    ProjectileShoot();
-                }
+                StartCoroutine(ShootCD());
             }
             else if (!isReloading)
             {
@@ -56,42 +58,46 @@ public class Weapon : MonoBehaviour
 
     public void ProjectileShoot()
     {
-        for (int i = 0; i < shotAmount; i++)
-        {
-            clipAmount--;
+        clipAmount--;
 
-            GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
+        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
 
-            if (bullet == null)
-                break; 
+        if (bullet == null)
+            return;
 
-            bullet.SetActive(true);
+        bullet.SetActive(true);
             
-            Bullet bulletScript = bullet.GetComponent<Bullet>();
-            Transform bulletTransform = bullet.GetComponent<Transform>();
-            bulletScript.damage = damage * damageBuff;
-            bulletScript.layerToHit = enemyLayer;
+        Bullet bulletScript = bullet.GetComponent<Bullet>();
+        Transform bulletTransform = bullet.GetComponent<Transform>();
+        bulletScript.damage = damage * damageBuff;
+        bulletScript.layerToHit = enemyLayer;
+        
+        bulletTransform.position = transform.position;
+        bullet.GetComponent<Rigidbody2D>().AddForce(bulletSpeed * bulletSpeedBuff * UnityEngine.Random.Range(8f, 12f) * DetermineSpread(), ForceMode2D.Force);
 
-            float spread = accuracy / accuracyBuff;
-            bulletTransform.SetPositionAndRotation(transform.position, Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z + UnityEngine.Random.Range(-spread, spread)));
-            bullet.GetComponent<Rigidbody2D>().AddForce(bulletSpeed * bulletSpeedBuff * UnityEngine.Random.Range(8f, 12f) * bullet.transform.right, ForceMode2D.Force);
-
-            StartCoroutine(bulletScript.Despawn());
-        }
-        StartCoroutine(ShootCD());
+        StartCoroutine(bulletScript.Despawn());
     }
 
     public void RaycastShoot()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 30f, ~enemyLayer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, DetermineSpread(), 30f, enemyLayer);
 
         if (hit.collider != null)
         {
             if (hit.transform.TryGetComponent(out Health hitHealth))
+            {
                 hitHealth.TakeDamage(damage * damageBuff);
+            }
                 
         }
         StartCoroutine(ShootCD());
+    }
+
+    public Vector2 DetermineSpread()
+    {
+        float spread = 100f - (accuracy + accuracyBuff);
+        Vector2 spreadAngle = Quaternion.Euler(0, 0, UnityEngine.Random.Range(-spread, spread)) * transform.right;
+        return spreadAngle;
     }
 
     public IEnumerator ShootCD()

@@ -26,12 +26,12 @@ public class BuffsHandler : MonoBehaviour
 
     public void FixedUpdate()
     {
-        foreach (ItemStats itemStats in buffList)
+        for (int i = buffList.Count - 1; i >= 0; i--)
         {
-            itemStats.duration -= Time.deltaTime;
+            buffList[i].duration -= Time.deltaTime;
 
-            if (itemStats.duration <= 0f)
-                buffList.Remove(itemStats);
+            if (buffList[i].duration <= 0f)
+                buffList.Remove(buffList[i]);
         }
         ApplyBuffs();
     }

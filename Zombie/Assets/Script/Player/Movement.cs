@@ -31,9 +31,13 @@ public class Movement : MonoBehaviour
     {
         if (!canMove)
             return;
-        rb.AddForce(moveDirection * (moveSpeed * (1 + moveSpeedBuff / 100)) * acceleration * transform.right, ForceMode2D.Force);
-
-        sprite.flipX = moveDirection > 0 ? false : (moveDirection < 0 ? true : sprite.flipX); //flips the player's sprite based on their directional speed
+        transform.rotation = Quaternion.Euler(
+            transform.eulerAngles.x,
+            moveDirection > 0 ? 0f : (moveDirection < 0 ? 180f : transform.eulerAngles.y),
+            transform.eulerAngles.z
+        );
+    
+        rb.AddForce((moveDirection == 0f ? 0 : moveSpeed * (1 + moveSpeedBuff / 100) * acceleration) * transform.right, ForceMode2D.Force);
 
         if (moveDirection == 0)
             rb.linearVelocityX *= (100 - deceleration) / 100; //decelerates the player when not moving

@@ -72,7 +72,7 @@ public class Weapon : MonoBehaviour
         bulletScript.damage = damage * damageBuff;
         bulletScript.layerToHit = enemyLayer;
         
-        bulletTransform.position = transform.position;
+        bulletTransform.SetPositionAndRotation(transform.position, transform.rotation);
         bullet.GetComponent<Rigidbody2D>().AddForce(bulletSpeed * bulletSpeedBuff * UnityEngine.Random.Range(8f, 12f) * DetermineSpread(), ForceMode2D.Force);
 
         StartCoroutine(bulletScript.Despawn());

@@ -43,17 +43,24 @@ public class BaseItem : MonoBehaviour
                     CoroutineHandler.Instance.StartCoroutine(buffs.GetComponent<Health>().RegenerateHealth(items.potency, items.duration));
                 break;
                 case ItemType.placeable:
-                    GetComponent<Traps>().layerToAvoid = 1 << buffs.gameObject.layer;
+                    Placeable placeable = GetComponent<Placeable>();
+                    placeable.layerToAvoid = 1 << buffs.gameObject.layer;
                     transform.position = new Vector2(buffs.transform.position.x, buffs.transform.position.y - 0.35f);
-                    gameObject.SetActive(true);
+                    EnableScripts();
                 break;
                 default:
-                    if (items.itemType == ItemType.placeable)
-                        break;
                     buffs.AddBuff(items);
                 break;
             }
             canPickUp = false;
         }  
+    }
+
+    public void EnableScripts()
+    {
+        MonoBehaviour[] scripts = GetComponents<MonoBehaviour>();
+        foreach (MonoBehaviour monoBehaviour in scripts)
+            monoBehaviour.enabled = true;
+        gameObject.SetActive(true);
     }
 }

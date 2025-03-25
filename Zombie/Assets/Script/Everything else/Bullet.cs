@@ -12,8 +12,11 @@ public class Bullet : MonoBehaviour
     {
         if ((layerToHit & (1 << other.gameObject.layer)) != 0)
         {
-            if (other.TryGetComponent<Health>(out var health)) //checks if the collided object has a health script
+            if (other.TryGetComponent<Health>(out var health) && other.TryGetComponent<Rigidbody2D>(out var rb)) //checks if the collided object has a health script
+            {
                 health.TakeDamage(damage);
+                rb.AddForce(60f * damage * transform.right, ForceMode2D.Force);
+            }
 
             TurnOffObj();
         } 

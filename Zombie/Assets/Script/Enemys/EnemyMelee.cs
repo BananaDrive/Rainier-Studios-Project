@@ -5,6 +5,8 @@ public class EnemyMelee : EnemyBehavior
 {
     public GameObject attackHitBox;
     public EnemyAttackHitbox enemyAttackHitbox;
+
+    bool isAttacking;
     
     public void FixedUpdate()
     {
@@ -14,21 +16,22 @@ public class EnemyMelee : EnemyBehavior
             attackHitBox.transform.position = new(transform.position.x + (enemyMovement.sprite.flipX ? -0.2f : 0.2f), transform.position.y);
             CoroutineHandler.Instance.StartCoroutine(MeleeAttack());
         }
-
-        EnableClip<EnemyMelee>();
+        if (!isAttacking)
+            EnableClip<EnemyMelee>();
     }
 
     public IEnumerator MeleeAttack()
     {
-        enemyMovement.rb.linearVelocityX = 0;
-        enemyMovement.canMove = false;
+        isAttacking = true;
+        enemyMovement.rb.constraints = RigidbodyConstraints2D.FreezeAll;
         yield return new WaitForSeconds(0.2f);
         attackHitBox.SetActive(true);
         yield return new WaitForSeconds(0.15f);
         attackHitBox.SetActive(false);
         enemyAttackHitbox.hasHit = false;
         yield return new WaitForSeconds(5 / attackRate);
-        enemyMovement.canMove = true;
+        enemyMovement.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        isAttacking = false;
         hasAttacked = false;
     }
 }

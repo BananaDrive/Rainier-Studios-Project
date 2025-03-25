@@ -400,15 +400,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
   damage: 16
-  fireRate: 50
+  fireRate: 30
   bulletSpeed: 10
-  shotAmount: 10
-  clipSize: 1e+15
+  shotAmount: 1
+  clipSize: 20
   reloadTime: 2
-  accuracy: 0
+  accuracy: 50
   clipAmount: 0
   allowAuto: 0
-  allowRaycast: 0
+  allowRaycast: 1
   playerLayer:
     serializedVersion: 2
     m_Bits: 64

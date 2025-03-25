@@ -186,9 +186,11 @@ MonoBehaviour:
   objectPoolHolder: {fileID: 7127970030511796452, guid: 8b6bbb8eb9a66ee4ea5ff44aa50bac9f, type: 3}
   objectsToPool:
   - pooledObj: {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
-    poolSize: 50
+    poolSize: 100
   - pooledObj: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
-    poolSize: 20
+    poolSize: 50
+  - pooledObj: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    poolSize: 50
 --- !u!114 &4702255026137393682
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -44,9 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4bfd406e4419f4b857a973a92e6606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zombies:
+  - zombie: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
+    spawnWeight: 50
+  - zombie: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    spawnWeight: 50
   zombieSpawnArea: {fileID: 8826887489213973431}
-  objectPoolNum: 1
   spawnMax: 20
   currentSpawned: 0
   spawnDelay: 4
   hasSpawned: 0
+  totalSpawnWeight: 0

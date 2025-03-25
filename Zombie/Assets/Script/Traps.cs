@@ -2,9 +2,8 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class Traps : MonoBehaviour
+public class Traps : Placeable
 {
-    public LayerMask layerToAvoid;
     public float damage;
     public bool stopMovement;
 

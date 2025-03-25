@@ -1,19 +1,21 @@
 using System.Collections;
 using UnityEngine;
 
-public class EnemyRanged : EnemyBehavior
+public class Turret : Placeable
 {
-    public float burstFireAmount;
-    void FixedUpdate()
+    public float damage;
+    public float attackRate;
+    public float detectRadius;
+
+    public bool hasAttacked;
+    public void FixedUpdate()
     {
-        if (enemyMovement.player != null && Vector2.Distance(enemyMovement.player.position, transform.position) < rangeToAttack && !hasAttacked)
+        if (Physics2D.Raycast(transform.position, transform.right, detectRadius, layerToHit) && !hasAttacked)
         {
             hasAttacked = true;
-            StartCoroutine(BurstFire());
-        }
-        EnableClip<EnemyRanged>();
+            RangedAttack();
+        }  
     }
-
     public void RangedAttack()
     {
         GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(0);
@@ -25,20 +27,16 @@ public class EnemyRanged : EnemyBehavior
         
         Bullet bulletScript = bullet.GetComponent<Bullet>();
         bulletScript.damage = damage;
-        bulletScript.layerToHit = enemyMovement.playerLayer;
+        bulletScript.layerToHit = layerToHit;
 
         StartCoroutine(bulletScript.Despawn());
         bullet.GetComponent<Transform>().position = transform.position;
         bullet.GetComponent<Rigidbody2D>().AddForce(40f * transform.right, ForceMode2D.Force);
     }
 
-    public IEnumerator BurstFire()
+    public IEnumerator AttackCD()
     {
-        for (int i = 0; i < burstFireAmount; i++)
-        {
-            RangedAttack();
-            yield return new WaitForSeconds(attackRate / 6);
-        }
-        StartCoroutine(AttackCD());
+        yield return new WaitForSeconds(attackRate);
+        hasAttacked = false;
     }
 }

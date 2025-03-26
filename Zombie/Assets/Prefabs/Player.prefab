@@ -178,6 +178,9 @@ MonoBehaviour:
   enhancerLayer:
     serializedVersion: 2
     m_Bits: 512
+  leverLayer:
+    serializedVersion: 2
+    m_Bits: 1024
   Items: []
 --- !u!114 &7542725141134096413
 MonoBehaviour:

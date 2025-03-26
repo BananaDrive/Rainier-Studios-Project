@@ -8,7 +8,8 @@ public class Inventory : MonoBehaviour
     public BuffsHandler buffs;
     internal BaseItem foundItem;
     internal Enhancers enhancer;
-    public LayerMask itemLayer, enhancerLayer;
+    internal Gate gate;
+    public LayerMask itemLayer, enhancerLayer, leverLayer;
     public BaseItem[] Items;
 
 
@@ -21,10 +22,16 @@ public class Inventory : MonoBehaviour
     {
         ItemDetection();
         EnhancerDetection();
+        GateDetection();
     }
 
     public void Update()
     {
+        if (Input.GetKeyDown(KeyCode.F) && gate != null && gate.canOpen)
+        {
+            gate.OpenGate();
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.F) && enhancer != null)
         {
             buffs.ApplyEnhancer(enhancer);
@@ -85,6 +92,22 @@ public class Inventory : MonoBehaviour
 
         if (enhancer != null)
             GameManager.Instance.UIManager.ChangeItemPanel(enhancer.itemName, enhancer.itemStats);
+    }
+
+    public void GateDetection()
+    {
+        gate = null;
+        float minDistance = 2f;
+        foreach (var collider in Physics2D.OverlapCircleAll(transform.position, 2f, leverLayer))
+        {
+            float gateDistance = Vector3.Distance(transform.position, collider.transform.position);
+
+            if (gateDistance < minDistance)
+            {
+                gate = collider.GetComponent<Gate>();
+                minDistance = gateDistance;
+            }
+        }
     }
 
     public int CheckInventory()

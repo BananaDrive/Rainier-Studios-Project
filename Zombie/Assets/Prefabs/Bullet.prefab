@@ -170,3 +170,6 @@ MonoBehaviour:
   layerToHit:
     serializedVersion: 2
     m_Bits: 0
+  layerToDespawn:
+    serializedVersion: 2
+    m_Bits: 8

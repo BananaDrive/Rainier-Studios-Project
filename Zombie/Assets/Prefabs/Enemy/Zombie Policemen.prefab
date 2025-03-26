@@ -188,7 +188,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
-  distanceToStop: 0.5
+  distanceToStop: 10
   detectRadius: 10
   canWander: 0
 --- !u!114 &3462653983634295118
@@ -225,7 +225,7 @@ MonoBehaviour:
     m_Bits: 128
   damage: 10
   attackRate: 1
-  speed: 3
+  speed: 1.5
   attackRange: 10
   rangeToAttack: 10
   canJump: 0

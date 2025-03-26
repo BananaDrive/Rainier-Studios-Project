@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    public GameObject overlay;
     public enum HealthType
     {
         player,
@@ -13,10 +14,18 @@ public class Health : MonoBehaviour
     public HealthType healthType;
     public float maxHealth;
     public float currentHealth;
+
+    bool overlayCooldown;
     
 
     public void TakeDamage(float damage)
     {
+        if (overlay != null && !overlayCooldown)
+        {
+            overlayCooldown = true;
+            StartCoroutine(OverlayDisplay());
+        }  
+            
         currentHealth -= damage;
 
         if (currentHealth <= 0)
@@ -54,5 +63,13 @@ public class Health : MonoBehaviour
         }
         else
             gameObject.SetActive(false);
+    }
+
+    public IEnumerator OverlayDisplay()
+    {
+        overlay.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        overlayCooldown = false;
+        overlay.SetActive(false);
     }
 }

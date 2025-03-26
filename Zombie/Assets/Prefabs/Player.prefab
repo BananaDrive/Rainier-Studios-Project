@@ -10,11 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8243942417990441310}
   - component: {fileID: 1863868727273682324}
-  - component: {fileID: 9029650941876938305}
-  - component: {fileID: 4762867353294558182}
-  - component: {fileID: 325464539879535733}
-  - component: {fileID: 2850213371711199149}
-  - component: {fileID: 7542725141134096413}
   m_Layer: 6
   m_Name: PlayerObj
   m_TagString: Player
@@ -92,127 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &9029650941876938305
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220368420181251730}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1.55}
-  m_Direction: 0
---- !u!114 &4762867353294558182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220368420181251730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4749212aab440ad44aeabdb710018660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthType: 0
-  maxHealth: 200
-  currentHealth: 200
---- !u!114 &325464539879535733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220368420181251730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 915933606aa1cdf44b4c580c55aad8c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 2341615639507034113}
-  movement: {fileID: 6073820443107811440}
---- !u!114 &2850213371711199149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220368420181251730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e472f6d51d87c42a558302b9431e86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 2797739084873007406}
-  buffs: {fileID: 7542725141134096413}
-  itemLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  enhancerLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  leverLayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  Items: []
---- !u!114 &7542725141134096413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220368420181251730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24bdfaab441dd5c44b261f9e4c720913, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movement: {fileID: 6073820443107811440}
-  weapon: {fileID: 6121928685509098609}
-  buffList: []
-  damageBuff: 0
-  fireRateBuff: 0
-  clipSizeBuff: 0
-  bulletSpeedBuff: 0
-  moveSpeedBuff: 0
-  accuracyBuff: 0
-  damageEnhance: 0
-  fireRateEnhance: 0
-  clipSizeEnhance: 0
-  bulletSpeedEnhance: 0
-  accuracyEnhance: 0
-  reloadEnhance: 0
-  shotAmountEnhance: 0
-  allowRaycast: 0
-  allowPiercing: 0
-  allowAuto: 0
 --- !u!1 &1649787460906391963
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,10 +302,15 @@ GameObject:
   m_Component:
   - component: {fileID: 296464217773923605}
   - component: {fileID: 8815408405336253798}
+  - component: {fileID: 829897267099723340}
   - component: {fileID: 6073820443107811440}
+  - component: {fileID: 7093294389132745453}
+  - component: {fileID: 1707694407593614904}
+  - component: {fileID: 8364591893400546399}
+  - component: {fileID: 8172515586023748523}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -480,6 +359,43 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!70 &829897267099723340
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270011203924545268}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1.55}
+  m_Direction: 0
 --- !u!114 &6073820443107811440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,7 +408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4269d26e49e3389469f4924439af8f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collider: {fileID: 9029650941876938305}
+  _collider: {fileID: 829897267099723340}
   sprite: {fileID: 1863868727273682324}
   rb: {fileID: 8815408405336253798}
   ground:
@@ -507,3 +423,88 @@ MonoBehaviour:
   moveSpeedBuff: 0
   canMove: 1
   hasJumped: 0
+--- !u!114 &7093294389132745453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270011203924545268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4749212aab440ad44aeabdb710018660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overlay: {fileID: 0}
+  healthType: 0
+  maxHealth: 200
+  currentHealth: 200
+--- !u!114 &1707694407593614904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270011203924545268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915933606aa1cdf44b4c580c55aad8c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 2341615639507034113}
+  movement: {fileID: 6073820443107811440}
+--- !u!114 &8364591893400546399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270011203924545268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e472f6d51d87c42a558302b9431e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 2797739084873007406}
+  buffs: {fileID: 8172515586023748523}
+  itemLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  enhancerLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  leverLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  Items: []
+--- !u!114 &8172515586023748523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270011203924545268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24bdfaab441dd5c44b261f9e4c720913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {fileID: 6073820443107811440}
+  weapon: {fileID: 6121928685509098609}
+  buffList: []
+  damageBuff: 0
+  fireRateBuff: 0
+  clipSizeBuff: 0
+  bulletSpeedBuff: 0
+  moveSpeedBuff: 0
+  accuracyBuff: 0
+  damageEnhance: 0
+  fireRateEnhance: 0
+  clipSizeEnhance: 0
+  bulletSpeedEnhance: 0
+  accuracyEnhance: 0
+  reloadEnhance: 0
+  shotAmountEnhance: 0
+  allowRaycast: 0
+  allowPiercing: 0
+  allowAuto: 0

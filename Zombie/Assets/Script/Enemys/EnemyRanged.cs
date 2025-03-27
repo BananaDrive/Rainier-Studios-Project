@@ -34,11 +34,14 @@ public class EnemyRanged : EnemyBehavior
 
     public IEnumerator BurstFire()
     {
+        enemyMovement.canMove = false;
+        enemyMovement.rb.linearVelocityX = 0f;
         for (int i = 0; i < burstFireAmount; i++)
         {
             RangedAttack();
             yield return new WaitForSeconds(attackRate / 6);
         }
+        enemyMovement.canMove = true;
         StartCoroutine(AttackCD());
     }
 }

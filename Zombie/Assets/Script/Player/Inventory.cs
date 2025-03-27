@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -8,8 +6,9 @@ public class Inventory : MonoBehaviour
     public BuffsHandler buffs;
     internal BaseItem foundItem;
     internal Enhancers enhancer;
+    internal Elevator elevator;
     internal Gate gate;
-    public LayerMask itemLayer, enhancerLayer, leverLayer;
+    public LayerMask itemLayer, enhancerLayer, interactableLayer;
     public BaseItem[] Items;
     public AudioSource Speaker;
 
@@ -21,50 +20,63 @@ public class Inventory : MonoBehaviour
 
     public void FixedUpdate()
     {
+        elevator = GeneralDetection<Elevator>(2f, interactableLayer);
+        gate = GeneralDetection<Gate>(2f, interactableLayer);
         ItemDetection();
         EnhancerDetection();
-        GateDetection();
     }
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && gate != null && gate.canOpen)
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            gate.OpenGate();
-            return;
+            if (gate != null && gate.canOpen)
+            {
+                gate.OpenGate();
+                return;
+            }
+            if (elevator != null && !elevator.onCooldown)
+            {
+                elevator.MoveToPosition(transform);
+                return;
+            }
+            if (enhancer != null)
+            {
+                buffs.ApplyEnhancer(enhancer);
+                enhancer.gameObject.SetActive(false);
+                enhancer = null;
+                return;
+            }
+            if (Items[0] != null && enhancer == null)
+            {
+                Items[0].UseItem();
+                Items[0] = null;
+                SortInv();
+            }
         }
-        if (Input.GetKeyDown(KeyCode.F) && enhancer != null)
+    }
+
+    public T GeneralDetection<T>(float detectDistance, LayerMask layerDetect)
+    {
+        T detectedScript = default;
+        float minDistance = detectDistance;
+        foreach (var collider in Physics2D.OverlapCircleAll(transform.position, detectDistance, layerDetect))
         {
-            buffs.ApplyEnhancer(enhancer);
-            enhancer.gameObject.SetActive(false);
-            enhancer = null;
-            return;
+            float distance = Vector3.Distance(transform.position, collider.transform.position);
+
+            if (collider.TryGetComponent<T>(out var scriptDetected) && distance < minDistance)
+            {
+                detectedScript = scriptDetected;
+                minDistance = distance;
+            }
         }
-        if (Input.GetKeyDown(KeyCode.F) && Items[0] != null && enhancer == null)
-        {
-            Items[0].UseItem();
-            Items[0] = null;
-            SortInv();
-        }
+        return detectedScript;
     }
 
     public void ItemDetection()
     {
-        foundItem = null;
-        float minDistance = 2f;
-        foreach (var collider in Physics2D.OverlapCircleAll(transform.position, 2f, itemLayer))
-        {
-            float itemDistance = Vector3.Distance(transform.position, collider.transform.position);
-
-            if (itemDistance < minDistance)
-            {
-                foundItem = collider.GetComponent<BaseItem>();
-                minDistance = itemDistance;
-            }
-        }
-
+        foundItem = GeneralDetection<BaseItem>(2f, itemLayer);
         int temp = CheckInventory();
-
         if (foundItem != null && foundItem.canPickUp && temp != 4)
         {
             foundItem.buffs = buffs;
@@ -76,40 +88,11 @@ public class Inventory : MonoBehaviour
 
     public void EnhancerDetection()
     {
+        enhancer = GeneralDetection<Enhancers>(2f, enhancerLayer);
         if (enhancer == null)
             GameManager.Instance.UIManager.itemStatsPanel.SetActive(false);
-
-        enhancer = null;
-        float minDistance = 2f;
-        foreach (var collider in Physics2D.OverlapCircleAll(transform.position, 2f, enhancerLayer))
-        {
-            float itemDistance = Vector3.Distance(transform.position, collider.transform.position);
-
-            if (itemDistance < minDistance)
-            {
-                enhancer = collider.GetComponent<Enhancers>();
-                minDistance = itemDistance;
-            }
-        }
-
-        if (enhancer != null)
+        else
             GameManager.Instance.UIManager.ChangeItemPanel(enhancer.itemName, enhancer.itemStats);
-    }
-
-    public void GateDetection()
-    {
-        gate = null;
-        float minDistance = 2f;
-        foreach (var collider in Physics2D.OverlapCircleAll(transform.position, 2f, leverLayer))
-        {
-            float gateDistance = Vector3.Distance(transform.position, collider.transform.position);
-
-            if (gateDistance < minDistance)
-            {
-                gate = collider.GetComponent<Gate>();
-                minDistance = gateDistance;
-            }
-        }
     }
 
     public int CheckInventory()

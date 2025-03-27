@@ -15,6 +15,7 @@ public class Weapon : MonoBehaviour
     public float reloadTime;
     public float accuracy;
     public float clipAmount;
+    public AudioSource gun;
 
     internal float damageBuff, fireRateBuff, bulletSpeedBuff, shotAmountBuff, clipSizeBuff, reloadTimeBuff, accuracyBuff;
 
@@ -80,6 +81,7 @@ public class Weapon : MonoBehaviour
 
     public void RaycastShoot()
     {
+        gun.Play();
         RaycastHit2D hit = Physics2D.Raycast(transform.position, DetermineSpread(), 30f, enemyLayer);
 
         if (hit.collider != null)

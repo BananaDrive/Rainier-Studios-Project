@@ -39,6 +39,7 @@ public class Weapon : MonoBehaviour
                 shootCooldown = true;
                 for (int i = 0; i < shotAmount; i++)
                 {
+                    clipAmount--;
                     if (allowRaycast)
                         RaycastShoot();
                     else
@@ -58,8 +59,6 @@ public class Weapon : MonoBehaviour
 
     public void ProjectileShoot()
     {
-        clipAmount--;
-
         GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
 
         if (bullet == null)

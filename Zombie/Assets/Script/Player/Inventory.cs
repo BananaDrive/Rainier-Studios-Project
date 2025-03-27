@@ -8,7 +8,8 @@ public class Inventory : MonoBehaviour
     public BuffsHandler buffs;
     internal BaseItem foundItem;
     internal Enhancers enhancer;
-    public LayerMask itemLayer, enhancerLayer;
+    internal Gate gate;
+    public LayerMask itemLayer, enhancerLayer, leverLayer;
     public BaseItem[] Items;
 
 
@@ -21,13 +22,19 @@ public class Inventory : MonoBehaviour
     {
         ItemDetection();
         EnhancerDetection();
+        GateDetection();
     }
 
     public void Update()
     {
+        if (Input.GetKeyDown(KeyCode.F) && gate != null && gate.canOpen)
+        {
+            gate.OpenGate();
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.F) && enhancer != null)
         {
-            ApplyEnhancer();
+            buffs.ApplyEnhancer(enhancer);
             enhancer.gameObject.SetActive(false);
             enhancer = null;
             return;
@@ -87,21 +94,20 @@ public class Inventory : MonoBehaviour
             GameManager.Instance.UIManager.ChangeItemPanel(enhancer.itemName, enhancer.itemStats);
     }
 
-    public void ApplyEnhancer()
+    public void GateDetection()
     {
-        buffs.damageEnhance += enhancer.damage;
-        buffs.fireRateBuff += enhancer.fireRate;
-        buffs.clipSizeEnhance += enhancer.clipSize;
-        buffs.bulletSpeedEnhance += enhancer.bulletSpeed;
-        buffs.reloadEnhance += enhancer.reloadSpeed;
-        buffs.accuracyEnhance += enhancer.accuracy;
-        buffs.shotAmountEnhance += enhancer.shotAmount;
+        gate = null;
+        float minDistance = 2f;
+        foreach (var collider in Physics2D.OverlapCircleAll(transform.position, 2f, leverLayer))
+        {
+            float gateDistance = Vector3.Distance(transform.position, collider.transform.position);
 
-        buffs.bulletSpeedEnhance = Mathf.Clamp(buffs.bulletSpeedEnhance, -80, 1000);
-
-        buffs.allowAuto = !enhancer.disableAuto && (enhancer.allowAuto || buffs.allowAuto);
-        buffs.allowPiercing = !enhancer.disablePiercing && (enhancer.allowPiercing || buffs.allowPiercing);
-        buffs.allowRaycast = !enhancer.disableRaycast && (enhancer.allowRaycast || buffs.allowRaycast);
+            if (gateDistance < minDistance)
+            {
+                gate = collider.GetComponent<Gate>();
+                minDistance = gateDistance;
+            }
+        }
     }
 
     public int CheckInventory()

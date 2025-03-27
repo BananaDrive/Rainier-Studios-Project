@@ -8,12 +8,10 @@ public class EnemyAttackHitbox : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player") && hasHit == false)
+        if (other.gameObject.CompareTag("Player") && !hasHit)
         {
             hasHit = true;
             other.GetComponent<Health>().TakeDamage(enemyBehavior.damage);
         }
     }
-
-    
 }

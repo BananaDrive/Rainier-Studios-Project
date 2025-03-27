@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class BuffsHandler : MonoBehaviour
 {
-    public LayerMask player;
-    public Dictionary<string, Coroutine> buffDict = new();
+    public Movement movement;
+    public Weapon weapon;
+
+    public List<ItemStats> buffList = new();
     
     [Header("Buffs")]
     public float damageBuff;
@@ -20,27 +22,88 @@ public class BuffsHandler : MonoBehaviour
     public bool allowPiercing;
     public bool allowAuto;
 
-    public IEnumerator BuffDuration(string buffName, BaseItem.ItemStats stats)
+
+
+    public void FixedUpdate()
     {
-        FieldInfo field = GetType().GetField(buffName);
-        field.SetValue(this, stats.potency);
-        yield return new WaitForSeconds(stats.duration);
-        buffDict[buffName] = null;
-        field.SetValue(this, 0);
+        for (int i = buffList.Count - 1; i >= 0; i--)
+        {
+            buffList[i].duration -= Time.deltaTime;
+
+            if (buffList[i].duration <= 0f)
+                buffList.Remove(buffList[i]);
+        }
+        ApplyBuffs();
     }
 
-    public void StoreCouroutine(string buffName, Coroutine coroutine)
+    public void AddBuff(ItemStats newBuff)
     {
-        if (!buffDict.ContainsKey(buffName))
+        if (!newBuff.isStackable)
         {
-            buffDict.Add(buffName, coroutine);
-            return;
+            buffList.RemoveAll(ItemStats => ItemStats.itemType == newBuff.itemType);
         }
-        if (buffDict[buffName] != null)
+        buffList.Add(newBuff);
+        ApplyBuffs();
+    }
+
+    public void ApplyBuffs()
+    {
+        damageBuff = 0;
+        fireRateBuff = 0;
+        moveSpeedBuff = 0;
+        accuracyBuff = 0;
+        bulletSpeedBuff = 0;
+        
+        foreach (ItemStats activeBuffs in buffList)
         {
-            StopCoroutine(buffDict[buffName]);
-            buffDict[buffName] = null;
+            switch (activeBuffs.itemType)
+            {
+                case ItemType.damage:
+                    damageBuff += activeBuffs.potency / 100;
+                break;
+                case ItemType.fireRate:
+                    fireRateBuff += activeBuffs.potency / 100;
+                break;
+                case ItemType.speed:
+                    moveSpeedBuff += activeBuffs.potency / 100;
+                break;
+                case ItemType.accuracy:
+                    accuracyBuff += activeBuffs.potency / 100;
+                break;
+                case ItemType.bulletSpeed:
+                    bulletSpeedBuff += activeBuffs.potency / 100;
+                break;
+            }
         }
-        buffDict[buffName] = coroutine;
+        UpdateStats();
+    }
+
+    public void ApplyEnhancer(Enhancers enhancer)
+    {
+        damageEnhance += enhancer.damage;
+        fireRateEnhance += enhancer.fireRate;
+        clipSizeEnhance += enhancer.clipSize;
+        bulletSpeedEnhance += enhancer.bulletSpeed;
+        reloadEnhance += enhancer.reloadSpeed;
+        accuracyEnhance += enhancer.accuracy;
+        shotAmountEnhance += enhancer.shotAmount;
+
+        bulletSpeedEnhance = Mathf.Clamp(bulletSpeedEnhance, -80, 1000);
+
+        allowAuto = !enhancer.disableAuto && (enhancer.allowAuto || allowAuto);
+        allowPiercing = !enhancer.disablePiercing && (enhancer.allowPiercing || allowPiercing);
+        allowRaycast = !enhancer.disableRaycast && (enhancer.allowRaycast || allowRaycast);
+    }
+
+    public void UpdateStats()
+    {
+        weapon.damageBuff = 1 + damageEnhance / 100 * damageBuff;
+        weapon.fireRateBuff = 1 + fireRateEnhance / 100 * fireRateBuff;
+        movement.moveSpeedBuff = 1 + moveSpeedBuff;
+        weapon.accuracyBuff = 1 + accuracyEnhance / 100 * accuracyBuff;
+        weapon.bulletSpeedBuff = 1 + bulletSpeedEnhance / 100 * bulletSpeedBuff;
+
+        weapon.allowAuto = allowAuto;
+        weapon.allowRaycast = allowRaycast;
     }
 }

@@ -28,8 +28,8 @@ public class EnemyRanged : EnemyBehavior
         bulletScript.layerToHit = enemyMovement.playerLayer;
 
         StartCoroutine(bulletScript.Despawn());
-        bullet.GetComponent<Transform>().position = transform.position;
-        bullet.GetComponent<Rigidbody2D>().AddForce((enemyMovement.sprite.flipX ? -1f : 1f) * 10f * 20f * transform.right, ForceMode2D.Force);
+        bullet.GetComponent<Transform>().SetPositionAndRotation(transform.position, transform.rotation);
+        bullet.GetComponent<Rigidbody2D>().AddForce(40f * transform.right, ForceMode2D.Force);
     }
 
     public IEnumerator BurstFire()

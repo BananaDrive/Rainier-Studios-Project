@@ -166,4 +166,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
-  despawnTimer: 0.5
+  despawnTimer: 3
+  layerToHit:
+    serializedVersion: 2
+    m_Bits: 0
+  layerToDespawn:
+    serializedVersion: 2
+    m_Bits: 8

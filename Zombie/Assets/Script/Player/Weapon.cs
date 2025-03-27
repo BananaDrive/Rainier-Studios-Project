@@ -5,7 +5,6 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public GameObject bullet;
-    public BuffsHandler buffs;
 
     [Header("Stats")]
     public float damage;
@@ -14,10 +13,12 @@ public class Weapon : MonoBehaviour
     public float shotAmount;
     public float clipSize;
     public float reloadTime;
-    public float spreadSize;
-
+    public float accuracy;
     public float clipAmount;
 
+    internal float damageBuff, fireRateBuff, bulletSpeedBuff, shotAmountBuff, clipSizeBuff, reloadTimeBuff, accuracyBuff;
+
+    public bool allowAuto, allowRaycast;
     int bulletPoolIndex;
     bool isReloading;
     bool shootCooldown;
@@ -31,19 +32,21 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        if ((buffs.allowAuto && Input.GetKey(KeyCode.E) || !buffs.allowAuto && Input.GetKeyDown(KeyCode.E)) && !shootCooldown)
+        if ((allowAuto && Input.GetKey(KeyCode.E) || !allowAuto && Input.GetKeyDown(KeyCode.E)) && !shootCooldown)
         {
-            if (clipAmount + buffs.clipSizeBuff + buffs.clipSizeEnhance > 0)
+            if (clipAmount > 0)
             {
                 shootCooldown = true;
-                if (buffs.allowRaycast)
+                for (int i = 0; i < shotAmount; i++)
                 {
-                    RaycastShoot();
+                    if (allowRaycast)
+                        RaycastShoot();
+                    else
+                        ProjectileShoot();
+                    if (clipAmount <= 0)
+                        break;
                 }
-                else
-                {
-                    ProjectileShoot();
-                }
+                StartCoroutine(ShootCD());
             }
             else if (!isReloading)
             {
@@ -55,60 +58,58 @@ public class Weapon : MonoBehaviour
 
     public void ProjectileShoot()
     {
-        for (int i = 0; i < shotAmount + buffs.shotAmountEnhance; i++)
-        {
-            clipAmount--;
+        clipAmount--;
 
-            GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
+        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
 
-            if (bullet == null)
-                break; 
+        if (bullet == null)
+            return;
 
-            bullet.SetActive(true);
+        bullet.SetActive(true);
             
-            Bullet bulletScript = bullet.GetComponent<Bullet>();
-            Transform bulletTransform = bullet.GetComponent<Transform>();
-            bulletScript.damage = BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff);
-            bulletScript.layerToHit = enemyLayer;
+        Bullet bulletScript = bullet.GetComponent<Bullet>();
+        Transform bulletTransform = bullet.GetComponent<Transform>();
+        bulletScript.damage = damage * damageBuff;
+        bulletScript.layerToHit = enemyLayer;
+        
+        bulletTransform.SetPositionAndRotation(transform.position, transform.rotation);
+        bullet.GetComponent<Rigidbody2D>().AddForce(bulletSpeed * bulletSpeedBuff * UnityEngine.Random.Range(8f, 12f) * DetermineSpread(), ForceMode2D.Force);
 
-            float spread = spreadSize - (spreadSize * buffs.accuracyEnhance + buffs.accuracyBuff / 100f);
-            bulletTransform.SetPositionAndRotation(transform.position, Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z + UnityEngine.Random.Range(-spread, spread)));
-            bullet.GetComponent<Rigidbody2D>().AddForce(BuffCalculation(bulletSpeed, buffs.bulletSpeedEnhance, buffs.bulletSpeedBuff) * UnityEngine.Random.Range(8f, 12f) * bullet.transform.right, ForceMode2D.Force);
-
-            StartCoroutine(bulletScript.Despawn());
-        }
-        StartCoroutine(ShootCD());
+        StartCoroutine(bulletScript.Despawn());
     }
 
     public void RaycastShoot()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 30f, ~enemyLayer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, DetermineSpread(), 30f, enemyLayer);
 
         if (hit.collider != null)
         {
             if (hit.transform.TryGetComponent(out Health hitHealth))
-                hitHealth.TakeDamage(BuffCalculation(damage, buffs.damageEnhance, buffs.damageBuff));
+            {
+                hitHealth.TakeDamage(damage * damageBuff);
+            }
                 
         }
         StartCoroutine(ShootCD());
     }
 
+    public Vector2 DetermineSpread()
+    {
+        float spread = 100f - (accuracy + accuracyBuff);
+        Vector2 spreadAngle = Quaternion.Euler(0, 0, UnityEngine.Random.Range(-spread, spread)) * transform.right;
+        return spreadAngle;
+    }
+
     public IEnumerator ShootCD()
     {
-        yield return new WaitForSeconds(1 / BuffCalculation(fireRate, buffs.fireRateEnhance, buffs.fireRateBuff));
+        yield return new WaitForSeconds(1 / fireRate * fireRateBuff);
         shootCooldown = false;
     }
 
     public IEnumerator Reload()
     {
         yield return new WaitForSeconds(reloadTime);
-        clipAmount = clipSize + buffs.clipSizeBuff + buffs.clipSizeEnhance;
+        clipAmount = clipSize;
         isReloading = false;
-    }
-
-    public float BuffCalculation(float mainStat, float enhancer, float itemBuff)
-    {
-        float tempValue = mainStat + (mainStat * enhancer / 100);
-        return tempValue + (tempValue * itemBuff / 100);
     }
 }

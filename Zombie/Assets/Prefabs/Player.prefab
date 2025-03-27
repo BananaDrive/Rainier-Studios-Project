@@ -10,13 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8243942417990441310}
   - component: {fileID: 1863868727273682324}
-  - component: {fileID: 4984421565833763411}
-  - component: {fileID: 2138873031860661316}
-  - component: {fileID: 4762867353294558182}
-  - component: {fileID: 2034708263222113837}
-  - component: {fileID: 325464539879535733}
-  - component: {fileID: 2850213371711199149}
-  - component: {fileID: 7542725141134096413}
   m_Layer: 6
   m_Name: PlayerObj
   m_TagString: Player
@@ -94,185 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &4984421565833763411
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220368420181251730}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: d1741eeb9c5de534cbda89883b9394bd, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 1
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!61 &2138873031860661316
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220368420181251730}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.59375, y: 1.515625}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.5, y: 1.55}
-  m_EdgeRadius: 0
---- !u!114 &4762867353294558182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220368420181251730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4749212aab440ad44aeabdb710018660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthType: 0
-  maxHealth: 200
-  currentHealth: 200
---- !u!114 &2034708263222113837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220368420181251730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4269d26e49e3389469f4924439af8f44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _collider: {fileID: 2138873031860661316}
-  sprite: {fileID: 1863868727273682324}
-  rb: {fileID: 4984421565833763411}
-  ground:
-    serializedVersion: 2
-    m_Bits: 8
-  buffsHandler: {fileID: 7542725141134096413}
-  moveSpeed: 5
-  acceleration: 20
-  deceleration: 23
-  jumpPower: 42
-  groundDistance: 0.8
-  moveDirection: 0
-  moveSpeedBuff: 0
-  canMove: 1
-  hasJumped: 0
---- !u!114 &325464539879535733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220368420181251730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 915933606aa1cdf44b4c580c55aad8c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 2341615639507034113}
-  movement: {fileID: 2034708263222113837}
---- !u!114 &2850213371711199149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220368420181251730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e472f6d51d87c42a558302b9431e86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 2797739084873007406}
-  buffs: {fileID: 7542725141134096413}
-  itemLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  enhancerLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  Items: []
---- !u!114 &7542725141134096413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220368420181251730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24bdfaab441dd5c44b261f9e4c720913, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageBuff: 0
-  fireRateBuff: 0
-  clipSizeBuff: 0
-  bulletSpeedBuff: 0
-  moveSpeedBuff: 0
-  accuracyBuff: 0
-  damageEnhance: 0
-  fireRateEnhance: 0
-  clipSizeEnhance: 0
-  bulletSpeedEnhance: 0
-  accuracyEnhance: 0
-  reloadEnhance: 0
-  shotAmountEnhance: 0
-  allowRaycast: 0
-  allowPiercing: 0
-  allowAuto: 0
 --- !u!1 &1649787460906391963
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,15 +276,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
-  buffs: {fileID: 7542725141134096413}
   damage: 16
-  fireRate: 50
+  fireRate: 30
   bulletSpeed: 10
-  shotAmount: 10
-  clipSize: 1e+15
+  shotAmount: 1
+  clipSize: 20
   reloadTime: 2
-  spreadSize: 0
+  accuracy: 50
   clipAmount: 0
+  allowAuto: 0
+  allowRaycast: 1
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -486,10 +301,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 296464217773923605}
-  - component: {fileID: 6434161493087983308}
+  - component: {fileID: 8815408405336253798}
+  - component: {fileID: 829897267099723340}
+  - component: {fileID: 6073820443107811440}
+  - component: {fileID: 7093294389132745453}
+  - component: {fileID: 1707694407593614904}
+  - component: {fileID: 8364591893400546399}
+  - component: {fileID: 8172515586023748523}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -511,7 +332,71 @@ Transform:
   - {fileID: 2341615639507034113}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6434161493087983308
+--- !u!50 &8815408405336253798
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270011203924545268}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: d1741eeb9c5de534cbda89883b9394bd, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!70 &829897267099723340
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270011203924545268}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1.55}
+  m_Direction: 0
+--- !u!114 &6073820443107811440
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -520,47 +405,106 @@ MonoBehaviour:
   m_GameObject: {fileID: 3270011203924545268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Script: {fileID: 11500000, guid: 4269d26e49e3389469f4924439af8f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImpulseDefinition:
-    ImpulseChannel: 1
-    ImpulseShape: 1
-    CustomImpulseShape:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    ImpulseDuration: 0.2
-    ImpulseType: 0
-    DissipationRate: 0.25
-    RawSignal: {fileID: 0}
-    AmplitudeGain: 1
-    FrequencyGain: 1
-    RepeatMode: 0
-    Randomize: 1
-    TimeEnvelope:
-      AttackShape:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      DecayShape:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      AttackTime: 0
-      SustainTime: 0.2
-      DecayTime: 0.7
-      ScaleWithImpact: 1
-      HoldForever: 0
-    ImpactRadius: 100
-    DirectionMode: 0
-    DissipationMode: 2
-    DissipationDistance: 100
-    PropagationSpeed: 343
-  DefaultVelocity: {x: 0, y: -1, z: 0}
+  _collider: {fileID: 829897267099723340}
+  sprite: {fileID: 1863868727273682324}
+  rb: {fileID: 8815408405336253798}
+  ground:
+    serializedVersion: 2
+    m_Bits: 8
+  moveSpeed: 5
+  acceleration: 20
+  deceleration: 23
+  jumpPower: 37.5
+  groundDistance: 0.8
+  moveDirection: 0
+  moveSpeedBuff: 0
+  canMove: 1
+  hasJumped: 0
+--- !u!114 &7093294389132745453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270011203924545268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4749212aab440ad44aeabdb710018660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overlay: {fileID: 0}
+  healthType: 0
+  maxHealth: 200
+  currentHealth: 200
+--- !u!114 &1707694407593614904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270011203924545268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915933606aa1cdf44b4c580c55aad8c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 2341615639507034113}
+  movement: {fileID: 6073820443107811440}
+--- !u!114 &8364591893400546399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270011203924545268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e472f6d51d87c42a558302b9431e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 2797739084873007406}
+  buffs: {fileID: 8172515586023748523}
+  itemLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  enhancerLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  leverLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  Items: []
+--- !u!114 &8172515586023748523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270011203924545268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24bdfaab441dd5c44b261f9e4c720913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {fileID: 6073820443107811440}
+  weapon: {fileID: 6121928685509098609}
+  buffList: []
+  damageBuff: 0
+  fireRateBuff: 0
+  clipSizeBuff: 0
+  bulletSpeedBuff: 0
+  moveSpeedBuff: 0
+  accuracyBuff: 0
+  damageEnhance: 0
+  fireRateEnhance: 0
+  clipSizeEnhance: 0
+  bulletSpeedEnhance: 0
+  accuracyEnhance: 0
+  reloadEnhance: 0
+  shotAmountEnhance: 0
+  allowRaycast: 0
+  allowPiercing: 0
+  allowAuto: 0

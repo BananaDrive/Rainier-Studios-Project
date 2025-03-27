@@ -1,20 +1,34 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
-    public GameObject zombie;
+    [Serializable]
+    public class ZombieSpawn
+    {
+        public GameObject zombie;
+        public float spawnWeight;
+    }
+    public List<ZombieSpawn> zombies;
+    public List<int> objectPoolNum;
+    
     public Transform zombieSpawnArea;
     public float spawnMax;
     public float currentSpawned;
     public float spawnDelay;
-    int objectPoolNum;
 
     public bool hasSpawned;
+    public float totalSpawnWeight;
 
     void Start()
     {
-        objectPoolNum = ObjectPool.SharedInstance.GetObjectPoolNum(zombie);
+        foreach (ZombieSpawn zombieSpawn in zombies)
+        {
+            objectPoolNum.Add(ObjectPool.SharedInstance.GetObjectPoolNum(zombieSpawn.zombie));
+            totalSpawnWeight += zombieSpawn.spawnWeight;
+        }
     }
 
     public void FixedUpdate()
@@ -28,17 +42,29 @@ public class EnemySpawn : MonoBehaviour
 
     public IEnumerator SpawnEnemy()
     {
-        GameObject temp = ObjectPool.SharedInstance.GetPooledObject(objectPoolNum);
+        GameObject temp = ObjectPool.SharedInstance.GetPooledObject(EnemyToSpawn());
         if (temp == null)
             yield break;
         temp.SetActive(true);
 
         EnemyBehavior enemyBehavior = temp.GetComponent<EnemyBehavior>();
-        enemyBehavior.InitializeStats(Random.Range(10f, 20f) / 10f, Random.Range(3f, 6f), 0.5f, Random.Range(5f, 8f));
+        enemyBehavior.InitializeStats(UnityEngine.Random.Range(10f, 20f) / 10f, UnityEngine.Random.Range(3f, 6f), 0.5f, UnityEngine.Random.Range(5f, 8f));
         enemyBehavior.hasAttacked = false;
         
         temp.transform.position = zombieSpawnArea.position;
         yield return new WaitForSeconds(spawnDelay);
         hasSpawned = false;
+    }
+
+    public int EnemyToSpawn()
+    {
+        float temp = UnityEngine.Random.Range(0, totalSpawnWeight);
+        for (int i = 0; i < zombies.Count - 1; i++)
+        {
+            temp -= zombies[i].spawnWeight;
+            if (temp <= 0)
+                return objectPoolNum[i];
+        }
+        return objectPoolNum[^1];
     }
 }

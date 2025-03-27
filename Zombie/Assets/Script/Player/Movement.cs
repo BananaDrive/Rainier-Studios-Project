@@ -2,11 +2,10 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public BoxCollider2D _collider;
+    public Collider2D _collider;
     public SpriteRenderer sprite;
     public Rigidbody2D rb;
     public LayerMask ground;
-    public BuffsHandler buffsHandler;
 
     [Header("Stats")]
     public float moveSpeed;
@@ -32,9 +31,13 @@ public class Movement : MonoBehaviour
     {
         if (!canMove)
             return;
-        rb.AddForce(moveDirection * (moveSpeed + (moveSpeed * buffsHandler.moveSpeedBuff / 100)) * acceleration * transform.right, ForceMode2D.Force);
-
-        sprite.flipX = moveDirection > 0 ? false : (moveDirection < 0 ? true : sprite.flipX); //flips the player's sprite based on their directional speed
+        transform.rotation = Quaternion.Euler(
+            transform.eulerAngles.x,
+            moveDirection > 0 ? 0f : (moveDirection < 0 ? 180f : transform.eulerAngles.y),
+            transform.eulerAngles.z
+        );
+    
+        rb.AddForce((moveDirection == 0f ? 0 : moveSpeed * (1 + moveSpeedBuff / 100) * acceleration) * transform.right, ForceMode2D.Force);
 
         if (moveDirection == 0)
             rb.linearVelocityX *= (100 - deceleration) / 100; //decelerates the player when not moving
@@ -43,6 +46,8 @@ public class Movement : MonoBehaviour
 
     public void SpeedLimit()
     {
+        if (!canMove)
+            return;
         Vector2 flatVel = new(rb.linearVelocityX, 0);
 
         if (Mathf.Abs(flatVel.magnitude) > moveSpeed)
@@ -54,7 +59,9 @@ public class Movement : MonoBehaviour
 
     public void Gravity()
     {
-        rb.AddForce(Physics.gravity*rb.mass*1.3f);
+        if (rb == null)
+            return;
+        rb.AddForce(1.3f * rb.mass * Physics.gravity);
     }
 
     public void Jump()
@@ -62,5 +69,10 @@ public class Movement : MonoBehaviour
         if (!canMove)
             return;
         rb.AddForceY(jumpPower * 10, ForceMode2D.Force);
+    }
+
+    public void UpdateStats()
+    {
+        
     }
 }

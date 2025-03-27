@@ -473,7 +473,7 @@ MonoBehaviour:
   enhancerLayer:
     serializedVersion: 2
     m_Bits: 512
-  leverLayer:
+  interactableLayer:
     serializedVersion: 2
     m_Bits: 1024
   Items: []

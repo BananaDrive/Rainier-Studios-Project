@@ -50,7 +50,7 @@ public class EnemyMovement : Movement
             player = collider.GetComponent<Transform>();
         }
 
-        if (player != null && Vector2.Distance(player.position, transform.position) > distanceToStop)
+        if (player != null && Vector2.Distance(player.position, transform.position) <= distanceToStop)
         {
             moveDirection = player.position.x - transform.position.x > 0 ? 1 : -1;
             hasWandered = false;

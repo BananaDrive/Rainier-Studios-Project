@@ -13,7 +13,6 @@ public class EnemyMelee : EnemyBehavior
         if (enemyMovement.player != null && Vector2.Distance(enemyMovement.player.position, transform.position) < rangeToAttack && !hasAttacked)
         {
             hasAttacked = true;
-            attackHitBox.transform.position = new(transform.position.x + (enemyMovement.sprite.flipX ? -0.2f : 0.2f), transform.position.y);
             CoroutineHandler.Instance.StartCoroutine(MeleeAttack());
         }
         if (!isAttacking)

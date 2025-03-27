@@ -10,15 +10,11 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if ((layerToDespawn & (1<< other.gameObject.layer)) != 0)
-        {
-            TurnOffObj();
-            return;
-        }
         if ((layerToHit & (1 << other.gameObject.layer)) != 0)
         {
             if (other.TryGetComponent<Health>(out var health) && other.TryGetComponent<Rigidbody2D>(out var rb)) //checks if the collided object has a health script
             {
+                Debug.Log(health);
                 health.TakeDamage(damage);
                 rb.AddForce(60f * damage * transform.right, ForceMode2D.Force);
             }

@@ -189,7 +189,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
-  distanceToStop: 0.5
+  distanceToStop: 0.3
   detectRadius: 10
   canWander: 0
 --- !u!114 &3237866848122796507
@@ -204,6 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4749212aab440ad44aeabdb710018660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  overlay: {fileID: 0}
   healthType: 1
   maxHealth: 100
   currentHealth: 100
@@ -227,8 +228,8 @@ MonoBehaviour:
   damage: 5
   attackRate: 5
   speed: 2
-  attackRange: 2
-  rangeToAttack: 1
+  attackRange: 1
+  rangeToAttack: 0.51
   canJump: 0
   canSprint: 0
   explodeOnDeath: 0

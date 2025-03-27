@@ -124,16 +124,16 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Mexican arms
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.36956522, y: -3.5}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 47
-      height: 10
+      width: 46
+      height: 8
     spriteID: 4ce9e389001ea2c4bb6490ae69aa6143
     spriteBone: []
     spriteOutline: []
@@ -156,10 +156,10 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 14
-        y: 27
-        width: 47
-        height: 10
+        x: 15
+        y: 28
+        width: 46
+        height: 8
       spriteId: 4ce9e389001ea2c4bb6490ae69aa6143
     linkedCells: []
     parentIndex: -1

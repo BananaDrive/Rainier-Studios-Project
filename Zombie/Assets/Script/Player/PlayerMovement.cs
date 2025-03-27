@@ -1,7 +1,9 @@
 using UnityEngine;
 
 public class PlayerMovement : Movement
+
 {
+    public AudioSource jump;
     public void Update()
     {
         moveDirection = Input.GetAxisRaw("Horizontal");
@@ -9,6 +11,7 @@ public class PlayerMovement : Movement
         if (Input.GetKeyDown(KeyCode.Space) && Grounded)
         {
             Jump();
+            jump.Play();
         }
 
         if (Input.GetKeyUp(KeyCode.Space) && rb.linearVelocityY > 0f)

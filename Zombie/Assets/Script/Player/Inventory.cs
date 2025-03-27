@@ -10,6 +10,7 @@ public class Inventory : MonoBehaviour
     internal Gate gate;
     public LayerMask itemLayer, enhancerLayer, interactableLayer;
     public BaseItem[] Items;
+    public AudioSource Speaker;
 
 
     public void Start()
@@ -81,6 +82,7 @@ public class Inventory : MonoBehaviour
             foundItem.buffs = buffs;
             Items[temp] = foundItem;
             foundItem.gameObject.SetActive(false);
+            Speaker.Play();
         }
     }
 

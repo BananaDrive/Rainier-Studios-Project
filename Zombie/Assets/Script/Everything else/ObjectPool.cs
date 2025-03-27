@@ -73,9 +73,4 @@ public class ObjectPool : MonoBehaviour
         Debug.Log("Object not found");
         return 0;
     }
-
-    internal int GetObjectPoolNum(List<GameObject> zombie)
-    {
-        throw new NotImplementedException();
-    }
 }

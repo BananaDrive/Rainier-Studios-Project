@@ -15,6 +15,7 @@ public class Weapon : MonoBehaviour
     public float reloadTime;
     public float accuracy;
     public float clipAmount;
+    public AudioSource gun;
 
     internal float damageBuff, fireRateBuff, bulletSpeedBuff, shotAmountBuff, clipSizeBuff, reloadTimeBuff, accuracyBuff;
 
@@ -39,6 +40,7 @@ public class Weapon : MonoBehaviour
                 shootCooldown = true;
                 for (int i = 0; i < shotAmount; i++)
                 {
+                    clipAmount--;
                     if (allowRaycast)
                         RaycastShoot();
                     else
@@ -58,8 +60,6 @@ public class Weapon : MonoBehaviour
 
     public void ProjectileShoot()
     {
-        clipAmount--;
-
         GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
 
         if (bullet == null)
@@ -80,6 +80,7 @@ public class Weapon : MonoBehaviour
 
     public void RaycastShoot()
     {
+        gun.Play();
         RaycastHit2D hit = Physics2D.Raycast(transform.position, DetermineSpread(), 30f, enemyLayer);
 
         if (hit.collider != null)

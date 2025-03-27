@@ -21,10 +21,10 @@ public class EnemyMovement : Movement
 
     public void FixedUpdate()
     {
+        moveDirection = 0;
         Gravity();
-        if (canMove)
-            MovementHandle();
         Detection();
+        MovementHandle();
 
         if (player == null)
         {
@@ -50,10 +50,13 @@ public class EnemyMovement : Movement
             player = collider.GetComponent<Transform>();
         }
 
-        if (player != null && Vector2.Distance(player.position, transform.position) > distanceToStop)
+        if (player != null)
         {
-            moveDirection = player.position.x - transform.position.x > 0 ? 1 : -1;
             hasWandered = false;
+            if (Vector2.Distance(player.position, transform.position) >= distanceToStop)
+                moveDirection = player.position.x - transform.position.x > 0 ? 1 : -1;
+            else 
+                moveDirection = 0f;
         }
     }
     

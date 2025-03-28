@@ -52,11 +52,11 @@ public class EnemyMovement : Movement
 
         if (player != null)
         {
-            hasWandered = false;
             if (Vector2.Distance(player.position, transform.position) >= distanceToStop)
                 moveDirection = player.position.x - transform.position.x > 0 ? 1 : -1;
             else 
                 moveDirection = 0f;
+            transform.rotation = Quaternion.Euler(0f, player.position.x - transform.position.x > 0 ? 0f : 180f, 0f);
         }
     }
     

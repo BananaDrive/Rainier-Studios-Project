@@ -62,9 +62,9 @@ public class Health : MonoBehaviour
     {
         if (healthType == HealthType.player)
         {
-            GameManager.Instance.GameOver();
-
             death.Play();
+
+            GameManager.Instance.GameOver();
         }
         else if (healthType == HealthType.enemy)
         {

@@ -48180,9 +48180,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2341615639507034113, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.082
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341615639507034113, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.178
+      objectReference: {fileID: 0}
     - target: {fileID: 3270011203924545268, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705790274937366882, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.447
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705790274937366882, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.558
       objectReference: {fileID: 0}
     - target: {fileID: 7093294389132745453, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: overlay

@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 79074208}
   - component: {fileID: 79074209}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor1 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12706,7 +12706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 216823803}
   - component: {fileID: 216823804}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12971,7 +12971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 790249000}
   - component: {fileID: 790249001}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13048,7 +13048,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 803062102}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13412,7 +13412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1076286079}
   - component: {fileID: 1076286080}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13761,7 +13761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1308280924}
   - component: {fileID: 1308280925}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25933,7 +25933,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2110260853}
   - component: {fileID: 2110260854}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26011,7 +26011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2111868945}
   - component: {fileID: 2111868946}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26152,6 +26152,10 @@ PrefabInstance:
     - target: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
       propertyPath: m_Name
       value: Zombie Policemen
+      objectReference: {fileID: 0}
+    - target: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 561915107828566534, guid: aab25800b908c69498d8308560d4ad44, type: 3}
       propertyPath: canWander

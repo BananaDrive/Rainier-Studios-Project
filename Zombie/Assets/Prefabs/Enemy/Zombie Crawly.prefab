@@ -186,7 +186,7 @@ MonoBehaviour:
     m_Bits: 8
   moveSpeed: 3
   acceleration: 5
-  deceleration: 6
+  deceleration: 7
   jumpPower: 20
   groundDistance: 0
   moveDirection: 0

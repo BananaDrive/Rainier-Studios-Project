@@ -26,9 +26,9 @@ public class EnemyMelee : EnemyBehavior
     public IEnumerator PounceAttack()
     {
         isAttacking = true;
-        CoroutineHandler.Instance.StartCoroutine(enemyMovement.Stop(0.9f + 5 / attackRate));
+        CoroutineHandler.Instance.StartCoroutine(enemyMovement.Stop(0.7f + 5 / attackRate));
         yield return new WaitForSeconds(0.3f);
-        enemyMovement.rb.AddForce(600f * SetAngle(), ForceMode2D.Force);
+        enemyMovement.rb.AddForce(900f * SetAngle(), ForceMode2D.Force);
         attackHitBox.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         attackHitBox.SetActive(false);
@@ -55,6 +55,6 @@ public class EnemyMelee : EnemyBehavior
 
     public Vector2 SetAngle()
     {
-        return Quaternion.Euler(0f, 0f, 25f * (enemyMovement.transform.eulerAngles.y > 0 ? -1 : 1)) * transform.right; 
+        return Quaternion.Euler(0f, 0f, 20f * (enemyMovement.transform.eulerAngles.y > 0 ? -1 : 1)) * transform.right; 
     }
 }

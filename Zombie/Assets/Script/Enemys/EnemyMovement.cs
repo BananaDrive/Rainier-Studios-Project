@@ -52,7 +52,7 @@ public class EnemyMovement : Movement
 
         if (player != null)
         {
-            if (Vector2.Distance(player.position, transform.position) >= distanceToStop)
+            if (Vector2.Distance(player.position, transform.position) >= distanceToStop && canMove)
                 moveDirection = player.position.x - transform.position.x > 0 ? 1 : -1;
             else 
                 moveDirection = 0f;

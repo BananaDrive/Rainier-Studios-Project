@@ -52,7 +52,7 @@ public class EnemyMovement : Movement
 
         if (player != null)
         {
-            if (Vector2.Distance(player.position, transform.position) >= distanceToStop)
+            if (Vector2.Distance(player.position, transform.position) >= distanceToStop && canMove)
                 moveDirection = player.position.x - transform.position.x > 0 ? 1 : -1;
             else 
                 moveDirection = 0f;
@@ -67,5 +67,14 @@ public class EnemyMovement : Movement
         moveDirection = 0;
         yield return new WaitForSeconds(Random.Range(1f, 3f));
         hasWandered = false;
+    }
+
+    public IEnumerator Stop(float time)
+    {
+        moveDirection = 0f;
+        canMove = false;
+        rb.linearVelocityX = 0f;
+        yield return new WaitForSeconds(time);
+        canMove = true;
     }
 }

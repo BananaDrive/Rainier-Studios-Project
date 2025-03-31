@@ -29,6 +29,9 @@ public class Movement : MonoBehaviour
 
     public void MovementHandle()
     {
+        if (moveDirection == 0)
+            rb.linearVelocityX *= (100 - deceleration) / 100; //decelerates the player when not moving
+            
         if (!canMove)
             return;
         transform.rotation = Quaternion.Euler(
@@ -38,9 +41,6 @@ public class Movement : MonoBehaviour
         );
     
         rb.AddForce((moveDirection == 0f ? 0 : moveSpeed * (1 + moveSpeedBuff / 100) * acceleration) * transform.right, ForceMode2D.Force);
-
-        if (moveDirection == 0)
-            rb.linearVelocityX *= (100 - deceleration) / 100; //decelerates the player when not moving
     }
 
 

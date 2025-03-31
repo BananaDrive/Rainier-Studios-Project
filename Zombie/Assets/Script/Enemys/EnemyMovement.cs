@@ -68,4 +68,13 @@ public class EnemyMovement : Movement
         yield return new WaitForSeconds(Random.Range(1f, 3f));
         hasWandered = false;
     }
+
+    public IEnumerator Stop(float time)
+    {
+        moveDirection = 0f;
+        canMove = false;
+        rb.linearVelocityX = 0f;
+        yield return new WaitForSeconds(time);
+        canMove = true;
+    }
 }

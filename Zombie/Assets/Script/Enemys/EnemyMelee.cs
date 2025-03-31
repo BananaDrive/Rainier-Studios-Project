@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class EnemyMelee : EnemyBehavior
@@ -12,25 +13,48 @@ public class EnemyMelee : EnemyBehavior
     {
         if (enemyMovement.player != null && Vector2.Distance(enemyMovement.player.position, transform.position) < rangeToAttack && !hasAttacked)
         {
+            if (canJump)
+                CoroutineHandler.Instance.StartCoroutine(PounceAttack());
+            else
+                CoroutineHandler.Instance.StartCoroutine(MeleeAttack());
             hasAttacked = true;
-            CoroutineHandler.Instance.StartCoroutine(MeleeAttack());
         }
         if (!isAttacking)
             EnableClip<EnemyMelee>();
     }
 
+    public IEnumerator PounceAttack()
+    {
+        isAttacking = true;
+        CoroutineHandler.Instance.StartCoroutine(enemyMovement.Stop(0.9f + 5 / attackRate));
+        yield return new WaitForSeconds(0.3f);
+        enemyMovement.rb.AddForce(600f * SetAngle(), ForceMode2D.Force);
+        attackHitBox.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        attackHitBox.SetActive(false);
+        enemyAttackHitbox.hasHit = false;
+        yield return new WaitForSeconds(5 / attackRate);
+        isAttacking = false;
+        hasAttacked = false;
+
+    }
+
     public IEnumerator MeleeAttack()
     {
         isAttacking = true;
-        enemyMovement.rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        CoroutineHandler.Instance.StartCoroutine(enemyMovement.Stop(0.35f + 5 / attackRate));
         yield return new WaitForSeconds(0.2f);
         attackHitBox.SetActive(true);
         yield return new WaitForSeconds(0.15f);
         attackHitBox.SetActive(false);
         enemyAttackHitbox.hasHit = false;
         yield return new WaitForSeconds(5 / attackRate);
-        enemyMovement.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         isAttacking = false;
         hasAttacked = false;
+    }
+
+    public Vector2 SetAngle()
+    {
+        return Quaternion.Euler(0f, 0f, 25f * (enemyMovement.transform.eulerAngles.y > 0 ? -1 : 1)) * transform.right; 
     }
 }

@@ -18,15 +18,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: bfebf419156797949a476ee9ed87c14e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.097437
+      value: -11.782349
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: bfebf419156797949a476ee9ed87c14e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.9870663
+      value: -1.136
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: bfebf419156797949a476ee9ed87c14e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.016058829
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: bfebf419156797949a476ee9ed87c14e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -34,15 +34,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: bfebf419156797949a476ee9ed87c14e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: bfebf419156797949a476ee9ed87c14e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: bfebf419156797949a476ee9ed87c14e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: bfebf419156797949a476ee9ed87c14e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -103,10 +103,10 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.4921875}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.96875, y: 0.984375}
     newSize: {x: 0.96875, y: 0.984375}
     adaptiveTilingThreshold: 0.5

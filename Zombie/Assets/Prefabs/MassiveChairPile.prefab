@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MassiveChairPile
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 156d17a103d95974c8158f38456eb553, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 156d17a103d95974c8158f38456eb553, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.7873125

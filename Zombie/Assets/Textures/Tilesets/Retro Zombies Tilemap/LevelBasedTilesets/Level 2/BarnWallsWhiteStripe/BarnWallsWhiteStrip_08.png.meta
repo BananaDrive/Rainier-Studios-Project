@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BarnWallsWhiteStrip_08_0: 4995328126795242297
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RedWall_04_0: 3493760111663075708
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

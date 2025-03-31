@@ -25097,6 +25097,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3237866848122796507, guid: b020c87128f6c0848b391845a86fca57, type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 3216806463299503421}
     - target: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_Name
       value: Zombie
@@ -25114,6 +25118,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b020c87128f6c0848b391845a86fca57, type: 3}
+--- !u!82 &3216806463299503421 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3659313979397218652, guid: b020c87128f6c0848b391845a86fca57, type: 3}
+  m_PrefabInstance: {fileID: 3216806463299503420}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5256327215516169874
 PrefabInstance:
   m_ObjectHideFlags: 0

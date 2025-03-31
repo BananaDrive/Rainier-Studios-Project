@@ -5,6 +5,10 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public GameObject overlay;
+    public AudioSource health;
+    public AudioSource death;
+    public AudioSource hurt;
+
     public enum HealthType
     {
         player,
@@ -24,6 +28,7 @@ public class Health : MonoBehaviour
         {
             overlayCooldown = true;
             StartCoroutine(OverlayDisplay());
+           hurt.Play();
         }  
             
         currentHealth -= damage;
@@ -34,6 +39,7 @@ public class Health : MonoBehaviour
 
     public void AddHealth(float addHealth)
     {
+        
         currentHealth += addHealth;
 
         if (currentHealth > maxHealth)
@@ -55,7 +61,11 @@ public class Health : MonoBehaviour
     public void HandleDeath()
     {
         if (healthType == HealthType.player)
+        {
+            death.Play();
+
             GameManager.Instance.GameOver();
+        }
         else if (healthType == HealthType.enemy)
         {
             gameObject.SetActive(false);
@@ -63,6 +73,14 @@ public class Health : MonoBehaviour
         }
         else
             gameObject.SetActive(false);
+
+
+
+
+
+
+
+
     }
 
     public IEnumerator OverlayDisplay()

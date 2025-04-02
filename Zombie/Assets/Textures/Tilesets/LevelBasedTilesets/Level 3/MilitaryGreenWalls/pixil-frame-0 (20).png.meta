@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 667c443428eb854489040bf6119d94d8
+guid: cc282c6ab04e28641957ff24115b86ce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1184251941510026252
-    second: GreenWalls_09_0
+      213: 2612383665505601816
+    second: pixil-frame-0 (20)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GreenWalls_09_0
+      name: pixil-frame-0 (20)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c04954acdde4f6010800000000000000
-      internalID: 1184251941510026252
+      spriteID: 8198e7f4a1d014420800000000000000
+      internalID: 2612383665505601816
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GreenWalls_09_0: 1184251941510026252
+      pixil-frame-0 (20)_0: 2612383665505601816
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

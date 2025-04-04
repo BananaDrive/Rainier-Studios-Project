@@ -27,7 +27,7 @@ public class Health : MonoBehaviour
         {
             overlayCooldown = true;
             StartCoroutine(OverlayDisplay());
-           hurt.Play();
+            hurt.Play();
         }  
             
         currentHealth -= damage;
@@ -38,7 +38,6 @@ public class Health : MonoBehaviour
 
     public void AddHealth(float addHealth)
     {
-        
         currentHealth += addHealth;
 
         if (currentHealth > maxHealth)
@@ -60,14 +59,6 @@ public class Health : MonoBehaviour
         }
         else
             gameObject.SetActive(false);
-
-
-
-
-
-
-
-
     }
 
     public IEnumerator OverlayDisplay()

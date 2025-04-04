@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
             {
                 Debug.Log(health);
                 health.TakeDamage(damage);
-                rb.AddForce(60f * damage * transform.right, ForceMode2D.Force);
+                rb.AddForce(120 * transform.right, ForceMode2D.Force);
             }
 
             TurnOffObj();

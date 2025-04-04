@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 220368420181251730}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.024, y: 0.026, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 0.99999994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 296464217773923605}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 3399243645569472923, guid: f4cfd6a3680cd5449a953fc1bc66a10c, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 5541577597093778254, guid: 44dab139bd7441c44bf76d1b62c5f3d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -241,8 +241,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649787460906391963}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.205, y: 0.4789, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.15, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -293,7 +293,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -849593229383215665, guid: 1cda54f18f804df4bb3b812d06007c95, type: 3}
+  m_Sprite: {fileID: -7995321995357809069, guid: 94b34ed59ae04404e9777026d84bc34b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -332,8 +332,8 @@ Transform:
   m_GameObject: {fileID: 2797739084873007406}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7106, y: 0.0867, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0.272, y: 0.058, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2341615639507034113}
@@ -531,8 +531,8 @@ GameObject:
   - component: {fileID: 296464217773923605}
   - component: {fileID: 8815408405336253798}
   - component: {fileID: 829897267099723340}
+  - component: {fileID: 7267827251629851082}
   - component: {fileID: 6073820443107811440}
-  - component: {fileID: 7093294389132745453}
   - component: {fileID: 1707694407593614904}
   - component: {fileID: 8364591893400546399}
   - component: {fileID: 8172515586023748523}
@@ -622,9 +622,31 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.023784101}
-  m_Size: {x: 0.5, y: 1.5975682}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1.55}
   m_Direction: 0
+--- !u!114 &7267827251629851082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270011203924545268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acaec258f30098d4cbfc86d05109f2ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overlay: {fileID: 0}
+  health: {fileID: 0}
+  death: {fileID: 0}
+  hurt: {fileID: 0}
+  healthType: 0
+  maxHealth: 200
+  currentHealth: 200
+  regenRate: 0.1
+  regenAmount: 0
+  regenTick: 0
 --- !u!114 &6073820443107811440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,31 +669,12 @@ MonoBehaviour:
   acceleration: 20
   deceleration: 23
   jumpPower: 37.5
-  groundDistance: 1.1
+  groundDistance: 0.8
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1
   hasJumped: 0
-  jump: {fileID: 1694278838669234112}
---- !u!114 &7093294389132745453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3270011203924545268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4749212aab440ad44aeabdb710018660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overlay: {fileID: 0}
-  health: {fileID: 0}
-  death: {fileID: 0}
-  hurt: {fileID: 0}
-  healthType: 0
-  maxHealth: 200
-  currentHealth: 200
+  jump: {fileID: 0}
 --- !u!114 &1707694407593614904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -710,7 +713,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   Items: []
-  Speaker: {fileID: 2513189334142336134}
+  Speaker: {fileID: 0}
+  inventorySpace: 4
 --- !u!114 &8172515586023748523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,6 +729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 6073820443107811440}
   weapon: {fileID: 6121928685509098609}
+  health: {fileID: 7267827251629851082}
   buffList: []
   damageBuff: 0
   fireRateBuff: 0
@@ -732,6 +737,7 @@ MonoBehaviour:
   bulletSpeedBuff: 0
   moveSpeedBuff: 0
   accuracyBuff: 0
+  regenBuff: 0
   damageEnhance: 0
   fireRateEnhance: 0
   clipSizeEnhance: 0

@@ -1,18 +1,18 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Reflection;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class BuffsHandler : MonoBehaviour
 {
     public Movement movement;
     public Weapon weapon;
+    public PlayerHealth health;
 
     public List<ItemStats> buffList = new();
     
     [Header("Buffs")]
     public float damageBuff;
-    public float fireRateBuff, clipSizeBuff, bulletSpeedBuff, moveSpeedBuff, accuracyBuff;
+    public float fireRateBuff, clipSizeBuff, bulletSpeedBuff, moveSpeedBuff, accuracyBuff, regenBuff;
 
     [Header("Enhancers")]
     public float damageEnhance;
@@ -33,6 +33,7 @@ public class BuffsHandler : MonoBehaviour
             if (buffList[i].duration <= 0f)
                 buffList.Remove(buffList[i]);
         }
+        GameManager.Instance.UIManager.DisplayBuffs(buffList);
         ApplyBuffs();
     }
 
@@ -48,30 +49,34 @@ public class BuffsHandler : MonoBehaviour
 
     public void ApplyBuffs()
     {
-        damageBuff = 0;
-        fireRateBuff = 0;
-        moveSpeedBuff = 0;
-        accuracyBuff = 0;
-        bulletSpeedBuff = 0;
+        damageBuff = 100;
+        fireRateBuff = 100;
+        moveSpeedBuff = 100;
+        accuracyBuff = 100;
+        bulletSpeedBuff = 100;
+        regenBuff = 0;
         
         foreach (ItemStats activeBuffs in buffList)
         {
             switch (activeBuffs.itemType)
             {
                 case ItemType.damage:
-                    damageBuff += activeBuffs.potency / 100;
+                    damageBuff += activeBuffs.potency;
                 break;
                 case ItemType.fireRate:
-                    fireRateBuff += activeBuffs.potency / 100;
+                    fireRateBuff += activeBuffs.potency;
                 break;
                 case ItemType.speed:
-                    moveSpeedBuff += activeBuffs.potency / 100;
+                    moveSpeedBuff += activeBuffs.potency;
                 break;
                 case ItemType.accuracy:
-                    accuracyBuff += activeBuffs.potency / 100;
+                    accuracyBuff += activeBuffs.potency;
                 break;
                 case ItemType.bulletSpeed:
-                    bulletSpeedBuff += activeBuffs.potency / 100;
+                    bulletSpeedBuff += activeBuffs.potency;
+                break;
+                case ItemType.regen:
+                    regenBuff += activeBuffs.potency;
                 break;
             }
         }
@@ -97,13 +102,15 @@ public class BuffsHandler : MonoBehaviour
 
     public void UpdateStats()
     {
-        weapon.damageBuff = 1 + damageEnhance / 100 * damageBuff;
-        weapon.fireRateBuff = 1 + fireRateEnhance / 100 * fireRateBuff;
-        movement.moveSpeedBuff = 1 + moveSpeedBuff;
-        weapon.accuracyBuff = 1 + accuracyEnhance / 100 * accuracyBuff;
-        weapon.bulletSpeedBuff = 1 + bulletSpeedEnhance / 100 * bulletSpeedBuff;
-
+        weapon.damageBuff = (damageEnhance + damageBuff) / 100;
+        weapon.fireRateBuff = (fireRateEnhance + fireRateBuff) / 100;
+        weapon.accuracyBuff = (accuracyEnhance + accuracyBuff) / 100;
+        weapon.bulletSpeedBuff = (bulletSpeedEnhance + bulletSpeedBuff) / 100;
         weapon.allowAuto = allowAuto;
         weapon.allowRaycast = allowRaycast;
+
+        movement.moveSpeedBuff = moveSpeedBuff / 100;
+
+        health.regenAmount = regenBuff;
     }
 }

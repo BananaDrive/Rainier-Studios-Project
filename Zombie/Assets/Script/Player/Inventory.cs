@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
@@ -12,10 +13,12 @@ public class Inventory : MonoBehaviour
     public BaseItem[] Items;
     public AudioSource Speaker;
 
+    public int inventorySpace;
+
 
     public void Start()
     {
-        Items = new BaseItem[4];
+        Items = new BaseItem[inventorySpace];
     }
 
     public void FixedUpdate()
@@ -77,11 +80,12 @@ public class Inventory : MonoBehaviour
     {
         foundItem = GeneralDetection<BaseItem>(2f, itemLayer);
         int temp = CheckInventory();
-        if (foundItem != null && foundItem.canPickUp && temp != 4)
+        if (foundItem != null && foundItem.canPickUp && temp != inventorySpace)
         {
             foundItem.buffs = buffs;
             Items[temp] = foundItem;
             foundItem.gameObject.SetActive(false);
+            GameManager.Instance.UIManager.DisplayInv(Items);
             Speaker.Play();
         }
     }
@@ -102,7 +106,7 @@ public class Inventory : MonoBehaviour
             if (Items[i] == null)
                 return i;
         }
-        return 4;
+        return inventorySpace;
     }
 
     public void SortInv()
@@ -112,5 +116,6 @@ public class Inventory : MonoBehaviour
             Items[i] = Items[i + 1];
             Items[i + 1] = null;
         }
+        GameManager.Instance.UIManager.DisplayInv(Items);
     }
 }

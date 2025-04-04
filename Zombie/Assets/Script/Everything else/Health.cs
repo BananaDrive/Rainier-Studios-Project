@@ -45,18 +45,6 @@ public class Health : MonoBehaviour
             currentHealth = maxHealth;
     }
 
-    public IEnumerator RegenerateHealth(float potency, float duration)
-    {
-        float timer = 0;
-
-        while (timer < duration)
-        {
-            AddHealth(potency);
-            yield return new WaitForSeconds(1f);
-            timer++;
-        }
-    }
-
     public void HandleDeath()
     {
         if (healthType == HealthType.player)

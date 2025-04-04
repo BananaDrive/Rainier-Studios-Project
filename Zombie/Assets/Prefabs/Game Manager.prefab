@@ -1085,7 +1085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryPanel: {fileID: 113453388446044093}
-  buffPanel: {fileID: 0}
+  buffPanel: {fileID: 5823759369386753050}
   inventorySlots: []
   itemStatsPanel: {fileID: 3915734660079728787}
   itemName: {fileID: 7304059089487739647}

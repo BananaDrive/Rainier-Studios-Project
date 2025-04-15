@@ -108,6 +108,7 @@ public class BuffsHandler : MonoBehaviour
         weapon.bulletSpeedBuff = (bulletSpeedEnhance + bulletSpeedBuff) / 100;
         weapon.allowAuto = allowAuto;
         weapon.allowRaycast = allowRaycast;
+        weapon.allowPiercing = allowPiercing;
 
         movement.moveSpeedBuff = moveSpeedBuff / 100;
 

@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public bool isPiercing;
     public float damage;
     public float despawnTimer;
 
@@ -14,13 +15,17 @@ public class Bullet : MonoBehaviour
         {
             if (other.TryGetComponent<Health>(out var health) && other.TryGetComponent<Rigidbody2D>(out var rb)) //checks if the collided object has a health script
             {
-                Debug.Log(health);
                 health.TakeDamage(damage);
                 rb.AddForce(120 * transform.right, ForceMode2D.Force);
             }
 
+            if (!isPiercing)
+                TurnOffObj();
+        }
+
+        if ((layerToDespawn & (1 << other.gameObject.layer)) != 0)
             TurnOffObj();
-        } 
+
     }
 
     void TurnOffObj()

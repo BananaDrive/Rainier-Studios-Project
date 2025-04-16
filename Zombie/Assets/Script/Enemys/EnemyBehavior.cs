@@ -18,7 +18,6 @@ public class EnemyBehavior : MonoBehaviour
     [Header("Stats")]
     public float damage;
     public float attackRate;
-    public float speed;
     public float attackRange;
     public float rangeToAttack;
 
@@ -28,10 +27,8 @@ public class EnemyBehavior : MonoBehaviour
 
     public bool hasAttacked;
 
-    public void InitializeStats(float speed, float attackRate, float attackRange, float damage)
+    public void InitializeStats(float attackRate, float attackRange, float damage)
     {
-        this.speed = speed;
-        enemyMovement.moveSpeed = speed;
         this.attackRate = attackRate;
         this.attackRange = attackRange;
         this.damage = damage;

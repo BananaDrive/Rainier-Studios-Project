@@ -32,6 +32,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
+        Debug.DrawRay(transform.position, transform.right);
         if ((allowAuto && Input.GetKey(KeyCode.E) || !allowAuto && Input.GetKeyDown(KeyCode.E)) && !shootCooldown)
         {
             if (clipAmount > 0)
@@ -91,8 +92,6 @@ public class Weapon : MonoBehaviour
             {
                 if (hit[i].transform.TryGetComponent(out Health hitHealth))
                     hitHealth.TakeDamage(damage * damageBuff);
-                
-                Debug.Log("hit");
             }
         }
         StartCoroutine(ShootCD());

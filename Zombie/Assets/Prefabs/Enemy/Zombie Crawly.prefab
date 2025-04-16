@@ -184,11 +184,11 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 8
-  moveSpeed: 3
+  moveSpeed: 4
   acceleration: 5
   deceleration: 7
   jumpPower: 20
-  groundDistance: 0
+  groundDistance: 0.1
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1
@@ -200,7 +200,11 @@ MonoBehaviour:
     m_Bits: 64
   distanceToStop: 3
   detectRadius: 10
-  canWander: 0
+  wanderSpeedMulti: 0
+  wanderDirection: 0
+  maxWanderSpeedMulti: 0.5
+  wanderRate: 5
+  canWander: 1
 --- !u!114 &2197203890812710161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,7 +243,6 @@ MonoBehaviour:
     m_Bits: 128
   damage: 5
   attackRate: 5
-  speed: 4
   attackRange: 3
   rangeToAttack: 3
   canJump: 1

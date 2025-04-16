@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Security.Cryptography;
 using UnityEngine;
 
 public class EnemyMelee : EnemyBehavior
@@ -8,7 +7,7 @@ public class EnemyMelee : EnemyBehavior
     public EnemyAttackHitbox enemyAttackHitbox;
 
     bool isAttacking;
-    
+
     public void FixedUpdate()
     {
         if (enemyMovement.player != null && Vector2.Distance(enemyMovement.player.position, transform.position) < rangeToAttack && !hasAttacked)

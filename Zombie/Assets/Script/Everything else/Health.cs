@@ -54,11 +54,18 @@ public class Health : MonoBehaviour
         }
         else if (healthType == HealthType.enemy)
         {
+            CallTable();
             gameObject.SetActive(false);
             currentHealth = maxHealth;
         }
         else
             gameObject.SetActive(false);
+    }
+
+    public void CallTable()
+    {
+        GameObject loot = Instantiate(GameManager.Instance.lootTable.FindLootTable(GetComponent<EnemyBehavior>().lootTableName));
+        loot.transform.position = transform.position;
     }
 
     public IEnumerator OverlayDisplay()

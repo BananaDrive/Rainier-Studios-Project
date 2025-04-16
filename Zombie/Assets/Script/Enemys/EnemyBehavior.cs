@@ -15,6 +15,9 @@ public class EnemyBehavior : MonoBehaviour
     public EnemyMovement enemyMovement;
     public LayerMask enemyLayer;
 
+    [Header("Has to have the EXACT same name as the loot table in the game manager")]
+    public string lootTableName;
+
     [Header("Stats")]
     public float damage;
     public float attackRate;

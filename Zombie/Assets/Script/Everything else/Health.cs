@@ -64,8 +64,12 @@ public class Health : MonoBehaviour
 
     public void CallTable()
     {
-        GameObject loot = Instantiate(GameManager.Instance.lootTable.FindLootTable(GetComponent<EnemyBehavior>().lootTableName));
-        loot.transform.position = transform.position;
+
+        GameObject loot = GameManager.Instance.lootTable.FindLootTable(GetComponent<EnemyBehavior>().lootTableName);
+        if (loot == null)
+            return;
+        GameObject lootObj = Instantiate(loot);
+        lootObj.transform.position = transform.position;
     }
 
     public IEnumerator OverlayDisplay()

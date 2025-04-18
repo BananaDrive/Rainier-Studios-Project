@@ -5971,10 +5971,18 @@ PrefabInstance:
       objectReference: {fileID: 535958341}
     - target: {fileID: 1707694407593614904, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: offsetX
-      value: 0.175
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1707694407593614904, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: offsetY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1707694407593614904, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: offsetOriginX
+      value: 0.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1707694407593614904, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: offsetOriginY
       value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 1863868727273682324, guid: e328ed4b3df729a40985ae45366693bb, type: 3}

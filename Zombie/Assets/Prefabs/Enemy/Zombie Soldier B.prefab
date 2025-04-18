@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6037824024291277827}
   - component: {fileID: 8671743620264012218}
   - component: {fileID: 3716370110731228153}
-  - component: {fileID: 5270665261085626310}
   - component: {fileID: 1382145871983844255}
   - component: {fileID: 2254845974781198439}
+  - component: {fileID: 278543447166062057}
   m_Layer: 7
   m_Name: Zombie Soldier B
   m_TagString: Untagged
@@ -156,22 +156,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
---- !u!114 &5270665261085626310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5642173446215676963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4749212aab440ad44aeabdb710018660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overlay: {fileID: 0}
-  healthType: 1
-  maxHealth: 100
-  currentHealth: 100
 --- !u!114 &1382145871983844255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +190,10 @@ MonoBehaviour:
     m_Bits: 64
   distanceToStop: 5
   detectRadius: 10
+  wanderSpeedMulti: 0
+  wanderDirection: 0
+  maxWanderSpeedMulti: 0
+  wanderRate: 0
   canWander: 0
 --- !u!114 &2254845974781198439
 MonoBehaviour:
@@ -224,9 +212,9 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  lootTableName: 
   damage: 3
   attackRate: 2
-  speed: 1
   attackRange: 5
   rangeToAttack: 5
   canJump: 0
@@ -234,3 +222,20 @@ MonoBehaviour:
   explodeOnDeath: 0
   hasAttacked: 0
   molotov: {fileID: 7405309601997203259, guid: c97f19747ddeab744abdb8cb8da5e1b4, type: 3}
+--- !u!114 &278543447166062057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5642173446215676963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ac115ee4bde694ab66ababb9a510d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  death: {fileID: 0}
+  hurt: {fileID: 0}
+  maxHealth: 200
+  currentHealth: 200

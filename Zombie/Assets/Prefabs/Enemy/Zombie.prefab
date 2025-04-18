@@ -271,8 +271,8 @@ GameObject:
   - component: {fileID: 8559366492459221640}
   - component: {fileID: 792959710959513520}
   - component: {fileID: 1644178122001065626}
-  - component: {fileID: 3237866848122796507}
   - component: {fileID: 8203910326083383789}
+  - component: {fileID: 484689764738824749}
   m_Layer: 7
   m_Name: Zombie
   m_TagString: Untagged
@@ -456,25 +456,6 @@ MonoBehaviour:
   maxWanderSpeedMulti: 0.75
   wanderRate: 0
   canWander: 1
---- !u!114 &3237866848122796507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5125834075557533559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4749212aab440ad44aeabdb710018660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overlay: {fileID: 0}
-  health: {fileID: 0}
-  death: {fileID: 0}
-  hurt: {fileID: 2444188283753195157}
-  healthType: 1
-  maxHealth: 100
-  currentHealth: 100
 --- !u!114 &8203910326083383789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +473,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  lootTableName: 
   damage: 5
   attackRate: 5
   attackRange: 1
@@ -502,6 +484,23 @@ MonoBehaviour:
   hasAttacked: 0
   attackHitBox: {fileID: 5329007421078522183}
   enemyAttackHitbox: {fileID: 3638005003921271216}
+--- !u!114 &484689764738824749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125834075557533559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ac115ee4bde694ab66ababb9a510d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  death: {fileID: 0}
+  hurt: {fileID: 0}
+  maxHealth: 200
+  currentHealth: 200
 --- !u!1 &5329007421078522183
 GameObject:
   m_ObjectHideFlags: 0

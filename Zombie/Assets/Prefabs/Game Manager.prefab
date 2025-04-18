@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 6408432225776151790}
   - component: {fileID: 1946637080395633974}
   - component: {fileID: 4702255026137393682}
+  - component: {fileID: 1307517547135546968}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -354,9 +355,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIManager: {fileID: 2606737159230611623}
-  gameOverScreen: {fileID: 0}
-  pauseScreen: {fileID: 0}
+  gameOverScreen: {fileID: 8848363750452623326}
+  pauseScreen: {fileID: 3702611795600501865}
+  lootTable: {fileID: 1307517547135546968}
   isPaused: 0
+--- !u!114 &1307517547135546968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062348928756457530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3baa93fe0030624f846e3ee16a98d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lootTables: []
 --- !u!1 &2351507145457459586
 GameObject:
   m_ObjectHideFlags: 0

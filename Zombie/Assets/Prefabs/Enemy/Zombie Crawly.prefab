@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1243954359294630970}
   - component: {fileID: 1401230590320024136}
   - component: {fileID: 5362036708392070465}
-  - component: {fileID: 2197203890812710161}
   - component: {fileID: 2786928428061324114}
+  - component: {fileID: 3320467673719802856}
   m_Layer: 7
   m_Name: Zombie Crawly
   m_TagString: Untagged
@@ -205,25 +205,6 @@ MonoBehaviour:
   maxWanderSpeedMulti: 0.5
   wanderRate: 5
   canWander: 1
---- !u!114 &2197203890812710161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300085864175242042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4749212aab440ad44aeabdb710018660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overlay: {fileID: 0}
-  health: {fileID: 0}
-  death: {fileID: 0}
-  hurt: {fileID: 0}
-  healthType: 1
-  maxHealth: 100
-  currentHealth: 100
 --- !u!114 &2786928428061324114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +222,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  lootTableName: 
   damage: 5
   attackRate: 5
   attackRange: 3
@@ -251,6 +233,23 @@ MonoBehaviour:
   hasAttacked: 0
   attackHitBox: {fileID: 6328183470331543896}
   enemyAttackHitbox: {fileID: 869579751112212912}
+--- !u!114 &3320467673719802856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300085864175242042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ac115ee4bde694ab66ababb9a510d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  death: {fileID: 0}
+  hurt: {fileID: 0}
+  maxHealth: 200
+  currentHealth: 200
 --- !u!1 &6328183470331543896
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ using UnityEngine;
         speed,
         accuracy,
         bulletSpeed,
+        damageReduc,
         placeable
     }
 

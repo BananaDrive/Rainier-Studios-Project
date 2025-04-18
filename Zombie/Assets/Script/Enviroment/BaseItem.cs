@@ -17,7 +17,6 @@ using UnityEngine;
     [Serializable]
     public class ItemStats
     {
-        public Sprite sprite;
         public ItemType itemType;
         public float potency;
         public float duration;

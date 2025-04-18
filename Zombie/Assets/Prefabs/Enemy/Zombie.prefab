@@ -492,6 +492,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  lootTableName: Zombie Civilian
   damage: 5
   attackRate: 5
   attackRange: 1

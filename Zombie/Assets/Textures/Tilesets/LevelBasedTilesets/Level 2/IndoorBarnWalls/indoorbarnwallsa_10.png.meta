@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      indoorbarnwallsa_10_0: 8989760605780808083
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -10,9 +10,8 @@ public class PlayerMovement : Movement
 
         if (Input.GetKeyDown(KeyCode.Space) && Grounded)
         {
-            jump.Play();
             Jump();
-            
+            jump.Play();
         }
 
         if (Input.GetKeyUp(KeyCode.Space) && rb.linearVelocityY > 0f)

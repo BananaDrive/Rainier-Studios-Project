@@ -10,6 +10,7 @@ using UnityEngine;
         speed,
         accuracy,
         bulletSpeed,
+        damageReduc,
         placeable
     }
 
@@ -24,11 +25,16 @@ using UnityEngine;
 
 public class BaseItem : MonoBehaviour
 {
-    public SpriteRenderer sprite;
+    public Sprite sprite;
     internal BuffsHandler buffs;
 
     public ItemStats[] itemsStats;
     public bool canPickUp = true;
+
+    public void Start()
+    {
+        sprite = GetComponent<SpriteRenderer>().sprite;
+    }
 
     public void UseItem()
     {
@@ -39,13 +45,10 @@ public class BaseItem : MonoBehaviour
                 case ItemType.health:
                     buffs.GetComponent<Health>().currentHealth += items.potency;
                 break;
-                case ItemType.regen:
-                    CoroutineHandler.Instance.StartCoroutine(buffs.GetComponent<Health>().RegenerateHealth(items.potency, items.duration));
-                break;
                 case ItemType.placeable:
                     Placeable placeable = GetComponent<Placeable>();
                     placeable.layerToAvoid = 1 << buffs.gameObject.layer;
-                    transform.position = new Vector2(buffs.transform.position.x, buffs.transform.position.y - 0.35f);
+                    transform.SetPositionAndRotation(new Vector2(buffs.transform.position.x, buffs.transform.position.y - 0.35f), Quaternion.Euler(0, buffs.transform.eulerAngles.y, 0));
                     EnableScripts();
                 break;
                 default:

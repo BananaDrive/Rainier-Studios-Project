@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b7ee508604b81524fb7cad3f92dcaba8
+guid: 60281d9b01a8e874ca74f4b9e5d008e3
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 18
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,10 +103,10 @@ TextureImporter:
       name: pixil-frame-0 (8)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 9
-        width: 32
-        height: 19
+        x: 2
+        y: 0
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

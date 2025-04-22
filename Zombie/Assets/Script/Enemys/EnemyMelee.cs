@@ -6,31 +6,48 @@ public class EnemyMelee : EnemyBehavior
     public GameObject attackHitBox;
     public EnemyAttackHitbox enemyAttackHitbox;
 
+    public bool canPounce;
     bool isAttacking;
-    
+
     public void FixedUpdate()
     {
         if (enemyMovement.player != null && Vector2.Distance(enemyMovement.player.position, transform.position) < rangeToAttack && !hasAttacked)
         {
             hasAttacked = true;
-            CoroutineHandler.Instance.StartCoroutine(MeleeAttack());
+            if (canPounce)
+                CoroutineHandler.Instance.StartCoroutine(PounceAttack());
+            else
+                CoroutineHandler.Instance.StartCoroutine(MeleeAttack());
         }
-        if (!isAttacking)
+        if (!hasAttacked)
             EnableClip<EnemyMelee>();
+    }
+
+    public IEnumerator PounceAttack()
+    {
+        CoroutineHandler.Instance.StartCoroutine(enemyMovement.Stop(0.7f + 5 / attackRate));
+        yield return new WaitForSeconds(0.3f);
+        enemyMovement.rb.AddForce(900f * SetAngle(), ForceMode2D.Force);
+        attackHitBox.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        attackHitBox.SetActive(false);
+        yield return new WaitForSeconds(5 / attackRate);
+        hasAttacked = false;
     }
 
     public IEnumerator MeleeAttack()
     {
-        isAttacking = true;
-        enemyMovement.rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        CoroutineHandler.Instance.StartCoroutine(enemyMovement.Stop(0.35f + 5 / attackRate));
         yield return new WaitForSeconds(0.2f);
         attackHitBox.SetActive(true);
         yield return new WaitForSeconds(0.15f);
         attackHitBox.SetActive(false);
-        enemyAttackHitbox.hasHit = false;
         yield return new WaitForSeconds(5 / attackRate);
-        enemyMovement.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        isAttacking = false;
         hasAttacked = false;
+    }
+
+    public Vector2 SetAngle()
+    {
+        return Quaternion.Euler(0f, 0f, 20f * (enemyMovement.transform.eulerAngles.y > 0 ? -1 : 1)) * transform.right; 
     }
 }

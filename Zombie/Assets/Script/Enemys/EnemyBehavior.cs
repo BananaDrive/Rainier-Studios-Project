@@ -3,23 +3,12 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
-    public enum EnemyType
-    {
-        civilian,
-        crawly,
-        policeMan,
-        soldierA,
-        soliderB
-    }
-    public EnemyType enemyType;
     public EnemyMovement enemyMovement;
     public LayerMask enemyLayer;
 
     [Header("Stats")]
     public float damage;
     public float attackRate;
-    public float speed;
-    public float attackRange;
     public float rangeToAttack;
 
     [Header("Traits")]
@@ -28,12 +17,9 @@ public class EnemyBehavior : MonoBehaviour
 
     public bool hasAttacked;
 
-    public void InitializeStats(float speed, float attackRate, float attackRange, float damage)
+    public void InitializeStats(float attackRate, float damage)
     {
-        this.speed = speed;
-        enemyMovement.moveSpeed = speed;
         this.attackRate = attackRate;
-        this.attackRange = attackRange;
         this.damage = damage;
     }
 

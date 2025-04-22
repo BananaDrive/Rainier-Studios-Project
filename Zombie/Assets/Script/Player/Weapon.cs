@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -19,7 +18,7 @@ public class Weapon : MonoBehaviour
 
     internal float damageBuff, fireRateBuff, bulletSpeedBuff, shotAmountBuff, clipSizeBuff, reloadTimeBuff, accuracyBuff;
 
-    public bool allowAuto, allowRaycast;
+    public bool allowAuto, allowRaycast, allowPiercing;
     int bulletPoolIndex;
     bool isReloading;
     bool shootCooldown;
@@ -33,6 +32,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
+        Debug.DrawRay(transform.position, transform.right);
         if ((allowAuto && Input.GetKey(KeyCode.E) || !allowAuto && Input.GetKeyDown(KeyCode.E)) && !shootCooldown)
         {
             if (clipAmount > 0)
@@ -71,9 +71,10 @@ public class Weapon : MonoBehaviour
         Transform bulletTransform = bullet.GetComponent<Transform>();
         bulletScript.damage = damage * damageBuff;
         bulletScript.layerToHit = enemyLayer;
+        bulletScript.isPiercing = allowPiercing;
         
         bulletTransform.SetPositionAndRotation(transform.position, transform.rotation);
-        bullet.GetComponent<Rigidbody2D>().AddForce(bulletSpeed * bulletSpeedBuff * UnityEngine.Random.Range(8f, 12f) * DetermineSpread(), ForceMode2D.Force);
+        bullet.GetComponent<Rigidbody2D>().AddForce(bulletSpeed * bulletSpeedBuff * Random.Range(8f, 12f) * DetermineSpread(), ForceMode2D.Force);
 
         StartCoroutine(bulletScript.Despawn());
     }
@@ -81,15 +82,17 @@ public class Weapon : MonoBehaviour
     public void RaycastShoot()
     {
         gun.Play();
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, DetermineSpread(), 30f, enemyLayer);
+        int pierceAmount = allowPiercing ? 30 : 1;
+        Vector2 spread = DetermineSpread();
+        RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, spread, 30f, enemyLayer);
 
-        if (hit.collider != null)
+        for (int i = 0; i < pierceAmount && i < hit.Length; i++)
         {
-            if (hit.transform.TryGetComponent(out Health hitHealth))
+            if (hit[i].collider != null)
             {
-                hitHealth.TakeDamage(damage * damageBuff);
+                if (hit[i].transform.TryGetComponent(out Health hitHealth))
+                    hitHealth.TakeDamage(damage * damageBuff);
             }
-                
         }
         StartCoroutine(ShootCD());
     }
@@ -97,13 +100,13 @@ public class Weapon : MonoBehaviour
     public Vector2 DetermineSpread()
     {
         float spread = 100f - (accuracy + accuracyBuff);
-        Vector2 spreadAngle = Quaternion.Euler(0, 0, UnityEngine.Random.Range(-spread, spread)) * transform.right;
+        Vector2 spreadAngle = Quaternion.Euler(0, 0, Random.Range(-spread, spread)) * transform.right;
         return spreadAngle;
     }
 
     public IEnumerator ShootCD()
     {
-        yield return new WaitForSeconds(1 / fireRate * fireRateBuff);
+        yield return new WaitForSeconds(1f / (fireRate * fireRateBuff * 2f));
         shootCooldown = false;
     }
 

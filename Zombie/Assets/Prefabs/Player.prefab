@@ -531,8 +531,8 @@ GameObject:
   - component: {fileID: 296464217773923605}
   - component: {fileID: 8815408405336253798}
   - component: {fileID: 829897267099723340}
+  - component: {fileID: 7267827251629851082}
   - component: {fileID: 6073820443107811440}
-  - component: {fileID: 7093294389132745453}
   - component: {fileID: 1707694407593614904}
   - component: {fileID: 8364591893400546399}
   - component: {fileID: 8172515586023748523}
@@ -625,6 +625,28 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.5, y: 1.55}
   m_Direction: 0
+--- !u!114 &7267827251629851082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270011203924545268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acaec258f30098d4cbfc86d05109f2ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overlay: {fileID: 0}
+  health: {fileID: 0}
+  death: {fileID: 0}
+  hurt: {fileID: 0}
+  healthType: 0
+  maxHealth: 200
+  currentHealth: 200
+  regenRate: 0.1
+  regenAmount: 0
+  regenTick: 0
 --- !u!114 &6073820443107811440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,22 +675,6 @@ MonoBehaviour:
   canMove: 1
   hasJumped: 0
   jump: {fileID: 0}
---- !u!114 &7093294389132745453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3270011203924545268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4749212aab440ad44aeabdb710018660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overlay: {fileID: 0}
-  healthType: 0
-  maxHealth: 200
-  currentHealth: 200
 --- !u!114 &1707694407593614904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,6 +714,7 @@ MonoBehaviour:
     m_Bits: 1024
   Items: []
   Speaker: {fileID: 0}
+  inventorySpace: 4
 --- !u!114 &8172515586023748523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,6 +729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 6073820443107811440}
   weapon: {fileID: 6121928685509098609}
+  health: {fileID: 7267827251629851082}
   buffList: []
   damageBuff: 0
   fireRateBuff: 0
@@ -729,6 +737,7 @@ MonoBehaviour:
   bulletSpeedBuff: 0
   moveSpeedBuff: 0
   accuracyBuff: 0
+  regenBuff: 0
   damageEnhance: 0
   fireRateEnhance: 0
   clipSizeEnhance: 0

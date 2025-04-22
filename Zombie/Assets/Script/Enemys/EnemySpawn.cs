@@ -45,6 +45,7 @@ public class EnemySpawn : MonoBehaviour
         GameObject temp = ObjectPool.SharedInstance.GetPooledObject(EnemyToSpawn());
         if (temp == null)
             yield break;
+        currentSpawned++;
         temp.SetActive(true);
 
         EnemyBehavior enemyBehavior = temp.GetComponent<EnemyBehavior>();

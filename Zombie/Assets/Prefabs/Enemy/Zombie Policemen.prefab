@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -221,7 +221,6 @@ MonoBehaviour:
   canSprint: 0
   explodeOnDeath: 0
   hasAttacked: 0
-  bullet: {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
   burstFireAmount: 1
 --- !u!114 &5787172711028390073
 MonoBehaviour:
@@ -238,6 +237,6 @@ MonoBehaviour:
   health: {fileID: 0}
   death: {fileID: 0}
   hurt: {fileID: 0}
-  damageReduc: 0
+  damageReduc: 1
   maxHealth: 300
   currentHealth: 300

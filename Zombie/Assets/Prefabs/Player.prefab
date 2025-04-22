@@ -417,7 +417,6 @@ MonoBehaviour:
   gun: {fileID: 5146715617024659985}
   allowAuto: 0
   allowRaycast: 1
-  allowPiercing: 0
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -638,13 +637,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acaec258f30098d4cbfc86d05109f2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  overlay: {fileID: 0}
   health: {fileID: 0}
   death: {fileID: 0}
   hurt: {fileID: 0}
-  damageReduc: 1
+  healthType: 0
   maxHealth: 200
   currentHealth: 200
-  overlay: {fileID: 0}
   regenRate: 0.1
   regenAmount: 0
   regenTick: 0
@@ -690,10 +689,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapon: {fileID: 2341615639507034113}
   movement: {fileID: 6073820443107811440}
-  offsetX: 0
-  offsetY: 0
-  offsetOriginX: 0.175
-  offsetOriginY: 0.52
 --- !u!114 &8364591893400546399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,7 +738,6 @@ MonoBehaviour:
   moveSpeedBuff: 0
   accuracyBuff: 0
   regenBuff: 0
-  damageReducBuff: 0
   damageEnhance: 0
   fireRateEnhance: 0
   clipSizeEnhance: 0

@@ -3,25 +3,12 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
-    public enum EnemyType
-    {
-        civilian,
-        crawly,
-        policeMan,
-        soldierA,
-        soliderB
-    }
-    public EnemyType enemyType;
     public EnemyMovement enemyMovement;
     public LayerMask enemyLayer;
-
-    [Header("Has to have the EXACT same name as the loot table in the game manager")]
-    public string lootTableName;
 
     [Header("Stats")]
     public float damage;
     public float attackRate;
-    public float attackRange;
     public float rangeToAttack;
 
     [Header("Traits")]
@@ -30,10 +17,9 @@ public class EnemyBehavior : MonoBehaviour
 
     public bool hasAttacked;
 
-    public void InitializeStats(float attackRate, float attackRange, float damage)
+    public void InitializeStats(float attackRate, float damage)
     {
         this.attackRate = attackRate;
-        this.attackRange = attackRange;
         this.damage = damage;
     }
 

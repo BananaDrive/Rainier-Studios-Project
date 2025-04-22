@@ -222,7 +222,6 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  lootTableName: 
   damage: 5
   attackRate: 5
   attackRange: 3
@@ -233,6 +232,7 @@ MonoBehaviour:
   hasAttacked: 0
   attackHitBox: {fileID: 6328183470331543896}
   enemyAttackHitbox: {fileID: 869579751112212912}
+  canPounce: 1
 --- !u!114 &3320467673719802856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,8 +248,10 @@ MonoBehaviour:
   health: {fileID: 0}
   death: {fileID: 0}
   hurt: {fileID: 0}
+  damageReduc: 0
   maxHealth: 200
   currentHealth: 200
+  lootTableName: 
 --- !u!1 &6328183470331543896
 GameObject:
   m_ObjectHideFlags: 0

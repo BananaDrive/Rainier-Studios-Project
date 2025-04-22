@@ -34,13 +34,13 @@ public class EnemyMovement : Movement
         moveDirection = 0;
         Gravity();
         Detection();
-        WanderAround();
+        WanderCheck();
         MovementHandle();
         JumpCheck();
         SpeedLimit();
     }
 
-    public void WanderAround()
+    public void WanderCheck()
     {
         if (player == null)
         {
@@ -96,6 +96,7 @@ public class EnemyMovement : Movement
         canMove = false;
         rb.linearVelocityX = 0f;
         yield return new WaitForSeconds(time);
+        Debug.Log("I can move!" + time);
         canMove = true;
     }
 }

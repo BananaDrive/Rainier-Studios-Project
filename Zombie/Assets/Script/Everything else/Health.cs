@@ -6,13 +6,18 @@ public abstract class Health : MonoBehaviour
     public AudioSource health;
     public AudioSource death;
     public AudioSource hurt;
-    public float damageReduc = 1;
+    public float damageReduc;
     public float maxHealth;
     public float currentHealth;
 
     public abstract void HandleDeath();
     public abstract void OtherDamageLogic();
-    
+
+    public void Start()
+    {
+        damageReduc = 1;
+    }
+
 
     public void TakeDamage(float damage)
     {

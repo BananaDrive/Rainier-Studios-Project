@@ -298,7 +298,6 @@ GameObject:
   - component: {fileID: 1946637080395633974}
   - component: {fileID: 4702255026137393682}
   - component: {fileID: 1307517547135546968}
-  - component: {fileID: 2070656498612744308}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -358,7 +357,7 @@ MonoBehaviour:
   UIManager: {fileID: 2606737159230611623}
   gameOverScreen: {fileID: 8848363750452623326}
   pauseScreen: {fileID: 3702611795600501865}
-  lootTable: {fileID: 2070656498612744308}
+  lootTable: {fileID: 1307517547135546968}
   isPaused: 0
 --- !u!114 &1307517547135546968
 MonoBehaviour:
@@ -373,44 +372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lootTables: []
---- !u!114 &2070656498612744308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062348928756457530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3baa93fe0030624f846e3ee16a98d75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lootTables:
-  - lootTableObjects:
-    - tableObj: {fileID: 0}
-      objWeight: 10
-    tableMaxWeight: 1000
-    tableName: Civilian Zombie
-  - lootTableObjects:
-    - tableObj: {fileID: 0}
-      objWeight: 10
-    tableMaxWeight: 1000
-    tableName: Crawler Zombie
-  - lootTableObjects:
-    - tableObj: {fileID: 0}
-      objWeight: 10
-    tableMaxWeight: 1000
-    tableName: Police Zombie
-  - lootTableObjects:
-    - tableObj: {fileID: 0}
-      objWeight: 10
-    tableMaxWeight: 1000
-    tableName: Soldier A Zombie
-  - lootTableObjects:
-    - tableObj: {fileID: 0}
-      objWeight: 10
-    tableMaxWeight: 1000
-    tableName: Soldier B  Zombie
 --- !u!1 &2351507145457459586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1935,7 +1896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7657122949817736258, guid: c18c44c622284b842ab292ecd66cf233, type: 3}
       propertyPath: m_fontSize
-      value: 36
+      value: 17.9
       objectReference: {fileID: 0}
     - target: {fileID: 8079088998880016367, guid: c18c44c622284b842ab292ecd66cf233, type: 3}
       propertyPath: m_Pivot.x
@@ -2041,7 +2002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7657122949817736258, guid: c18c44c622284b842ab292ecd66cf233, type: 3}
       propertyPath: m_fontSize
-      value: 36
+      value: 17.9
       objectReference: {fileID: 0}
     - target: {fileID: 8079088998880016367, guid: c18c44c622284b842ab292ecd66cf233, type: 3}
       propertyPath: m_Pivot.x
@@ -2147,7 +2108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7657122949817736258, guid: c18c44c622284b842ab292ecd66cf233, type: 3}
       propertyPath: m_fontSize
-      value: 36
+      value: 17.9
       objectReference: {fileID: 0}
     - target: {fileID: 8079088998880016367, guid: c18c44c622284b842ab292ecd66cf233, type: 3}
       propertyPath: m_Pivot.x
@@ -2253,7 +2214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7657122949817736258, guid: c18c44c622284b842ab292ecd66cf233, type: 3}
       propertyPath: m_fontSize
-      value: 36
+      value: 17.9
       objectReference: {fileID: 0}
     - target: {fileID: 8079088998880016367, guid: c18c44c622284b842ab292ecd66cf233, type: 3}
       propertyPath: m_Pivot.x

@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EnemyHealth : Health
 {
+    [Header("Has to have the EXACT same name as the loot table in the game manager")]
+    public string lootTableName;
     public override void OtherDamageLogic()
     {
     }
@@ -14,7 +16,7 @@ public class EnemyHealth : Health
 
     public void CallTable()
     {
-        GameObject loot = GameManager.Instance.lootTable.FindLootTable(GetComponent<EnemyBehavior>().lootTableName);
+        GameObject loot = GameManager.Instance.lootTable.FindLootTable(lootTableName);
         if (loot == null)
             return;
         GameObject lootObj = Instantiate(loot);

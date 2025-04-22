@@ -3,7 +3,14 @@ using UnityEngine;
 
 public class EnemyRanged : EnemyBehavior
 {
-    public float burstFireAmount;
+    public GameObject bullet;
+    public int burstFireAmount;
+    int bulletPoolIndex;
+
+    void Start()
+    {
+        bulletPoolIndex = ObjectPool.SharedInstance.GetObjectPoolNum(bullet);
+    }
     void FixedUpdate()
     {
         if (enemyMovement.player != null && Vector2.Distance(enemyMovement.player.position, transform.position) < rangeToAttack && !hasAttacked)
@@ -16,7 +23,7 @@ public class EnemyRanged : EnemyBehavior
 
     public void RangedAttack()
     {
-        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(0);
+        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
 
         if (bullet == null)
             return;

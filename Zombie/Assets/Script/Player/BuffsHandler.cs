@@ -116,6 +116,6 @@ public class BuffsHandler : MonoBehaviour
         movement.moveSpeedBuff = moveSpeedBuff / 100;
 
         health.regenAmount = regenBuff;
-        health.damageReduc = damageReducBuff;
+        health.damageReduc = damageReducBuff / 100;
     }
 }

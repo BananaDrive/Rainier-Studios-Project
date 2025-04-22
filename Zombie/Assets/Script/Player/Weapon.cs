@@ -106,7 +106,7 @@ public class Weapon : MonoBehaviour
 
     public IEnumerator ShootCD()
     {
-        yield return new WaitForSeconds(1 / (fireRate * fireRateBuff));
+        yield return new WaitForSeconds(1f / (fireRate * fireRateBuff * 2f));
         shootCooldown = false;
     }
 

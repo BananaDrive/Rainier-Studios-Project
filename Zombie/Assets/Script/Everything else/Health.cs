@@ -12,7 +12,12 @@ public abstract class Health : MonoBehaviour
 
     public abstract void HandleDeath();
     public abstract void OtherDamageLogic();
-    
+
+    public void Start()
+    {
+        damageReduc = 1;
+    }
+
 
     public void TakeDamage(float damage)
     {

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5362036708392070465}
   - component: {fileID: 2786928428061324114}
   - component: {fileID: 3320467673719802856}
+  - component: {fileID: 1111738854305531241}
   m_Layer: 7
   m_Name: Zombie Crawly
   m_TagString: Untagged
@@ -83,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.16216493, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -217,21 +218,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18c68873094e6f4f82dd872dbb525c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: 1
+  animator: {fileID: 1111738854305531241}
   enemyMovement: {fileID: 5362036708392070465}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  spr: {fileID: 7627851325256127879}
   damage: 5
   attackRate: 5
-  attackRange: 3
   rangeToAttack: 3
   canJump: 1
   canSprint: 0
   explodeOnDeath: 0
+  canInterrupt: 0
   hasAttacked: 0
   attackHitBox: {fileID: 6328183470331543896}
-  enemyAttackHitbox: {fileID: 869579751112212912}
   canPounce: 1
 --- !u!114 &3320467673719802856
 MonoBehaviour:
@@ -251,7 +252,30 @@ MonoBehaviour:
   damageReduc: 0
   maxHealth: 200
   currentHealth: 200
+  enemyBehavior: {fileID: 2786928428061324114}
   lootTableName: 
+--- !u!95 &1111738854305531241
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300085864175242042}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 104e9cfbdd68cf844b1f1683da529a0c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6328183470331543896
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,4 +359,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyBehavior: {fileID: 2786928428061324114}
-  hasHit: 0

@@ -5,7 +5,7 @@ public class OfficeManagerBoss : EnemyBehavior
 {
     public GameObject attackHitbox;
     public GameObject printer;
-    public SpriteRenderer spr;
+    public SpriteRenderer spr2;
 
     public float attackStartUp, hitboxDuration;
 
@@ -63,7 +63,7 @@ public class OfficeManagerBoss : EnemyBehavior
 
     public IEnumerator ThrowAttack(float throwPower)
     {
-        CoroutineHandler.Instance.StartCoroutine(enemyMovement.Stop(attackRate / 3));
+        enemyMovement.Stop();
         spr.color = Color.red;
         yield return new WaitForSeconds(attackStartUp);
         spr.color = Color.white;
@@ -80,7 +80,7 @@ public class OfficeManagerBoss : EnemyBehavior
 
     public IEnumerator MeleeAttack()
     {
-        CoroutineHandler.Instance.StartCoroutine(enemyMovement.Stop(attackRate / 3));
+        enemyMovement.Stop();
         spr.color = Color.red;
         yield return new WaitForSeconds(attackStartUp);
         spr.color = Color.white;
@@ -94,7 +94,7 @@ public class OfficeManagerBoss : EnemyBehavior
     public IEnumerator SlamAttack()
     {
         slamCD = true;
-        CoroutineHandler.Instance.StartCoroutine(enemyMovement.Stop(2.5f));
+        enemyMovement.Stop();
         spr.color = Color.blue;
         yield return new WaitForSeconds(attackStartUp * 4);
         spr.color = Color.white;

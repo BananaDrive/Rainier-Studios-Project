@@ -90,13 +90,12 @@ public class EnemyMovement : Movement
         hasWandered = false;
     }
 
-    public IEnumerator Stop(float time)
+    public void Stop()
     {
         moveDirection = 0f;
         canMove = false;
         rb.linearVelocityX = 0f;
-        yield return new WaitForSeconds(time);
-        Debug.Log("I can move!" + time);
-        canMove = true;
     }
+
+    public void Move() => canMove = true;
 }

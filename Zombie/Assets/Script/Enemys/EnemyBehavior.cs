@@ -3,8 +3,11 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
+    public Animator animator;
     public EnemyMovement enemyMovement;
     public LayerMask enemyLayer;
+    public SpriteRenderer spr;
+    Color color;
 
     [Header("Stats")]
     public float damage;
@@ -13,9 +16,10 @@ public class EnemyBehavior : MonoBehaviour
 
     [Header("Traits")]
     public bool canJump;
-    public bool canSprint, explodeOnDeath;
+    public bool canSprint, explodeOnDeath, canInterrupt;
 
     public bool hasAttacked;
+    internal bool interrupted;
 
     public void InitializeStats(float attackRate, float damage)
     {
@@ -45,5 +49,21 @@ public class EnemyBehavior : MonoBehaviour
                 collider.attachedRigidbody.AddForceX(distance / 2, ForceMode2D.Impulse);
             }
         }
+    }
+
+    public void StartAttack()
+    {
+        color = spr.color;
+        spr.color = Color.red;
+        interrupted = false;
+        hasAttacked = true;
+        enemyMovement.Stop();
+    }
+
+    public void EndAttack()
+    {
+        spr.color = color;
+        CoroutineHandler.Instance.StartCoroutine(AttackCD());
+        enemyMovement.Move();
     }
 }

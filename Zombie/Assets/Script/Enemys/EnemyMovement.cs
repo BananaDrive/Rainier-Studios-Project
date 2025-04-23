@@ -1,5 +1,4 @@
 using System.Collections;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class EnemyMovement : Movement
@@ -35,13 +34,13 @@ public class EnemyMovement : Movement
         moveDirection = 0;
         Gravity();
         Detection();
-        WanderAround();
+        WanderCheck();
         MovementHandle();
         JumpCheck();
         SpeedLimit();
     }
 
-    public void WanderAround()
+    public void WanderCheck()
     {
         if (player == null)
         {
@@ -91,12 +90,12 @@ public class EnemyMovement : Movement
         hasWandered = false;
     }
 
-    public IEnumerator Stop(float time)
+    public void Stop()
     {
         moveDirection = 0f;
         canMove = false;
         rb.linearVelocityX = 0f;
-        yield return new WaitForSeconds(time);
-        canMove = true;
     }
+
+    public void Move() => canMove = true;
 }

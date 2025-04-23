@@ -1,36 +1,29 @@
 using System.Collections;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public abstract class Health : MonoBehaviour
 {
-    public GameObject overlay;
     public AudioSource health;
     public AudioSource death;
     public AudioSource hurt;
-
-    public enum HealthType
-    {
-        player,
-        enemy,
-        breakable
-    }
-    public HealthType healthType;
+    public float damageReduc;
     public float maxHealth;
     public float currentHealth;
 
-    bool overlayCooldown;
-    
+    public abstract void HandleDeath();
+    public abstract void OtherDamageLogic();
+
+    public void Start()
+    {
+        damageReduc = 1;
+    }
+
 
     public void TakeDamage(float damage)
     {
-        if (overlay != null && !overlayCooldown)
-        {
-            overlayCooldown = true;
-            StartCoroutine(OverlayDisplay());
-            hurt.Play();
-        }  
-            
-        currentHealth -= damage;
+        currentHealth -= damage / damageReduc;
+
+        OtherDamageLogic();
 
         if (currentHealth <= 0)
             HandleDeath();
@@ -38,45 +31,6 @@ public class Health : MonoBehaviour
 
     public void AddHealth(float addHealth)
     {
-        currentHealth += addHealth;
-
-        if (currentHealth > maxHealth)
-            currentHealth = maxHealth;
-    }
-
-    public void HandleDeath()
-    {
-        if (healthType == HealthType.player)
-        {
-            death.Play();
-
-            GameManager.Instance.GameOver();
-        }
-        else if (healthType == HealthType.enemy)
-        {
-            CallTable();
-            gameObject.SetActive(false);
-            currentHealth = maxHealth;
-        }
-        else
-            gameObject.SetActive(false);
-    }
-
-    public void CallTable()
-    {
-
-        GameObject loot = GameManager.Instance.lootTable.FindLootTable(GetComponent<EnemyBehavior>().lootTableName);
-        if (loot == null)
-            return;
-        GameObject lootObj = Instantiate(loot);
-        lootObj.transform.position = transform.position;
-    }
-
-    public IEnumerator OverlayDisplay()
-    {
-        overlay.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        overlayCooldown = false;
-        overlay.SetActive(false);
+        currentHealth = Mathf.Clamp(currentHealth += addHealth, 0f, maxHealth);
     }
 }

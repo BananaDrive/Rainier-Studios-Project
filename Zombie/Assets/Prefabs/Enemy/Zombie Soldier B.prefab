@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6037824024291277827}
   - component: {fileID: 8671743620264012218}
   - component: {fileID: 3716370110731228153}
-  - component: {fileID: 5270665261085626310}
   - component: {fileID: 1382145871983844255}
   - component: {fileID: 2254845974781198439}
+  - component: {fileID: 278543447166062057}
+  - component: {fileID: 247907701628730816}
   m_Layer: 7
   m_Name: Zombie Soldier B
   m_TagString: Untagged
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.53792745, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -156,22 +157,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
---- !u!114 &5270665261085626310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5642173446215676963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4749212aab440ad44aeabdb710018660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overlay: {fileID: 0}
-  healthType: 1
-  maxHealth: 100
-  currentHealth: 100
 --- !u!114 &1382145871983844255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,7 +179,7 @@ MonoBehaviour:
   acceleration: 7
   deceleration: 30
   jumpPower: 0
-  groundDistance: 0
+  groundDistance: 0.1
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1
@@ -206,6 +191,10 @@ MonoBehaviour:
     m_Bits: 64
   distanceToStop: 5
   detectRadius: 10
+  wanderSpeedMulti: 0
+  wanderDirection: 0
+  maxWanderSpeedMulti: 0
+  wanderRate: 0
   canWander: 0
 --- !u!114 &2254845974781198439
 MonoBehaviour:
@@ -219,18 +208,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 693c9b37f84f0b647ac3717f63622eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: 4
+  animator: {fileID: 247907701628730816}
   enemyMovement: {fileID: 1382145871983844255}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  spr: {fileID: 6037824024291277827}
   damage: 3
   attackRate: 2
-  speed: 1
-  attackRange: 5
   rangeToAttack: 5
   canJump: 0
   canSprint: 0
   explodeOnDeath: 0
+  canInterrupt: 1
   hasAttacked: 0
   molotov: {fileID: 7405309601997203259, guid: c97f19747ddeab744abdb8cb8da5e1b4, type: 3}
+--- !u!114 &278543447166062057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5642173446215676963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ac115ee4bde694ab66ababb9a510d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  death: {fileID: 0}
+  hurt: {fileID: 0}
+  damageReduc: 0
+  maxHealth: 200
+  currentHealth: 200
+  enemyBehavior: {fileID: 2254845974781198439}
+  lootTableName: 
+--- !u!95 &247907701628730816
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5642173446215676963}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c2ae41b8a85e0e14494b8d6ea37ec728, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

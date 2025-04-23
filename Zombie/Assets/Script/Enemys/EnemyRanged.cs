@@ -3,20 +3,32 @@ using UnityEngine;
 
 public class EnemyRanged : EnemyBehavior
 {
-    public float burstFireAmount;
+    public GameObject bullet;
+    public int burstFireAmount;
+    int bulletPoolIndex;
+
+    void Start()
+    {
+        bulletPoolIndex = ObjectPool.SharedInstance.GetObjectPoolNum(bullet);
+    }
     void FixedUpdate()
     {
-        if (enemyMovement.player != null && Vector2.Distance(enemyMovement.player.position, transform.position) < rangeToAttack && !hasAttacked)
+        animator.SetInteger("State", 0);
+
+        if (enemyMovement.moveDirection != 0)
+            animator.SetInteger("State", 1);
+        
+        if (enemyMovement.player != null)
         {
-            hasAttacked = true;
-            StartCoroutine(BurstFire());
+            if (Vector2.Distance(enemyMovement.player.position, transform.position) < rangeToAttack && !hasAttacked)
+                animator.SetInteger("State", 2);
         }
         EnableClip<EnemyRanged>();
     }
-
-    public void RangedAttack()
+            
+    public void Shoot()
     {
-        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(0);
+        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
 
         if (bullet == null)
             return;
@@ -34,14 +46,13 @@ public class EnemyRanged : EnemyBehavior
 
     public IEnumerator BurstFire()
     {
-        enemyMovement.canMove = false;
-        enemyMovement.rb.linearVelocityX = 0f;
-        for (int i = 0; i < burstFireAmount; i++)
+        if (!interrupted)
         {
-            RangedAttack();
-            yield return new WaitForSeconds(attackRate / 6);
+            for (int i = 0; i < burstFireAmount; i++)
+            {
+                Shoot();
+                yield return new WaitForSeconds(attackRate / 6);
+            }
         }
-        enemyMovement.canMove = true;
-        StartCoroutine(AttackCD());
     }
 }

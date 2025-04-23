@@ -11,7 +11,7 @@ public class BuffsHandler : MonoBehaviour
     
     [Header("Buffs")]
     public float damageBuff;
-    public float fireRateBuff, clipSizeBuff, bulletSpeedBuff, moveSpeedBuff, accuracyBuff, regenBuff;
+    public float fireRateBuff, clipSizeBuff, bulletSpeedBuff, moveSpeedBuff, accuracyBuff, regenBuff, damageReducBuff;
 
     [Header("Enhancers")]
     public float damageEnhance;
@@ -53,6 +53,7 @@ public class BuffsHandler : MonoBehaviour
         moveSpeedBuff = 100;
         accuracyBuff = 100;
         bulletSpeedBuff = 100;
+        damageReducBuff = 100;
         regenBuff = 0;
         
         foreach (ItemStats activeBuffs in buffList)
@@ -76,6 +77,9 @@ public class BuffsHandler : MonoBehaviour
                 break;
                 case ItemType.regen:
                     regenBuff += activeBuffs.potency;
+                break;
+                case ItemType.damageReduc:
+                    damageReducBuff += activeBuffs.potency;
                 break;
             }
         }
@@ -112,5 +116,6 @@ public class BuffsHandler : MonoBehaviour
         movement.moveSpeedBuff = moveSpeedBuff / 100;
 
         health.regenAmount = regenBuff;
+        health.damageReduc = damageReducBuff / 100;
     }
 }

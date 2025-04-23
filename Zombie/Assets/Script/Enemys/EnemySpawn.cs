@@ -48,7 +48,7 @@ public class EnemySpawn : MonoBehaviour
         temp.SetActive(true);
 
         EnemyBehavior enemyBehavior = temp.GetComponent<EnemyBehavior>();
-        enemyBehavior.InitializeStats(UnityEngine.Random.Range(3f, 6f), 0.5f, UnityEngine.Random.Range(5f, 8f));
+        enemyBehavior.InitializeStats(UnityEngine.Random.Range(3f, 6f), UnityEngine.Random.Range(5f, 8f));
         enemyBehavior.hasAttacked = false;
         
         temp.transform.position = zombieSpawnArea.position;

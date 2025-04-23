@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using JetBrains.Annotations;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class LootTable : MonoBehaviour
@@ -29,7 +27,7 @@ public class LootTable : MonoBehaviour
     {
         public GameObject tableObj;
         public float objWeight;
-        public float totalWeight;
+        internal float totalWeight;
     }
 
     public List<LootTables> lootTables;

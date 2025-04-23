@@ -6,6 +6,8 @@ public class EnemyBehavior : MonoBehaviour
     public Animator animator;
     public EnemyMovement enemyMovement;
     public LayerMask enemyLayer;
+    public SpriteRenderer spr;
+    Color color;
 
     [Header("Stats")]
     public float damage;
@@ -51,12 +53,16 @@ public class EnemyBehavior : MonoBehaviour
 
     public void StartAttack()
     {
+        color = spr.color;
+        spr.color = Color.red;
+        interrupted = false;
         hasAttacked = true;
         enemyMovement.Stop();
     }
 
     public void EndAttack()
     {
+        spr.color = color;
         CoroutineHandler.Instance.StartCoroutine(AttackCD());
         enemyMovement.Move();
     }

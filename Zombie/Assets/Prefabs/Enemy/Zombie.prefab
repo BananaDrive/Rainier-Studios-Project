@@ -474,6 +474,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  spr: {fileID: 4450570444474460765}
   damage: 5
   attackRate: 0
   rangeToAttack: 0.51
@@ -483,7 +484,6 @@ MonoBehaviour:
   canInterrupt: 0
   hasAttacked: 0
   attackHitBox: {fileID: 5329007421078522183}
-  enemyAttackHitbox: {fileID: 3638005003921271216}
   canPounce: 0
 --- !u!114 &484689764738824749
 MonoBehaviour:

@@ -8,7 +8,7 @@ public class EnemyHealth : Health
 
     public override void OtherDamageLogic()
     {
-        if (enemyBehavior.canInterrupt && enemyBehavior.animator.GetInteger("State") == 3)
+        if (enemyBehavior.canInterrupt)
         {
             enemyBehavior.interrupted = true;
         }

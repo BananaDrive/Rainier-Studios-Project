@@ -4,7 +4,7 @@ using UnityEngine;
 public class EnemyMelee : EnemyBehavior
 {
     public GameObject attackHitBox;
-    public EnemyAttackHitbox enemyAttackHitbox;
+    Vector2 lungeAngle;
 
     public bool canPounce;
     bool isAttacking;
@@ -19,7 +19,10 @@ public class EnemyMelee : EnemyBehavior
         if (enemyMovement.player != null)
         {
             if (Vector2.Distance(enemyMovement.player.position, transform.position) < rangeToAttack && !hasAttacked)
+            {
                 animator.SetInteger("State", 2);
+                lungeAngle = SetAngle();
+            }
         }
 
         if (!hasAttacked)
@@ -28,8 +31,8 @@ public class EnemyMelee : EnemyBehavior
 
     public void Pounce()
     {
-        if (canPounce)
-            enemyMovement.rb.AddForce(900f * SetAngle(), ForceMode2D.Force);
+        if (canPounce && !interrupted)
+            enemyMovement.rb.AddForce(900f * lungeAngle, ForceMode2D.Force);
     }
     public void EnableHitbox() => attackHitBox.SetActive(true);
     public void DisableHitbox() => attackHitBox.SetActive(false);

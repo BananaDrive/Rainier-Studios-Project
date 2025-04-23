@@ -3502,6 +3502,63 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1001 &1079278730
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 428861404853458720, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
+      propertyPath: m_Name
+      value: Zombie Soldier A
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
 --- !u!1 &1255365006
 GameObject:
   m_ObjectHideFlags: 0
@@ -6751,6 +6808,63 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1989695403
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5642173446215676963, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
+      propertyPath: m_Name
+      value: Zombie Soldier B
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
 --- !u!1 &2030038162
 GameObject:
   m_ObjectHideFlags: 0
@@ -7403,18 +7517,6 @@ PrefabInstance:
       propertyPath: attackRange
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 3436430349203109555, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3436430349203109555, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3436430349203109555, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_Color.r
-      value: 0.06607056
-      objectReference: {fileID: 0}
     - target: {fileID: 8164287992251503653, guid: aab25800b908c69498d8308560d4ad44, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.44
@@ -7645,6 +7747,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  spr: {fileID: 4450570444565428737}
   damage: 5
   attackRate: 4
   rangeToAttack: 20
@@ -7655,7 +7758,7 @@ MonoBehaviour:
   hasAttacked: 0
   attackHitbox: {fileID: 5329007421167917339}
   printer: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
-  spr: {fileID: 4450570444565428737}
+  spr2: {fileID: 0}
   attackStartUp: 0.5
   hitboxDuration: 0.125
   slamCDLength: 15
@@ -7691,3 +7794,5 @@ SceneRoots:
   - {fileID: 1957304388}
   - {fileID: 2070405006945268912}
   - {fileID: 98436399}
+  - {fileID: 1989695403}
+  - {fileID: 1079278730}

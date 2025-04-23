@@ -5,7 +5,7 @@ public class OfficeManagerBoss : EnemyBehavior
 {
     public GameObject attackHitbox;
     public GameObject printer;
-    public SpriteRenderer spr;
+    public SpriteRenderer spr2;
 
     public float attackStartUp, hitboxDuration;
 

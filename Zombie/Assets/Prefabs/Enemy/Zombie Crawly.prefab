@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.16216493, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -223,6 +223,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  spr: {fileID: 7627851325256127879}
   damage: 5
   attackRate: 5
   rangeToAttack: 3
@@ -232,7 +233,6 @@ MonoBehaviour:
   canInterrupt: 0
   hasAttacked: 0
   attackHitBox: {fileID: 6328183470331543896}
-  enemyAttackHitbox: {fileID: 869579751112212912}
   canPounce: 1
 --- !u!114 &3320467673719802856
 MonoBehaviour:

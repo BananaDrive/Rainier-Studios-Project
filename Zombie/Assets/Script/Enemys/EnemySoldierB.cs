@@ -41,8 +41,9 @@ public class EnemySoldierB : EnemyBehavior
         _molotov.layerToHit = enemyMovement.playerLayer;
 
         StartCoroutine(_molotov.Despawn());
+        throwDirection.y += 0.75f;
         molotovObj.GetComponent<Transform>().SetPositionAndRotation(transform.position, transform.rotation);
-        molotovObj.GetComponent<Rigidbody2D>().AddForce(135f * throwPower * throwDirection, ForceMode2D.Force);
+        molotovObj.GetComponent<Rigidbody2D>().AddForce(55f * throwPower * throwDirection, ForceMode2D.Force);
     }
 
     public Vector2 SetAngle()

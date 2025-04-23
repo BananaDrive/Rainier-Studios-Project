@@ -2494,7 +2494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8203910326083383789, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: lootTableName
@@ -3666,7 +3666,7 @@ Transform:
   m_GameObject: {fileID: 1255365006}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.87, y: 3.49, z: -10}
+  m_LocalPosition: {x: -18.87, y: -2.93, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4385,7 +4385,7 @@ Transform:
   m_GameObject: {fileID: 1720813832}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.87, y: 3.49, z: -10}
+  m_LocalPosition: {x: -18.87, y: -2.93, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4692,7 +4692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 296464217773923605, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.49
+      value: -2.93
       objectReference: {fileID: 0}
     - target: {fileID: 296464217773923605, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7025,6 +7025,7 @@ MonoBehaviour:
   damageReduc: 0
   maxHealth: 200
   currentHealth: 200
+  enemyBehavior: {fileID: 0}
   lootTableName: 3
 --- !u!70 &792959711113396204
 CapsuleCollider2D:
@@ -7358,7 +7359,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &5125834076888223783 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
@@ -7396,31 +7397,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 561915107828566534, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: canWander
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 561915107828566534, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_Enabled
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 561915107828566534, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: detectRadius
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 561915107828566534, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: distanceToStop
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2819984677176277959, guid: aab25800b908c69498d8308560d4ad44, type: 3}
       propertyPath: attackRange
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2819984677176277959, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: rangeToAttack
-      value: 3
+    - target: {fileID: 3436430349203109555, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436430349203109555, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436430349203109555, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+      propertyPath: m_Color.r
+      value: 0.06607056
       objectReference: {fileID: 0}
     - target: {fileID: 8164287992251503653, guid: aab25800b908c69498d8308560d4ad44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7478,6 +7471,10 @@ PrefabInstance:
     - target: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
       propertyPath: m_Name
       value: Zombie Crawly
+      objectReference: {fileID: 0}
+    - target: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4061426184721876345, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7643,6 +7640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 335ecd5928b5afd43aeb93c3ef346766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   enemyMovement: {fileID: 1644178121906960070}
   enemyLayer:
     serializedVersion: 2
@@ -7653,6 +7651,7 @@ MonoBehaviour:
   canJump: 0
   canSprint: 0
   explodeOnDeath: 0
+  canInterrupt: 0
   hasAttacked: 0
   attackHitbox: {fileID: 5329007421167917339}
   printer: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}

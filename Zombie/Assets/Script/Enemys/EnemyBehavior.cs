@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
+    public Animator animator;
     public EnemyMovement enemyMovement;
     public LayerMask enemyLayer;
 
@@ -13,9 +14,10 @@ public class EnemyBehavior : MonoBehaviour
 
     [Header("Traits")]
     public bool canJump;
-    public bool canSprint, explodeOnDeath;
+    public bool canSprint, explodeOnDeath, canInterrupt;
 
     public bool hasAttacked;
+    internal bool interrupted;
 
     public void InitializeStats(float attackRate, float damage)
     {
@@ -45,5 +47,17 @@ public class EnemyBehavior : MonoBehaviour
                 collider.attachedRigidbody.AddForceX(distance / 2, ForceMode2D.Impulse);
             }
         }
+    }
+
+    public void StartAttack()
+    {
+        hasAttacked = true;
+        enemyMovement.Stop();
+    }
+
+    public void EndAttack()
+    {
+        CoroutineHandler.Instance.StartCoroutine(AttackCD());
+        enemyMovement.Move();
     }
 }

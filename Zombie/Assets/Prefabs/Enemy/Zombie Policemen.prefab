@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 561915107828566534}
   - component: {fileID: 2819984677176277959}
   - component: {fileID: 5787172711028390073}
+  - component: {fileID: 151590895543552110}
   m_Layer: 7
   m_Name: Zombie Policemen
   m_TagString: Untagged
@@ -188,13 +189,13 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
-  distanceToStop: 10
-  detectRadius: 10
+  distanceToStop: 5
+  detectRadius: 8
   wanderSpeedMulti: 0
   wanderDirection: 0
   maxWanderSpeedMulti: 0.6
   wanderRate: 0
-  canWander: 1
+  canWander: 0
 --- !u!114 &2819984677176277959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,19 +208,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aa49c18aaed1e4489415d3d2f7e56ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: 2
+  animator: {fileID: 151590895543552110}
   enemyMovement: {fileID: 561915107828566534}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  lootTableName: 
   damage: 10
-  attackRate: 1
-  attackRange: 10
-  rangeToAttack: 10
+  attackRate: 3
+  rangeToAttack: 5
   canJump: 0
   canSprint: 0
   explodeOnDeath: 0
+  canInterrupt: 1
   hasAttacked: 0
   bullet: {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
   burstFireAmount: 1
@@ -241,3 +241,27 @@ MonoBehaviour:
   damageReduc: 0
   maxHealth: 300
   currentHealth: 300
+  enemyBehavior: {fileID: 2819984677176277959}
+  lootTableName: 
+--- !u!95 &151590895543552110
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428861404853458720}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1f0d9c5e340cdd240855dee385b07a12, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

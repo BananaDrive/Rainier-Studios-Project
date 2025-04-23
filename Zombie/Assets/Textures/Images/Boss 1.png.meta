@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6995c6ccd700be8438ae8796a9f39e2e
+guid: a1f355fe66887884cac88ec3e8a32074
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1023746334283481644
-    second: Adrenaline_0
+      213: -2336039528399532061
+    second: Boss 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Adrenaline_0
+      name: Boss 1_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 6
-        width: 508
-        height: 506
+        x: 19
+        y: 0
+        width: 932
+        height: 1271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c224313fdd3153e00800000000000000
-      internalID: 1023746334283481644
+      spriteID: 3ef89700d68b49fd0800000000000000
+      internalID: -2336039528399532061
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Adrenaline_0: 1023746334283481644
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

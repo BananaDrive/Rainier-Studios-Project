@@ -2443,8 +2443,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8056102172973175273, guid: b020c87128f6c0848b391845a86fca57, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 104e9cfbdd68cf844b1f1683da529a0c, type: 2}
     - target: {fileID: 8203910326083383789, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: lootTableName
       value: 3
@@ -4235,6 +4239,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29ab0d2bddf39904ea6c057d886f9e96, type: 3}
+--- !u!61 &1709921461 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6513123515107871197, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+  m_PrefabInstance: {fileID: 1946897423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1720813832
 GameObject:
   m_ObjectHideFlags: 0
@@ -4771,6 +4780,10 @@ PrefabInstance:
       propertyPath: overlay
       value: 
       objectReference: {fileID: 535004452}
+    - target: {fileID: 6073820443107811440, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: _collider
+      value: 
+      objectReference: {fileID: 1709921461}
     - target: {fileID: 6073820443107811440, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: moveSpeed
       value: 4

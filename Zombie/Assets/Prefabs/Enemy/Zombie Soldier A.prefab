@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8164287992251503653}
   - component: {fileID: 3436430349203109555}
   - component: {fileID: 670258356885377820}
-  - component: {fileID: 1099012060391582736}
+  - component: {fileID: 2406276306087578982}
   - component: {fileID: 561915107828566534}
   - component: {fileID: 2819984677176277959}
   - component: {fileID: 4389842551940665543}
@@ -120,8 +120,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &1099012060391582736
-CapsuleCollider2D:
+--- !u!61 &2406276306087578982
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -155,8 +155,17 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.9, y: 1}
+  m_EdgeRadius: 0
 --- !u!114 &561915107828566534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b371dbeee7b2a45b4fbd0e15db7181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collider: {fileID: 1099012060391582736}
+  _collider: {fileID: 2406276306087578982}
   sprite: {fileID: 3436430349203109555}
   rb: {fileID: 670258356885377820}
   ground:
@@ -184,7 +193,6 @@ MonoBehaviour:
   moveSpeedBuff: 0
   canMove: 1
   hasJumped: 0
-  enemyBehavior: {fileID: 2819984677176277959}
   player: {fileID: 0}
   playerLayer:
     serializedVersion: 2

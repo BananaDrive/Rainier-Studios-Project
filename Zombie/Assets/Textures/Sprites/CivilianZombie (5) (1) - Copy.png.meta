@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CivilianZombie (5) (1) - Copy_0: 2054809868508468711
+      CivilianZombie (5) (1) - Copy_1: 4539391661301727691
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

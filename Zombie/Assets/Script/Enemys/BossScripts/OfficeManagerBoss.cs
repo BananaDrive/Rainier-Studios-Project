@@ -1,25 +1,22 @@
 using System.Collections;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class OfficeManagerBoss : EnemyBehavior
 {
-    public GameObject attackHitbox;
     public GameObject printer;
-    public SpriteRenderer spr2;
 
-    public float attackStartUp, hitboxDuration;
+    public float rangedCD;
+    float throwPower;
+    bool inRangedCD;
 
-    public float slamCDLength;
-    float slamCDDuration;
-    bool slamCD;
-
-    public void Start()
-    {
-        slamCD = true;
-    }
 
     public void FixedUpdate()
-    {    
+    {
+        animator.SetInteger("State", 0);
+
+        if (enemyMovement.moveDirection != 0)
+            animator.SetInteger("State", 1);
         AttackCheck();
     }
 
@@ -27,81 +24,29 @@ public class OfficeManagerBoss : EnemyBehavior
     {
         if (enemyMovement.player != null)
         {
-            float distance = Vector2.Distance(transform.position, enemyMovement.player.position);
             if (!hasAttacked)
             {
-                hasAttacked = true;
-                if (!slamCD)
+                if (Vector2.Distance(transform.position, enemyMovement.player.position) <= enemyMovement.distanceToStop)
+                    animator.SetInteger("State", 2);
+                else if (!inRangedCD)
                 {
-                    CoroutineHandler.Instance.StartCoroutine(SlamAttack());
-                    return;
-                }
-                if (distance > enemyMovement.distanceToStop)
-                {
-                    CoroutineHandler.Instance.StartCoroutine(ThrowAttack(distance * 0.9f));
-                }
-                else
-                {
-                    CoroutineHandler.Instance.StartCoroutine(MeleeAttack());
+                    throwPower = 4.5f + Vector2.Distance(transform.position, enemyMovement.player.position) / 3.4f;
+                    animator.SetInteger("State", 3);
                 }
             }
-
-            if (slamCD)
-                Cooldown();
         }
     }
 
-    public void Cooldown()
+    public void ThrowAttack()
     {
-        slamCDDuration += Time.deltaTime;
-        if (slamCDDuration >= slamCDLength)
-        {
-            slamCDDuration = 0;
-            slamCD = false;
-        } 
-    }
-
-    public IEnumerator ThrowAttack(float throwPower)
-    {
-        enemyMovement.Stop();
-        spr.color = Color.red;
-        yield return new WaitForSeconds(attackStartUp);
-        spr.color = Color.white;
-
+        inRangedCD = true;
         GameObject thrownObj = Instantiate(printer);
         Vector2 throwDirection = (enemyMovement.player.position - transform.position).normalized;
-        throwDirection.y += 1f / Mathf.Clamp(throwPower, 1f, 10f);
+        throwDirection.y += 0.75f;
         thrownObj.transform.position = transform.position;
-        thrownObj.GetComponent<Rigidbody2D>().AddForce(110f * throwPower * throwDirection, ForceMode2D.Force);
-
-        yield return new WaitForSeconds(attackRate);
-        hasAttacked = false;
+        thrownObj.GetComponent<Rigidbody2D>().AddForce(55f * throwPower * throwDirection, ForceMode2D.Force);
+        Invoke(nameof(RangedCD), rangedCD);
     }
 
-    public IEnumerator MeleeAttack()
-    {
-        enemyMovement.Stop();
-        spr.color = Color.red;
-        yield return new WaitForSeconds(attackStartUp);
-        spr.color = Color.white;
-        attackHitbox.SetActive(true);
-        yield return new WaitForSeconds(hitboxDuration);
-        attackHitbox.SetActive(false);
-        yield return new WaitForSeconds(attackRate);
-        hasAttacked = false;
-    }
-
-    public IEnumerator SlamAttack()
-    {
-        slamCD = true;
-        enemyMovement.Stop();
-        spr.color = Color.blue;
-        yield return new WaitForSeconds(attackStartUp * 4);
-        spr.color = Color.white;
-        attackHitbox.SetActive(true);
-        yield return new WaitForSeconds(hitboxDuration);
-        attackHitbox.SetActive(false);
-        yield return new WaitForSeconds(attackRate);
-        hasAttacked = false;
-    }
+    void RangedCD() => inRangedCD = false;
 }

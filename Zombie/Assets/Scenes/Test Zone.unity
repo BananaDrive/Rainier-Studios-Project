@@ -2608,7 +2608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8203910326083383789, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: lootTableName
@@ -3627,6 +3627,10 @@ PrefabInstance:
     - target: {fileID: 428861404853458720, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
       propertyPath: m_Name
       value: Zombie Soldier A
+      objectReference: {fileID: 0}
+    - target: {fileID: 428861404853458720, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6088,6 +6092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie Soldier B
       objectReference: {fileID: 0}
+    - target: {fileID: 5642173446215676963, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10
@@ -6407,7 +6415,7 @@ MonoBehaviour:
   damageReduc: 0
   maxHealth: 200
   currentHealth: 200
-  enemyBehavior: {fileID: 0}
+  enemyBehavior: {fileID: 8559366492628832981}
   lootTableName: 3
 --- !u!70 &792959711113396204
 CapsuleCollider2D:
@@ -6551,7 +6559,7 @@ Transform:
   m_GameObject: {fileID: 5125834075669464875}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.98, y: -2.48, z: 0}
+  m_LocalPosition: {x: 3.16, y: -2.48, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6735,13 +6743,14 @@ GameObject:
   - component: {fileID: 1644178121906960070}
   - component: {fileID: 484689764904757873}
   - component: {fileID: 8559366492628832981}
+  - component: {fileID: 8559366492628832982}
   m_Layer: 7
   m_Name: Boss Zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &5125834076888223783 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
@@ -7010,26 +7019,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 335ecd5928b5afd43aeb93c3ef346766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 8559366492628832982}
   enemyMovement: {fileID: 1644178121906960070}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
   spr: {fileID: 4450570444565428737}
   damage: 5
-  attackRate: 4
+  attackRate: 1
   rangeToAttack: 20
   canJump: 0
   canSprint: 0
   explodeOnDeath: 0
   canInterrupt: 0
   hasAttacked: 0
-  attackHitbox: {fileID: 5329007421167917339}
   printer: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
-  spr2: {fileID: 0}
-  attackStartUp: 0.5
-  hitboxDuration: 0.125
-  slamCDLength: 15
+  rangedCD: 3
+--- !u!95 &8559366492628832982
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125834075669464875}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f881b9f7916efe24c80592670630a1fa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

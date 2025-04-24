@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Adrenaline_0: 1023746334283481644
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

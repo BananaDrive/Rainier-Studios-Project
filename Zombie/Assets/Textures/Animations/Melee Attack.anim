@@ -59,13 +59,6 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.5833333
-    functionName: Pounce
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.5833333
     functionName: EnableHitbox
     data: 
     objectReferenceParameter: {fileID: 0}

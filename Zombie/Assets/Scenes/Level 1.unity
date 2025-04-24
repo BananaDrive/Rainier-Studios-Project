@@ -31140,13 +31140,11 @@ MonoBehaviour:
   - lootTableObjects:
     - tableObj: {fileID: 0}
       objWeight: 10
-      totalWeight: 0
     tableMaxWeight: 1000
     tableName: Civilian Zombie
   - lootTableObjects:
     - tableObj: {fileID: 0}
       objWeight: 10
-      totalWeight: 0
     tableMaxWeight: 1000
     tableName: Crawler Zombie
 --- !u!1001 &1755508324998394028
@@ -31223,9 +31221,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 792959710959513520, guid: b020c87128f6c0848b391845a86fca57, type: 3}
+      propertyPath: m_Size.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 792959710959513520, guid: b020c87128f6c0848b391845a86fca57, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070405007123260652, guid: b020c87128f6c0848b391845a86fca57, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2070405007123260652, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2070405007123260652, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31233,7 +31243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2070405007123260652, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -2.648
       objectReference: {fileID: 0}
     - target: {fileID: 2070405007123260652, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_LocalPosition.z
@@ -31267,6 +31277,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4450570444474460765, guid: b020c87128f6c0848b391845a86fca57, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450570444474460765, guid: b020c87128f6c0848b391845a86fca57, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8820201289743977399, guid: d6ade0190083b6d43b974540b06cf9d5, type: 3}
     - target: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_Name
       value: Zombie
@@ -31279,6 +31297,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 8056102172973175273, guid: b020c87128f6c0848b391845a86fca57, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e1cd733ff2795974da9330a0586ecca6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rage Potion_0: -1485686261417634799
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

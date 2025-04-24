@@ -4,7 +4,6 @@ using UnityEngine;
 public class EnemyMovement : Movement
 {
     [Header("Enemy Stuff")]
-    public EnemyBehavior enemyBehavior;
     public Transform player;
 
     [Header("Detect Config")]

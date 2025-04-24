@@ -106,10 +106,10 @@ TextureImporter:
       name: CivilianZombie (7) - Copy_0
       rect:
         serializedVersion: 2
-        x: 13
+        x: 0
         y: 0
-        width: 34
-        height: 78
+        width: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,10 +128,10 @@ TextureImporter:
       name: CivilianZombie (7) - Copy_1
       rect:
         serializedVersion: 2
-        x: 77
+        x: 64
         y: 0
-        width: 34
-        height: 77
+        width: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9587b6c11d5131e48a631f2a8468cead
     internalID: 0
     vertices: []
     indices: 

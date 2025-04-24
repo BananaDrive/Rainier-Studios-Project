@@ -22,6 +22,12 @@ public class EnemySpawn : MonoBehaviour
     public bool hasSpawned;
     public float totalSpawnWeight;
 
+    void OnEnable()
+    {
+        currentSpawned = 0f;
+        hasSpawned = false;
+    }
+
     void Start()
     {
         foreach (ZombieSpawn zombieSpawn in zombies)
@@ -37,6 +43,11 @@ public class EnemySpawn : MonoBehaviour
         {
             hasSpawned = true;
             StartCoroutine(SpawnEnemy());
+        }
+
+        if (currentSpawned >= spawnMax)
+        {
+            gameObject.SetActive(false);
         }
     }
 
@@ -58,6 +69,7 @@ public class EnemySpawn : MonoBehaviour
 
     public int EnemyToSpawn()
     {
+        currentSpawned++;
         float temp = UnityEngine.Random.Range(0, totalSpawnWeight);
         for (int i = 0; i < zombies.Count - 1; i++)
         {

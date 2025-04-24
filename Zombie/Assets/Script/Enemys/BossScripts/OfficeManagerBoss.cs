@@ -1,14 +1,15 @@
-using System.Collections;
-using Unity.Mathematics;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class OfficeManagerBoss : EnemyBehavior
 {
+    public GameObject attackHitBox;
     public GameObject printer;
+    public Transform printerSpawns, zombieSpawns;
 
-    public float rangedCD;
+    public float rangedCD, slamCD, summonCD;
+    bool inRangedCD, inSlamCD, inSummonCD;
     float throwPower;
-    bool inRangedCD;
 
 
     public void FixedUpdate()
@@ -26,6 +27,16 @@ public class OfficeManagerBoss : EnemyBehavior
         {
             if (!hasAttacked)
             {
+                if (!inSummonCD)
+                {
+                    animator.SetInteger("State", 5);
+                    return;
+                }
+                if (!inSlamCD)
+                {
+                    animator.SetInteger("State", 4);
+                    return;
+                }
                 if (Vector2.Distance(transform.position, enemyMovement.player.position) <= enemyMovement.distanceToStop)
                     animator.SetInteger("State", 2);
                 else if (!inRangedCD)
@@ -48,5 +59,31 @@ public class OfficeManagerBoss : EnemyBehavior
         Invoke(nameof(RangedCD), rangedCD);
     }
 
+    public void SlamAttack()
+    {
+        inSlamCD = true;
+        for (int i = 0; i < printerSpawns.childCount; i++)
+        {
+            GameObject printerObj = Instantiate(printer);
+            printerObj.transform.position = printerSpawns.GetChild(i).position;
+        }
+        Invoke(nameof(SlamCD), slamCD);
+    }
+
+    public void SpawnZombies()
+    {
+        inSummonCD = true;
+        for (int i = 0; i < zombieSpawns.childCount; i++)
+        {
+            zombieSpawns.GetChild(i).gameObject.SetActive(true);
+        }
+        Invoke(nameof(SummonCD), summonCD);
+    }
+
     void RangedCD() => inRangedCD = false;
+    void SlamCD() => inSlamCD = false;
+    void SummonCD() => inSummonCD = false;
+
+    public void EnableHitbox() => attackHitBox.SetActive(true);
+    public void DisableHitbox() => attackHitBox.SetActive(false);
 }

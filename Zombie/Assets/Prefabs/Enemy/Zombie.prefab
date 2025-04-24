@@ -445,7 +445,6 @@ MonoBehaviour:
   moveSpeedBuff: 0
   canMove: 1
   hasJumped: 0
-  enemyBehavior: {fileID: 8203910326083383789}
   player: {fileID: 0}
   playerLayer:
     serializedVersion: 2
@@ -544,7 +543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7570949497901460733
 Transform:
   m_ObjectHideFlags: 0

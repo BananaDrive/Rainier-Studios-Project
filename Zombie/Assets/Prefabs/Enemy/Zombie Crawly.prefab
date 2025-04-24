@@ -165,7 +165,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &5362036708392070465
 MonoBehaviour:
@@ -194,7 +194,6 @@ MonoBehaviour:
   moveSpeedBuff: 0
   canMove: 1
   hasJumped: 0
-  enemyBehavior: {fileID: 2786928428061324114}
   player: {fileID: 0}
   playerLayer:
     serializedVersion: 2

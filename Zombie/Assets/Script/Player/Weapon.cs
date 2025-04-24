@@ -47,6 +47,7 @@ public class Weapon : MonoBehaviour
                         ProjectileShoot();
                     if (clipAmount <= 0)
                         break;
+                    gun.Play();
                 }
                 StartCoroutine(ShootCD());
             }
@@ -81,7 +82,7 @@ public class Weapon : MonoBehaviour
 
     public void RaycastShoot()
     {
-        gun.Play();
+        
         int pierceAmount = allowPiercing ? 30 : 1;
         Vector2 spread = DetermineSpread();
         RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, spread, 30f, enemyLayer);
@@ -92,6 +93,7 @@ public class Weapon : MonoBehaviour
             {
                 if (hit[i].transform.TryGetComponent(out Health hitHealth))
                     hitHealth.TakeDamage(damage * damageBuff);
+              
             }
         }
         StartCoroutine(ShootCD());

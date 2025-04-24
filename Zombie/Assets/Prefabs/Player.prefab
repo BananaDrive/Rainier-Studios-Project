@@ -417,6 +417,7 @@ MonoBehaviour:
   gun: {fileID: 5146715617024659985}
   allowAuto: 0
   allowRaycast: 1
+  allowPiercing: 0
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -530,7 +531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 296464217773923605}
   - component: {fileID: 8815408405336253798}
-  - component: {fileID: 829897267099723340}
+  - component: {fileID: 6513123515107871197}
   - component: {fileID: 7267827251629851082}
   - component: {fileID: 6073820443107811440}
   - component: {fileID: 1707694407593614904}
@@ -588,8 +589,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &829897267099723340
-CapsuleCollider2D:
+--- !u!61 &6513123515107871197
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -623,8 +624,17 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   m_Size: {x: 0.5, y: 1.55}
-  m_Direction: 0
+  m_EdgeRadius: 0
 --- !u!114 &7267827251629851082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,13 +647,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acaec258f30098d4cbfc86d05109f2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  overlay: {fileID: 0}
   health: {fileID: 0}
   death: {fileID: 0}
   hurt: {fileID: 0}
-  healthType: 0
+  damageReduc: 0
   maxHealth: 200
   currentHealth: 200
+  overlay: {fileID: 0}
   regenRate: 0.1
   regenAmount: 0
   regenTick: 0
@@ -659,7 +669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4269d26e49e3389469f4924439af8f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collider: {fileID: 829897267099723340}
+  _collider: {fileID: 0}
   sprite: {fileID: 1863868727273682324}
   rb: {fileID: 8815408405336253798}
   ground:
@@ -738,6 +748,7 @@ MonoBehaviour:
   moveSpeedBuff: 0
   accuracyBuff: 0
   regenBuff: 0
+  damageReducBuff: 0
   damageEnhance: 0
   fireRateEnhance: 0
   clipSizeEnhance: 0

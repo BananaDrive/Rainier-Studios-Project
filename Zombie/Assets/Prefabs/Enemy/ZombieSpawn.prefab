@@ -49,6 +49,7 @@ MonoBehaviour:
     spawnWeight: 50
   - zombie: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
     spawnWeight: 50
+  objectPoolNum: 
   zombieSpawnArea: {fileID: 8826887489213973431}
   spawnMax: 20
   currentSpawned: 0

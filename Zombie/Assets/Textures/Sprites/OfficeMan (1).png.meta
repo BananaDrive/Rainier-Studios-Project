@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 0ce2253220bd52d44b9fd18969b96474
+guid: b2b8e207d195e6145ae31d593dc24ffd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1713317191072631755
-    second: OfficeMan_0
+      213: -973617976765216851
+    second: OfficeMan (1)_0
+  - first:
+      213: -5488786641479176451
+    second: OfficeMan (1)_1
+  - first:
+      213: 223690786322830902
+    second: OfficeMan (1)_2
+  - first:
+      213: 5985343591611604929
+    second: OfficeMan (1)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 192
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OfficeMan_0
+      name: OfficeMan (1)_0
       rect:
         serializedVersion: 2
-        x: 289
-        y: 0
-        width: 292
-        height: 801
+        x: 28
+        y: 127
+        width: 31
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bcb447168ece6c710800000000000000
-      internalID: 1713317191072631755
+      spriteID: da789fbcb930d72f0800000000000000
+      internalID: -973617976765216851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeMan (1)_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 127
+        width: 31
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe69b261a9e3d3b0800000000000000
+      internalID: -5488786641479176451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeMan (1)_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 127
+        width: 31
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636dc42c595ba1300800000000000000
+      internalID: 223690786322830902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeMan (1)_3
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 31
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cf9bace846301350800000000000000
+      internalID: 5985343591611604929
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      OfficeMan_0: 1713317191072631755
+      OfficeMan (1)_0: -973617976765216851
+      OfficeMan (1)_1: -5488786641479176451
+      OfficeMan (1)_2: 223690786322830902
+      OfficeMan (1)_3: 5985343591611604929
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

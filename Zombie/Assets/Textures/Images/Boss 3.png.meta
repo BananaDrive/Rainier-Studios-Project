@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: c09631707b36c4b4dbd6e51edb257e7e
+guid: de9f1a72515b24f419ed369511e0240c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -132905838697651235
-    second: Mexican_0
-  - first:
-      213: -2648126785711077626
-    second: Mexican_1
+      213: -2903058983992507192
+    second: Boss 3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,35 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mexican_0
+      name: Boss 3_0
       rect:
         serializedVersion: 2
-        x: 139
-        y: 1059
-        width: 462
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dd3e9d708d2d72ef0800000000000000
-      internalID: -132905838697651235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mexican_1
-      rect:
-        serializedVersion: 2
-        x: 89
+        x: 1349
         y: 0
-        width: 382
-        height: 971
+        width: 1422
+        height: 2761
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6078e7108b6ff3bd0800000000000000
-      internalID: -2648126785711077626
+      spriteID: 8c4ce113c3346b7d0800000000000000
+      internalID: -2903058983992507192
       vertices: []
       indices: 
       edges: []
@@ -185,9 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Mexican_0: -132905838697651235
-      Mexican_1: -2648126785711077626
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

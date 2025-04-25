@@ -82,17 +82,20 @@ public class Weapon : MonoBehaviour
 
     public void RaycastShoot()
     {
-        
         int pierceAmount = allowPiercing ? 30 : 1;
         Vector2 spread = DetermineSpread();
         RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, spread, 30f, enemyLayer);
+        float decayDamage = damage * damageBuff;
 
         for (int i = 0; i < pierceAmount && i < hit.Length; i++)
         {
             if (hit[i].collider != null)
             {
                 if (hit[i].transform.TryGetComponent(out Health hitHealth))
-                    hitHealth.TakeDamage(damage * damageBuff);
+                {
+                    decayDamage *= 0.75f;
+                    hitHealth.TakeDamage(decayDamage);
+                }
               
             }
         }

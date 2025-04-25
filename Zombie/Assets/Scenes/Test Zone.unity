@@ -3470,11 +3470,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428861404853458720, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.44
+      value: 14.125
       objectReference: {fileID: 0}
     - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5817,17 +5817,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie Soldier B
       objectReference: {fileID: 0}
-    - target: {fileID: 5642173446215676963, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.29
+      value: -3.221
       objectReference: {fileID: 0}
     - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6218,14 +6214,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie Policemen
       objectReference: {fileID: 0}
-    - target: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2819984677176277959, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: attackRange
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8164287992251503653, guid: aab25800b908c69498d8308560d4ad44, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.44
@@ -6323,6 +6311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4805442544061717094, guid: 6f20f069255915e4d94a62a70d70591d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6384,6 +6376,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6093898671713897986, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093898671713897986, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 9047018324184498003, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
       propertyPath: m_Offset.x
       value: 0
@@ -6407,11 +6407,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: d777c613734b0cd4a9d23733d828ff41, type: 3}
     - target: {fileID: 3725928491529861689, guid: be09426b289a3d849afe5c98481acd30, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.9016232
+      value: -6.568
       objectReference: {fileID: 0}
     - target: {fileID: 3725928491529861689, guid: be09426b289a3d849afe5c98481acd30, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.4
+      value: -3.469
       objectReference: {fileID: 0}
     - target: {fileID: 3725928491529861689, guid: be09426b289a3d849afe5c98481acd30, type: 3}
       propertyPath: m_LocalPosition.z

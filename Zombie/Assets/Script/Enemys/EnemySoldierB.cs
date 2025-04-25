@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemySoldierB : EnemyBehavior
 {
+    public Transform throwPoint;
     public GameObject molotov;
     Vector2 throwDirection;
     float throwPower;
@@ -18,8 +19,6 @@ public class EnemySoldierB : EnemyBehavior
             if (Vector2.Distance(enemyMovement.player.position, transform.position) < rangeToAttack && !hasAttacked)
             {
                 animator.SetInteger("State", 2);
-                throwDirection = (enemyMovement.player.position - transform.position).normalized;
-                throwPower = Vector2.Distance(transform.position, enemyMovement.player.position);
             }
         }
         EnableClip<EnemyRanged>();
@@ -41,8 +40,12 @@ public class EnemySoldierB : EnemyBehavior
         _molotov.layerToHit = enemyMovement.playerLayer;
 
         StartCoroutine(_molotov.Despawn());
+
+        throwDirection = (enemyMovement.player.position - transform.position).normalized;
+        throwPower = 1f + Vector2.Distance(transform.position, enemyMovement.player.position) / 1.5f;
         throwDirection.y += 0.75f;
-        molotovObj.GetComponent<Transform>().SetPositionAndRotation(transform.position, transform.rotation);
+
+        molotovObj.GetComponent<Transform>().SetPositionAndRotation(throwPoint.position, transform.rotation);
         molotovObj.GetComponent<Rigidbody2D>().AddForce(55f * throwPower * throwDirection, ForceMode2D.Force);
     }
 

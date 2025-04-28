@@ -31566,7 +31566,7 @@ PrefabInstance:
     - target: {fileID: 8056102172973175273, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e1cd733ff2795974da9330a0586ecca6, type: 2}
+      objectReference: {fileID: 9100000, guid: 104e9cfbdd68cf844b1f1683da529a0c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31664,7 +31664,7 @@ PrefabInstance:
       objectReference: {fileID: 5935907}
     - target: {fileID: 8172515586023748523, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: allowRaycast
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8364591893400546399, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: Speaker

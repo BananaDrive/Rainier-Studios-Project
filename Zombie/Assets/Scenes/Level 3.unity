@@ -55648,7 +55648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8172515586023748523, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: allowRaycast
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8364591893400546399, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: Speaker

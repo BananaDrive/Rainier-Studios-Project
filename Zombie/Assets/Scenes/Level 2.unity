@@ -74053,6 +74053,10 @@ PrefabInstance:
       propertyPath: jump
       value: 
       objectReference: {fileID: 812215743}
+    - target: {fileID: 6073820443107811440, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: _collider
+      value: 
+      objectReference: {fileID: 5256327215516169875}
     - target: {fileID: 6121928685509098609, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: gun
       value: 
@@ -74098,6 +74102,11 @@ PrefabInstance:
       addedObject: {fileID: 988574791}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+--- !u!61 &5256327215516169875 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6513123515107871197, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+  m_PrefabInstance: {fileID: 5256327215516169874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5689027630895446404
 PrefabInstance:
   m_ObjectHideFlags: 0

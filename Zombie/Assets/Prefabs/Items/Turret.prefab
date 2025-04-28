@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
   itemsStats:
-  - itemType: 7
+  - itemType: 8
     potency: 0
     duration: 0
     isStackable: 0
@@ -173,6 +173,7 @@ MonoBehaviour:
   layerToAvoid:
     serializedVersion: 2
     m_Bits: 64
+  bullet: {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
   damage: 200
   attackRate: 0.3
   detectRadius: 10

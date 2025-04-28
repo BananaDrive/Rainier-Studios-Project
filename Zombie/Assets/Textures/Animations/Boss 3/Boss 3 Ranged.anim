@@ -58,8 +58,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0
+    functionName: PreRangedAttack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.75
-    functionName: ThrowAttack
+    functionName: RangedAttack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -67,6 +74,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.9
     functionName: EndAttack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.9
+    functionName: PostRangedAttack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

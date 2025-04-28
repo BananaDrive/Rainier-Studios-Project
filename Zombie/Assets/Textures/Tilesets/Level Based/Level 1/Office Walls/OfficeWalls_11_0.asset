@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OfficeWalls_11_0
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -6182900723539361152, guid: 2301ab770fa2cbc418f01089c7e4b419, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.74509805, g: 0.8352941, b: 0.75691646, a: 1}
   m_Transform:
     e00: 1
     e01: 0

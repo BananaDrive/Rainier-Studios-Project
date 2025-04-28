@@ -64116,7 +64116,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 30
-      m_TileSpriteIndex: 17
+      m_TileSpriteIndex: 31
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -69149,8 +69149,8 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: dacbb4bb8c143364eb3d8024e49cc856, type: 3}
   - m_RefCount: 70
     m_Data: {fileID: 8908597230582502335, guid: a8f4a6dadbd32f94fbd82f34f873d8df, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 02b1092b2b59fd8459c52c5aa3e005cc, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: dbead580b91493b4f998871d8462568a, type: 3}
   - m_RefCount: 50
@@ -69177,8 +69177,8 @@ Tilemap:
     m_Data: {fileID: -4919517487961691516, guid: 3cbec959a8e59144b9f0ae5415f7fdd5, type: 3}
   - m_RefCount: 13
     m_Data: {fileID: 3065729251932762746, guid: 2afeff5d79a0b4542aa1749673793080, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 02b1092b2b59fd8459c52c5aa3e005cc, type: 3}
   - m_RefCount: 14
     m_Data: {fileID: -6752348965081268044, guid: 6cb6d9a942a02c64b8fc1ebf53d00f87, type: 3}
   - m_RefCount: 14
@@ -73734,7 +73734,7 @@ PrefabInstance:
       objectReference: {fileID: 699265789}
     - target: {fileID: 8172515586023748523, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: allowRaycast
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8243942417990441310, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_LocalPosition.x

@@ -657,7 +657,7 @@ MonoBehaviour:
   anchorPoint: {fileID: 1410370141036997404}
   preRangedHitbox: {fileID: 2574241453443620502}
   rangedHitbox: {fileID: 3723844135764874139}
-  turretSpawns: {fileID: 0}
+  turretSpawns: {fileID: 4756458177330221227}
   rangedCD: 6
   grenadeCD: 0
   summonCD: 0

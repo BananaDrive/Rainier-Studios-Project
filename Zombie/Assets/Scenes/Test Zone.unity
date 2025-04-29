@@ -2443,7 +2443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8056102172973175273, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_Controller
@@ -2593,7 +2593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1946637080395633974, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: objectsToPool.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1946637080395633974, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: objectsToPool.Array.data[3].poolSize
@@ -2602,7 +2602,7 @@ PrefabInstance:
     - target: {fileID: 1946637080395633974, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: objectsToPool.Array.data[3].pooledObj
       value: 
-      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+      objectReference: {fileID: 240300000762235923, guid: cdc8be2e0a838f34f8959f9c9312a97d, type: 3}
     - target: {fileID: 2062348928756457530, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: m_Name
       value: Game Manager
@@ -3681,7 +3681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428861404853458720, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8164287992251503653, guid: 3e9bcc6dcb68a7f4d83b49cce757614a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3898,6 +3898,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1257599938 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6037804636458055673, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+  m_PrefabInstance: {fileID: 957227420410949319}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1283097796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4061,6 +4066,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1312261192 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2609526859544953815, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+  m_PrefabInstance: {fileID: 957227420410949319}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045142a2cb9974b418ea6782938e7ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1358978861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6070,6 +6086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie Soldier B
       objectReference: {fileID: 0}
+    - target: {fileID: 5642173446215676963, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6928819300339221314, guid: 62ddd9659ab6af34194a5a50f8cdb18e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10
@@ -6589,6 +6609,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2609526859544953815, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+      propertyPath: grenade
+      value: 
+      objectReference: {fileID: 240300000762235923, guid: cdc8be2e0a838f34f8959f9c9312a97d, type: 3}
+    - target: {fileID: 2609526859544953815, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+      propertyPath: summonCD
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609526859544953815, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+      propertyPath: grenadeCD
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609526859544953815, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+      propertyPath: throwPoint
+      value: 
+      objectReference: {fileID: 1257599938}
+    - target: {fileID: 2609526859544953815, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+      propertyPath: grenadeAmount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579911929951915769, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+      propertyPath: enemyBehavior
+      value: 
+      objectReference: {fileID: 1312261192}
     - target: {fileID: 6167721933871364287, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
       propertyPath: m_Name
       value: Boss 3
@@ -6634,7 +6678,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 634868983833133206, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+    - {fileID: 2503491755458712287, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+    - {fileID: 4971946221706803308, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+    - {fileID: 9110916513414249423, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+    - {fileID: 6108108531125531406, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+    - {fileID: 3519214628106397473, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+    - {fileID: 8283872494823922519, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+    - {fileID: 514603116073886263, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+    - {fileID: 4276993604974099561, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+    - {fileID: 4381275037013217224, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
@@ -6868,7 +6922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4805442544061717094, guid: 6f20f069255915e4d94a62a70d70591d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

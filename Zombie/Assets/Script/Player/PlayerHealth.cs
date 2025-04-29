@@ -32,14 +32,16 @@ public class PlayerHealth : Health
         {
             overlayCooldown = true;
             StartCoroutine(OverlayDisplay());
-            hurt.Play();
+            if (hurt != null)
+                hurt.Play();
         }  
     }
 
     public override void HandleDeath()
     {
-        death.Play();
-        GameManager.Instance.GameOver();
+        if (death != null)
+            death.Play();
+        //GameManager.Instance.GameOver();
     }
 
     public IEnumerator OverlayDisplay()

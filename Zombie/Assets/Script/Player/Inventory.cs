@@ -86,7 +86,8 @@ public class Inventory : MonoBehaviour
             Items[temp] = foundItem;
             foundItem.gameObject.SetActive(false);
             GameManager.Instance.UIManager.DisplayInv(Items);
-            Speaker.Play();
+            if (Speaker != null)
+                Speaker.Play();
         }
     }
 

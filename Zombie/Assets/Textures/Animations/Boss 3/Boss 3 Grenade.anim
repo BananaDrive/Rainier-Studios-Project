@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Boss 3 Slam
+  m_Name: Boss 3 Grenade
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -59,21 +59,7 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 1.4166666
-    functionName: EnableHitbox
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 1.4166666
-    functionName: SlamAttack
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 1.5833334
-    functionName: DisableHitbox
+    functionName: GrenadeAttack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

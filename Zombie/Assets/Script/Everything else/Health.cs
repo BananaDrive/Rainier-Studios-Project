@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public abstract class Health : MonoBehaviour
@@ -11,6 +10,8 @@ public abstract class Health : MonoBehaviour
     public float damageReduc;
     public float maxHealth;
     public float currentHealth;
+    public float invincibltyTime;
+    public bool invincible;
 
     public abstract void HandleDeath();
     public abstract void OtherDamageLogic();
@@ -23,6 +24,8 @@ public abstract class Health : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if (invincible)
+            return;
         currentHealth -= damage / damageReduc;
 
         if (healthbar != null)
@@ -40,5 +43,12 @@ public abstract class Health : MonoBehaviour
 
         if (healthbar != null)
             healthbar.UpdateHealth(currentHealth / maxHealth);
+    }
+
+    public IEnumerator Invincible()
+    {
+        invincible = true;
+        yield return new WaitForSeconds(invincibltyTime);
+        invincible = false;
     }
 }

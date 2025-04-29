@@ -34,14 +34,16 @@ public class PlayerHealth : Health
             StartCoroutine(OverlayDisplay());
             if (hurt != null)
                 hurt.Play();
-        }  
+        }
+
+        CoroutineHandler.Instance.StartCoroutine(Invincible());
     }
 
     public override void HandleDeath()
     {
         if (death != null)
             death.Play();
-        //GameManager.Instance.GameOver();
+        GameManager.Instance.GameOver();
     }
 
     public IEnumerator OverlayDisplay()

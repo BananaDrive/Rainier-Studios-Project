@@ -3,11 +3,18 @@ using UnityEngine;
 
 public class Turret : Placeable
 {
+    public GameObject bullet;
     public float damage;
     public float attackRate;
     public float detectRadius;
-
     public bool hasAttacked;
+
+    int bulletPoolIndex;
+
+    public void Start()
+    {
+        bulletPoolIndex = ObjectPool.SharedInstance.GetObjectPoolNum(bullet);
+    }
     public void FixedUpdate()
     {
         if (Physics2D.Raycast(transform.position, transform.right, detectRadius, layerToHit) && !hasAttacked)
@@ -18,7 +25,7 @@ public class Turret : Placeable
     }
     public void RangedAttack()
     {
-        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(0);
+        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletPoolIndex);
 
         if (bullet == null)
             return;
@@ -29,9 +36,11 @@ public class Turret : Placeable
         bulletScript.damage = damage;
         bulletScript.layerToHit = layerToHit;
 
-        StartCoroutine(bulletScript.Despawn());
+        CoroutineHandler.Instance.StartCoroutine(bulletScript.Despawn());
         bullet.GetComponent<Transform>().position = transform.position;
         bullet.GetComponent<Rigidbody2D>().AddForce(40f * transform.right, ForceMode2D.Force);
+
+        CoroutineHandler.Instance.StartCoroutine(AttackCD());
     }
 
     public IEnumerator AttackCD()

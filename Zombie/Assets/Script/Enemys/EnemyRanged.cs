@@ -23,7 +23,8 @@ public class EnemyRanged : EnemyBehavior
             if (Vector2.Distance(enemyMovement.player.position, transform.position) < rangeToAttack && !hasAttacked)
                 animator.SetInteger("State", 2);
         }
-        EnableClip<EnemyRanged>();
+        if (!hasAttacked)
+            EnableClip<EnemyRanged>();
     }
             
     public void Shoot()

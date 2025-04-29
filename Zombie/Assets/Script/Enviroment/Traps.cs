@@ -9,7 +9,7 @@ public class Traps : Placeable
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if ((layerToAvoid & (1 << other.gameObject.layer)) != 0)
+        if (((layerToAvoid & (1 << other.gameObject.layer)) != 0) || !isActiveAndEnabled)
             return;
         if (other.TryGetComponent<Health>(out var health) && other.TryGetComponent<Movement>(out var movement))
         {

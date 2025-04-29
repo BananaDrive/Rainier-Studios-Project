@@ -35,7 +35,7 @@ public class EnemyBehavior : MonoBehaviour
 
     public void EnableClip<T>() where T : EnemyBehavior
     {
-        if (enemyMovement.hasJumped)
+        if (enemyMovement.moveDirection == 0)
             return;
         foreach (var collider in Physics2D.OverlapCircleAll(transform.position, enemyMovement._collider.bounds.extents.x, enemyLayer))
         {

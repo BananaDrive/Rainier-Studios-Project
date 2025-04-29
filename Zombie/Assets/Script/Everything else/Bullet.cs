@@ -22,6 +22,7 @@ public class Bullet : MonoBehaviour
 
             if (!isPiercing)
                 TurnOffObj();
+            damage *= 0.75f;
         }
 
         if ((layerToDespawn & (1 << other.gameObject.layer)) != 0)

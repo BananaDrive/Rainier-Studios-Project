@@ -29,10 +29,7 @@ public class Movement : MonoBehaviour
     public bool hasJumped;
 
     public void MovementHandle()
-    {
-        if (moveDirection == 0)
-            rb.linearVelocityX *= (100 - deceleration) / 100; //decelerates the player when not moving
-            
+    {       
         if (!canMove)
             return;
         transform.rotation = Quaternion.Euler(
@@ -41,7 +38,7 @@ public class Movement : MonoBehaviour
             transform.eulerAngles.z
         );
     
-        rb.AddForce((moveDirection == 0f ? 0 : moveSpeed * moveSpeedBuff * acceleration) * transform.right, ForceMode2D.Force);
+        rb.AddForce((moveDirection == 0f ? 0 : moveSpeed * Mathf.Abs(moveDirection) * moveSpeedBuff * acceleration) * transform.right, ForceMode2D.Force);
     }
 
 
@@ -51,10 +48,9 @@ public class Movement : MonoBehaviour
             return;
         Vector2 flatVel = new(rb.linearVelocityX, 0);
 
-        if (Mathf.Abs(flatVel.magnitude) > moveSpeed * moveSpeedBuff)
+        if (Mathf.Abs(flatVel.magnitude) > moveSpeed * moveSpeedBuff * Mathf.Abs(moveDirection))
         {
-            Vector2 limitedVel = flatVel.normalized * moveSpeed * moveSpeedBuff;
-            rb.linearVelocity = new(limitedVel.x, rb.linearVelocityY);
+            rb.linearVelocityX *= (100 - deceleration) / 100;
         }
     }
 

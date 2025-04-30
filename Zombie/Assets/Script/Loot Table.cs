@@ -19,7 +19,6 @@ public class LootTable : MonoBehaviour
                 item.totalWeight = total;
             }
         }
-
     }
 
     [Serializable]
@@ -28,6 +27,7 @@ public class LootTable : MonoBehaviour
         public GameObject tableObj;
         public float objWeight;
         internal float totalWeight;
+        public float scoreMilestone;
     }
 
     public List<LootTables> lootTables;
@@ -65,7 +65,7 @@ public class LootTable : MonoBehaviour
 
             float _lootFloat = _lootTables.lootTableObjects[mid].totalWeight - lootFloat;
 
-            if (_lootFloat >= 0 && _lootFloat < _lootTables.lootTableObjects[mid].objWeight)
+            if (_lootFloat >= 0 && _lootFloat < _lootTables.lootTableObjects[mid].objWeight && GameManager.Instance.UIManager.score >= _lootTables.lootTableObjects[mid].scoreMilestone)
                 return _lootTables.lootTableObjects[mid].tableObj;
             if (_lootFloat < 0)
                 left = mid + 1;

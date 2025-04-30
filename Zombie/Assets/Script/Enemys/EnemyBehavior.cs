@@ -13,6 +13,7 @@ public class EnemyBehavior : MonoBehaviour
     public float damage;
     public float attackRate;
     public float rangeToAttack;
+    public float scoreOnDeath;
 
     [Header("Traits")]
     public bool canJump;

@@ -21,10 +21,12 @@ public class EnemyHealth : Health
     }
     public override void HandleDeath()
     {
-        GameManager.Instance.UIManager.UpdateScore(enemyBehavior.scoreOnDeath);
         CallTable();
+
+        GameManager.Instance.UIManager.UpdateScore(enemyBehavior.scoreOnDeath);
         gameObject.SetActive(false);
         currentHealth = maxHealth;
+        healthbar.UpdateHealth(maxHealth);
     }
 
     public void CallTable()

@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mexican_0: -132905838697651235
+      Mexican_1: -2648126785711077626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

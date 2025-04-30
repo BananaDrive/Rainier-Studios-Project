@@ -312,7 +312,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -885,7 +886,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1403,7 +1405,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1465,7 +1468,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1527,7 +1531,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1589,7 +1594,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1731,7 +1737,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.931486, y: -2.6709974, z: -10}
+  m_LocalPosition: {x: -18.22068, y: -2.6709974, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2961,7 +2967,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3136,7 +3143,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3697,7 +3705,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3759,7 +3768,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -19349,7 +19359,7 @@ Tilemap:
       m_TileIndex: 21
       m_TileSpriteIndex: 27
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
@@ -19799,7 +19809,7 @@ Tilemap:
       m_TileIndex: 14
       m_TileSpriteIndex: 26
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
@@ -27128,12 +27138,12 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1136
+  - m_RefCount: 1134
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 6.7666e-41, g: 6.7666e-41, b: 6.7666e-41, a: 6.7666e-41}
-  - m_RefCount: 0
-    m_Data: {r: 6.7666e-41, g: 6.7666e-41, b: 6.7666e-41, a: 6.7666e-41}
+  - m_RefCount: 2
+    m_Data: {r: 0.74509805, g: 0.8352941, b: 0.75691646, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -27396,7 +27406,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -28170,7 +28181,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -28791,7 +28803,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -28969,7 +28982,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -29578,7 +29592,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -30868,7 +30883,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Printer (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -31401,11 +31417,13 @@ MonoBehaviour:
   - lootTableObjects:
     - tableObj: {fileID: 0}
       objWeight: 10
+      scoreMilestone: 0
     tableMaxWeight: 1000
     tableName: Civilian Zombie
   - lootTableObjects:
     - tableObj: {fileID: 0}
       objWeight: 10
+      scoreMilestone: 0
     tableMaxWeight: 1000
     tableName: Crawler Zombie
 --- !u!1001 &1755508324998394028
@@ -31485,11 +31503,11 @@ PrefabInstance:
     - target: {fileID: 484689764738824749, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: hurt
       value: 
-      objectReference: {fileID: 3216806463299503421}
+      objectReference: {fileID: 0}
     - target: {fileID: 484689764738824749, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: death
       value: 
-      objectReference: {fileID: 3216806463299503422}
+      objectReference: {fileID: 0}
     - target: {fileID: 792959710959513520, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_Size.x
       value: 0.25
@@ -31583,16 +31601,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b020c87128f6c0848b391845a86fca57, type: 3}
---- !u!82 &3216806463299503421 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2444188283753195157, guid: b020c87128f6c0848b391845a86fca57, type: 3}
-  m_PrefabInstance: {fileID: 3216806463299503420}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &3216806463299503422 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3659313979397218652, guid: b020c87128f6c0848b391845a86fca57, type: 3}
-  m_PrefabInstance: {fileID: 3216806463299503420}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5256327215516169874
 PrefabInstance:
   m_ObjectHideFlags: 0

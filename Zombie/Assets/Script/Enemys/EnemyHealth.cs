@@ -6,6 +6,12 @@ public class EnemyHealth : Health
     [Header("Has to have the EXACT same name as the loot table in the game manager")]
     public string lootTableName;
 
+    public override void OtherHealthLogic()
+    {
+        if (healthbar != null)
+            healthbar.UpdateHealth(currentHealth / maxHealth);
+    }
+
     public override void OtherDamageLogic()
     {
         if (enemyBehavior.canInterrupt)
@@ -15,10 +21,12 @@ public class EnemyHealth : Health
     }
     public override void HandleDeath()
     {
-        GameManager.Instance.UIManager.UpdateScore(enemyBehavior.scoreOnDeath);
         CallTable();
+
+        GameManager.Instance.UIManager.UpdateScore(enemyBehavior.scoreOnDeath);
         gameObject.SetActive(false);
         currentHealth = maxHealth;
+        healthbar.UpdateHealth(maxHealth);
     }
 
     public void CallTable()

@@ -8,6 +8,8 @@ public class UIManager : MonoBehaviour
 {
     public Transform inventoryPanel;
     public BuffPanel buffPanel;
+    public PlayerHealthBar playerHealthBar;
+    public Image hurtOverlay;
     public Image[] inventorySlots;
     public GameObject itemStatsPanel;
     public TMP_Text itemName, itemStats;

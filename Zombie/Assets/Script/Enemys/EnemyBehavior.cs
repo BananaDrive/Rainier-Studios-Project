@@ -13,6 +13,7 @@ public class EnemyBehavior : MonoBehaviour
     public float damage;
     public float attackRate;
     public float rangeToAttack;
+    public float scoreOnDeath;
 
     [Header("Traits")]
     public bool canJump;
@@ -35,7 +36,7 @@ public class EnemyBehavior : MonoBehaviour
 
     public void EnableClip<T>() where T : EnemyBehavior
     {
-        if (enemyMovement.hasJumped)
+        if (enemyMovement.moveDirection == 0)
             return;
         foreach (var collider in Physics2D.OverlapCircleAll(transform.position, enemyMovement._collider.bounds.extents.x, enemyLayer))
         {

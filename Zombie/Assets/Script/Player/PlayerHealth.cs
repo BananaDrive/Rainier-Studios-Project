@@ -11,23 +11,10 @@ public class PlayerHealth : Health
 
     bool overlayCooldown;
 
-    void FixedUpdate()
-    {
-        if (regenTick && regenAmount > 0)
-        {
-            regenTick = false;
-            Invoke(nameof(Regenerate), regenRate);
-        }
-    }
-
-    public void Regenerate()
-    {
-        currentHealth += regenAmount * regenRate;
-        regenTick = true;
-    }
-
     public override void OtherDamageLogic()
     {
+        GameManager.Instance.UIManager.playerHealthBar.UpdateSlider(currentHealth);
+        
         if (overlay != null && !overlayCooldown)
         {
             overlayCooldown = true;
@@ -39,6 +26,31 @@ public class PlayerHealth : Health
         CoroutineHandler.Instance.StartCoroutine(Invincible());
     }
 
+    public override void OtherHealthLogic()
+    {
+        GameManager.Instance.UIManager.playerHealthBar.UpdateSlider(currentHealth);
+    }
+
+    new void Start()
+    {
+        GameManager.Instance.UIManager.playerHealthBar.InitializeSlider(maxHealth);
+    }
+
+    void FixedUpdate()
+    {
+        if (regenTick && regenAmount > 0)
+        {
+            regenTick = false;
+            Invoke(nameof(Regenerate), regenRate);
+        }
+    }
+
+    public void Regenerate()
+    {
+        AddHealth(regenAmount * regenRate);
+        regenTick = true;
+    }
+
     public override void HandleDeath()
     {
         if (death != null)
@@ -48,9 +60,9 @@ public class PlayerHealth : Health
 
     public IEnumerator OverlayDisplay()
     {
-        overlay.SetActive(true);
+        GameManager.Instance.UIManager.hurtOverlay.gameObject.SetActive(true);
         yield return new WaitForSeconds(1f);
         overlayCooldown = false;
-        overlay.SetActive(false);
+        GameManager.Instance.UIManager.hurtOverlay.gameObject.SetActive(false);
     }
 }

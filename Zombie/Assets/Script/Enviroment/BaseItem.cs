@@ -43,7 +43,7 @@ public class BaseItem : MonoBehaviour
             switch (items.itemType)
             {
                 case ItemType.health:
-                    buffs.GetComponent<Health>().currentHealth += items.potency;
+                    buffs.GetComponent<Health>().AddHealth(items.potency);
                 break;
                 case ItemType.placeable:
                     Placeable placeable = GetComponent<Placeable>();

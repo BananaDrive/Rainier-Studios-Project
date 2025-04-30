@@ -15,6 +15,7 @@ public abstract class Health : MonoBehaviour
 
     public abstract void HandleDeath();
     public abstract void OtherDamageLogic();
+    public abstract void OtherHealthLogic();
 
     public void Start()
     {
@@ -41,8 +42,7 @@ public abstract class Health : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth += addHealth, 0f, maxHealth);
 
-        if (healthbar != null)
-            healthbar.UpdateHealth(currentHealth / maxHealth);
+        OtherHealthLogic();
     }
 
     public IEnumerator Invincible()

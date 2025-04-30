@@ -47,6 +47,7 @@ public class Weapon : MonoBehaviour
                         ProjectileShoot();
                     if (clipAmount <= 0)
                         break;
+                    gun.Play();
                 }
                 StartCoroutine(ShootCD());
             }
@@ -81,17 +82,21 @@ public class Weapon : MonoBehaviour
 
     public void RaycastShoot()
     {
-        gun.Play();
         int pierceAmount = allowPiercing ? 30 : 1;
         Vector2 spread = DetermineSpread();
         RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, spread, 30f, enemyLayer);
+        float decayDamage = damage * damageBuff;
 
         for (int i = 0; i < pierceAmount && i < hit.Length; i++)
         {
             if (hit[i].collider != null)
             {
                 if (hit[i].transform.TryGetComponent(out Health hitHealth))
-                    hitHealth.TakeDamage(damage * damageBuff);
+                {
+                    decayDamage *= 0.75f;
+                    hitHealth.TakeDamage(decayDamage);
+                }
+              
             }
         }
         StartCoroutine(ShootCD());

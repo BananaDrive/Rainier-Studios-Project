@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,8 +10,10 @@ public class UIManager : MonoBehaviour
     public BuffPanel buffPanel;
     public Image[] inventorySlots;
     public GameObject itemStatsPanel;
-    public TMP_Text itemName;
-    public TMP_Text itemStats;
+    public TMP_Text itemName, itemStats;
+    public TMP_Text scoreText;
+
+    public float score;
 
     public void Start()
     {
@@ -54,5 +57,11 @@ public class UIManager : MonoBehaviour
             if (i < itemStats.Count)
                 buffPanel.buffSlots[i].text.SetText(((int)itemStats[i].duration).ToString());
         }
+    }
+
+    public void UpdateScore(float add)
+    {
+        score += add;
+        scoreText.SetText("Score: " + score);
     }
 }

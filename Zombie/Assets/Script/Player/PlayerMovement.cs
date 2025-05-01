@@ -7,16 +7,19 @@ public class PlayerMovement : Movement
     public void Update()
     {
         var gamepad = Gamepad.current;
+        bool controller = false;
+        if (gamepad != null)
+            controller = true;
         
         moveDirection = Input.GetAxisRaw("Horizontal");
 
-        if ((gamepad.buttonSouth.wasPressedThisFrame || Input.GetKeyDown(KeyCode.Space)) && Grounded)
+        if (((controller && gamepad.buttonSouth.wasPressedThisFrame) || Input.GetKeyDown(KeyCode.Space)) && Grounded)
         {
             Jump();
             jump.Play();
         }
 
-        if ((gamepad.buttonSouth.wasReleasedThisFrame || Input.GetKeyUp(KeyCode.Space)) && rb.linearVelocityY > 0f)
+        if (((controller && gamepad.buttonSouth.wasPressedThisFrame) || Input.GetKeyUp(KeyCode.Space)) && rb.linearVelocityY > 0f)
         {
             rb.linearVelocityY = 0f;
             rb.AddForceY(-jumpPower, ForceMode2D.Force);

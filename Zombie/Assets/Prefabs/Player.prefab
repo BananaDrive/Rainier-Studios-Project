@@ -678,11 +678,11 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 8
-  moveSpeed: 5
-  acceleration: 20
-  deceleration: 23
+  moveSpeed: 2.5
+  acceleration: 13
+  deceleration: 16
   jumpPower: 37.5
-  groundDistance: 0.8
+  groundDistance: 0.1
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1

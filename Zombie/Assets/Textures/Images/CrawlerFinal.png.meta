@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: cb1db80a7b9afa04ab614f00b3053502
+guid: 4a644bb0d146906489d1f2b029b79ae4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2927186740133344988
-    second: Banan_0
+      213: 8744309950394866966
+    second: CrawlerFinal_0
   - first:
-      213: -1765788539115304576
-    second: Banan_1
+      213: 684788344238545690
+    second: CrawlerFinal_1
   - first:
-      213: -4204682245515760541
-    second: Banan_2
-  - first:
-      213: 4828938567020632548
-    second: Banan_3
+      213: -1758464403855423732
+    second: CrawlerFinal_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Banan_0
+      name: CrawlerFinal_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 98
-        width: 28
-        height: 24
+        x: 179
+        y: 0
+        width: 862
+        height: 501
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4294e133b2b8067d0800000000000000
-      internalID: -2927186740133344988
+      spriteID: 61d133f02970a5970800000000000000
+      internalID: 8744309950394866966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Banan_1
+      name: CrawlerFinal_1
       rect:
         serializedVersion: 2
-        x: 2
-        y: 66
-        width: 36
-        height: 24
+        x: 1059
+        y: 0
+        width: 22
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0898391eda8ae77e0800000000000000
-      internalID: -1765788539115304576
+      spriteID: a1b9aa4fe5bd08900800000000000000
+      internalID: 684788344238545690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Banan_2
+      name: CrawlerFinal_2
       rect:
         serializedVersion: 2
-        x: 2
-        y: 34
-        width: 39
-        height: 24
+        x: 1109
+        y: 0
+        width: 12
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,30 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36c24aa66c7f5a5c0800000000000000
-      internalID: -4204682245515760541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banan_3
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 2
-        width: 33
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e9d279ba06d30340800000000000000
-      internalID: 4828938567020632548
+      spriteID: c07470201fda897e0800000000000000
+      internalID: -1758464403855423732
       vertices: []
       indices: 
       edges: []
@@ -209,11 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Banan_0: -2927186740133344988
-      Banan_1: -1765788539115304576
-      Banan_2: -4204682245515760541
-      Banan_3: 4828938567020632548
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

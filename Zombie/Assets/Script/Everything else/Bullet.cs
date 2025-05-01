@@ -1,8 +1,10 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.LowLevelPhysics;
 
 public class Bullet : MonoBehaviour
 {
+    public TrailRenderer trailRenderer;
     public Rigidbody2D rb;
     public bool isPiercing;
     public float damage;

@@ -39,7 +39,7 @@ public class Weapon : MonoBehaviour
         if (gamepad != null)
             controller = true;
         Debug.DrawRay(transform.position, transform.right);
-        if (allowAuto && Input.GetKey(KeyCode.E) || (!allowAuto && (Input.GetKeyDown(KeyCode.E) || (controller && gamepad.buttonWest.wasPressedThisFrame)) && !shootCooldown ))
+        if ((allowAuto && Input.GetKey(KeyCode.E) || (!allowAuto && Input.GetKeyDown(KeyCode.E) || (controller && gamepad.buttonWest.wasPressedThisFrame))) && !shootCooldown)
         {
             if (clipAmount > 0)
             {
@@ -118,6 +118,7 @@ public class Weapon : MonoBehaviour
     public IEnumerator ShootCD()
     {
         yield return new WaitForSeconds(1f / (fireRate * fireRateBuff * 2f));
+        Debug.Log(1f / (fireRate * fireRateBuff * 2f));
         shootCooldown = false;
     }
 

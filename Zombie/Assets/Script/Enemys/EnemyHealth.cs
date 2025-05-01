@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemyHealth : Health
 {
     public EnemyBehavior enemyBehavior;
+    public HealthBar healthbar;
     [Header("Has to have the EXACT same name as the loot table in the game manager")]
     public string lootTableName;
 
@@ -14,6 +15,9 @@ public class EnemyHealth : Health
 
     public override void OtherDamageLogic()
     {
+        if (healthbar != null)
+            healthbar.UpdateHealth(currentHealth / maxHealth);
+            
         if (enemyBehavior.canInterrupt)
         {
             enemyBehavior.interrupted = true;
@@ -26,7 +30,7 @@ public class EnemyHealth : Health
         GameManager.Instance.UIManager.UpdateScore(enemyBehavior.scoreOnDeath);
         gameObject.SetActive(false);
         currentHealth = maxHealth;
-        healthbar.UpdateHealth(maxHealth);
+        healthbar.UpdateHealth(1f);
     }
 
     public void CallTable()

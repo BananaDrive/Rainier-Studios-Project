@@ -3,10 +3,7 @@ using UnityEngine;
 
 public abstract class Health : MonoBehaviour
 {
-    public AudioSource health;
-    public AudioSource death;
-    public AudioSource hurt;
-    public HealthBar healthbar;
+    public AudioSource health, death, hurt;
     public float damageReduc;
     public float maxHealth;
     public float currentHealth;
@@ -28,9 +25,6 @@ public abstract class Health : MonoBehaviour
         if (invincible)
             return;
         currentHealth -= damage / damageReduc;
-
-        if (healthbar != null)
-            healthbar.UpdateHealth(currentHealth / maxHealth);
 
         OtherDamageLogic();
 

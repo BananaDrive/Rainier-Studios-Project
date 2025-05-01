@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
@@ -31,7 +32,12 @@ public class Inventory : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        var gamepad = Gamepad.current;
+        bool controller = false;
+        if (gamepad != null)
+            controller = true;
+
+        if (Input.GetKeyDown(KeyCode.F) || (controller && gamepad.buttonEast.wasPressedThisFrame))
         {
             if (gate != null && gate.canOpen)
             {

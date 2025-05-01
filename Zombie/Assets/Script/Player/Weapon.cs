@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Weapon : MonoBehaviour
 {
@@ -32,8 +33,12 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
+        var gamepad = Gamepad.current;
+        bool controller = false;
+        if (gamepad != null)
+            controller = true;
         Debug.DrawRay(transform.position, transform.right);
-        if ((allowAuto && Input.GetKey(KeyCode.E) || !allowAuto && Input.GetKeyDown(KeyCode.E)) && !shootCooldown)
+        if (allowAuto && Input.GetKey(KeyCode.E) || (!allowAuto && (Input.GetKeyDown(KeyCode.E) || (controller && gamepad.buttonWest.wasPressedThisFrame)) && !shootCooldown ))
         {
             if (clipAmount > 0)
             {

@@ -13,7 +13,7 @@ public class EnemyHealth : Health
             healthbar.UpdateHealth(currentHealth / maxHealth);
     }
 
-    public override void OtherDamageLogic()
+    public override void OtherDamageLogic(float damage)
     {
         if (healthbar != null)
             healthbar.UpdateHealth(currentHealth / maxHealth);

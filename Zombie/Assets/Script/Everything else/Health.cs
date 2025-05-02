@@ -11,7 +11,7 @@ public abstract class Health : MonoBehaviour
     public bool invincible;
 
     public abstract void HandleDeath();
-    public abstract void OtherDamageLogic();
+    public abstract void OtherDamageLogic(float damage);
     public abstract void OtherHealthLogic();
 
     public void Start()
@@ -24,9 +24,11 @@ public abstract class Health : MonoBehaviour
     {
         if (invincible)
             return;
-        currentHealth -= damage / damageReduc;
 
-        OtherDamageLogic();
+        float finalDamage = damage / damageReduc;
+        currentHealth -= finalDamage;
+
+        OtherDamageLogic(finalDamage);
 
         if (currentHealth <= 0)
             HandleDeath();

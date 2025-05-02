@@ -138,111 +138,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CivilianZombie (10)_0
+      name: Police Zombie Idle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 191
+        y: 192
         width: 96
-        height: 82
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: effc4c3951c18da20800000000000000
-      internalID: 3087248423561515006
+      spriteID: 813ca74020b782749ae8a4b51252a33d
+      internalID: -1672590786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (10)_1
+      name: Police Zombie Idle_1
       rect:
         serializedVersion: 2
         x: 96
-        y: 191
+        y: 192
         width: 96
-        height: 81
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d686b372d70960c90800000000000000
-      internalID: -7203911686729013139
+      spriteID: 5246a097eeb8e4c4284ebabcdfa5a49e
+      internalID: -2068906704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (10)_2
+      name: Police Zombie Idle_2
       rect:
         serializedVersion: 2
         x: 192
-        y: 191
+        y: 192
         width: 96
-        height: 80
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c4e46d475422d1de0800000000000000
-      internalID: -1360893830687732148
+      spriteID: 86d862af41a9e2e4783e82680463c877
+      internalID: 2037034479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (10)_3
+      name: Police Zombie Idle_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 96
-        height: 80
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fd477054be63446c0800000000000000
-      internalID: -4160139771680164641
+      spriteID: 10f0f4e57e1e3aa4384c24900200b013
+      internalID: -672519731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (10)_4
+      name: Police Zombie Idle_4
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 96
-        height: 81
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e03ea49e6ca558880800000000000000
-      internalID: -8609375302284811506
+      spriteID: 9d25268ae9845a64983a8581bf1be656
+      internalID: 1868555429
       vertices: []
       indices: 
       edges: []
@@ -261,11 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CivilianZombie (10)_0: 3087248423561515006
-      CivilianZombie (10)_1: -7203911686729013139
-      CivilianZombie (10)_2: -1360893830687732148
-      CivilianZombie (10)_3: -4160139771680164641
-      CivilianZombie (10)_4: -8609375302284811506
+      Police Zombie Idle_0: -1672590786
+      Police Zombie Idle_1: -2068906704
+      Police Zombie Idle_2: 2037034479
+      Police Zombie Idle_3: -672519731
+      Police Zombie Idle_4: 1868555429
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

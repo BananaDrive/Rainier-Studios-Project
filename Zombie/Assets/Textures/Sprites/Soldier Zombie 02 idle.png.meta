@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 192
+  spritePixelsToUnits: 78
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -138,111 +138,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: soldier 02 idle_0
+      name: Soldier Zombie 02 idle_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 191
-        width: 32
-        height: 83
+        x: 0
+        y: 192
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 82f21f047421222a0800000000000000
-      internalID: -6763823593115537624
+      spriteID: a442a5e17c933074f9c9d2d96af127cf
+      internalID: 1838194784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: soldier 02 idle_1
+      name: Soldier Zombie 02 idle_1
       rect:
         serializedVersion: 2
-        x: 129
-        y: 191
-        width: 32
-        height: 82
+        x: 96
+        y: 192
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f73e3e275988e1460800000000000000
-      internalID: 7214353828553155455
+      spriteID: a8de6499b4007784a9a3f97363635c50
+      internalID: -563035307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: soldier 02 idle_2
+      name: Soldier Zombie 02 idle_2
       rect:
         serializedVersion: 2
-        x: 225
-        y: 191
-        width: 32
-        height: 81
+        x: 192
+        y: 192
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f0f93c72b080af670800000000000000
-      internalID: 8573173684657954575
+      spriteID: b347cfed43248964aa0be7498516847c
+      internalID: -1451893383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: soldier 02 idle_3
+      name: Soldier Zombie 02 idle_3
       rect:
         serializedVersion: 2
-        x: 33
+        x: 0
         y: 0
-        width: 32
-        height: 81
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2ced551b8ac87b160800000000000000
-      internalID: 7041251198574649026
+      spriteID: 490e0deef2a0ca549b21ed6ec5c94888
+      internalID: -1173196094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: soldier 02 idle_4
+      name: Soldier Zombie 02 idle_4
       rect:
         serializedVersion: 2
-        x: 129
+        x: 96
         y: 0
-        width: 32
-        height: 82
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c946b0a5722e8f990800000000000000
-      internalID: -7351877733040036708
+      spriteID: 187d823212290004baf81df815898910
+      internalID: -1375025030
       vertices: []
       indices: 
       edges: []
@@ -251,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 519e42d79c4ea5045b0c61165d1600f9
     internalID: 0
     vertices: []
     indices: 
@@ -261,11 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      soldier 02 idle_0: -6763823593115537624
-      soldier 02 idle_1: 7214353828553155455
-      soldier 02 idle_2: 8573173684657954575
-      soldier 02 idle_3: 7041251198574649026
-      soldier 02 idle_4: -7351877733040036708
+      Soldier Zombie 02 idle_0: 1838194784
+      Soldier Zombie 02 idle_1: -563035307
+      Soldier Zombie 02 idle_2: -1451893383
+      Soldier Zombie 02 idle_3: -1173196094
+      Soldier Zombie 02 idle_4: -1375025030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

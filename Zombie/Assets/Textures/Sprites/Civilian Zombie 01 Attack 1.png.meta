@@ -87,7 +87,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 72
+  spritePixelsToUnits: 192
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -162,287 +162,287 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CivilianZombie (7) - Copy (1)_0
+      name: Civilian Zombie 01 Attack 1_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 383
-        width: 34
-        height: 79
+        x: 0
+        y: 384
+        width: 96
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4c78a07aea0db7220800000000000000
-      internalID: 2484809067970332612
+      spriteID: 7fd111619f7c95344b95c2632106f9e0
+      internalID: -1385037580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (7) - Copy (1)_1
+      name: Civilian Zombie 01 Attack 1_1
       rect:
         serializedVersion: 2
-        x: 142
-        y: 383
-        width: 36
-        height: 78
+        x: 96
+        y: 384
+        width: 96
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 69940abc210230540800000000000000
-      internalID: 4972853678644939158
+      spriteID: 713621a9caa40b24187efdd6c6ca504f
+      internalID: -1910400770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (7) - Copy (1)_2
+      name: Civilian Zombie 01 Attack 1_2
       rect:
         serializedVersion: 2
-        x: 232
-        y: 383
-        width: 42
-        height: 76
+        x: 192
+        y: 384
+        width: 96
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ae1ff37765f46e7e0800000000000000
-      internalID: -1736613373518286358
+      spriteID: 293283bd00bdd9a4eb8a37956f8cfb40
+      internalID: -1536676902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (7) - Copy (1)_3
+      name: Civilian Zombie 01 Attack 1_3
       rect:
         serializedVersion: 2
-        x: 328
-        y: 383
-        width: 42
-        height: 75
+        x: 288
+        y: 384
+        width: 96
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9335d902fc0f370a0800000000000000
-      internalID: -6884894632923278535
+      spriteID: 6296b1e9b3c37684e9101ca789e9dcf8
+      internalID: 290176923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (7) - Copy (1)_4
+      name: Civilian Zombie 01 Attack 1_4
       rect:
         serializedVersion: 2
-        x: 40
-        y: 255
-        width: 42
-        height: 73
+        x: 0
+        y: 256
+        width: 96
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0864ed11d17f33310800000000000000
-      internalID: 1383721214758766208
+      spriteID: 5c306c180c043e140a9a49b5e59fc6df
+      internalID: 611165015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (7) - Copy (1)_5
+      name: Civilian Zombie 01 Attack 1_5
       rect:
         serializedVersion: 2
-        x: 142
-        y: 255
-        width: 36
-        height: 72
+        x: 96
+        y: 256
+        width: 96
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d39149ce1d908f3e0800000000000000
-      internalID: -2019853635653723843
+      spriteID: 0a7392e50a57871498af5b4f9424ae18
+      internalID: -951897668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (7) - Copy (1)_6
+      name: Civilian Zombie 01 Attack 1_6
       rect:
         serializedVersion: 2
-        x: 238
-        y: 255
-        width: 36
-        height: 70
+        x: 192
+        y: 256
+        width: 96
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 83456fb2ad96923e0800000000000000
-      internalID: -2078013367293422536
+      spriteID: 92c4d9cb384731345aa65328e2679707
+      internalID: -1530236207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (7) - Copy (1)_7
+      name: Civilian Zombie 01 Attack 1_7
       rect:
         serializedVersion: 2
-        x: 332
-        y: 258
-        width: 36
-        height: 70
+        x: 288
+        y: 256
+        width: 96
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 32b01a814fe1e4ea0800000000000000
-      internalID: -5886733629192598749
+      spriteID: f9264dfd36e4c8f4fac19b40ab080c92
+      internalID: -833108951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (7) - Copy (1)_8
+      name: Civilian Zombie 01 Attack 1_8
       rect:
         serializedVersion: 2
-        x: 31
-        y: 132
-        width: 50
-        height: 69
+        x: 0
+        y: 128
+        width: 96
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 827577825694e2480800000000000000
-      internalID: -8922113112954939608
+      spriteID: 5ac7f392bdfbc294ba31135f83278f60
+      internalID: 1200427581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (7) - Copy (1)_9
+      name: Civilian Zombie 01 Attack 1_9
       rect:
         serializedVersion: 2
-        x: 125
-        y: 131
-        width: 50
-        height: 69
+        x: 96
+        y: 128
+        width: 96
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e536993d4ca5261b0800000000000000
-      internalID: -5664865579868527778
+      spriteID: fe8183a9f57e5874fb12385a57ba7363
+      internalID: 89359138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (7) - Copy (1)_10
+      name: Civilian Zombie 01 Attack 1_10
       rect:
         serializedVersion: 2
-        x: 219
-        y: 131
-        width: 32
-        height: 70
+        x: 192
+        y: 128
+        width: 96
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e434eebaf4218e330800000000000000
-      internalID: 3740259623927432014
+      spriteID: 520a930da063f164684f117f3c5820c5
+      internalID: -519427306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (7) - Copy (1)_11
+      name: Civilian Zombie 01 Attack 1_11
       rect:
         serializedVersion: 2
-        x: 311
-        y: 127
-        width: 36
-        height: 70
+        x: 288
+        y: 128
+        width: 96
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6fc45914e103cb7c0800000000000000
-      internalID: -4054312658032833290
+      spriteID: 7e7162a1f31331d4397395bf1c77512b
+      internalID: -1824741318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (7) - Copy (1)_12
+      name: Civilian Zombie 01 Attack 1_12
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 0
-        width: 34
-        height: 78
+        width: 96
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 120a0a2e28935fa10800000000000000
-      internalID: 1942522048590946337
+      spriteID: e168b5195484e5a4c88bfbc02cd54ed8
+      internalID: 1322455981
       vertices: []
       indices: 
       edges: []
@@ -451,7 +451,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3fd6956c224c2654b9806d03fccfa68e
     internalID: 0
     vertices: []
     indices: 
@@ -461,19 +461,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CivilianZombie (7) - Copy (1)_0: 2484809067970332612
-      CivilianZombie (7) - Copy (1)_1: 4972853678644939158
-      CivilianZombie (7) - Copy (1)_10: 3740259623927432014
-      CivilianZombie (7) - Copy (1)_11: -4054312658032833290
-      CivilianZombie (7) - Copy (1)_12: 1942522048590946337
-      CivilianZombie (7) - Copy (1)_2: -1736613373518286358
-      CivilianZombie (7) - Copy (1)_3: -6884894632923278535
-      CivilianZombie (7) - Copy (1)_4: 1383721214758766208
-      CivilianZombie (7) - Copy (1)_5: -2019853635653723843
-      CivilianZombie (7) - Copy (1)_6: -2078013367293422536
-      CivilianZombie (7) - Copy (1)_7: -5886733629192598749
-      CivilianZombie (7) - Copy (1)_8: -8922113112954939608
-      CivilianZombie (7) - Copy (1)_9: -5664865579868527778
+      Civilian Zombie 01 Attack 1_0: -1385037580
+      Civilian Zombie 01 Attack 1_1: -1910400770
+      Civilian Zombie 01 Attack 1_10: -519427306
+      Civilian Zombie 01 Attack 1_11: -1824741318
+      Civilian Zombie 01 Attack 1_12: 1322455981
+      Civilian Zombie 01 Attack 1_2: -1536676902
+      Civilian Zombie 01 Attack 1_3: 290176923
+      Civilian Zombie 01 Attack 1_4: 611165015
+      Civilian Zombie 01 Attack 1_5: -951897668
+      Civilian Zombie 01 Attack 1_6: -1530236207
+      Civilian Zombie 01 Attack 1_7: -833108951
+      Civilian Zombie 01 Attack 1_8: 1200427581
+      Civilian Zombie 01 Attack 1_9: 89359138
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

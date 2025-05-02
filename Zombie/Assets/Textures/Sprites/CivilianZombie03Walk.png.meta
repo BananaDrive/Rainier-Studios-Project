@@ -78,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 75
+  spritePixelsToUnits: 78
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -153,221 +153,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CivilianZombie (3)_0
+      name: CivilianZombie03Walk_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 255
-        width: 34
-        height: 79
+        x: 0
+        y: 256
+        width: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3248a1ad85cfbfc20800000000000000
-      internalID: 3241461815369696291
+      spriteID: f64256715b59bc8458c34b7214da719e
+      internalID: -1450604642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (3)_1
+      name: CivilianZombie03Walk_1
       rect:
         serializedVersion: 2
-        x: 77
-        y: 255
-        width: 33
-        height: 79
+        x: 64
+        y: 256
+        width: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dc81ec7da5ad4afc0800000000000000
-      internalID: -3484420127975401267
+      spriteID: 5d66093f146856e46a30ad871aca459d
+      internalID: -210590881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (3)_2
+      name: CivilianZombie03Walk_2
       rect:
         serializedVersion: 2
-        x: 141
-        y: 255
-        width: 27
-        height: 77
+        x: 128
+        y: 256
+        width: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f974d9945d8d4f0c0800000000000000
-      internalID: -4542767713535309921
+      spriteID: fd970cf18430d064fa4d2b434b3e53ce
+      internalID: 1072500356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (3)_3
+      name: CivilianZombie03Walk_3
       rect:
         serializedVersion: 2
-        x: 205
-        y: 255
-        width: 27
-        height: 77
+        x: 192
+        y: 256
+        width: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5370b75a12e012440800000000000000
-      internalID: 4909220606483564341
+      spriteID: 7659fd8903e5e6341838c28e54df193e
+      internalID: -1979820301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (3)_4
+      name: CivilianZombie03Walk_4
       rect:
         serializedVersion: 2
-        x: 13
-        y: 127
-        width: 30
-        height: 78
+        x: 0
+        y: 128
+        width: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 09ba5dbbb267a08b0800000000000000
-      internalID: -5185202090756691056
+      spriteID: c8601ebbb48722247bf87d537b8aa401
+      internalID: 1372996635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (3)_5
+      name: CivilianZombie03Walk_5
       rect:
         serializedVersion: 2
-        x: 77
-        y: 127
-        width: 27
-        height: 77
+        x: 64
+        y: 128
+        width: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5b1b41c346a49ad90800000000000000
-      internalID: -7086050744325590603
+      spriteID: 07d9cb70f0d255841b42c99e0eb722cd
+      internalID: -1951188102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (3)_6
+      name: CivilianZombie03Walk_6
       rect:
         serializedVersion: 2
-        x: 141
-        y: 127
-        width: 27
-        height: 77
+        x: 128
+        y: 128
+        width: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bb0a6dec2352633a0800000000000000
-      internalID: -6686115696636157765
+      spriteID: 06d3309fb5c788148a5ed82959488afd
+      internalID: -2108022402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (3)_7
+      name: CivilianZombie03Walk_7
       rect:
         serializedVersion: 2
-        x: 205
-        y: 127
-        width: 28
-        height: 77
+        x: 192
+        y: 128
+        width: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 227e286204de5ff60800000000000000
-      internalID: 8067615167283914530
+      spriteID: a24d91a37a649e448848cf13563c56ca
+      internalID: 549844944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (3)_8
+      name: CivilianZombie03Walk_8
       rect:
         serializedVersion: 2
-        x: 13
+        x: 0
         y: 0
-        width: 33
-        height: 78
+        width: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9e5617629a2455850800000000000000
-      internalID: 6365066942619936233
+      spriteID: 51b0bdb3fe1fd8649907e0ab923d81b4
+      internalID: -946740390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (3)_9
+      name: CivilianZombie03Walk_9
       rect:
         serializedVersion: 2
-        x: 77
+        x: 64
         y: 0
-        width: 34
-        height: 78
+        width: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 08673ec0791ea4fb0800000000000000
-      internalID: -4662666425316182400
+      spriteID: 9ef974d1b562f524ab188fd0a4def4db
+      internalID: 782724566
       vertices: []
       indices: 
       edges: []
@@ -376,7 +376,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2c250edd2adaa8e45b2d06532c22b166
     internalID: 0
     vertices: []
     indices: 
@@ -386,16 +386,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CivilianZombie (3)_0: 3241461815369696291
-      CivilianZombie (3)_1: -3484420127975401267
-      CivilianZombie (3)_2: -4542767713535309921
-      CivilianZombie (3)_3: 4909220606483564341
-      CivilianZombie (3)_4: -5185202090756691056
-      CivilianZombie (3)_5: -7086050744325590603
-      CivilianZombie (3)_6: -6686115696636157765
-      CivilianZombie (3)_7: 8067615167283914530
-      CivilianZombie (3)_8: 6365066942619936233
-      CivilianZombie (3)_9: -4662666425316182400
+      CivilianZombie03Walk_0: -1450604642
+      CivilianZombie03Walk_1: -210590881
+      CivilianZombie03Walk_2: 1072500356
+      CivilianZombie03Walk_3: -1979820301
+      CivilianZombie03Walk_4: 1372996635
+      CivilianZombie03Walk_5: -1951188102
+      CivilianZombie03Walk_6: -2108022402
+      CivilianZombie03Walk_7: 549844944
+      CivilianZombie03Walk_8: -946740390
+      CivilianZombie03Walk_9: 782724566
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

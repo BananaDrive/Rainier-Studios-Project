@@ -196,7 +196,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &8559366492459221640
@@ -354,13 +354,13 @@ MonoBehaviour:
   health: {fileID: 0}
   death: {fileID: 7218013736252647862}
   hurt: {fileID: 5949861547048403455}
-  healthbar: {fileID: 7631498994103669363}
   damageReduc: 1
   maxHealth: 200
   currentHealth: 200
   invincibltyTime: 0
   invincible: 0
   enemyBehavior: {fileID: 8203910326083383789}
+  healthbar: {fileID: 7631498994103669363}
   lootTableName: 
 --- !u!95 &8056102172973175273
 Animator:
@@ -372,7 +372,7 @@ Animator:
   m_GameObject: {fileID: 5125834075557533559}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 104e9cfbdd68cf844b1f1683da529a0c, type: 2}
+  m_Controller: {fileID: 9100000, guid: e1cd733ff2795974da9330a0586ecca6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

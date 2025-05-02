@@ -4,13 +4,14 @@ public class EnviromentCollision : MonoBehaviour
 {
     public LayerMask layersToTrigger;
     public Animator anim;
-    public AnimationClip animClip;
 
-    public void OnCollisionEnter2D(Collision2D other)
+    public string triggerName;
+
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if ((layersToTrigger & (1 << other.gameObject.layer)) != 0)
         {
-            anim.Play(animClip.ToString());
+            anim.SetTrigger(triggerName);
         }
     }
 }

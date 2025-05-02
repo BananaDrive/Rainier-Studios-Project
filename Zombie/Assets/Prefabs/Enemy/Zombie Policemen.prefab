@@ -260,7 +260,7 @@ MonoBehaviour:
   invincible: 0
   enemyBehavior: {fileID: 2819984677176277959}
   healthbar: {fileID: 1040705566092767075}
-  lootTableName: 
+  lootTableName: Zombie Police
 --- !u!95 &151590895543552110
 Animator:
   serializedVersion: 7

@@ -35,6 +35,7 @@ public class Bullet : MonoBehaviour
     {
         layerToHit = 0;
         damage = 0f;
+        trailRenderer.Clear();
         gameObject.SetActive(false);
     }
 

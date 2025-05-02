@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e0e03bd5a8af045affe3f4c136a1b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
+  bullet: {fileID: 5090919567473301052, guid: f689d4ddf1967254382ab1746bcf6e1c, type: 3}
   shootPoint: {fileID: 5321357807592417712}
   damage: 32
   fireRate: 3
@@ -418,7 +418,7 @@ MonoBehaviour:
   clipAmount: 0
   gun: {fileID: 5146715617024659985}
   allowAuto: 0
-  allowRaycast: 1
+  allowRaycast: 0
   allowPiercing: 0
   playerLayer:
     serializedVersion: 2

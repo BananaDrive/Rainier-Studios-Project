@@ -144,155 +144,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soldier Zombie 02 Walk 01_0
+      name: CivilianZombie (4)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 96
-        height: 192
+        x: 11
+        y: 191
+        width: 51
+        height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c7dae006a8ccb3d44b0c5b7d2bbdfb04
-      internalID: -266870848
+      spriteID: 54b6c55722cc5f400800000000000000
+      internalID: 357416193815767877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier Zombie 02 Walk 01_1
+      name: CivilianZombie (4)_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
-        width: 96
-        height: 192
+        x: 107
+        y: 191
+        width: 51
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 93618f713cbefd3498c5cfaa191ffff1
-      internalID: 971941290
+      spriteID: f00e8b1dafcc257a0800000000000000
+      internalID: -6389819543652868081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier Zombie 02 Walk 01_2
+      name: CivilianZombie (4)_2
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 96
-        height: 192
+        x: 203
+        y: 191
+        width: 51
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b070a2b861b34324b960228d51dfbe4d
-      internalID: 2131640787
+      spriteID: 7af84d2cf99aac420800000000000000
+      internalID: 2651117834294562727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier Zombie 02 Walk 01_3
+      name: CivilianZombie (4)_3
       rect:
         serializedVersion: 2
-        x: 288
+        x: 299
         y: 192
-        width: 96
-        height: 192
+        width: 51
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bce50e6041fc2284fa70e3b8519bd875
-      internalID: 744971877
+      spriteID: 65a7afb458eb41fa0800000000000000
+      internalID: -5830826137823315370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier Zombie 02 Walk 01_4
+      name: CivilianZombie (4)_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 11
         y: 0
-        width: 96
-        height: 192
+        width: 51
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5f56ba268d3301d4b8be5dbfaa775864
-      internalID: -903375828
+      spriteID: 6329ac64c2cdf8910800000000000000
+      internalID: 1841932855342174774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier Zombie 02 Walk 01_5
+      name: CivilianZombie (4)_5
       rect:
         serializedVersion: 2
-        x: 96
+        x: 107
         y: 0
-        width: 96
-        height: 192
+        width: 51
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 424a4c4aab9997444990c5f831803d58
-      internalID: 841839625
+      spriteID: bc56b38e1c56848f0800000000000000
+      internalID: -556082670480955957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier Zombie 02 Walk 01_6
+      name: CivilianZombie (4)_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 203
         y: 0
-        width: 96
-        height: 192
+        width: 51
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: aacde3c9788a6e94c98db31b3f9f6ea5
-      internalID: -1234226774
+      spriteID: a7711984d64cf3d20800000000000000
+      internalID: 3260540628887476090
       vertices: []
       indices: 
       edges: []
@@ -301,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 07079db841c290444a83021ea7bd3ed9
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -311,13 +311,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Soldier Zombie 02 Walk 01_0: -266870848
-      Soldier Zombie 02 Walk 01_1: 971941290
-      Soldier Zombie 02 Walk 01_2: 2131640787
-      Soldier Zombie 02 Walk 01_3: 744971877
-      Soldier Zombie 02 Walk 01_4: -903375828
-      Soldier Zombie 02 Walk 01_5: 841839625
-      Soldier Zombie 02 Walk 01_6: -1234226774
+      CivilianZombie (4)_0: 357416193815767877
+      CivilianZombie (4)_1: -6389819543652868081
+      CivilianZombie (4)_2: 2651117834294562727
+      CivilianZombie (4)_3: -5830826137823315370
+      CivilianZombie (4)_4: 1841932855342174774
+      CivilianZombie (4)_5: -556082670480955957
+      CivilianZombie (4)_6: 3260540628887476090
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

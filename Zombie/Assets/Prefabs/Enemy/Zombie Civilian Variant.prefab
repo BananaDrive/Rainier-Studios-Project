@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 3241461815369696291, guid: 206a6133ff8cace4e923f519a98425d2, type: 3}
     - target: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_Name
-      value: Zombie Civilian Variant
+      value: Zombie (1) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_IsActive
@@ -71,7 +71,7 @@ PrefabInstance:
     - target: {fileID: 8056102172973175273, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: a0f26263a166cb541b82679739e73162, type: 2}
+      objectReference: {fileID: 9100000, guid: adf828d3ddbf90d4bbc2270d916de6a9, type: 2}
     - target: {fileID: 8203910326083383789, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: lootTableName
       value: 3

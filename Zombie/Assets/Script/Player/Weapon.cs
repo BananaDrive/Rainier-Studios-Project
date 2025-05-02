@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 public class Weapon : MonoBehaviour
 {
     public GameObject bullet;
-    public Transform shootPoint;
 
     [Header("Stats")]
     public float damage;
@@ -39,7 +38,7 @@ public class Weapon : MonoBehaviour
         if (gamepad != null)
             controller = true;
         Debug.DrawRay(transform.position, transform.right);
-        if ((allowAuto && Input.GetKey(KeyCode.E) || (!allowAuto && Input.GetKeyDown(KeyCode.E) || (controller && gamepad.buttonWest.wasPressedThisFrame))) && !shootCooldown)
+        if (allowAuto && Input.GetKey(KeyCode.E) || (!allowAuto && (Input.GetKeyDown(KeyCode.E) || (controller && gamepad.buttonWest.wasPressedThisFrame)) && !shootCooldown ))
         {
             if (clipAmount > 0)
             {
@@ -80,7 +79,7 @@ public class Weapon : MonoBehaviour
         bulletScript.layerToHit = enemyLayer;
         bulletScript.isPiercing = allowPiercing;
         
-        bulletTransform.SetPositionAndRotation(shootPoint.position, transform.rotation);
+        bulletTransform.SetPositionAndRotation(transform.position, transform.rotation);
         bullet.GetComponent<Rigidbody2D>().AddForce(bulletSpeed * bulletSpeedBuff * Random.Range(8f, 12f) * DetermineSpread(), ForceMode2D.Force);
 
         StartCoroutine(bulletScript.Despawn());
@@ -118,7 +117,6 @@ public class Weapon : MonoBehaviour
     public IEnumerator ShootCD()
     {
         yield return new WaitForSeconds(1f / (fireRate * fireRateBuff * 2f));
-        Debug.Log(1f / (fireRate * fireRateBuff * 2f));
         shootCooldown = false;
     }
 

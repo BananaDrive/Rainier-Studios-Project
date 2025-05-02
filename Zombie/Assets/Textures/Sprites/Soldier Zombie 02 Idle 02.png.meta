@@ -129,45 +129,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soldier Zombie 02 Idle 02_0
+      name: CivilianZombie (5) (1)_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 29
         y: 0
-        width: 96
-        height: 192
+        width: 32
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9ea2385153f03fc44b8676e7170cd842
-      internalID: -381165003
+      spriteID: 3debf92ea08d5d680800000000000000
+      internalID: -8730834761324445997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier Zombie 02 Idle 02_1
+      name: CivilianZombie (5) (1)_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 125
         y: 0
-        width: 96
-        height: 192
+        width: 32
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f02f4773e428e3e4fbc76d17e8d3daef
-      internalID: -1851351536
+      spriteID: 517680b21dc8f9a10800000000000000
+      internalID: 1918406796281145109
       vertices: []
       indices: 
       edges: []
@@ -176,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 110cd8aff36f7334e8cfea087c76aeb4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -186,8 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Soldier Zombie 02 Idle 02_0: -381165003
-      Soldier Zombie 02 Idle 02_1: -1851351536
+      CivilianZombie (5) (1)_0: -8730834761324445997
+      CivilianZombie (5) (1)_1: 1918406796281145109
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

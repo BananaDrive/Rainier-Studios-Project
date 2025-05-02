@@ -228,14 +228,12 @@ MonoBehaviour:
   damage: 10
   attackRate: 1
   rangeToAttack: 10
-  scoreOnDeath: 0
   canJump: 0
   canSprint: 0
   explodeOnDeath: 0
   canInterrupt: 0
   hasAttacked: 0
   bullet: {fileID: 0}
-  shotPoint: {fileID: 0}
   burstFireAmount: 3
 --- !u!114 &4389842551940665543
 MonoBehaviour:
@@ -252,13 +250,11 @@ MonoBehaviour:
   health: {fileID: 0}
   death: {fileID: 8104419803079820022}
   hurt: {fileID: 6864576098947849691}
+  healthbar: {fileID: 1337745096588674849}
   damageReduc: 0
   maxHealth: 200
   currentHealth: 200
-  invincibltyTime: 0
-  invincible: 0
   enemyBehavior: {fileID: 2819984677176277959}
-  healthbar: {fileID: 1337745096588674849}
   lootTableName: 
 --- !u!95 &963372963312941416
 Animator:
@@ -270,7 +266,7 @@ Animator:
   m_GameObject: {fileID: 428861404853458720}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 66436543e745cd444b66692ac6901a0c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 837aa5defd425c943a8d9d4e4938d62c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

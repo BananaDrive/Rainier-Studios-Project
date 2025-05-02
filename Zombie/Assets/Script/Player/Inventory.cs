@@ -1,8 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
+    public GameObject weapon;
     public BuffsHandler buffs;
     internal BaseItem foundItem;
     internal Enhancers enhancer;

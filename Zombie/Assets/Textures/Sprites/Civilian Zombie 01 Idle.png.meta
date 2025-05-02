@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 78
+  spritePixelsToUnits: 72
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,45 +129,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Civilian Zombie 01 Idle_0
+      name: CivilianZombie (7) - Copy_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
-        height: 80
+        height: 77
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2b7d31b7095f27846b80e0355f2ed0b3
-      internalID: 1307169249
+      spriteID: 34d676e696feb7580800000000000000
+      internalID: -8828199408426848957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Civilian Zombie 01 Idle_1
+      name: CivilianZombie (7) - Copy_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
-        height: 80
+        height: 77
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4378a421b3e2cbf489a2dba20e423bec
-      internalID: 314781423
+      spriteID: fcab997cce2667150800000000000000
+      internalID: 5869987933424564943
       vertices: []
       indices: 
       edges: []
@@ -186,8 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Civilian Zombie 01 Idle_0: 1307169249
-      Civilian Zombie 01 Idle_1: 314781423
+      CivilianZombie (7) - Copy_0: -8828199408426848957
+      CivilianZombie (7) - Copy_1: 5869987933424564943
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

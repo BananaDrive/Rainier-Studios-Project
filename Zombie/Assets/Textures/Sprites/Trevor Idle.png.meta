@@ -135,89 +135,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Trevor Idle_0
+      name: OfficeMan (1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 128
+        x: 28
+        y: 127
+        width: 31
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a398fe02174091849aca3556895c6299
-      internalID: -1241035602
+      spriteID: da789fbcb930d72f0800000000000000
+      internalID: -973617976765216851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trevor Idle_1
+      name: OfficeMan (1)_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 128
+        x: 92
+        y: 127
+        width: 31
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cb3c60895b7505b4c969b3b25751f448
-      internalID: -771831728
+      spriteID: dfe69b261a9e3d3b0800000000000000
+      internalID: -5488786641479176451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trevor Idle_2
+      name: OfficeMan (1)_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 128
+        x: 156
+        y: 127
+        width: 31
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 206d79112612f464fa037554fe9422cd
-      internalID: -850815964
+      spriteID: 636dc42c595ba1300800000000000000
+      internalID: 223690786322830902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trevor Idle_3
+      name: OfficeMan (1)_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 28
         y: 0
-        width: 64
-        height: 128
+        width: 31
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0a6a1ab32d37bf24c818705d6c666b8d
-      internalID: -2081108280
+      spriteID: 1cf9bace846301350800000000000000
+      internalID: 5985343591611604929
       vertices: []
       indices: 
       edges: []
@@ -226,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a73cd243c3a4f5f42b8e494ef51d5293
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -236,10 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Trevor Idle_0: -1241035602
-      Trevor Idle_1: -771831728
-      Trevor Idle_2: -850815964
-      Trevor Idle_3: -2081108280
+      OfficeMan (1)_0: -973617976765216851
+      OfficeMan (1)_1: -5488786641479176451
+      OfficeMan (1)_2: 223690786322830902
+      OfficeMan (1)_3: 5985343591611604929
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

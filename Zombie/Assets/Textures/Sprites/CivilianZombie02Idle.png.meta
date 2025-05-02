@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 78
+  spritePixelsToUnits: 75
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,45 +129,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CivilianZombie02Idle_0
+      name: CivilianZombie (8) - Copy_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 11
         y: 0
-        width: 64
-        height: 128
+        width: 36
+        height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 87f7851f6f144d04ea999e8bca2ef5cd
-      internalID: -1692703756
+      spriteID: 5a29ff9e27b48a310800000000000000
+      internalID: 1416465039732216485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie02Idle_1
+      name: CivilianZombie (8) - Copy_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 76
         y: 0
-        width: 64
-        height: 128
+        width: 36
+        height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: dd8af148b06f3ab449bf0aa4d06d2532
-      internalID: 591390219
+      spriteID: f61da083408130060800000000000000
+      internalID: 6918399858970382703
       vertices: []
       indices: 
       edges: []
@@ -186,8 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CivilianZombie02Idle_0: -1692703756
-      CivilianZombie02Idle_1: 591390219
+      CivilianZombie (8) - Copy_0: 1416465039732216485
+      CivilianZombie (8) - Copy_1: 6918399858970382703
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

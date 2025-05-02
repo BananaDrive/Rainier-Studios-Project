@@ -38,9 +38,9 @@ public class PlayerHealth : Health
 
     void FixedUpdate()
     {
-        if (regenTick && regenAmount > 0)
+        if (!regenTick && regenAmount > 0)
         {
-            regenTick = false;
+            regenTick = true;
             Invoke(nameof(Regenerate), regenRate);
         }
     }
@@ -48,7 +48,7 @@ public class PlayerHealth : Health
     public void Regenerate()
     {
         AddHealth(regenAmount * regenRate);
-        regenTick = true;
+        regenTick = false;
     }
 
     public override void HandleDeath()

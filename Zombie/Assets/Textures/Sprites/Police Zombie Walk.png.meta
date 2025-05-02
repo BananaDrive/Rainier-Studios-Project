@@ -78,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 78
+  spritePixelsToUnits: 192
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -153,221 +153,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CivilianZombie_0
+      name: Police Zombie Walk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 384
         width: 96
-        height: 80
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b63083ab7cce8cdc0800000000000000
-      internalID: -3618381958025313429
+      spriteID: 5b823287e11cee04c9f8311285075fd0
+      internalID: -1308323285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie_1
+      name: Police Zombie Walk_1
       rect:
         serializedVersion: 2
         x: 96
         y: 384
         width: 96
-        height: 80
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 27e080d035e1434f0800000000000000
-      internalID: -850021087616430478
+      spriteID: 018d50ddaed55fb4aab9c4b0a5048309
+      internalID: 276221218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie_2
+      name: Police Zombie Walk_2
       rect:
         serializedVersion: 2
         x: 192
         y: 384
         width: 96
-        height: 80
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b3c1720e99046b140800000000000000
-      internalID: 4735043087861488699
+      spriteID: 9ada50bfb0faed44ab81d23ffbd3405e
+      internalID: 1899153075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie_3
+      name: Police Zombie Walk_3
       rect:
         serializedVersion: 2
         x: 288
         y: 384
         width: 96
-        height: 80
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cbcd5b00b4669a100800000000000000
-      internalID: 119739337422527676
+      spriteID: a7a65b03f37a9b64b836d2df81c2cc12
+      internalID: -546500062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie_4
+      name: Police Zombie Walk_4
       rect:
         serializedVersion: 2
         x: 0
         y: 192
         width: 96
-        height: 80
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dee2f9d61c0914e70800000000000000
-      internalID: 9097711882707349229
+      spriteID: 1072145285a414e4786377e09cf47ea2
+      internalID: -242991593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie_5
+      name: Police Zombie Walk_5
       rect:
         serializedVersion: 2
         x: 96
         y: 192
         width: 96
-        height: 80
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f20bfdea4d5375750800000000000000
-      internalID: 6293558191856791599
+      spriteID: 5d03c8806678e344fb0324dcf36be018
+      internalID: -2088208805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie_6
+      name: Police Zombie Walk_6
       rect:
         serializedVersion: 2
         x: 192
         y: 192
         width: 96
-        height: 80
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e9814b6ad48b3f6f0800000000000000
-      internalID: -651974877389776738
+      spriteID: 6db0248f1e486c941a1c9c50e49c404e
+      internalID: -911114076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie_7
+      name: Police Zombie Walk_7
       rect:
         serializedVersion: 2
         x: 288
         y: 192
         width: 96
-        height: 80
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c34a2ea73647efcc0800000000000000
-      internalID: -3675372275275488196
+      spriteID: d92836efd2a89f44e83a33703818c393
+      internalID: 1435999937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie_8
+      name: Police Zombie Walk_8
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 96
-        height: 80
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3bb58175c5291bb70800000000000000
-      internalID: 8913066062838782899
+      spriteID: fa7f39d5ea67d564cae83238e774318a
+      internalID: -205917825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie_9
+      name: Police Zombie Walk_9
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 96
-        height: 80
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7ef75baee34d690a0800000000000000
-      internalID: -6875074414443659289
+      spriteID: afca0e762755d424d9a352c941abb2e9
+      internalID: -1506429139
       vertices: []
       indices: 
       edges: []
@@ -386,16 +386,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CivilianZombie_0: -3618381958025313429
-      CivilianZombie_1: -850021087616430478
-      CivilianZombie_2: 4735043087861488699
-      CivilianZombie_3: 119739337422527676
-      CivilianZombie_4: 9097711882707349229
-      CivilianZombie_5: 6293558191856791599
-      CivilianZombie_6: -651974877389776738
-      CivilianZombie_7: -3675372275275488196
-      CivilianZombie_8: 8913066062838782899
-      CivilianZombie_9: -6875074414443659289
+      Police Zombie Walk_0: -1308323285
+      Police Zombie Walk_1: 276221218
+      Police Zombie Walk_2: 1899153075
+      Police Zombie Walk_3: -546500062
+      Police Zombie Walk_4: -242991593
+      Police Zombie Walk_5: -2088208805
+      Police Zombie Walk_6: -911114076
+      Police Zombie Walk_7: 1435999937
+      Police Zombie Walk_8: -205917825
+      Police Zombie Walk_9: -1506429139
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

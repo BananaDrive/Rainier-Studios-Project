@@ -78,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 78
+  spritePixelsToUnits: 192
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -153,221 +153,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CivilianZombie (6)_0
+      name: Soldier Zombie 01 Throw_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 383
-        width: 33
-        height: 83
+        x: 0
+        y: 384
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: efc865dd183ff7f60800000000000000
-      internalID: 8034407999342021886
+      spriteID: b5623a527a5e1e942bad78da9636a9ea
+      internalID: -2110788469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (6)_1
+      name: Soldier Zombie 01 Throw_1
       rect:
         serializedVersion: 2
-        x: 126
-        y: 383
-        width: 35
-        height: 83
+        x: 96
+        y: 384
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9cc10cec5b2baef90800000000000000
-      internalID: -6923524983201194807
+      spriteID: 29ba17cff1aaa0f469308e96fd7a9b8a
+      internalID: -534931740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (6)_2
+      name: Soldier Zombie 01 Throw_2
       rect:
         serializedVersion: 2
-        x: 222
-        y: 383
-        width: 36
-        height: 83
+        x: 192
+        y: 384
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c1451218fb99adb20800000000000000
-      internalID: 3160007136338072604
+      spriteID: eddf7de889a297f44907362aff51cdc0
+      internalID: -410585771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (6)_3
+      name: Soldier Zombie 01 Throw_3
       rect:
         serializedVersion: 2
-        x: 318
-        y: 383
-        width: 44
-        height: 83
+        x: 288
+        y: 384
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 17bcc8059490742f0800000000000000
-      internalID: -988811382695867535
+      spriteID: 084d7866924b5d9488d0a2ed0bf7bc99
+      internalID: -1869389879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (6)_4
+      name: Soldier Zombie 01 Throw_4
       rect:
         serializedVersion: 2
-        x: 30
-        y: 191
-        width: 47
-        height: 83
+        x: 0
+        y: 192
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ed0ecabacdd08d790800000000000000
-      internalID: -7505233537588731682
+      spriteID: 073b94231dce61147904171666813a6a
+      internalID: -323661356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (6)_5
+      name: Soldier Zombie 01 Throw_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 191
-        width: 29
-        height: 86
+        x: 96
+        y: 192
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a35bb6d2e209a52e0800000000000000
-      internalID: -2136236545228950214
+      spriteID: 67fccaf135aa942459f40162fd2e20fc
+      internalID: 1852134387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (6)_6
+      name: Soldier Zombie 01 Throw_6
       rect:
         serializedVersion: 2
-        x: 218
-        y: 191
-        width: 35
-        height: 83
+        x: 192
+        y: 192
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 964fe13eaeef67b20800000000000000
-      internalID: 3131970875669017705
+      spriteID: 76800b9a1f5f70546b4be689f8b56fce
+      internalID: 735985771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (6)_7
+      name: Soldier Zombie 01 Throw_7
       rect:
         serializedVersion: 2
-        x: 320
-        y: 191
-        width: 29
-        height: 83
+        x: 288
+        y: 192
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5aeb26bfe31405700800000000000000
-      internalID: 526992895163678373
+      spriteID: 1a25582a380049842ba97cd9019e8674
+      internalID: 1770556548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (6)_8
+      name: Soldier Zombie 01 Throw_8
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 0
-        width: 29
-        height: 82
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 973059f82291b5000800000000000000
-      internalID: 25641859109159801
+      spriteID: 8590ee92aaed0e746a36aa5d430c5675
+      internalID: -968755800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CivilianZombie (6)_9
+      name: Soldier Zombie 01 Throw_9
       rect:
         serializedVersion: 2
-        x: 126
+        x: 96
         y: 0
-        width: 33
-        height: 82
+        width: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ef8ccc05611e8e470800000000000000
-      internalID: 8424230588957640958
+      spriteID: 9b7b5c08034632746863e448d3352383
+      internalID: 369597782
       vertices: []
       indices: 
       edges: []
@@ -376,7 +376,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 813e6c85668965e4dbe24b0f7a527980
     internalID: 0
     vertices: []
     indices: 
@@ -386,16 +386,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CivilianZombie (6)_0: 8034407999342021886
-      CivilianZombie (6)_1: -6923524983201194807
-      CivilianZombie (6)_2: 3160007136338072604
-      CivilianZombie (6)_3: -988811382695867535
-      CivilianZombie (6)_4: -7505233537588731682
-      CivilianZombie (6)_5: -2136236545228950214
-      CivilianZombie (6)_6: 3131970875669017705
-      CivilianZombie (6)_7: 526992895163678373
-      CivilianZombie (6)_8: 25641859109159801
-      CivilianZombie (6)_9: 8424230588957640958
+      Soldier Zombie 01 Throw_0: -2110788469
+      Soldier Zombie 01 Throw_1: -534931740
+      Soldier Zombie 01 Throw_2: -410585771
+      Soldier Zombie 01 Throw_3: -1869389879
+      Soldier Zombie 01 Throw_4: -323661356
+      Soldier Zombie 01 Throw_5: 1852134387
+      Soldier Zombie 01 Throw_6: 735985771
+      Soldier Zombie 01 Throw_7: 1770556548
+      Soldier Zombie 01 Throw_8: -968755800
+      Soldier Zombie 01 Throw_9: 369597782
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

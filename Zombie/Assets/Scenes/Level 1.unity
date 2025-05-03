@@ -31802,7 +31802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1307517547135546968, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: lootTables.Array.data[0].lootTableObjects.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1307517547135546968, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: lootTables.Array.data[1].lootTableObjects.Array.size
@@ -31823,7 +31823,7 @@ PrefabInstance:
     - target: {fileID: 1307517547135546968, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: lootTables.Array.data[0].lootTableObjects.Array.data[3].tableObj
       value: 
-      objectReference: {fileID: 6570681286541883612, guid: fd2f1cd2b538f0045acc305635ceb217, type: 3}
+      objectReference: {fileID: 8991184985484401020, guid: be6a202872ec08144ac72032635dad4d, type: 3}
     - target: {fileID: 1307517547135546968, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: lootTables.Array.data[1].lootTableObjects.Array.data[0].tableObj
       value: 
@@ -31849,12 +31849,20 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1307517547135546968, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[0].lootTableObjects.Array.data[3].objWeight
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307517547135546968, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: lootTables.Array.data[0].lootTableObjects.Array.data[1].scoreMilestone
       value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1307517547135546968, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: lootTables.Array.data[0].lootTableObjects.Array.data[2].scoreMilestone
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307517547135546968, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[0].lootTableObjects.Array.data[3].scoreMilestone
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1337449488634551436, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: m_AnchorMax.y

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Civ Zombie 02 Idle
+  m_Name: Trevor Idle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -20,12 +20,14 @@ AnimationClip:
   m_PPtrCurves:
   - serializedVersion: 2
     curve:
-    - time: 0.083333336
-      value: {fileID: 1416465039732216485, guid: 1c6681f43850acc4d86de7ace7b5ca86, type: 3}
-    - time: 0.51666665
-      value: {fileID: 6918399858970382703, guid: 1c6681f43850acc4d86de7ace7b5ca86, type: 3}
-    - time: 0.9
-      value: {fileID: 1416465039732216485, guid: 1c6681f43850acc4d86de7ace7b5ca86, type: 3}
+    - time: 0
+      value: {fileID: -1241035602, guid: b2b8e207d195e6145ae31d593dc24ffd, type: 3}
+    - time: 0.21666667
+      value: {fileID: -771831728, guid: b2b8e207d195e6145ae31d593dc24ffd, type: 3}
+    - time: 0.45
+      value: {fileID: -850815964, guid: b2b8e207d195e6145ae31d593dc24ffd, type: 3}
+    - time: 0.6666667
+      value: {fileID: -2081108280, guid: b2b8e207d195e6145ae31d593dc24ffd, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,15 +50,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1416465039732216485, guid: 1c6681f43850acc4d86de7ace7b5ca86, type: 3}
-    - {fileID: 6918399858970382703, guid: 1c6681f43850acc4d86de7ace7b5ca86, type: 3}
-    - {fileID: 1416465039732216485, guid: 1c6681f43850acc4d86de7ace7b5ca86, type: 3}
+    - {fileID: -1241035602, guid: b2b8e207d195e6145ae31d593dc24ffd, type: 3}
+    - {fileID: -771831728, guid: b2b8e207d195e6145ae31d593dc24ffd, type: 3}
+    - {fileID: -850815964, guid: b2b8e207d195e6145ae31d593dc24ffd, type: 3}
+    - {fileID: -2081108280, guid: b2b8e207d195e6145ae31d593dc24ffd, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.9166666
+    m_StopTime: 0.68333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

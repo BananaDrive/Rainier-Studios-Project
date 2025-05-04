@@ -188,8 +188,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.16216493, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 3637484463193222890, guid: 9ada626c9fa5a2f44ac711c60ceeb2f2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -263,8 +263,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.48936167, y: 0}
+    oldSize: {x: 1.46875, y: 0.78125}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -331,6 +331,7 @@ MonoBehaviour:
   damage: 5
   attackRate: 5
   rangeToAttack: 3
+  scoreOnDeath: 0
   canJump: 1
   canSprint: 0
   explodeOnDeath: 0
@@ -353,11 +354,13 @@ MonoBehaviour:
   health: {fileID: 0}
   death: {fileID: 5273108118825644886}
   hurt: {fileID: 167561953171961730}
-  healthbar: {fileID: 4315619807202225017}
   damageReduc: 0
   maxHealth: 200
   currentHealth: 200
+  invincibltyTime: 0
+  invincible: 0
   enemyBehavior: {fileID: 2786928428061324114}
+  healthbar: {fileID: 4315619807202225017}
   lootTableName: 
 --- !u!95 &1111738854305531241
 Animator:

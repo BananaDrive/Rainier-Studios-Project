@@ -151,11 +151,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f394b24107f687c45802a08592a95a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Enhancer
-  itemStats: Item Stats here
-  damage: 0
-  fireRate: 0
-  accuracy: 0
+  itemName: Swtich
+  itemStats: + Auto / + 50% Fire Rate / - 25% Damage / - 25% Accuracy
+  damage: -25
+  fireRate: 50
+  accuracy: -25
   reloadSpeed: 0
   bulletSpeed: 0
   shotAmount: 0

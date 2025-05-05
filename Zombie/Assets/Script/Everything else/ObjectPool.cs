@@ -11,6 +11,7 @@ public class ObjectPool : MonoBehaviour
     public class ObjectsToPool
     {
         public GameObject pooledObj;
+        public Transform parentObj;
         public int poolSize;
     }
     public ObjectsToPool[] objectsToPool;
@@ -33,7 +34,10 @@ public class ObjectPool : MonoBehaviour
         for (int i = 0; i < listOfPooledObjects.Length; i++)
         {
             Transform temp = Instantiate(objectPoolHolder).transform;
-            temp.SetParent(transform);
+            if (objectsToPool[i].parentObj == null)
+                temp.SetParent(transform);
+            else
+                temp.SetParent(objectsToPool[i].parentObj);
             MakeObjectPool(i, temp);
         }
     }

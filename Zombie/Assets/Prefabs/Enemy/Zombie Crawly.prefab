@@ -361,7 +361,7 @@ MonoBehaviour:
   invincible: 0
   enemyBehavior: {fileID: 2786928428061324114}
   healthbar: {fileID: 4315619807202225017}
-  lootTableName: 
+  lootTableName: Crawler
 --- !u!95 &1111738854305531241
 Animator:
   serializedVersion: 7

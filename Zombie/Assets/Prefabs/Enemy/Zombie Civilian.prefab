@@ -289,12 +289,12 @@ MonoBehaviour:
   rb: {fileID: 8559366492459221640}
   ground:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 4104
   moveSpeed: 1.5
   acceleration: 7
   deceleration: 30
   jumpPower: 35
-  groundDistance: 0.1
+  groundDistance: -0.2
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1
@@ -360,7 +360,6 @@ MonoBehaviour:
   invincibltyTime: 0
   invincible: 0
   enemyBehavior: {fileID: 8203910326083383789}
-  damageDisplay: {fileID: 5787175705764278705, guid: 9980b179bbf33114295b87c1bdbc691c, type: 3}
   healthbar: {fileID: 7631498994103669363}
   lootTableName: Zombie Civilian
 --- !u!95 &8056102172973175273
@@ -373,7 +372,7 @@ Animator:
   m_GameObject: {fileID: 5125834075557533559}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e1cd733ff2795974da9330a0586ecca6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 104e9cfbdd68cf844b1f1683da529a0c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

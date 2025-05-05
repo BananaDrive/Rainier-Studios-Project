@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2791561042572361558, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.0769231
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4450570444474460765, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_Size.x
@@ -83,7 +83,7 @@ PrefabInstance:
     - target: {fileID: 8056102172973175273, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 15cacc8f4852dae4a95776eeab3a38ae, type: 2}
+      objectReference: {fileID: 9100000, guid: 98710ff11903828409864c7e1101e416, type: 2}
     - target: {fileID: 8203910326083383789, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: lootTableName
       value: 3

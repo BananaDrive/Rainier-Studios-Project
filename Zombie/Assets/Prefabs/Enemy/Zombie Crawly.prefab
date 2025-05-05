@@ -294,7 +294,7 @@ MonoBehaviour:
   acceleration: 5
   deceleration: 7
   jumpPower: 20
-  groundDistance: 0.1
+  groundDistance: -0.2
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1
@@ -467,6 +467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyBehavior: {fileID: 2786928428061324114}
+  damage: 0
 --- !u!1 &7044910466142640356
 GameObject:
   m_ObjectHideFlags: 0

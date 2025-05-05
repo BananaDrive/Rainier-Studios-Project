@@ -360,6 +360,7 @@ MonoBehaviour:
   invincibltyTime: 0
   invincible: 0
   enemyBehavior: {fileID: 8203910326083383789}
+  damageDisplay: {fileID: 5787175705764278705, guid: 9980b179bbf33114295b87c1bdbc691c, type: 3}
   healthbar: {fileID: 7631498994103669363}
   lootTableName: Zombie Civilian
 --- !u!95 &8056102172973175273

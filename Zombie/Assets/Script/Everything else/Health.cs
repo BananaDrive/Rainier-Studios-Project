@@ -4,7 +4,7 @@ using UnityEngine;
 public abstract class Health : MonoBehaviour
 {
     public AudioSource health, death, hurt;
-    public float damageReduc;
+    public float damageReduc = 1;
     public float maxHealth;
     public float currentHealth;
     public float invincibltyTime;
@@ -13,11 +13,6 @@ public abstract class Health : MonoBehaviour
     public abstract void HandleDeath();
     public abstract void OtherDamageLogic(float damage);
     public abstract void OtherHealthLogic();
-
-    public void Start()
-    {
-        damageReduc = 1;
-    }
 
 
     public void TakeDamage(float damage)

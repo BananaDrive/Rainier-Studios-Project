@@ -31,7 +31,7 @@ public class PlayerHealth : Health
         GameManager.Instance.UIManager.playerHealthBar.UpdateSlider(currentHealth);
     }
 
-    new void Start()
+    void Start()
     {
         GameManager.Instance.UIManager.playerHealthBar.InitializeSlider(maxHealth);
     }

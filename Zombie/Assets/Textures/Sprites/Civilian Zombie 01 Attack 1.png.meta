@@ -1,40 +1,46 @@
 fileFormatVersion: 2
-guid: a44e9b18679436a4eb2645156fde6ae8
+guid: 8b7eb8dcd925f5847a33db155d7a4855
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1713317191072631755
-    second: OfficeMan_0
+      213: 3284993334661316189
+    second: Civilian Zombie 01 Attack 1_0
   - first:
-      213: -4694416396248949735
-    second: OfficeMan_1
+      213: 6591691529282792636
+    second: Civilian Zombie 01 Attack 1_1
   - first:
-      213: 4741911563986714243
-    second: OfficeMan_2
+      213: 1514920839688180789
+    second: Civilian Zombie 01 Attack 1_2
   - first:
-      213: 9207798217694124917
-    second: OfficeMan_3
+      213: 1773713625393645159
+    second: Civilian Zombie 01 Attack 1_3
   - first:
-      213: 5655387877153128421
-    second: OfficeMan_4
+      213: -6621312626109254377
+    second: Civilian Zombie 01 Attack 1_4
   - first:
-      213: -3433485225804117085
-    second: OfficeMan_5
+      213: 7438395395597107398
+    second: Civilian Zombie 01 Attack 1_5
   - first:
-      213: 5334100648968768104
-    second: OfficeMan_6
+      213: -224983538743895665
+    second: Civilian Zombie 01 Attack 1_6
   - first:
-      213: -8949841867533952946
-    second: OfficeMan_7
+      213: -706628747620417682
+    second: Civilian Zombie 01 Attack 1_7
   - first:
-      213: 6887373682621449697
-    second: OfficeMan_8
+      213: 4071204159601830743
+    second: Civilian Zombie 01 Attack 1_8
   - first:
-      213: -660053100689863865
-    second: OfficeMan_9
+      213: 4973087284705635606
+    second: Civilian Zombie 01 Attack 1_9
   - first:
-      213: -4570592877098966300
-    second: OfficeMan_10
+      213: 5777426934915375872
+    second: Civilian Zombie 01 Attack 1_10
+  - first:
+      213: -4636113908536349508
+    second: Civilian Zombie 01 Attack 1_11
+  - first:
+      213: 8703156657322666774
+    second: Civilian Zombie 01 Attack 1_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -127,37 +133,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -169,243 +149,287 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Trevor Walk_0
+      name: Civilian Zombie 01 Attack 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 64
-        height: 90
+        x: 48
+        y: 383
+        width: 34
+        height: 79
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e71bb9c8c0d39174a85093c321228b89
-      internalID: -1894031910
+      spriteID: d5e73028804a69d20800000000000000
+      internalID: 3284993334661316189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trevor Walk_1
+      name: Civilian Zombie 01 Attack 1_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 256
-        width: 64
-        height: 90
+        x: 142
+        y: 383
+        width: 36
+        height: 78
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d56c06a9ef9e0fe46a88f7b8e010b99f
-      internalID: 1343465623
+      spriteID: cbc2ad785846a7b50800000000000000
+      internalID: 6591691529282792636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trevor Walk_2
+      name: Civilian Zombie 01 Attack 1_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 256
-        width: 64
-        height: 90
+        x: 232
+        y: 383
+        width: 42
+        height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a109e22c1374fd245b18055c6316514b
-      internalID: -497592388
+      spriteID: 53453703a74160510800000000000000
+      internalID: 1514920839688180789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trevor Walk_3
+      name: Civilian Zombie 01 Attack 1_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 256
-        width: 64
-        height: 90
+        x: 328
+        y: 383
+        width: 42
+        height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9b2af15e6a1376248b666cc45cbf9719
-      internalID: 1311563414
+      spriteID: 766cbde052f7d9810800000000000000
+      internalID: 1773713625393645159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trevor Walk_4
+      name: Civilian Zombie 01 Attack 1_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 64
-        height: 90
+        x: 40
+        y: 255
+        width: 42
+        height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e59963c83b3e83a4b9d5ee3f71266bf4
-      internalID: 715656181
+      spriteID: 715f2fd6f3f5c14a0800000000000000
+      internalID: -6621312626109254377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trevor Walk_5
+      name: Civilian Zombie 01 Attack 1_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 90
+        x: 142
+        y: 255
+        width: 36
+        height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9480534332bfc6f4aa1f1278c6e52a0a
-      internalID: 903134792
+      spriteID: 6c08775b33d7a3760800000000000000
+      internalID: 7438395395597107398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trevor Walk_6
+      name: Civilian Zombie 01 Attack 1_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 90
+        x: 238
+        y: 255
+        width: 36
+        height: 70
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3e1ba2bdc1365cd47b4f16dc4ff3c69d
-      internalID: -120905796
+      spriteID: f891cdcd9a2b0ecf0800000000000000
+      internalID: -224983538743895665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trevor Walk_7
+      name: Civilian Zombie 01 Attack 1_7
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 90
+        x: 332
+        y: 258
+        width: 36
+        height: 70
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d1f8092f80e4e9142a92df263b694391
-      internalID: 2113972640
+      spriteID: e6f710ed5ec8136f0800000000000000
+      internalID: -706628747620417682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trevor Walk_8
+      name: Civilian Zombie 01 Attack 1_8
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
-        width: 64
-        height: 90
+        x: 31
+        y: 132
+        width: 50
+        height: 69
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: be0fba6cd655d9d4fa35ad57e5b9189d
-      internalID: 427433199
+      spriteID: 75be82dec92df7830800000000000000
+      internalID: 4071204159601830743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trevor Walk_9
+      name: Civilian Zombie 01 Attack 1_9
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
-        width: 64
-        height: 90
+        x: 125
+        y: 131
+        width: 50
+        height: 69
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 05271381e07d4154a98f613a0c5d412c
-      internalID: -1754343508
+      spriteID: 61d24e17984f30540800000000000000
+      internalID: 4973087284705635606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trevor Walk_10
+      name: Civilian Zombie 01 Attack 1_10
       rect:
         serializedVersion: 2
-        x: 0
+        x: 219
+        y: 131
+        width: 32
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003a76bef2b8d2050800000000000000
+      internalID: 5777426934915375872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian Zombie 01 Attack 1_11
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 127
+        width: 36
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc617f96f639afb0800000000000000
+      internalID: -4636113908536349508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian Zombie 01 Attack 1_12
+      rect:
+        serializedVersion: 2
+        x: 23
         y: 0
-        width: 64
-        height: 90
+        width: 34
+        height: 78
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d32c5c62fe6b4b3488b24c42caa0ee20
-      internalID: -218539182
+      spriteID: 61b2b485ed2d7c870800000000000000
+      internalID: 8703156657322666774
       vertices: []
       indices: 
       edges: []
@@ -414,7 +438,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 66ace064f72068a489ace404146d4b0c
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -424,17 +448,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Trevor Walk_0: -1894031910
-      Trevor Walk_1: 1343465623
-      Trevor Walk_10: -218539182
-      Trevor Walk_2: -497592388
-      Trevor Walk_3: 1311563414
-      Trevor Walk_4: 715656181
-      Trevor Walk_5: 903134792
-      Trevor Walk_6: -120905796
-      Trevor Walk_7: 2113972640
-      Trevor Walk_8: 427433199
-      Trevor Walk_9: -1754343508
+      Civilian Zombie 01 Attack 1_0: 3284993334661316189
+      Civilian Zombie 01 Attack 1_1: 6591691529282792636
+      Civilian Zombie 01 Attack 1_10: 5777426934915375872
+      Civilian Zombie 01 Attack 1_11: -4636113908536349508
+      Civilian Zombie 01 Attack 1_12: 8703156657322666774
+      Civilian Zombie 01 Attack 1_2: 1514920839688180789
+      Civilian Zombie 01 Attack 1_3: 1773713625393645159
+      Civilian Zombie 01 Attack 1_4: -6621312626109254377
+      Civilian Zombie 01 Attack 1_5: 7438395395597107398
+      Civilian Zombie 01 Attack 1_6: -224983538743895665
+      Civilian Zombie 01 Attack 1_7: -706628747620417682
+      Civilian Zombie 01 Attack 1_8: 4071204159601830743
+      Civilian Zombie 01 Attack 1_9: 4973087284705635606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

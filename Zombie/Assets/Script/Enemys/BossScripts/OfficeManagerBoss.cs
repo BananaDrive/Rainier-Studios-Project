@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -56,6 +57,8 @@ public class OfficeManagerBoss : EnemyBehavior
         throwDirection.y += 0.75f;
         thrownObj.transform.position = transform.position;
         thrownObj.GetComponent<Rigidbody2D>().AddForce(55f * throwPower * throwDirection, ForceMode2D.Force);
+
+        Destroy(thrownObj, 3f);
         Invoke(nameof(RangedCD), rangedCD);
     }
 
@@ -66,6 +69,7 @@ public class OfficeManagerBoss : EnemyBehavior
         {
             GameObject printerObj = Instantiate(printer);
             printerObj.transform.position = printerSpawns.GetChild(i).position;
+            Destroy(printerObj, 3f);
         }
         Invoke(nameof(SlamCD), slamCD);
     }

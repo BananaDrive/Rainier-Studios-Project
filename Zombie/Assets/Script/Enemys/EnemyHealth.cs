@@ -7,13 +7,18 @@ public class EnemyHealth : Health
     [Header("Has to have the EXACT same name as the loot table in the game manager")]
     public string lootTableName;
 
+    public void Start()
+    {
+        damageReduc = 1;
+    }
+
     public override void OtherHealthLogic()
     {
         if (healthbar != null)
             healthbar.UpdateHealth(currentHealth / maxHealth);
     }
 
-    public override void OtherDamageLogic()
+    public override void OtherDamageLogic(float damage)
     {
         if (healthbar != null)
             healthbar.UpdateHealth(currentHealth / maxHealth);

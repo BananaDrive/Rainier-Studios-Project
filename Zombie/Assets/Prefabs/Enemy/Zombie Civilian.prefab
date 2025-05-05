@@ -193,7 +193,7 @@ SpriteRenderer:
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.2307693, y: 1.0769231}
+  m_Size: {x: 1.2307693, y: 1.6410257}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -264,8 +264,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2307693, y: 1.0769231}
-    newSize: {x: 1.2307693, y: 1.0769231}
+    oldSize: {x: 1.2307693, y: 1.6410257}
+    newSize: {x: 1.2307693, y: 1.6410257}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -289,12 +289,12 @@ MonoBehaviour:
   rb: {fileID: 8559366492459221640}
   ground:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 4104
   moveSpeed: 1.5
   acceleration: 7
   deceleration: 30
   jumpPower: 35
-  groundDistance: 0.1
+  groundDistance: -0.2
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1
@@ -354,13 +354,13 @@ MonoBehaviour:
   health: {fileID: 0}
   death: {fileID: 7218013736252647862}
   hurt: {fileID: 5949861547048403455}
-  healthbar: {fileID: 7631498994103669363}
   damageReduc: 1
   maxHealth: 200
   currentHealth: 200
   invincibltyTime: 0
   invincible: 0
   enemyBehavior: {fileID: 8203910326083383789}
+  healthbar: {fileID: 7631498994103669363}
   lootTableName: 
 --- !u!95 &8056102172973175273
 Animator:

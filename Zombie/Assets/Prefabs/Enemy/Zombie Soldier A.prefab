@@ -191,7 +191,7 @@ MonoBehaviour:
   acceleration: 7
   deceleration: 30
   jumpPower: 0
-  groundDistance: 0.1
+  groundDistance: -0.2
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1

@@ -5,15 +5,12 @@ using UnityEngine;
 public class EnemyHealth : Health
 {
     public EnemyBehavior enemyBehavior;
-    public GameObject damageDisplay;
     public HealthBar healthbar;
-    int objPoolNum;
     [Header("Has to have the EXACT same name as the loot table in the game manager")]
     public string lootTableName;
 
     public void Start()
     {
-        objPoolNum = ObjectPool.SharedInstance.GetObjectPoolNum(damageDisplay);
         damageReduc = 1;
     }
 

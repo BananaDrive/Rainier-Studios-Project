@@ -4,7 +4,6 @@ public class HealthBar : MonoBehaviour
 {
     public Transform fill;
     float size;
-    float offset;
 
     void Start()
     {

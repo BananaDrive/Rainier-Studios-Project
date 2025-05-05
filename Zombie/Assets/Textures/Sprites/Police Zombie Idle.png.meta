@@ -134,6 +134,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -141,12 +154,12 @@ TextureImporter:
       name: Police Zombie Idle_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 12
         y: 192
-        width: 96
-        height: 192
+        width: 50
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,12 +176,12 @@ TextureImporter:
       name: Police Zombie Idle_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 108
         y: 192
-        width: 96
-        height: 192
+        width: 50
+        height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,12 +198,12 @@ TextureImporter:
       name: Police Zombie Idle_2
       rect:
         serializedVersion: 2
-        x: 192
+        x: 204
         y: 192
-        width: 96
-        height: 192
+        width: 50
+        height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -207,12 +220,12 @@ TextureImporter:
       name: Police Zombie Idle_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 12
         y: 0
-        width: 96
-        height: 192
+        width: 50
+        height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -229,12 +242,12 @@ TextureImporter:
       name: Police Zombie Idle_4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 108
         y: 0
-        width: 96
-        height: 192
+        width: 50
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

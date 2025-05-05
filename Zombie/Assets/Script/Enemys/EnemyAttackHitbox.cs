@@ -13,7 +13,6 @@ public class EnemyAttackHitbox : MonoBehaviour
                 other.GetComponent<Health>().TakeDamage(enemyBehavior.damage);
             else
                 other.GetComponent<Health>().TakeDamage(damage);
-
             gameObject.SetActive(false);
         }
     }

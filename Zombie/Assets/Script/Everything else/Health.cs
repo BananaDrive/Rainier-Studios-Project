@@ -4,29 +4,26 @@ using UnityEngine;
 public abstract class Health : MonoBehaviour
 {
     public AudioSource health, death, hurt;
-    public float damageReduc;
+    public float damageReduc = 1;
     public float maxHealth;
     public float currentHealth;
     public float invincibltyTime;
     public bool invincible;
 
     public abstract void HandleDeath();
-    public abstract void OtherDamageLogic();
+    public abstract void OtherDamageLogic(float damage);
     public abstract void OtherHealthLogic();
-
-    public void Start()
-    {
-        damageReduc = 1;
-    }
 
 
     public void TakeDamage(float damage)
     {
         if (invincible)
             return;
-        currentHealth -= damage / damageReduc;
 
-        OtherDamageLogic();
+        float finalDamage = damage / damageReduc;
+        currentHealth -= finalDamage;
+
+        OtherDamageLogic(finalDamage);
 
         if (currentHealth <= 0)
             HandleDeath();

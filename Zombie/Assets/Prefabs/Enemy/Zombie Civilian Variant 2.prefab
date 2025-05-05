@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2791561042572361558, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.0769231
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4450570444474460765, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_Size.x
@@ -74,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_Name
-      value: Zombie (2) Variant
+      value: Zombie Civilian Variant 2
       objectReference: {fileID: 0}
     - target: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_IsActive

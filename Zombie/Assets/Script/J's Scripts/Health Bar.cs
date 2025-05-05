@@ -14,8 +14,4 @@ public class HealthBar : MonoBehaviour
         fill.localScale = new Vector2(size * ratio, fill.localScale.y);
         fill.localPosition = new Vector2((1 - size * ratio) / 2, fill.localPosition.y);
     }
-
-    public void FixedUpdate()
-    {
-    }
 }

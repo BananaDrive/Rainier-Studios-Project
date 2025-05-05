@@ -258,7 +258,6 @@ MonoBehaviour:
   invincibltyTime: 0
   invincible: 0
   enemyBehavior: {fileID: 2819984677176277959}
-  damageDisplay: {fileID: 0}
   healthbar: {fileID: 1337745096588674849}
   lootTableName: 
 --- !u!95 &963372963312941416

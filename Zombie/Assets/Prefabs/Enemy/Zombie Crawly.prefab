@@ -360,9 +360,8 @@ MonoBehaviour:
   invincibltyTime: 0
   invincible: 0
   enemyBehavior: {fileID: 2786928428061324114}
-  damageDisplay: {fileID: 0}
   healthbar: {fileID: 4315619807202225017}
-  lootTableName: 
+  lootTableName: Crawler
 --- !u!95 &1111738854305531241
 Animator:
   serializedVersion: 7
@@ -468,6 +467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyBehavior: {fileID: 2786928428061324114}
+  damage: 0
 --- !u!1 &7044910466142640356
 GameObject:
   m_ObjectHideFlags: 0

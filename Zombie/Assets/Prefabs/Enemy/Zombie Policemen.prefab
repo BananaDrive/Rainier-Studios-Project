@@ -162,7 +162,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2307693, y: 1.1538461}
+    oldSize: {x: 0.64102566, y: 1.0256411}
     newSize: {x: 1.2307693, y: 1.0769231}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -259,7 +259,6 @@ MonoBehaviour:
   invincibltyTime: 0
   invincible: 0
   enemyBehavior: {fileID: 2819984677176277959}
-  damageDisplay: {fileID: 0}
   healthbar: {fileID: 1040705566092767075}
   lootTableName: Zombie Police
 --- !u!95 &151590895543552110

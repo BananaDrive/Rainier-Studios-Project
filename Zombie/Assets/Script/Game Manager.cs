@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverScreen;
     public GameObject pauseScreen;
     public LootTable lootTable;
-    public bool isPaused, gameOver;
+    public bool isPaused;
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -21,15 +21,14 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))  
         {
-            PauseScreen(pauseScreen);
+            PauseScreen();
         } 
     }
 
     public void GameOver()
     {
-        gameOver = true;
         Time.timeScale = 0;
-        Toggle(gameOverScreen);
+        gameOverScreen.SetActive(true);
     }
 
     public void MainMenu()
@@ -39,26 +38,19 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void TryAgain()
+    public void PauseScreen()
     {
-        Time.timeScale = 1; 
-        gameOverScreen.SetActive(false);
-        
-        if (isPaused)
-            PauseScreen(pauseScreen);
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (!isPaused && !gameOverScreen.activeInHierarchy)
+        {
+            pauseScreen.SetActive(true);
+            isPaused = true;
+            Time.timeScale = 0;
+        }
+        else if (isPaused)
+        {
+            pauseScreen.SetActive(false);
+            isPaused = false;
+            Time.timeScale = 1;
+        }
     }
-
-    public void PauseScreen(GameObject gameObject)
-    {
-        if (gameOver)
-            return;
-
-        Toggle(gameObject);
-        isPaused = !isPaused;
-        Time.timeScale = !isPaused ? 1 : 0;
-    }
-
-    public void Toggle(GameObject gameObject) => gameObject.SetActive(!gameObject.activeSelf); 
 }

@@ -11,7 +11,7 @@ public class PlayerHealth : Health
 
     bool overlayCooldown;
 
-    public override void OtherDamageLogic(float damage)
+    public override void OtherDamageLogic()
     {
         GameManager.Instance.UIManager.playerHealthBar.UpdateSlider(currentHealth);
         
@@ -31,7 +31,7 @@ public class PlayerHealth : Health
         GameManager.Instance.UIManager.playerHealthBar.UpdateSlider(currentHealth);
     }
 
-    void Start()
+    new void Start()
     {
         GameManager.Instance.UIManager.playerHealthBar.InitializeSlider(maxHealth);
     }

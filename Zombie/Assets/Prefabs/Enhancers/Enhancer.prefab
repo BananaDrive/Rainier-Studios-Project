@@ -151,15 +151,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f394b24107f687c45802a08592a95a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Mystery
-  itemStats: You Will Be Undefeated
-  damage: 500
-  fireRate: 5
-  accuracy: 5
-  reloadSpeed: 0.5
-  bulletSpeed: 5
-  shotAmount: 6
-  clipSize: 100
+  itemName: Enhancer
+  itemStats: Item Stats here
+  damage: 0
+  fireRate: 0
+  accuracy: 0
+  reloadSpeed: 0
+  bulletSpeed: 0
+  shotAmount: 0
+  clipSize: 0
   allowRaycast: 0
   allowPiercing: 0
   allowAuto: 1

@@ -151,14 +151,14 @@ MonoBehaviour:
   itemsStats:
   - itemType: 1
     potency: 10
-    duration: 5
+    duration: 2
     isStackable: 0
   - itemType: 4
     potency: 50
-    duration: 15
+    duration: 2
     isStackable: 0
   - itemType: 3
     potency: 20
-    duration: 15
+    duration: 2
     isStackable: 0
   canPickUp: 1

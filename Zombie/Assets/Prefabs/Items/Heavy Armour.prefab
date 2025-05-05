@@ -150,11 +150,11 @@ MonoBehaviour:
   sprite: {fileID: 0}
   itemsStats:
   - itemType: 4
-    potency: -20
-    duration: 30
+    potency: -10
+    duration: 2
     isStackable: 0
-  - itemType: 7
-    potency: 25
-    duration: 30
+  - itemType: 4
+    potency: 10
+    duration: 2
     isStackable: 0
   canPickUp: 0

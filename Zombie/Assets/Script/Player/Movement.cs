@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
     {
         get
         {
-            var s = Physics2D.Raycast(transform.position, Vector2.down, _collider.bounds.extents.y + groundDistance, ground);
+            var s = Physics2D.CircleCast(transform.position, _collider.bounds.extents.x - 0.05f, Vector2.down, _collider.bounds.extents.y + groundDistance, ground);
             return s;
         }
     }

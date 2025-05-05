@@ -191,7 +191,7 @@ MonoBehaviour:
   acceleration: 7
   deceleration: 30
   jumpPower: 0
-  groundDistance: -0.2
+  groundDistance: 0.1
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1
@@ -258,7 +258,6 @@ MonoBehaviour:
   invincibltyTime: 0
   invincible: 0
   enemyBehavior: {fileID: 2819984677176277959}
-  damageDisplay: {fileID: 0}
   healthbar: {fileID: 1337745096588674849}
   lootTableName: 
 --- !u!95 &963372963312941416

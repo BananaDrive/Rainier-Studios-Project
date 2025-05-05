@@ -162,7 +162,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2307693, y: 1.1538461}
+    oldSize: {x: 1.2307693, y: 1.0769231}
     newSize: {x: 1.2307693, y: 1.0769231}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
   acceleration: 7
   deceleration: 30
   jumpPower: 35
-  groundDistance: -0.2
+  groundDistance: 0.1
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1
@@ -259,7 +259,6 @@ MonoBehaviour:
   invincibltyTime: 0
   invincible: 0
   enemyBehavior: {fileID: 2819984677176277959}
-  damageDisplay: {fileID: 0}
   healthbar: {fileID: 1040705566092767075}
   lootTableName: Zombie Police
 --- !u!95 &151590895543552110
@@ -272,7 +271,7 @@ Animator:
   m_GameObject: {fileID: 428861404853458720}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1f0d9c5e340cdd240855dee385b07a12, type: 2}
+  m_Controller: {fileID: 9100000, guid: 38ad749a5d97f8a4ba686618b0d200e7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

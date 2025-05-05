@@ -188,12 +188,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1385037580, guid: 2bde41b5c92433f4ca6eb34e9c87c314, type: 3}
+  m_Sprite: {fileID: 1307169249, guid: 2b3c036ba6773bd4cb48e74750b9be03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.2307693, y: 1.6410257}
+  m_Size: {x: 0.82051283, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -264,8 +264,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2307693, y: 1.6410257}
-    newSize: {x: 1.2307693, y: 1.6410257}
+    oldSize: {x: 0.82051283, y: 1}
+    newSize: {x: 0.82051283, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -289,12 +289,12 @@ MonoBehaviour:
   rb: {fileID: 8559366492459221640}
   ground:
     serializedVersion: 2
-    m_Bits: 4104
+    m_Bits: 8
   moveSpeed: 1.5
   acceleration: 7
   deceleration: 30
   jumpPower: 35
-  groundDistance: -0.2
+  groundDistance: 0.1
   moveDirection: 0
   moveSpeedBuff: 0
   canMove: 1
@@ -360,8 +360,9 @@ MonoBehaviour:
   invincibltyTime: 0
   invincible: 0
   enemyBehavior: {fileID: 8203910326083383789}
+  damageDisplay: {fileID: 5787175705764278705, guid: 9980b179bbf33114295b87c1bdbc691c, type: 3}
   healthbar: {fileID: 7631498994103669363}
-  lootTableName: 
+  lootTableName: Zombie Civilian
 --- !u!95 &8056102172973175273
 Animator:
   serializedVersion: 7
@@ -372,7 +373,7 @@ Animator:
   m_GameObject: {fileID: 5125834075557533559}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 104e9cfbdd68cf844b1f1683da529a0c, type: 2}
+  m_Controller: {fileID: 9100000, guid: e1cd733ff2795974da9330a0586ecca6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

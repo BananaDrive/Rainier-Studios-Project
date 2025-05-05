@@ -149,12 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
   itemsStats:
-  - itemType: 1
-    potency: 10
-    duration: 10
-    isStackable: 0
   - itemType: 0
-    potency: 25
-    duration: 2
+    potency: 50
+    duration: 1
     isStackable: 0
   canPickUp: 1

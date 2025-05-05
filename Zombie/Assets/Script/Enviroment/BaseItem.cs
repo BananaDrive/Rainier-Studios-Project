@@ -33,6 +33,7 @@ public class BaseItem : MonoBehaviour
 
     public void Start()
     {
+        sprite = GetComponent<SpriteRenderer>().sprite;
     }
 
     public void UseItem()

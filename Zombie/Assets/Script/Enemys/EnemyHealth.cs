@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyHealth : Health
 {
+    public float knockbackRes;
     public EnemyBehavior enemyBehavior;
     public HealthBar healthbar;
     [Header("Has to have the EXACT same name as the loot table in the game manager")]
@@ -24,6 +25,9 @@ public class EnemyHealth : Health
     {
         if (healthbar != null)
             healthbar.UpdateHealth(currentHealth / maxHealth);
+
+        if (TryGetComponent<Rigidbody2D>(out var rb))
+            rb.AddForce(damage * 5f / (knockbackRes + 1) * -transform.right, ForceMode2D.Force);
             
         if (enemyBehavior.canInterrupt)
         {

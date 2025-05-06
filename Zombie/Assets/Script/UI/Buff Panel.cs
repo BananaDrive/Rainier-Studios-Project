@@ -18,7 +18,8 @@ public class BuffPanel : MonoBehaviour
         {
             buffSlots[i] = new()
             {
-                text = transform.GetChild(i).GetChild(0).GetComponentInChildren<TMP_Text>()
+                text = transform.GetChild(i).GetChild(0).GetComponentInChildren<TMP_Text>(),
+                image = transform.GetChild(i).GetComponentInChildren<Image>()
             };
         }
     }

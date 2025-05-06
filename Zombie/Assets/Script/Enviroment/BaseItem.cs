@@ -1,7 +1,8 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
-    public enum ItemType
+public enum ItemType
     {
         health,
         regen,
@@ -18,6 +19,7 @@ using UnityEngine;
     public class ItemStats
     {
         public ItemType itemType;
+        public Sprite buffSprite;
         public float potency;
         public float duration;
         public bool isStackable;

@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 73f7c7ce2d6d5cd448ff421e58da342a
+guid: 47212868c701d0c4dbf166ce327af339
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7286641530164325828
-    second: Markqualius Idle_0
+      213: -6888756438569675735
+    second: New Piskel (1)_0
   - first:
-      213: -2220042473393288149
-    second: Markqualius Idle_1
+      213: 9173839873224666002
+    second: New Piskel (1)_1
   - first:
-      213: -7096268165464205703
-    second: Markqualius Idle_2
+      213: -745645855993587873
+    second: New Piskel (1)_2
   - first:
-      213: 3234450009018629280
-    second: Markqualius Idle_3
-  - first:
-      213: 5598852407033960297
-    second: Markqualius Idle_4
+      213: 4123733795721074919
+    second: New Piskel (1)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 60
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Markqualius Idle_0
+      name: New Piskel (1)_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 127
-        width: 36
-        height: 88
+        x: 0
+        y: 50
+        width: 64
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cdad0b8dd95f1560800000000000000
-      internalID: 7286641530164325828
+      spriteID: 9249ede64883660a0800000000000000
+      internalID: -6888756438569675735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius Idle_1
+      name: New Piskel (1)_1
       rect:
         serializedVersion: 2
-        x: 83
-        y: 127
-        width: 36
-        height: 86
+        x: 0
+        y: 34
+        width: 64
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2c0d1bf123d031e0800000000000000
-      internalID: -2220042473393288149
+      spriteID: 29beed572c6005f70800000000000000
+      internalID: 9173839873224666002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius Idle_2
+      name: New Piskel (1)_2
       rect:
         serializedVersion: 2
-        x: 147
-        y: 127
-        width: 36
-        height: 86
+        x: 0
+        y: 18
+        width: 64
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 976d79e73bdf48d90800000000000000
-      internalID: -7096268165464205703
+      spriteID: f5792496b0fe6a5f0800000000000000
+      internalID: -745645855993587873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius Idle_3
+      name: New Piskel (1)_3
       rect:
         serializedVersion: 2
-        x: 19
-        y: 0
-        width: 36
-        height: 85
+        x: 0
+        y: 6
+        width: 33
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,30 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ac7057752313ec20800000000000000
-      internalID: 3234450009018629280
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Markqualius Idle_4
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 0
-        width: 36
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9679917a99e13bd40800000000000000
-      internalID: 5598852407033960297
+      spriteID: 7e85a3ae9027a3930800000000000000
+      internalID: 4123733795721074919
       vertices: []
       indices: 
       edges: []
@@ -235,11 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Markqualius Idle_0: 7286641530164325828
-      Markqualius Idle_1: -2220042473393288149
-      Markqualius Idle_2: -7096268165464205703
-      Markqualius Idle_3: 3234450009018629280
-      Markqualius Idle_4: 5598852407033960297
+      New Piskel (1)_0: -6888756438569675735
+      New Piskel (1)_1: 9173839873224666002
+      New Piskel (1)_2: -745645855993587873
+      New Piskel (1)_3: 4123733795721074919
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

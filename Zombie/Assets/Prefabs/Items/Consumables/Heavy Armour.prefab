@@ -157,4 +157,4 @@ MonoBehaviour:
     potency: 25
     duration: 30
     isStackable: 0
-  canPickUp: 0
+  canPickUp: 1

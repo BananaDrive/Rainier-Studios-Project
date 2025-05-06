@@ -1,49 +1,55 @@
 fileFormatVersion: 2
-guid: 1a098052d1cd1e24a93d7d3e3acc8f2f
+guid: 60968a00e0f179c4f934a76bc256245b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -625128746740135810
-    second: CrawlerFinal (2)_0
+      213: 8744309950394866966
+    second: CrawlerFinal_0
   - first:
-      213: -3491940142061608615
-    second: CrawlerFinal (2)_1
+      213: 684788344238545690
+    second: CrawlerFinal_1
   - first:
-      213: -6672592459760275856
-    second: CrawlerFinal (2)_2
+      213: -1758464403855423732
+    second: CrawlerFinal_2
   - first:
-      213: 3334644808002199912
-    second: CrawlerFinal (2)_3
+      213: -5465688620128487120
+    second: CrawlerFinal_3
   - first:
-      213: -7669208936400980781
-    second: CrawlerFinal (2)_4
+      213: 2255911761386243062
+    second: CrawlerFinal_4
   - first:
-      213: -2190191237638550813
-    second: CrawlerFinal (2)_5
+      213: -614297369309155229
+    second: CrawlerFinal_5
   - first:
-      213: 2154707687505585913
-    second: CrawlerFinal (2)_6
+      213: 5773897460650866468
+    second: CrawlerFinal_6
   - first:
-      213: 8932664044194092421
-    second: CrawlerFinal (2)_7
+      213: -5682422943088475533
+    second: CrawlerFinal_7
   - first:
-      213: -5605189376051893614
-    second: CrawlerFinal (2)_8
+      213: 6954593305436879656
+    second: CrawlerFinal_8
   - first:
-      213: 5527274659226028764
-    second: CrawlerFinal (2)_9
+      213: -664811842938572108
+    second: CrawlerFinal_9
   - first:
-      213: -2211097641088152428
-    second: CrawlerFinal (2)_10
+      213: 6833375738411109207
+    second: CrawlerFinal_10
   - first:
-      213: 545746359120440250
-    second: CrawlerFinal (2)_11
+      213: 5394871671447581213
+    second: CrawlerFinal_11
   - first:
-      213: 4345021932810042870
-    second: CrawlerFinal (2)_12
+      213: -3125049897755163051
+    second: CrawlerFinal_12
   - first:
-      213: 404970951382395573
-    second: CrawlerFinal (2)_13
+      213: 4730197848642368119
+    second: CrawlerFinal_13
+  - first:
+      213: 4893754028336684482
+    second: CrawlerFinal_14
+  - first:
+      213: -2899152821264028048
+    second: CrawlerFinal_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,339 +141,357 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CrawlerFinal (2)_0
+      name: CrawlerFinal_0
       rect:
         serializedVersion: 2
         x: 17
         y: 319
         width: 92
         height: 52
-      alignment: 9
-      pivot: {x: 0.4893617, y: 0.64}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e784ba787b81357f0800000000000000
-      internalID: -625128746740135810
+      spriteID: 61d133f02970a5970800000000000000
+      internalID: 8744309950394866966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrawlerFinal (2)_1
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 319
-        width: 91
-        height: 52
-      alignment: 9
-      pivot: {x: 0.5, y: 0.64}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 951ad7f11f22a8fc0800000000000000
-      internalID: -3491940142061608615
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrawlerFinal (2)_2
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 255
-        width: 91
-        height: 53
-      alignment: 9
-      pivot: {x: 0.5, y: 0.64}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 07ee901c2803663a0800000000000000
-      internalID: -6672592459760275856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrawlerFinal (2)_3
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 255
-        width: 91
-        height: 54
-      alignment: 9
-      pivot: {x: 0.5, y: 0.64}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 861621109c9074e20800000000000000
-      internalID: 3334644808002199912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrawlerFinal (2)_4
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 191
-        width: 91
-        height: 54
-      alignment: 9
-      pivot: {x: 0.5, y: 0.64}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d471950b1f719590800000000000000
-      internalID: -7669208936400980781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrawlerFinal (2)_5
+      name: CrawlerFinal_1
       rect:
         serializedVersion: 2
         x: 145
+        y: 319
+        width: 97
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b9aa4fe5bd08900800000000000000
+      internalID: 684788344238545690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrawlerFinal_2
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 319
+        width: 98
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c07470201fda897e0800000000000000
+      internalID: -1758464403855423732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrawlerFinal_3
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 255
+        width: 100
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039b8509829f524b0800000000000000
+      internalID: -5465688620128487120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrawlerFinal_4
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 255
+        width: 102
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f38d0e6bcb9e4f10800000000000000
+      internalID: 2255911761386243062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrawlerFinal_5
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 255
+        width: 104
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 360fedb1cc39977f0800000000000000
+      internalID: -614297369309155229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrawlerFinal_6
+      rect:
+        serializedVersion: 2
+        x: 18
         y: 191
-        width: 92
-        height: 57
-      alignment: 9
-      pivot: {x: 0.5, y: 0.64}
+        width: 106
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ea816a6ca0ea91e0800000000000000
-      internalID: -2190191237638550813
+      spriteID: 427ff972621012050800000000000000
+      internalID: 5773897460650866468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrawlerFinal (2)_6
+      name: CrawlerFinal_7
       rect:
         serializedVersion: 2
-        x: 12
-        y: 63
-        width: 97
-        height: 60
-      alignment: 9
-      pivot: {x: 0.5, y: 0.64}
+        x: 146
+        y: 191
+        width: 106
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f6e294c93f07ed10800000000000000
-      internalID: 2154707687505585913
+      spriteID: 3728ea5a07af321b0800000000000000
+      internalID: -5682422943088475533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrawlerFinal (2)_7
+      name: CrawlerFinal_8
       rect:
         serializedVersion: 2
-        x: 13
+        x: 274
+        y: 191
+        width: 106
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82bffd7a3cda38060800000000000000
+      internalID: 6954593305436879656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrawlerFinal_9
+      rect:
+        serializedVersion: 2
+        x: 18
         y: 127
-        width: 96
-        height: 62
-      alignment: 9
-      pivot: {x: 0.5, y: 0.64}
+        width: 106
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 585d714fe9237fb70800000000000000
-      internalID: 8932664044194092421
+      spriteID: 4b27c23b62d16c6f0800000000000000
+      internalID: -664811842938572108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrawlerFinal (2)_8
+      name: CrawlerFinal_10
       rect:
         serializedVersion: 2
-        x: 140
-        y: 123
-        width: 97
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.64}
+        x: 146
+        y: 127
+        width: 106
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29a22a5c5fd5632b0800000000000000
-      internalID: -5605189376051893614
+      spriteID: 75b44c0870705de50800000000000000
+      internalID: 6833375738411109207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrawlerFinal (2)_9
+      name: CrawlerFinal_11
       rect:
         serializedVersion: 2
-        x: 141
+        x: 274
+        y: 127
+        width: 108
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d127371b33f6eda40800000000000000
+      internalID: 5394871671447581213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrawlerFinal_12
+      rect:
+        serializedVersion: 2
+        x: 18
         y: 63
-        width: 96
-        height: 61
-      alignment: 9
-      pivot: {x: 0.5, y: 0.64}
+        width: 109
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cda8f2f8403d4bc40800000000000000
-      internalID: 5527274659226028764
+      spriteID: 556ceeadca791a4d0800000000000000
+      internalID: -3125049897755163051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrawlerFinal (2)_10
+      name: CrawlerFinal_13
       rect:
         serializedVersion: 2
-        x: 161
-        y: 119
-        width: 7
-        height: 6
+        x: 146
+        y: 63
+        width: 87
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 49c8c3b096a9051e0800000000000000
-      internalID: -2211097641088152428
+      spriteID: 77235a5b1e905a140800000000000000
+      internalID: 4730197848642368119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrawlerFinal (2)_11
+      name: CrawlerFinal_14
       rect:
         serializedVersion: 2
-        x: 29
-        y: 52
-        width: 6
-        height: 8
+        x: 248
+        y: 63
+        width: 136
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: abb26d01c61e29700800000000000000
-      internalID: 545746359120440250
+      spriteID: 2cd152d4c5b1ae340800000000000000
+      internalID: 4893754028336684482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrawlerFinal (2)_12
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 48
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6fd7c6e4d6e9c4c30800000000000000
-      internalID: 4345021932810042870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrawlerFinal (2)_13
+      name: CrawlerFinal_15
       rect:
         serializedVersion: 2
         x: 17
         y: 0
-        width: 92
+        width: 109
         height: 51
-      alignment: 9
-      pivot: {x: 0.5, y: 0.64}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5baef754feebe9500800000000000000
-      internalID: 404970951382395573
+      spriteID: 07e6cf29ed324c7d0800000000000000
+      internalID: -2899152821264028048
       vertices: []
       indices: 
       edges: []
@@ -476,7 +500,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9bae8a450d4f77d409fad3346d3f3d7e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -486,20 +510,22 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CrawlerFinal (2)_0: -625128746740135810
-      CrawlerFinal (2)_1: -3491940142061608615
-      CrawlerFinal (2)_10: -2211097641088152428
-      CrawlerFinal (2)_11: 545746359120440250
-      CrawlerFinal (2)_12: 4345021932810042870
-      CrawlerFinal (2)_13: 404970951382395573
-      CrawlerFinal (2)_2: -6672592459760275856
-      CrawlerFinal (2)_3: 3334644808002199912
-      CrawlerFinal (2)_4: -7669208936400980781
-      CrawlerFinal (2)_5: -2190191237638550813
-      CrawlerFinal (2)_6: 2154707687505585913
-      CrawlerFinal (2)_7: 8932664044194092421
-      CrawlerFinal (2)_8: -5605189376051893614
-      CrawlerFinal (2)_9: 5527274659226028764
+      CrawlerFinal_0: 8744309950394866966
+      CrawlerFinal_1: 684788344238545690
+      CrawlerFinal_10: 6833375738411109207
+      CrawlerFinal_11: 5394871671447581213
+      CrawlerFinal_12: -3125049897755163051
+      CrawlerFinal_13: 4730197848642368119
+      CrawlerFinal_14: 4893754028336684482
+      CrawlerFinal_15: -2899152821264028048
+      CrawlerFinal_2: -1758464403855423732
+      CrawlerFinal_3: -5465688620128487120
+      CrawlerFinal_4: 2255911761386243062
+      CrawlerFinal_5: -614297369309155229
+      CrawlerFinal_6: 5773897460650866468
+      CrawlerFinal_7: -5682422943088475533
+      CrawlerFinal_8: 6954593305436879656
+      CrawlerFinal_9: -664811842938572108
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

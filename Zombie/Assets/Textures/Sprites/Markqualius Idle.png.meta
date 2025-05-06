@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Markqualius Idle_0: 7286641530164325828
+      Markqualius Idle_1: -2220042473393288149
+      Markqualius Idle_2: -7096268165464205703
+      Markqualius Idle_3: 3234450009018629280
+      Markqualius Idle_4: 5598852407033960297
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

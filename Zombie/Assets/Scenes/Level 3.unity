@@ -7795,6 +7795,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1690274411931094614, guid: 673d63b64eb41494083c7510cabc0293, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d7002605e24fa964fb8dd084969658f5, type: 3}
     - target: {fileID: 5588894721135467063, guid: 673d63b64eb41494083c7510cabc0293, type: 3}
       propertyPath: m_Name
       value: Heavy Armour
@@ -7933,11 +7937,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8520824392448096570, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.601389
+      value: -16.14
       objectReference: {fileID: 0}
     - target: {fileID: 8520824392448096570, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -25.549541
+      value: -25.43
       objectReference: {fileID: 0}
     - target: {fileID: 8520824392448096570, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
       propertyPath: m_LocalPosition.z
@@ -57359,6 +57363,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4574813236326389905, guid: 8fc80f89b569c174d9fbfc57b542f51a, type: 3}
   m_PrefabInstance: {fileID: 1675756147}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1683936564 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5168067630646483315, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+  m_PrefabInstance: {fileID: 1704980309549350522}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3baa93fe0030624f846e3ee16a98d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1693236035 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2247784616421732137, guid: cf2cd032fc9a0444bb9100ad012b0778, type: 3}
@@ -60442,11 +60457,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dceb52c68059cc146a9cbc5b96b3628a, type: 3}
---- !u!1 &2051328694 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8848363750452623326, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
-  m_PrefabInstance: {fileID: 1704980309549350522}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2054480890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61479,8 +61489,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4702255026137393682, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: gameOver
-      value: 
-      objectReference: {fileID: 2051328694}
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4702255026137393682, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: itemName
       value: 
@@ -61489,6 +61499,10 @@ PrefabInstance:
       propertyPath: itemStats
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4702255026137393682, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 1683936564}
     - target: {fileID: 5389204347325167831, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: m_VerticalAlignment
       value: 512
@@ -61681,7 +61695,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1307517547135546968, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

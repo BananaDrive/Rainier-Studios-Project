@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 78
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -151,10 +151,10 @@ TextureImporter:
       name: Trevor Idle_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 29
         y: 128
-        width: 64
-        height: 90
+        width: 29
+        height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: Trevor Idle_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 93
         y: 128
-        width: 64
-        height: 90
+        width: 29
+        height: 79
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,10 +195,10 @@ TextureImporter:
       name: Trevor Idle_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 157
         y: 128
-        width: 64
-        height: 90
+        width: 29
+        height: 79
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +217,10 @@ TextureImporter:
       name: Trevor Idle_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 29
         y: 0
-        width: 64
-        height: 90
+        width: 29
+        height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

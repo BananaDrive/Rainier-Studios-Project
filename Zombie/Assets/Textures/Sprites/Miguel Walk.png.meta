@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 78
+  spritePixelsToUnits: 60
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -159,12 +159,12 @@ TextureImporter:
       name: pixil-frame-0 (7) (1)_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 9
         y: 256
-        width: 64
-        height: 128
+        width: 33
+        height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: pixil-frame-0 (7) (1)_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 72
         y: 256
-        width: 64
-        height: 128
+        width: 34
+        height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: pixil-frame-0 (7) (1)_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 135
         y: 256
-        width: 64
-        height: 128
+        width: 35
+        height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,12 +225,12 @@ TextureImporter:
       name: pixil-frame-0 (7) (1)_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 199
         y: 256
-        width: 64
-        height: 128
+        width: 35
+        height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: pixil-frame-0 (7) (1)_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 263
         y: 256
-        width: 64
-        height: 128
+        width: 35
+        height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -269,12 +269,12 @@ TextureImporter:
       name: pixil-frame-0 (7) (1)_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 7
         y: 128
-        width: 64
-        height: 128
+        width: 35
+        height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -291,12 +291,12 @@ TextureImporter:
       name: pixil-frame-0 (7) (1)_6
       rect:
         serializedVersion: 2
-        x: 64
+        x: 71
         y: 128
-        width: 64
-        height: 128
+        width: 35
+        height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -313,12 +313,12 @@ TextureImporter:
       name: pixil-frame-0 (7) (1)_7
       rect:
         serializedVersion: 2
-        x: 128
+        x: 136
         y: 128
-        width: 64
-        height: 128
+        width: 34
+        height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -335,12 +335,12 @@ TextureImporter:
       name: pixil-frame-0 (7) (1)_8
       rect:
         serializedVersion: 2
-        x: 192
+        x: 200
         y: 128
-        width: 64
-        height: 128
+        width: 34
+        height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -357,12 +357,12 @@ TextureImporter:
       name: pixil-frame-0 (7) (1)_9
       rect:
         serializedVersion: 2
-        x: 256
+        x: 264
         y: 128
-        width: 64
-        height: 128
+        width: 34
+        height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -379,12 +379,12 @@ TextureImporter:
       name: pixil-frame-0 (7) (1)_10
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 0
-        width: 64
-        height: 128
+        width: 34
+        height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

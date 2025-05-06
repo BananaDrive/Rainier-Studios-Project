@@ -3,16 +3,22 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : Movement
 {
+    public Animator animator;
     public float aimDistance;
     public AudioSource jump;
     public void Update()
     {
+        animator.SetInteger("State", 0);
+
         var gamepad = Gamepad.current;
         bool controller = false;
         if (gamepad != null)
             controller = true;
         
         moveDirection = Input.GetAxisRaw("Horizontal");
+
+        if (Mathf.Abs(moveDirection) >= aimDistance)
+            animator.SetInteger("State", 1);
 
         if (((controller && gamepad.buttonSouth.wasPressedThisFrame) || Input.GetKeyDown(KeyCode.Space)) && Grounded)
         {

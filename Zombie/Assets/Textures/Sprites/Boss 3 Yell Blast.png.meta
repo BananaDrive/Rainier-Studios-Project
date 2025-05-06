@@ -1,0 +1,2249 @@
+fileFormatVersion: 2
+guid: 6ddd3ce336444814d817f777a94057e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6022393049100508138
+    second: Boss 3 Base (1) (1)_0
+  - first:
+      213: 1780653957236268303
+    second: Boss 3 Base (1) (1)_1
+  - first:
+      213: 2756634082156639618
+    second: Boss 3 Base (1) (1)_2
+  - first:
+      213: -1975155365331807135
+    second: Boss 3 Base (1) (1)_3
+  - first:
+      213: -6477297727810561689
+    second: Boss 3 Base (1) (1)_4
+  - first:
+      213: 8083267994801001247
+    second: Boss 3 Base (1) (1)_5
+  - first:
+      213: -368972551594865877
+    second: Boss 3 Base (1) (1)_6
+  - first:
+      213: -6341307533775948098
+    second: Boss 3 Base (1) (1)_7
+  - first:
+      213: 8673744863481346917
+    second: Boss 3 Base (1) (1)_8
+  - first:
+      213: 1463627021110414833
+    second: Boss 3 Base (1) (1)_9
+  - first:
+      213: 2229951212339723987
+    second: Boss 3 Base (1) (1)_10
+  - first:
+      213: -3893240411463734434
+    second: Boss 3 Base (1) (1)_11
+  - first:
+      213: -6078428072698104500
+    second: Boss 3 Base (1) (1)_12
+  - first:
+      213: 4988148347194230665
+    second: Boss 3 Base (1) (1)_13
+  - first:
+      213: 2284724937305961456
+    second: Boss 3 Base (1) (1)_14
+  - first:
+      213: -934366865022691130
+    second: Boss 3 Base (1) (1)_15
+  - first:
+      213: 1757294549358088192
+    second: Boss 3 Base (1) (1)_16
+  - first:
+      213: -8693439151450121592
+    second: Boss 3 Base (1) (1)_17
+  - first:
+      213: -3360380001846267731
+    second: Boss 3 Base (1) (1)_18
+  - first:
+      213: -1617032776680983354
+    second: Boss 3 Base (1) (1)_19
+  - first:
+      213: 3433868866140283408
+    second: Boss 3 Base (1) (1)_20
+  - first:
+      213: -1701635895659328176
+    second: Boss 3 Base (1) (1)_21
+  - first:
+      213: -7499681584766541522
+    second: Boss 3 Base (1) (1)_22
+  - first:
+      213: 5058431982114956091
+    second: Boss 3 Base (1) (1)_23
+  - first:
+      213: -3476038384016811970
+    second: Boss 3 Base (1) (1)_24
+  - first:
+      213: 1560829654856612835
+    second: Boss 3 Base (1) (1)_25
+  - first:
+      213: -9030495488396177264
+    second: Boss 3 Base (1) (1)_26
+  - first:
+      213: 666174132097176965
+    second: Boss 3 Base (1) (1)_27
+  - first:
+      213: 1024431033700364563
+    second: Boss 3 Base (1) (1)_28
+  - first:
+      213: 1903062698131239356
+    second: Boss 3 Base (1) (1)_29
+  - first:
+      213: 1441550004204281666
+    second: Boss 3 Base (1) (1)_30
+  - first:
+      213: 3482000447432345815
+    second: Boss 3 Base (1) (1)_31
+  - first:
+      213: 6676698874887916786
+    second: Boss 3 Base (1) (1)_32
+  - first:
+      213: 5750933165221692745
+    second: Boss 3 Base (1) (1)_33
+  - first:
+      213: -6916138792465319608
+    second: Boss 3 Base (1) (1)_34
+  - first:
+      213: -333828372241334441
+    second: Boss 3 Base (1) (1)_35
+  - first:
+      213: -3626943420764195375
+    second: Boss 3 Base (1) (1)_36
+  - first:
+      213: 4840996504113580455
+    second: Boss 3 Base (1) (1)_37
+  - first:
+      213: 1733657743304503274
+    second: Boss 3 Base (1) (1)_38
+  - first:
+      213: 6048753138605199957
+    second: Boss 3 Base (1) (1)_39
+  - first:
+      213: 1638663879440663662
+    second: Boss 3 Base (1) (1)_40
+  - first:
+      213: -6962969690445267277
+    second: Boss 3 Base (1) (1)_41
+  - first:
+      213: -6174327715935263845
+    second: Boss 3 Base (1) (1)_42
+  - first:
+      213: 869741904804038537
+    second: Boss 3 Base (1) (1)_43
+  - first:
+      213: 196551759955643637
+    second: Boss 3 Base (1) (1)_44
+  - first:
+      213: 1437395135943373070
+    second: Boss 3 Base (1) (1)_45
+  - first:
+      213: -4586210767027964312
+    second: Boss 3 Base (1) (1)_46
+  - first:
+      213: 6416645765952962972
+    second: Boss 3 Base (1) (1)_47
+  - first:
+      213: 8924371563995977687
+    second: Boss 3 Base (1) (1)_48
+  - first:
+      213: 4866003869435016583
+    second: Boss 3 Base (1) (1)_49
+  - first:
+      213: 1041445636927314290
+    second: Boss 3 Base (1) (1)_50
+  - first:
+      213: 4515537194554122561
+    second: Boss 3 Base (1) (1)_51
+  - first:
+      213: 6936073824903446586
+    second: Boss 3 Base (1) (1)_52
+  - first:
+      213: 5748406121072507336
+    second: Boss 3 Base (1) (1)_53
+  - first:
+      213: 6401450715001992151
+    second: Boss 3 Base (1) (1)_54
+  - first:
+      213: 7259511637852700088
+    second: Boss 3 Base (1) (1)_55
+  - first:
+      213: -2653633356022789144
+    second: Boss 3 Base (1) (1)_56
+  - first:
+      213: 1580926522107269704
+    second: Boss 3 Base (1) (1)_57
+  - first:
+      213: -244895125347619629
+    second: Boss 3 Base (1) (1)_58
+  - first:
+      213: 1245379704408387706
+    second: Boss 3 Base (1) (1)_59
+  - first:
+      213: -654684823183135931
+    second: Boss 3 Base (1) (1)_60
+  - first:
+      213: 8573149369515325789
+    second: Boss 3 Base (1) (1)_61
+  - first:
+      213: -3761665572032566060
+    second: Boss 3 Base (1) (1)_62
+  - first:
+      213: 3133436761777879328
+    second: Boss 3 Base (1) (1)_63
+  - first:
+      213: 3612345317233832296
+    second: Boss 3 Base (1) (1)_64
+  - first:
+      213: -4889716958253115943
+    second: Boss 3 Base (1) (1)_65
+  - first:
+      213: 5030854436964880438
+    second: Boss 3 Base (1) (1)_66
+  - first:
+      213: -1351842494345097789
+    second: Boss 3 Base (1) (1)_67
+  - first:
+      213: 620757693233412324
+    second: Boss 3 Base (1) (1)_68
+  - first:
+      213: 2388663478903424065
+    second: Boss 3 Base (1) (1)_69
+  - first:
+      213: 5834439299668665143
+    second: Boss 3 Base (1) (1)_70
+  - first:
+      213: 8042977467767309133
+    second: Boss 3 Base (1) (1)_71
+  - first:
+      213: 617655522187168577
+    second: Boss 3 Base (1) (1)_72
+  - first:
+      213: 7245766836477853258
+    second: Boss 3 Base (1) (1)_73
+  - first:
+      213: 1645952671544604918
+    second: Boss 3 Base (1) (1)_74
+  - first:
+      213: -4139051852824467544
+    second: Boss 3 Base (1) (1)_75
+  - first:
+      213: -4074771119570315553
+    second: Boss 3 Base (1) (1)_76
+  - first:
+      213: -2070105998360300118
+    second: Boss 3 Base (1) (1)_77
+  - first:
+      213: 4121071205417123222
+    second: Boss 3 Base (1) (1)_78
+  - first:
+      213: 3318123076876761317
+    second: Boss 3 Base (1) (1)_79
+  - first:
+      213: 6605948304438191461
+    second: Boss 3 Base (1) (1)_80
+  - first:
+      213: -5363634066228926461
+    second: Boss 3 Base (1) (1)_81
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 360
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_0
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1799
+        width: 144
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614259a0e692c6ca0800000000000000
+      internalID: -6022393049100508138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_1
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1799
+        width: 144
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d16fcf65726b810800000000000000
+      internalID: 1780653957236268303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_2
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1799
+        width: 144
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2857eaaa718814620800000000000000
+      internalID: 2756634082156639618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 1799
+        width: 144
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164d039f8a6d694e0800000000000000
+      internalID: -1975155365331807135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_4
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 1799
+        width: 144
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7691865e8040c16a0800000000000000
+      internalID: -6477297727810561689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_5
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 1799
+        width: 144
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13d56e0a698d2070800000000000000
+      internalID: 8083267994801001247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_6
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1690
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b81525b6521eaf0800000000000000
+      internalID: -368972551594865877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_7
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1439
+        width: 144
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6b6cd45662ff7a0800000000000000
+      internalID: -6341307533775948098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_8
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1439
+        width: 144
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bbc247ff45f5870800000000000000
+      internalID: 8673744863481346917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_9
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1439
+        width: 144
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd03f46509df4410800000000000000
+      internalID: 1463627021110414833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 1439
+        width: 144
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3def5f510d062fe10800000000000000
+      internalID: 2229951212339723987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_11
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 1439
+        width: 144
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b2289197e68f9c0800000000000000
+      internalID: -3893240411463734434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_12
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 1439
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45311e6fd515aba0800000000000000
+      internalID: -6078428072698104500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_13
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1079
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987c6715e76793540800000000000000
+      internalID: 4988148347194230665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_14
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1079
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f33999b939f4bf10800000000000000
+      internalID: 2284724937305961456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_15
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1079
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c85d6869467803f0800000000000000
+      internalID: -934366865022691130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_16
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 1079
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0001834051a236810800000000000000
+      internalID: 1757294549358088192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_17
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 1079
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a975dc623ba5780800000000000000
+      internalID: -8693439151450121592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_18
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 1079
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da070af31388d51d0800000000000000
+      internalID: -3360380001846267731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_19
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 719
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c434cbc1452f89e0800000000000000
+      internalID: -1617032776680983354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_20
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 719
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012a0935a8d87af20800000000000000
+      internalID: 3433868866140283408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_21
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 719
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d0c262b239268e0800000000000000
+      internalID: -1701635895659328176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_22
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 997
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21a37b6557cbe790800000000000000
+      internalID: -7499681584766541522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_23
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 1009
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33ef664619233640800000000000000
+      internalID: 5058431982114956091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_24
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1011
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e381e0fa181a2cfc0800000000000000
+      internalID: -3476038384016811970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_25
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1005
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ebbf9c2d4e29a510800000000000000
+      internalID: 1560829654856612835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_26
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 1002
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 090d06ce23c3da280800000000000000
+      internalID: -9030495488396177264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_27
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 719
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585d436f7d9be3900800000000000000
+      internalID: 666174132097176965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_28
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 997
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311b894f892873e00800000000000000
+      internalID: 1024431033700364563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_29
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 1009
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1b86be079096a10800000000000000
+      internalID: 1903062698131239356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_30
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 1011
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f1f86571a610410800000000000000
+      internalID: 1441550004204281666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_31
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 1005
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8c4f065fc825030800000000000000
+      internalID: 3482000447432345815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_32
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 1002
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fcc1f5804668ac50800000000000000
+      internalID: 6676698874887916786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_33
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 719
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9454d087e3b6fcf40800000000000000
+      internalID: 5750933165221692745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_34
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 997
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8493ec95960f400a0800000000000000
+      internalID: -6916138792465319608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_35
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 1009
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75fbb983dd00e5bf0800000000000000
+      internalID: -333828372241334441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_36
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1011
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5f8e8dc228aadc0800000000000000
+      internalID: -3626943420764195375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_37
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 1005
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9099afbacae2340800000000000000
+      internalID: 4840996504113580455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_38
+      rect:
+        serializedVersion: 2
+        x: 1907
+        y: 1002
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef25cf38803f0810800000000000000
+      internalID: 1733657743304503274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_39
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 719
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55297909eec71f350800000000000000
+      internalID: 6048753138605199957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_40
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 965
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e640358cd14bdb610800000000000000
+      internalID: 1638663879440663662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_41
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 965
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3beb23b35ff8e5f90800000000000000
+      internalID: -6962969690445267277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_42
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 965
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9364d4c7a1605aa0800000000000000
+      internalID: -6174327715935263845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_43
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 965
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987cd1287a1f11c00800000000000000
+      internalID: 869741904804038537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_44
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 915
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc4228c8ca4ab200800000000000000
+      internalID: 196551759955643637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_45
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 915
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0177cfa247a2f310800000000000000
+      internalID: 1437395135943373070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_46
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 913
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 866f93e2b918a50c0800000000000000
+      internalID: -4586210767027964312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_47
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 902
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c910429c3518c0950800000000000000
+      internalID: 6416645765952962972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_48
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 889
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d7d39377acb9db70800000000000000
+      internalID: 8924371563995977687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_49
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 637
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785b951fcb4878340800000000000000
+      internalID: 4866003869435016583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_50
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 649
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279dee9f945f37e00800000000000000
+      internalID: 1041445636927314290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_51
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 651
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141667377296aae30800000000000000
+      internalID: 4515537194554122561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_52
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 645
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3041451562e14060800000000000000
+      internalID: 6936073824903446586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_53
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 642
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9353729e076cf40800000000000000
+      internalID: 5748406121072507336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_54
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 359
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d33dda428586d850800000000000000
+      internalID: 6401450715001992151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_55
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 637
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd36014f57feb460800000000000000
+      internalID: 7259511637852700088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_56
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 649
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb4222b5866c2bd0800000000000000
+      internalID: -2653633356022789144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_57
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 651
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8429236bb4490f510800000000000000
+      internalID: 1580926522107269704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_58
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 645
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc2e665e25f99cf0800000000000000
+      internalID: -244895125347619629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_59
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 642
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a703ebb2e3a784110800000000000000
+      internalID: 1245379704408387706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_60
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 359
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b645a3f971ae6f0800000000000000
+      internalID: -654684823183135931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_61
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 359
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d593358dde1f9f670800000000000000
+      internalID: 8573149369515325789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_62
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 359
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dcae27a711ebcbc0800000000000000
+      internalID: -3761665572032566060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_63
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 359
+        width: 144
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 029bbe712243c7b20800000000000000
+      internalID: 3133436761777879328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_64
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 359
+        width: 144
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 861b4cf4de0a12230800000000000000
+      internalID: 3612345317233832296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_65
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 605
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d59e13555c342cb0800000000000000
+      internalID: -4889716958253115943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_66
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 605
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6305dffa47f21d540800000000000000
+      internalID: 5030854436964880438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_67
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 605
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd484ce96a4d3de0800000000000000
+      internalID: -1351842494345097789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_68
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 605
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8b4c445df5d9800800000000000000
+      internalID: 620757693233412324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_69
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 555
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 144ccf347cc362120800000000000000
+      internalID: 2388663478903424065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_70
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 555
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733645081a718f050800000000000000
+      internalID: 5834439299668665143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_71
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 553
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43cdb6b4656e9f60800000000000000
+      internalID: 8042977467767309133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_72
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 542
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b4689cc6a529800800000000000000
+      internalID: 617655522187168577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_73
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 529
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e719d4c822e8460800000000000000
+      internalID: 7245766836477853258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_74
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 555
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f87580fb3997d610800000000000000
+      internalID: 1645952671544604918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_75
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 555
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7a97df4422f86c0800000000000000
+      internalID: -4139051852824467544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_76
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 553
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd69dfc71418377c0800000000000000
+      internalID: -4074771119570315553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_77
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 542
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa53458ff818543e0800000000000000
+      internalID: -2070105998360300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_78
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 529
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d7afc4d6cf03930800000000000000
+      internalID: 4121071205417123222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_79
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 144
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8f346bb575c0e20800000000000000
+      internalID: 3318123076876761317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_80
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 0
+        width: 144
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565e1aaabfa0dab50800000000000000
+      internalID: 6605948304438191461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 3 Base (1) (1)_81
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 0
+        width: 144
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308ad390c3b8095b0800000000000000
+      internalID: -5363634066228926461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Boss 3 Base (1) (1)_0: -6022393049100508138
+      Boss 3 Base (1) (1)_1: 1780653957236268303
+      Boss 3 Base (1) (1)_10: 2229951212339723987
+      Boss 3 Base (1) (1)_11: -3893240411463734434
+      Boss 3 Base (1) (1)_12: -6078428072698104500
+      Boss 3 Base (1) (1)_13: 4988148347194230665
+      Boss 3 Base (1) (1)_14: 2284724937305961456
+      Boss 3 Base (1) (1)_15: -934366865022691130
+      Boss 3 Base (1) (1)_16: 1757294549358088192
+      Boss 3 Base (1) (1)_17: -8693439151450121592
+      Boss 3 Base (1) (1)_18: -3360380001846267731
+      Boss 3 Base (1) (1)_19: -1617032776680983354
+      Boss 3 Base (1) (1)_2: 2756634082156639618
+      Boss 3 Base (1) (1)_20: 3433868866140283408
+      Boss 3 Base (1) (1)_21: -1701635895659328176
+      Boss 3 Base (1) (1)_22: -7499681584766541522
+      Boss 3 Base (1) (1)_23: 5058431982114956091
+      Boss 3 Base (1) (1)_24: -3476038384016811970
+      Boss 3 Base (1) (1)_25: 1560829654856612835
+      Boss 3 Base (1) (1)_26: -9030495488396177264
+      Boss 3 Base (1) (1)_27: 666174132097176965
+      Boss 3 Base (1) (1)_28: 1024431033700364563
+      Boss 3 Base (1) (1)_29: 1903062698131239356
+      Boss 3 Base (1) (1)_3: -1975155365331807135
+      Boss 3 Base (1) (1)_30: 1441550004204281666
+      Boss 3 Base (1) (1)_31: 3482000447432345815
+      Boss 3 Base (1) (1)_32: 6676698874887916786
+      Boss 3 Base (1) (1)_33: 5750933165221692745
+      Boss 3 Base (1) (1)_34: -6916138792465319608
+      Boss 3 Base (1) (1)_35: -333828372241334441
+      Boss 3 Base (1) (1)_36: -3626943420764195375
+      Boss 3 Base (1) (1)_37: 4840996504113580455
+      Boss 3 Base (1) (1)_38: 1733657743304503274
+      Boss 3 Base (1) (1)_39: 6048753138605199957
+      Boss 3 Base (1) (1)_4: -6477297727810561689
+      Boss 3 Base (1) (1)_40: 1638663879440663662
+      Boss 3 Base (1) (1)_41: -6962969690445267277
+      Boss 3 Base (1) (1)_42: -6174327715935263845
+      Boss 3 Base (1) (1)_43: 869741904804038537
+      Boss 3 Base (1) (1)_44: 196551759955643637
+      Boss 3 Base (1) (1)_45: 1437395135943373070
+      Boss 3 Base (1) (1)_46: -4586210767027964312
+      Boss 3 Base (1) (1)_47: 6416645765952962972
+      Boss 3 Base (1) (1)_48: 8924371563995977687
+      Boss 3 Base (1) (1)_49: 4866003869435016583
+      Boss 3 Base (1) (1)_5: 8083267994801001247
+      Boss 3 Base (1) (1)_50: 1041445636927314290
+      Boss 3 Base (1) (1)_51: 4515537194554122561
+      Boss 3 Base (1) (1)_52: 6936073824903446586
+      Boss 3 Base (1) (1)_53: 5748406121072507336
+      Boss 3 Base (1) (1)_54: 6401450715001992151
+      Boss 3 Base (1) (1)_55: 7259511637852700088
+      Boss 3 Base (1) (1)_56: -2653633356022789144
+      Boss 3 Base (1) (1)_57: 1580926522107269704
+      Boss 3 Base (1) (1)_58: -244895125347619629
+      Boss 3 Base (1) (1)_59: 1245379704408387706
+      Boss 3 Base (1) (1)_6: -368972551594865877
+      Boss 3 Base (1) (1)_60: -654684823183135931
+      Boss 3 Base (1) (1)_61: 8573149369515325789
+      Boss 3 Base (1) (1)_62: -3761665572032566060
+      Boss 3 Base (1) (1)_63: 3133436761777879328
+      Boss 3 Base (1) (1)_64: 3612345317233832296
+      Boss 3 Base (1) (1)_65: -4889716958253115943
+      Boss 3 Base (1) (1)_66: 5030854436964880438
+      Boss 3 Base (1) (1)_67: -1351842494345097789
+      Boss 3 Base (1) (1)_68: 620757693233412324
+      Boss 3 Base (1) (1)_69: 2388663478903424065
+      Boss 3 Base (1) (1)_7: -6341307533775948098
+      Boss 3 Base (1) (1)_70: 5834439299668665143
+      Boss 3 Base (1) (1)_71: 8042977467767309133
+      Boss 3 Base (1) (1)_72: 617655522187168577
+      Boss 3 Base (1) (1)_73: 7245766836477853258
+      Boss 3 Base (1) (1)_74: 1645952671544604918
+      Boss 3 Base (1) (1)_75: -4139051852824467544
+      Boss 3 Base (1) (1)_76: -4074771119570315553
+      Boss 3 Base (1) (1)_77: -2070105998360300118
+      Boss 3 Base (1) (1)_78: 4121071205417123222
+      Boss 3 Base (1) (1)_79: 3318123076876761317
+      Boss 3 Base (1) (1)_8: 8673744863481346917
+      Boss 3 Base (1) (1)_80: 6605948304438191461
+      Boss 3 Base (1) (1)_81: -5363634066228926461
+      Boss 3 Base (1) (1)_9: 1463627021110414833
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

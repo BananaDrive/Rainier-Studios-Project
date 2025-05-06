@@ -4,17 +4,21 @@ public class Aiming : MonoBehaviour
 {
     public Transform directionPoint, leftArm, rightArm;
 
+    public float xOffset, yOffset;
+
     void Update()
     {
         float aimSide = transform.eulerAngles.y == 180f? -1 : 1;
         float aimDirection = Input.GetAxisRaw("Vertical");
 
         directionPoint.rotation = Quaternion.Euler(directionPoint.rotation.x, transform.eulerAngles.y, aimDirection * 90); //determines the weapon direction from the player direction and its vertical input
-        Vector2 rotationDistance = new(0.7f * aimSide * Mathf.Cos(aimDirection * Mathf.PI / 2), 0.5f + (0.9f * Mathf.Sin(aimDirection * Mathf.PI / 2))); //makes the weapon seem like its orbiting the player
+        Vector2 rotationDistance = new(xOffset * aimSide * Mathf.Cos(aimDirection * Mathf.PI / 2), yOffset + (0.9f * Mathf.Sin(aimDirection * Mathf.PI / 2))); //makes the weapon seem like its orbiting the player
         directionPoint.position = new(transform.position.x + rotationDistance.x, transform.position.y + rotationDistance.y);
 
-        CalcDirection(leftArm);
-        CalcDirection(rightArm);
+        if (leftArm != null)
+            CalcDirection(leftArm);
+        if (rightArm != null)
+            CalcDirection(rightArm);
     }
 
     void CalcDirection(Transform objToRotate)

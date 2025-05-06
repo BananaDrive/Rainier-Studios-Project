@@ -1,64 +1,70 @@
 fileFormatVersion: 2
-guid: 550f73a92ca8c574f88f210065282c78
+guid: 61bce8cade52a35478b0b233c2f2b63c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6035183879194835219
-    second: Markqualius walk_0
+      213: -2510476293373519475
+    second: New Piskel_0
   - first:
-      213: -4907338302836268713
-    second: Markqualius walk_1
+      213: 627625725489826318
+    second: New Piskel_1
   - first:
-      213: 8518579925459215257
-    second: Markqualius walk_2
+      213: 6338068570567419226
+    second: New Piskel_2
   - first:
-      213: 8870241911422644625
-    second: Markqualius walk_3
+      213: -4309738878335270719
+    second: New Piskel_3
   - first:
-      213: 1658262488672285079
-    second: Markqualius walk_4
+      213: 7920555144810264317
+    second: New Piskel_4
   - first:
-      213: 1262065702200890979
-    second: Markqualius walk_5
+      213: 4847817712686481240
+    second: New Piskel_5
   - first:
-      213: 8368613198891744392
-    second: Markqualius walk_6
+      213: 6995750527968357485
+    second: New Piskel_6
   - first:
-      213: 6052581177832200758
-    second: Markqualius walk_7
+      213: -5451150391451894679
+    second: New Piskel_7
   - first:
-      213: -2764373287932016460
-    second: Markqualius walk_8
+      213: -5930547643211109364
+    second: New Piskel_8
   - first:
-      213: -819471900649754694
-    second: Markqualius walk_9
+      213: 1521325034740627089
+    second: New Piskel_9
   - first:
-      213: 1689487281788208578
-    second: Markqualius walk_10
+      213: -1231491972741519832
+    second: New Piskel_10
   - first:
-      213: 3264540767387436832
-    second: Markqualius walk_11
+      213: -487593108907190007
+    second: New Piskel_11
   - first:
-      213: -4188853762431679354
-    second: Markqualius walk_12
+      213: -7757339544638446355
+    second: New Piskel_12
   - first:
-      213: 4578832070855022509
-    second: Markqualius walk_13
+      213: 1777937247925281152
+    second: New Piskel_13
   - first:
-      213: -5488857191452262930
-    second: Markqualius walk_14
+      213: 1978759242539912703
+    second: New Piskel_14
   - first:
-      213: 1153637908715186276
-    second: Markqualius walk_15
+      213: -5061409336387082696
+    second: New Piskel_15
   - first:
-      213: 7062053097707650951
-    second: Markqualius walk_16
+      213: 345722018515597643
+    second: New Piskel_16
   - first:
-      213: 5362240917477583225
-    second: Markqualius walk_17
+      213: 4932282247359268839
+    second: New Piskel_17
   - first:
-      213: -5987420872559780651
-    second: Markqualius walk_18
+      213: -2246552871507872522
+    second: New Piskel_18
+  - first:
+      213: -3871374204143653761
+    second: New Piskel_19
+  - first:
+      213: 7911726311057383256
+    second: New Piskel_20
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -91,7 +97,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -105,7 +111,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 60
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,7 +135,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -154,13 +160,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Markqualius walk_0
+      name: New Piskel_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 383
-        width: 36
-        height: 88
+        x: 9
+        y: 69
+        width: 13
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de68d66dc38be3ca0800000000000000
-      internalID: -6035183879194835219
+      spriteID: d899e6cbc1ff82dd0800000000000000
+      internalID: -2510476293373519475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_1
+      name: New Piskel_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 383
-        width: 35
-        height: 88
+        x: 31
+        y: 81
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 751a6c250d1a5ebb0800000000000000
-      internalID: -4907338302836268713
+      spriteID: e0ac7b3a546c5b800800000000000000
+      internalID: 627625725489826318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_2
+      name: New Piskel_2
       rect:
         serializedVersion: 2
-        x: 150
-        y: 383
-        width: 33
-        height: 88
+        x: 35
+        y: 63
+        width: 10
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99325cf0f43183670800000000000000
-      internalID: 8518579925459215257
+      spriteID: a552dbec8c755f750800000000000000
+      internalID: 6338068570567419226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_3
+      name: New Piskel_3
       rect:
         serializedVersion: 2
-        x: 215
-        y: 383
-        width: 32
-        height: 88
+        x: 38
+        y: 64
+        width: 27
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,20 +241,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 191f02a950e691b70800000000000000
-      internalID: 8870241911422644625
+      spriteID: 1c0c22af25bb034c0800000000000000
+      internalID: -4309738878335270719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_4
+      name: New Piskel_4
       rect:
         serializedVersion: 2
-        x: 281
-        y: 383
-        width: 30
-        height: 88
+        x: 40
+        y: 81
+        width: 21
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 791baa592f4530710800000000000000
-      internalID: 1658262488672285079
+      spriteID: df6fe4670f67bed60800000000000000
+      internalID: 7920555144810264317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_5
+      name: New Piskel_5
       rect:
         serializedVersion: 2
-        x: 345
-        y: 383
-        width: 30
-        height: 88
+        x: 57
+        y: 31
+        width: 39
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,20 +285,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36653e6c112c38110800000000000000
-      internalID: 1262065702200890979
+      spriteID: 85f368c5688e64340800000000000000
+      internalID: 4847817712686481240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_6
+      name: New Piskel_6
       rect:
         serializedVersion: 2
-        x: 25
-        y: 255
-        width: 30
-        height: 88
+        x: 0
+        y: 23
+        width: 39
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,20 +307,108 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 88c76969d59432470800000000000000
-      internalID: 8368613198891744392
+      spriteID: d6c2ec44a06e51160800000000000000
+      internalID: 6995750527968357485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_7
+      name: New Piskel_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 51
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c3744b99f9954b0800000000000000
+      internalID: -5451150391451894679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel_8
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 56
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c2fd2075672bda0800000000000000
+      internalID: -5930547643211109364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel_9
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 45
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196bf9b0f05dc1510800000000000000
+      internalID: 1521325034740627089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 49
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8262ff4539cd8eee0800000000000000
+      internalID: -1231491972741519832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel_11
       rect:
         serializedVersion: 2
         x: 86
-        y: 255
-        width: 33
-        height: 88
+        y: 49
+        width: 6
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,20 +417,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 63a57e663861ff350800000000000000
-      internalID: 6052581177832200758
+      spriteID: 90998ac96a8bb39f0800000000000000
+      internalID: -487593108907190007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_8
+      name: New Piskel_12
       rect:
         serializedVersion: 2
-        x: 149
-        y: 255
-        width: 34
-        height: 88
+        x: 35
+        y: 31
+        width: 29
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,20 +439,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b8cb321429f2a9d0800000000000000
-      internalID: -2764373287932016460
+      spriteID: de42cb7c8c4685490800000000000000
+      internalID: -7757339544638446355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_9
+      name: New Piskel_13
       rect:
         serializedVersion: 2
-        x: 213
-        y: 255
-        width: 34
-        height: 88
+        x: 41
+        y: 49
+        width: 10
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,20 +461,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: abf6b5ae5a6a0a4f0800000000000000
-      internalID: -819471900649754694
+      spriteID: 081a58fc1808ca810800000000000000
+      internalID: 1777937247925281152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_10
+      name: New Piskel_14
       rect:
         serializedVersion: 2
-        x: 278
-        y: 255
-        width: 33
-        height: 88
+        x: 71
+        y: 39
+        width: 9
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,20 +483,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c5c6834bb3427710800000000000000
-      internalID: 1689487281788208578
+      spriteID: ffdcc931c07f57b10800000000000000
+      internalID: 1978759242539912703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_11
+      name: New Piskel_15
       rect:
         serializedVersion: 2
-        x: 345
-        y: 255
-        width: 30
-        height: 88
+        x: 79
+        y: 39
+        width: 9
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,20 +505,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 027c8ea188afd4d20800000000000000
-      internalID: 3264540767387436832
+      spriteID: 8366dc9660342c9b0800000000000000
+      internalID: -5061409336387082696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_12
+      name: New Piskel_16
       rect:
         serializedVersion: 2
-        x: 25
-        y: 127
-        width: 30
-        height: 88
+        x: 32
+        y: 35
+        width: 6
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,20 +527,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 684833252b33ed5c0800000000000000
-      internalID: -4188853762431679354
+      spriteID: b4937a818504cc400800000000000000
+      internalID: 345722018515597643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_13
+      name: New Piskel_17
       rect:
         serializedVersion: 2
-        x: 89
-        y: 127
-        width: 30
-        height: 88
+        x: 0
+        y: 3
+        width: 29
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,20 +549,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da7da7d32874b8f30800000000000000
-      internalID: 4578832070855022509
+      spriteID: 7e780d5529cf27440800000000000000
+      internalID: 4932282247359268839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_14
+      name: New Piskel_18
       rect:
         serializedVersion: 2
-        x: 151
-        y: 127
-        width: 32
-        height: 88
+        x: 39
+        y: 24
+        width: 17
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,20 +571,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eedb3a03779a3d3b0800000000000000
-      internalID: -5488857191452262930
+      spriteID: 6f4b3ace014a2d0e0800000000000000
+      internalID: -2246552871507872522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_15
+      name: New Piskel_19
       rect:
         serializedVersion: 2
-        x: 215
-        y: 127
-        width: 32
-        height: 88
+        x: 41
+        y: 15
+        width: 15
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,20 +593,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 468a464d09b820010800000000000000
-      internalID: 1153637908715186276
+      spriteID: f7c28693cad164ac0800000000000000
+      internalID: -3871374204143653761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Markqualius walk_16
+      name: New Piskel_20
       rect:
         serializedVersion: 2
-        x: 278
-        y: 127
-        width: 33
-        height: 88
+        x: 38
+        y: 10
+        width: 18
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,52 +615,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78fbfc140e3710260800000000000000
-      internalID: 7062053097707650951
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Markqualius walk_17
-      rect:
-        serializedVersion: 2
-        x: 340
-        y: 127
-        width: 35
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 979e05e34b18a6a40800000000000000
-      internalID: 5362240917477583225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Markqualius walk_18
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 0
-        width: 36
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5dc905a607868eca0800000000000000
-      internalID: -5987420872559780651
+      spriteID: 85fdfaa69291ccd60800000000000000
+      internalID: 7911726311057383256
       vertices: []
       indices: 
       edges: []
@@ -585,25 +635,27 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Markqualius walk_0: -6035183879194835219
-      Markqualius walk_1: -4907338302836268713
-      Markqualius walk_10: 1689487281788208578
-      Markqualius walk_11: 3264540767387436832
-      Markqualius walk_12: -4188853762431679354
-      Markqualius walk_13: 4578832070855022509
-      Markqualius walk_14: -5488857191452262930
-      Markqualius walk_15: 1153637908715186276
-      Markqualius walk_16: 7062053097707650951
-      Markqualius walk_17: 5362240917477583225
-      Markqualius walk_18: -5987420872559780651
-      Markqualius walk_2: 8518579925459215257
-      Markqualius walk_3: 8870241911422644625
-      Markqualius walk_4: 1658262488672285079
-      Markqualius walk_5: 1262065702200890979
-      Markqualius walk_6: 8368613198891744392
-      Markqualius walk_7: 6052581177832200758
-      Markqualius walk_8: -2764373287932016460
-      Markqualius walk_9: -819471900649754694
+      New Piskel_0: -2510476293373519475
+      New Piskel_1: 627625725489826318
+      New Piskel_10: -1231491972741519832
+      New Piskel_11: -487593108907190007
+      New Piskel_12: -7757339544638446355
+      New Piskel_13: 1777937247925281152
+      New Piskel_14: 1978759242539912703
+      New Piskel_15: -5061409336387082696
+      New Piskel_16: 345722018515597643
+      New Piskel_17: 4932282247359268839
+      New Piskel_18: -2246552871507872522
+      New Piskel_19: -3871374204143653761
+      New Piskel_2: 6338068570567419226
+      New Piskel_20: 7911726311057383256
+      New Piskel_3: -4309738878335270719
+      New Piskel_4: 7920555144810264317
+      New Piskel_5: 4847817712686481240
+      New Piskel_6: 6995750527968357485
+      New Piskel_7: -5451150391451894679
+      New Piskel_8: -5930547643211109364
+      New Piskel_9: 1521325034740627089
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -584,7 +584,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Markqualius walk_0: -6035183879194835219
+      Markqualius walk_1: -4907338302836268713
+      Markqualius walk_10: 1689487281788208578
+      Markqualius walk_11: 3264540767387436832
+      Markqualius walk_12: -4188853762431679354
+      Markqualius walk_13: 4578832070855022509
+      Markqualius walk_14: -5488857191452262930
+      Markqualius walk_15: 1153637908715186276
+      Markqualius walk_16: 7062053097707650951
+      Markqualius walk_17: 5362240917477583225
+      Markqualius walk_18: -5987420872559780651
+      Markqualius walk_2: 8518579925459215257
+      Markqualius walk_3: 8870241911422644625
+      Markqualius walk_4: 1658262488672285079
+      Markqualius walk_5: 1262065702200890979
+      Markqualius walk_6: 8368613198891744392
+      Markqualius walk_7: 6052581177832200758
+      Markqualius walk_8: -2764373287932016460
+      Markqualius walk_9: -819471900649754694
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

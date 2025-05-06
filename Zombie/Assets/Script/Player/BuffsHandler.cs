@@ -22,6 +22,12 @@ public class BuffsHandler : MonoBehaviour
     public bool allowAuto;
 
 
+    void Awake()
+    {
+        if (GameManager.Instance.buffsHandler != null)
+            CopyStats(GameManager.Instance.buffsHandler);
+        GameManager.Instance.buffsHandler = this;
+    }
 
     public void FixedUpdate()
     {
@@ -117,5 +123,20 @@ public class BuffsHandler : MonoBehaviour
 
         health.regenAmount = regenBuff;
         health.damageReduc = damageReducBuff / 100;
+    }
+
+    public void CopyStats(BuffsHandler buffs)
+    {
+        damageEnhance = buffs.damageEnhance;
+        fireRateEnhance = buffs.fireRateEnhance;
+        clipSizeEnhance = buffs.clipSizeEnhance;
+        bulletSpeedEnhance = buffs.bulletSpeedEnhance;
+        reloadEnhance = buffs.reloadEnhance;
+        accuracyEnhance = buffs.accuracyEnhance;
+        shotAmountEnhance = buffs.shotAmountEnhance;
+
+        allowAuto = buffs.allowAuto;
+        allowPiercing = buffs.allowPiercing;
+        allowRaycast = buffs.allowRaycast;
     }
 }

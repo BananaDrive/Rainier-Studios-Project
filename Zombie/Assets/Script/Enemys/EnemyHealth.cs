@@ -27,7 +27,7 @@ public class EnemyHealth : Health
             healthbar.UpdateHealth(currentHealth / maxHealth);
 
         if (TryGetComponent<Rigidbody2D>(out var rb))
-            rb.AddForce(damage * 5f / (knockbackRes + 1) * Vector2.right, ForceMode2D.Force);
+            rb.AddForce(damage * 5f / (knockbackRes + 1) * -transform.right, ForceMode2D.Force);
             
         if (enemyBehavior.canInterrupt)
         {

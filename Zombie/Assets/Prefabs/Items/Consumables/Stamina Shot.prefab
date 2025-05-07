@@ -150,14 +150,17 @@ MonoBehaviour:
   sprite: {fileID: 0}
   itemsStats:
   - itemType: 1
+    buffSprite: {fileID: 1023746334283481644, guid: 6995c6ccd700be8438ae8796a9f39e2e, type: 3}
     potency: 10
     duration: 5
     isStackable: 0
   - itemType: 4
+    buffSprite: {fileID: 0}
     potency: 50
     duration: 15
     isStackable: 0
   - itemType: 3
+    buffSprite: {fileID: 0}
     potency: 20
     duration: 15
     isStackable: 0

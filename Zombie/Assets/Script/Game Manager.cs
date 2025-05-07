@@ -9,10 +9,12 @@ public class GameManager : MonoBehaviour
     public GameObject pauseScreen;
     public LootTable lootTable;
     public BuffsHandler buffsHandler;
+    public NameInput nameInput;
+    public Leaderboard leaderboard;
     public bool isPaused, gameOver;
     void Awake()
     {
-        if (Instance != null && Instance != this)
+        if ((Instance != null && Instance != this) || SceneManager.GetActiveScene().buildIndex == 0)
             Destroy(this);
         else
             Instance = this;
@@ -37,6 +39,14 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         gameOverScreen.SetActive(false);
+
+        ScoreEntry scoreEntry = new()
+        {
+            score = UIManager.score,
+            playerName = nameInput.GetName()
+        };
+
+        Debug.Log(scoreEntry.playerName + " " + scoreEntry.score);
         SceneManager.LoadScene(0);
     }
 

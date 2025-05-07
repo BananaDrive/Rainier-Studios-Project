@@ -710,7 +710,7 @@ MonoBehaviour:
   rb: {fileID: 8815408405336253798}
   ground:
     serializedVersion: 2
-    m_Bits: 4104
+    m_Bits: 8
   moveSpeed: 2.5
   acceleration: 13
   deceleration: 16

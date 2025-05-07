@@ -109,155 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ceiling lights_0
+      name: New Piskel (1)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 32
-        height: 16
+        y: 50
+        width: 64
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9b5068fc8d250344ebc8ebd3f283e077
-      internalID: 187495252
+      spriteID: 9249ede64883660a0800000000000000
+      internalID: -6888756438569675735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceiling lights_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9aa1316638c4926418421c7a431ad401
-      internalID: 122353959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ceiling lights_2
+      name: New Piskel (1)_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 16
+        y: 34
+        width: 64
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 87d81c54dc65b664c9054fa8b29057dc
-      internalID: 902620610
+      spriteID: 29beed572c6005f70800000000000000
+      internalID: 9173839873224666002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceiling lights_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ad1b7eee9b66fb48b108448f1aff4d5
-      internalID: -933538342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ceiling lights_4
+      name: New Piskel (1)_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 32
-        height: 16
+        y: 18
+        width: 64
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 61605f7847810a64ea8001e29d326c6b
-      internalID: 930083717
+      spriteID: f5792496b0fe6a5f0800000000000000
+      internalID: -745645855993587873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceiling lights_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ed932b1b2ac49a44a6576598bb9507a
-      internalID: 755449442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ceiling lights_6
+      name: New Piskel (1)_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 32
-        height: 16
+        y: 6
+        width: 33
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d03a02aede7dcfc42be094c496112e39
-      internalID: -230556441
+      spriteID: 7e85a3ae9027a3930800000000000000
+      internalID: 4123733795721074919
       vertices: []
       indices: 
       edges: []
@@ -266,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 85a1ccc06dd69344684325b070fe7b1f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -276,13 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ceiling lights_0: 187495252
-      ceiling lights_1: 122353959
-      ceiling lights_2: 902620610
-      ceiling lights_3: -933538342
-      ceiling lights_4: 930083717
-      ceiling lights_5: 755449442
-      ceiling lights_6: -230556441
+      New Piskel (1)_0: -6888756438569675735
+      New Piskel (1)_1: 9173839873224666002
+      New Piskel (1)_2: -745645855993587873
+      New Piskel (1)_3: 4123733795721074919
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

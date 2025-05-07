@@ -52,11 +52,26 @@ public class UIManager : MonoBehaviour
 
     public void DisplayBuffs(List<ItemStats> itemStats)
     {
-        for (int i = 0; i < buffPanel.buffSlots.Length; i++)
+        int slotsTaken = 0;
+        if (itemStats.Count == 0)
+        {
+            for (int i = 0; i < buffPanel.buffSlots.Length; i++)
+            {
+                buffPanel.buffSlots[i].text.SetText("");
+                buffPanel.buffSlots[slotsTaken].image.sprite = null;
+            }
+            return;
+        }
+            
+        for (int i = 0; i < itemStats.Count && slotsTaken < 4; i++)
         {
             buffPanel.buffSlots[i].text.SetText("");
-            if (i < itemStats.Count)
-                buffPanel.buffSlots[i].text.SetText(((int)itemStats[i].duration).ToString());
+            if (itemStats[i].buffSprite != null)
+            {
+                buffPanel.buffSlots[slotsTaken].image.sprite = itemStats[i].buffSprite;
+                buffPanel.buffSlots[slotsTaken].text.SetText(((int)itemStats[i].duration).ToString());
+                slotsTaken++;
+            }
         }
     }
 

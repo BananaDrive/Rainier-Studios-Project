@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverScreen;
     public GameObject pauseScreen;
     public LootTable lootTable;
+    public BuffsHandler buffsHandler;
     public bool isPaused, gameOver;
     void Awake()
     {

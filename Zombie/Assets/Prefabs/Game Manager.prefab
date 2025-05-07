@@ -831,10 +831,10 @@ MonoBehaviour:
   UIManager: {fileID: 2606737159230611623}
   gameOverScreen: {fileID: 8848363750452623326}
   pauseScreen: {fileID: 3702611795600501865}
-  lootTable: {fileID: 0}
+  lootTable: {fileID: 5168067630646483315}
   buffsHandler: {fileID: 0}
   nameInput: {fileID: 2531744241187090480}
-  leaderboard: {fileID: 0}
+  leaderboard: {fileID: 1403877075510545958}
   isPaused: 0
   gameOver: 0
 --- !u!114 &5168067630646483315
@@ -874,6 +874,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b2d2421a29d7614487ecd2cdc80f85f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leaderBoard: {fileID: 0}
+  playerStats: []
 --- !u!1 &2065282635033941458
 GameObject:
   m_ObjectHideFlags: 0

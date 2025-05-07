@@ -49,7 +49,7 @@ public class Leaderboard : MonoBehaviour
     public void GetReferences()
     {
         for (int i = 0; i < leaderBoard.transform.childCount; i++)
-            playerStats[i] = GetComponent<TMP_Text>();
+            playerStats[i] = leaderBoard.transform.GetChild(i).GetComponent<TMP_Text>();
         DisplayLeaderboard();
     }
 

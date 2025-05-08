@@ -764,8 +764,7 @@ GameObject:
   - component: {fileID: 6408432225776151790}
   - component: {fileID: 1946637080395633974}
   - component: {fileID: 4702255026137393682}
-  - component: {fileID: 5168067630646483315}
-  - component: {fileID: 1403877075510545958}
+  - component: {fileID: 2201885364386645244}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -831,13 +830,13 @@ MonoBehaviour:
   UIManager: {fileID: 2606737159230611623}
   gameOverScreen: {fileID: 8848363750452623326}
   pauseScreen: {fileID: 3702611795600501865}
-  lootTable: {fileID: 5168067630646483315}
+  lootTable: {fileID: 2201885364386645244}
   buffsHandler: {fileID: 0}
   nameInput: {fileID: 2531744241187090480}
-  leaderboard: {fileID: 1403877075510545958}
+  leaderboard: {fileID: 0}
   isPaused: 0
   gameOver: 0
---- !u!114 &5168067630646483315
+--- !u!114 &2201885364386645244
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -851,31 +850,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootTables:
   - lootTableObjects:
-    - tableObj: {fileID: 0}
-      objWeight: 10
+    - tableObj: {fileID: 6570681286541883612, guid: fd2f1cd2b538f0045acc305635ceb217, type: 3}
+      objWeight: 350
       scoreMilestone: 0
+    - tableObj: {fileID: 8310854824089226904, guid: 5784446949924e046a18a40028b23e9e, type: 3}
+      objWeight: 200
+      scoreMilestone: 500
+    - tableObj: {fileID: 2798564134538928818, guid: ae709ba76dec1164a8678575983b5a90, type: 3}
+      objWeight: 100
+      scoreMilestone: 1000
+    - tableObj: {fileID: 8991184985484401020, guid: cadc149b4cebc9d47af09fbefca85883, type: 3}
+      objWeight: 10
+      scoreMilestone: 2000
     tableMaxWeight: 1000
     tableName: Civilian Zombie
   - lootTableObjects:
-    - tableObj: {fileID: 0}
+    - tableObj: {fileID: 967271096852664349, guid: a583c8c81bd85ed41baf5e323d073a17, type: 3}
+      objWeight: 350
+      scoreMilestone: 500
+    - tableObj: {fileID: 5588894721135467063, guid: 673d63b64eb41494083c7510cabc0293, type: 3}
+      objWeight: 300
+      scoreMilestone: 700
+    - tableObj: {fileID: 4163664845319010306, guid: be09426b289a3d849afe5c98481acd30, type: 3}
+      objWeight: 200
+      scoreMilestone: 1500
+    - tableObj: {fileID: 8991184985484401020, guid: cf2cd032fc9a0444bb9100ad012b0778, type: 3}
       objWeight: 10
-      scoreMilestone: 0
+      scoreMilestone: 4000
     tableMaxWeight: 1000
-    tableName: Crawler Zombie
---- !u!114 &1403877075510545958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062348928756457530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b2d2421a29d7614487ecd2cdc80f85f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leaderBoard: {fileID: 0}
-  playerStats: []
+    tableName: Zombie Police
+  - lootTableObjects:
+    - tableObj: {fileID: 2798564134538928818, guid: ae709ba76dec1164a8678575983b5a90, type: 3}
+      objWeight: 350
+      scoreMilestone: 1000
+    - tableObj: {fileID: 3951232263880404247, guid: c0660cdc7ffab99499bc2c48ae26de28, type: 3}
+      objWeight: 200
+      scoreMilestone: 1500
+    - tableObj: {fileID: 8991184985484401020, guid: 54e5f4c935745eb4cb2fbfba63058056, type: 3}
+      objWeight: 50
+      scoreMilestone: 5000
+    - tableObj: {fileID: 8991184985484401020, guid: 13222b1578579f34ca872538f9c3db4e, type: 3}
+      objWeight: 50
+      scoreMilestone: 5000
+    tableMaxWeight: 1000
+    tableName: Crawler
 --- !u!1 &2065282635033941458
 GameObject:
   m_ObjectHideFlags: 0

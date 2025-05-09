@@ -832,7 +832,7 @@ MonoBehaviour:
   UIManager: {fileID: 2606737159230611623}
   gameOverScreen: {fileID: 8848363750452623326}
   pauseScreen: {fileID: 3702611795600501865}
-  lootTable: {fileID: 5168067630646483315}
+  lootTable: {fileID: 0}
   buffsHandler: {fileID: 0}
   nameInput: {fileID: 2531744241187090480}
   leaderboard: {fileID: 1403877075510545958}
@@ -5052,7 +5052,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7609185176653677809
 RectTransform:
   m_ObjectHideFlags: 0

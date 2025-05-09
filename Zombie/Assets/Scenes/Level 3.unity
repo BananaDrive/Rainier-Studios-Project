@@ -57363,17 +57363,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4574813236326389905, guid: 8fc80f89b569c174d9fbfc57b542f51a, type: 3}
   m_PrefabInstance: {fileID: 1675756147}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1683936564 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5168067630646483315, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
-  m_PrefabInstance: {fileID: 1704980309549350522}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3baa93fe0030624f846e3ee16a98d75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1693236035 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2247784616421732137, guid: cf2cd032fc9a0444bb9100ad012b0778, type: 3}
@@ -61548,6 +61537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 3249594665053532918, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: eventSystem
+      value: 
+      objectReference: {fileID: 1314993480}
     - target: {fileID: 3915734660079728787, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -61631,7 +61624,7 @@ PrefabInstance:
     - target: {fileID: 4702255026137393682, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: lootTable
       value: 
-      objectReference: {fileID: 1683936564}
+      objectReference: {fileID: 0}
     - target: {fileID: 5389204347325167831, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: m_VerticalAlignment
       value: 512

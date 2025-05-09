@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public Transform inventoryPanel;
     public BuffPanel buffPanel;
     public PlayerHealthBar playerHealthBar;
+    public SpriteRenderer blackScreen;
     public Image hurtOverlay;
     public Image[] inventorySlots;
     public GameObject itemStatsPanel;
@@ -18,7 +19,7 @@ public class UIManager : MonoBehaviour
 
     public void Start()
     {
-        InitializeComponents(); 
+        InitializeComponents();
     }
 
     public void InitializeComponents()

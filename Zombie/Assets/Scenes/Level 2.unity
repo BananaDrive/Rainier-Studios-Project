@@ -4846,17 +4846,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5630978870816976329, guid: a355d4c6750dc99428872e433912cddf, type: 3}
   m_PrefabInstance: {fileID: 1127827174}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1130596212 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5378796851522942771, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
-  m_PrefabInstance: {fileID: 1704980309549350522}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3baa93fe0030624f846e3ee16a98d75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1132990203
 GameObject:
   m_ObjectHideFlags: 0
@@ -74223,7 +74212,7 @@ PrefabInstance:
     - target: {fileID: 4702255026137393682, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: lootTable
       value: 
-      objectReference: {fileID: 1130596212}
+      objectReference: {fileID: 0}
     - target: {fileID: 6013661919590400864, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -74312,6 +74301,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6882787890478880705, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: eventSystem
+      value: 
+      objectReference: {fileID: 1314993480}
     - target: {fileID: 7311236687590145588, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class GameManager : MonoBehaviour
     public BuffsHandler buffsHandler;
     public NameInput nameInput;
     public Leaderboard leaderboard;
+    public GameObject gameOverButton, pauseButton;
+    public EventSystemAcess eventSystemAcess;
     public bool isPaused, gameOver;
     void Awake()
     {
@@ -33,6 +36,7 @@ public class GameManager : MonoBehaviour
         gameOver = true;
         Time.timeScale = 0;
         Toggle(gameOverScreen);
+        eventSystemAcess.Select(gameOverButton);
     }
 
     public void MainMenu()
@@ -45,8 +49,7 @@ public class GameManager : MonoBehaviour
             score = UIManager.score,
             playerName = nameInput.GetName()
         };
-
-        Debug.Log(scoreEntry.playerName + " " + scoreEntry.score);
+        leaderboard.SaveFile(scoreEntry);
         SceneManager.LoadScene(0);
     }
 
@@ -67,6 +70,7 @@ public class GameManager : MonoBehaviour
             return;
 
         Toggle(gameObject);
+        eventSystemAcess.Select(pauseButton);
         isPaused = !isPaused;
         Time.timeScale = !isPaused ? 1 : 0;
     }

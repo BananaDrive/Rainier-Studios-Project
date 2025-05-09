@@ -22,7 +22,7 @@ public class BuffsHandler : MonoBehaviour
     public bool allowAuto;
 
 
-    void Awake()
+    void Start()
     {
         if (GameManager.Instance.buffsHandler != null)
             CopyStats(GameManager.Instance.buffsHandler);

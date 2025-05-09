@@ -6,6 +6,8 @@ public class PlayerMovement : Movement
     public Animator animator;
     public float aimDistance;
     public AudioSource jump;
+    public Aiming aiming;
+    
     public void Update()
     {
         animator.SetInteger("State", 0);
@@ -15,7 +17,10 @@ public class PlayerMovement : Movement
         if (gamepad != null)
             controller = true;
         
-        moveDirection = Input.GetAxisRaw("Horizontal");
+        moveDirection = 0;
+        
+        if (aiming.aimDirection == 0)
+            moveDirection = Input.GetAxisRaw("Horizontal");
 
         if (Mathf.Abs(moveDirection) >= aimDistance)
             animator.SetInteger("State", 1);

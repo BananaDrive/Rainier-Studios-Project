@@ -3,20 +3,23 @@ using System.IO;
 using TMPro;
 using UnityEngine;
 
+[System.Serializable]
 public class ScoreEntry
 {
     public float score;
     public string playerName;
 }
 
+[System.Serializable]
 public class ScoreList
 {
-    public List<ScoreEntry> scores;
+    public List<ScoreEntry> scores = new();
 }
 public class Leaderboard : MonoBehaviour
 {
+    public ScoreList scoreList = new();
     public Transform leaderBoard;
-    public TMP_Text[] playerStats;
+    public List<TMP_Text> playerStats = new();
 
     string filePath;
 
@@ -30,9 +33,11 @@ public class Leaderboard : MonoBehaviour
         }
     }
 
-    public void SaveFile(List<ScoreEntry> scores)
+    public void SaveFile(ScoreEntry scoreEntry)
     {
-        string json = JsonUtility.ToJson(new ScoreList {scores = scores} );
+        List<ScoreEntry> currentFiles = LoadFiles();
+        currentFiles.Add(scoreEntry);
+        string json = JsonUtility.ToJson(new ScoreList {scores = scoreList.scores} );
         File.WriteAllText(filePath, json);
     }
 
@@ -41,7 +46,8 @@ public class Leaderboard : MonoBehaviour
         if (File.Exists(filePath))
         {
             string json = File.ReadAllText(filePath);
-            return JsonUtility.FromJson<ScoreList>(json).scores;
+            scoreList = JsonUtility.FromJson<ScoreList>(json);
+            return scoreList.scores;
         }
         return new List<ScoreEntry>();
     }
@@ -49,7 +55,7 @@ public class Leaderboard : MonoBehaviour
     public void GetReferences()
     {
         for (int i = 0; i < leaderBoard.transform.childCount; i++)
-            playerStats[i] = GetComponent<TMP_Text>();
+            playerStats.Add(leaderBoard.transform.GetChild(i).GetComponent<TMP_Text>());
         DisplayLeaderboard();
     }
 
@@ -57,9 +63,8 @@ public class Leaderboard : MonoBehaviour
     {
         List<ScoreEntry> scores = LoadFiles();
 
-        for (int i = 0; i < scores.Count; i++)
-        {
+        for (int i = 0; i < scores.Count && i < leaderBoard.childCount; i++)
             playerStats[i].SetText(scores[i].playerName + ": " + scores[i].score);
-        }
+        
     }
 }

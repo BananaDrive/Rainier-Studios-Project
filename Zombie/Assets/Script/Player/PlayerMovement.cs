@@ -19,7 +19,7 @@ public class PlayerMovement : Movement
         
         moveDirection = 0;
         
-        if (aiming.aimDirection == 0)
+        if (Mathf.Abs(aiming.aimDirection) >= 0.05f)
             moveDirection = Input.GetAxisRaw("Horizontal");
 
         if (Mathf.Abs(moveDirection) >= aimDistance)

@@ -6,6 +6,9 @@ public class Gate : MonoBehaviour
     public GameObject openObject;
     public Transform highest;
     public Transform lowest;
+
+    public Sprite before, after;
+    public SpriteRenderer spr;
     public float duration;
 
     public bool canOpen;
@@ -18,6 +21,7 @@ public class Gate : MonoBehaviour
     {
         canOpen = false;
         StartCoroutine(OpenUp());
+        spr.sprite = after;
     }
     public IEnumerator OpenUp()
     {

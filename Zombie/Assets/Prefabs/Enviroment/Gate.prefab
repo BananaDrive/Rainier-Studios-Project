@@ -333,6 +333,9 @@ MonoBehaviour:
   openObject: {fileID: 483898892557318893}
   highest: {fileID: 92191611722594067}
   lowest: {fileID: 7970788819708926620}
+  before: {fileID: 21300000, guid: 5fda5b6df6e42de4b9a2c29c165f2795, type: 3}
+  after: {fileID: 21300000, guid: 19a4dd60dbd8b4f4a857e8e1e4617939, type: 3}
+  spr: {fileID: 1311659681122083921}
   duration: 2
   canOpen: 1
 --- !u!58 &6477255034477935395

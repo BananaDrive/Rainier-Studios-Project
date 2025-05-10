@@ -627,6 +627,7 @@ MonoBehaviour:
   currentHealth: 200
   invincibltyTime: 0
   invincible: 0
+  knockbackRes: 0
   enemyBehavior: {fileID: 8206883953357117639}
   healthbar: {fileID: 0}
   lootTableName: 3
@@ -651,7 +652,7 @@ MonoBehaviour:
   damage: 5
   attackRate: 1
   rangeToAttack: 20
-  scoreOnDeath: 0
+  scoreOnDeath: 1000
   canJump: 0
   canSprint: 0
   explodeOnDeath: 0

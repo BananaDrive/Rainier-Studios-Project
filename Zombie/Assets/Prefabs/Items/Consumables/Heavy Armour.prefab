@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85d3d59f8d5cb64c87cac0af5b0572b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: d7002605e24fa964fb8dd084969658f5, type: 3}
   itemsStats:
   - itemType: 4
     buffSprite: {fileID: -8892568980494086783, guid: 5e9c64e4d53c1054f8b2e21dcdf5c24a, type: 3}

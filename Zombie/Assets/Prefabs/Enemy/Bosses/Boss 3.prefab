@@ -582,7 +582,7 @@ MonoBehaviour:
   damage: 40
   attackRate: 1
   rangeToAttack: 100
-  scoreOnDeath: 0
+  scoreOnDeath: 2000
   canJump: 0
   canSprint: 0
   explodeOnDeath: 0

@@ -331,7 +331,7 @@ MonoBehaviour:
   damage: 5
   attackRate: 5
   rangeToAttack: 3
-  scoreOnDeath: 0
+  scoreOnDeath: 200
   canJump: 1
   canSprint: 0
   explodeOnDeath: 0
@@ -359,6 +359,7 @@ MonoBehaviour:
   currentHealth: 200
   invincibltyTime: 0
   invincible: 0
+  knockbackRes: 0
   enemyBehavior: {fileID: 2786928428061324114}
   healthbar: {fileID: 4315619807202225017}
   lootTableName: Crawler

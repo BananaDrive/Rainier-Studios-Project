@@ -359,6 +359,7 @@ MonoBehaviour:
   currentHealth: 200
   invincibltyTime: 0
   invincible: 0
+  knockbackRes: 0
   enemyBehavior: {fileID: 8203910326083383789}
   healthbar: {fileID: 7631498994103669363}
   lootTableName: Zombie Civilian

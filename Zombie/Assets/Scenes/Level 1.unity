@@ -323,7 +323,10 @@ PrefabInstance:
     - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1463203369}
   m_SourcePrefab: {fileID: 100100000, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
 --- !u!4 &47294323 stripped
 Transform:
@@ -609,6 +612,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 07aa81a6cb6488c4685be94d38e25bfa, type: 3}
   m_PrefabInstance: {fileID: 80511995}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &108395271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
+  m_PrefabInstance: {fileID: 1075730503}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &114685959
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,6 +806,18 @@ PrefabInstance:
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: spawnMax
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].spawnWeight
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1038,6 +1058,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29ab0d2bddf39904ea6c057d886f9e96, type: 3}
+--- !u!1 &167432177 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
+  m_PrefabInstance: {fileID: 1809288760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &191642155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1901,6 +1926,26 @@ PrefabInstance:
       propertyPath: spawnMax
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].zombie
+      value: 
+      objectReference: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].spawnWeight
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].spawnWeight
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.1899996
@@ -2037,6 +2082,26 @@ PrefabInstance:
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: spawnMax
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].zombie
+      value: 
+      objectReference: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].spawnWeight
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].spawnWeight
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2249,6 +2314,18 @@ PrefabInstance:
       propertyPath: spawnMax
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].spawnWeight
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.13
@@ -2313,7 +2390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1624104754449970155, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -21.743
+      value: -21.805
       objectReference: {fileID: 0}
     - target: {fileID: 1624104754449970155, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2430,7 +2507,10 @@ PrefabInstance:
     - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1496267136}
   m_SourcePrefab: {fileID: 100100000, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
 --- !u!4 &393197619 stripped
 Transform:
@@ -3355,6 +3435,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: bfebf419156797949a476ee9ed87c14e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 611891810}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: bfebf419156797949a476ee9ed87c14e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 611891812}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: bfebf419156797949a476ee9ed87c14e, type: 3}
 --- !u!1 &611891809 stripped
 GameObject:
@@ -3411,6 +3494,38 @@ BoxCollider2D:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: bfebf419156797949a476ee9ed87c14e, type: 3}
   m_PrefabInstance: {fileID: 611891808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &611891812
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611891809}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!1 &616478108 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
+  m_PrefabInstance: {fileID: 777886237}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &616495537
 PrefabInstance:
@@ -4460,13 +4575,43 @@ PrefabInstance:
     - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 777886239}
   m_SourcePrefab: {fileID: 100100000, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
 --- !u!4 &777886238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1624104754449970155, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
   m_PrefabInstance: {fileID: 777886237}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &777886239
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616478108}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &782682587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5020,6 +5165,26 @@ PrefabInstance:
       propertyPath: spawnMax
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].zombie
+      value: 
+      objectReference: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].spawnWeight
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].spawnWeight
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5362,6 +5527,26 @@ PrefabInstance:
       propertyPath: spawnMax
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].zombie
+      value: 
+      objectReference: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].spawnWeight
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].spawnWeight
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.279999
@@ -5576,13 +5761,43 @@ PrefabInstance:
     - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1075730505}
   m_SourcePrefab: {fileID: 100100000, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
 --- !u!4 &1075730504 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1624104754449970155, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
   m_PrefabInstance: {fileID: 1075730503}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &1075730505
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108395271}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1085684562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5788,6 +6003,18 @@ PrefabInstance:
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: spawnMax
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].spawnWeight
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29494,7 +29721,10 @@ PrefabInstance:
     - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1419769606}
   m_SourcePrefab: {fileID: 100100000, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
 --- !u!4 &1244361679 stripped
 Transform:
@@ -30624,6 +30854,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1964602157222698432, guid: 3a4d8c488f64fc847aff486cff116952, type: 3}
   m_PrefabInstance: {fileID: 1413204649}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1419769605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
+  m_PrefabInstance: {fileID: 1244361678}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1419769606
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419769605}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1427925728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2253911629886400664, guid: 9181794b1ae7bbb45bcf01fd2bc5f49c, type: 3}
@@ -30819,6 +31081,26 @@ PrefabInstance:
       propertyPath: spawnMax
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].zombie
+      value: 
+      objectReference: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].spawnWeight
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].spawnWeight
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.289999
@@ -30984,6 +31266,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1964602157222698432, guid: 3a4d8c488f64fc847aff486cff116952, type: 3}
   m_PrefabInstance: {fileID: 1451287222}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1463203368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
+  m_PrefabInstance: {fileID: 47294322}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1463203369
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463203368}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1466364117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31255,6 +31569,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1964602157222698432, guid: 3a4d8c488f64fc847aff486cff116952, type: 3}
   m_PrefabInstance: {fileID: 1496157309}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1496267135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
+  m_PrefabInstance: {fileID: 393197618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1496267136
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496267135}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1514006526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31971,6 +32317,26 @@ PrefabInstance:
       propertyPath: spawnMax
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].zombie
+      value: 
+      objectReference: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].spawnWeight
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].spawnWeight
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.019999
@@ -32159,7 +32525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1624104754449970155, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -21.72839
+      value: -21.812
       objectReference: {fileID: 0}
     - target: {fileID: 1624104754449970155, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32201,7 +32567,8 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -32780,6 +33147,26 @@ PrefabInstance:
       propertyPath: spawnMax
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].zombie
+      value: 
+      objectReference: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].spawnWeight
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[3].spawnWeight
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.049999237
@@ -33018,13 +33405,43 @@ PrefabInstance:
     - {fileID: -5761225041141280343, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1973702694556457870, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1809288762}
   m_SourcePrefab: {fileID: 100100000, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
 --- !u!4 &1809288761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1624104754449970155, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
   m_PrefabInstance: {fileID: 1809288760}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &1809288762
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167432177}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1821966957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33214,6 +33631,18 @@ PrefabInstance:
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: spawnMax
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].spawnWeight
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33510,6 +33939,18 @@ PrefabInstance:
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: spawnMax
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].spawnWeight
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34835,9 +35276,29 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1946637080395633974, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: objectsToPool.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946637080395633974, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: objectsToPool.Array.data[4].poolSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946637080395633974, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: objectsToPool.Array.data[4].pooledObj
+      value: 
+      objectReference: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
     - target: {fileID: 2062348928756457530, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: m_Name
       value: Game Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[1].tableMaxWeight
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[2].tableMaxWeight
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 3249594665053532918, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: eventSystem
@@ -35267,6 +35728,18 @@ PrefabInstance:
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: spawnMax
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
+    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
+      propertyPath: zombies.Array.data[2].spawnWeight
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x

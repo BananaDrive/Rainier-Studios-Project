@@ -145,10 +145,10 @@ TextureImporter:
       name: Soldier Zombie 02 Idle 02_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 30
         y: 0
-        width: 96
-        height: 90
+        width: 30
+        height: 81
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,10 +167,10 @@ TextureImporter:
       name: Soldier Zombie 02 Idle 02_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 126
         y: 0
-        width: 96
-        height: 90
+        width: 30
+        height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -209,7 +209,7 @@ MonoBehaviour:
   bullet: {fileID: 5090919567473301052, guid: b6f0c44cbe63aeb46a93b5e82be4697e, type: 3}
   shotPoint: {fileID: 2341948851840565523}
   damage: 200
-  attackRate: 0.3
+  attackRate: 4
   despawnTime: 20
   detectRadius: 10
   hasAttacked: 0

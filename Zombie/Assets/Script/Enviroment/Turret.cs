@@ -8,7 +8,6 @@ public class Turret : Placeable
     public Transform shotPoint;
     public float damage;
     public float attackRate;
-    public float despawnTime;
     public float detectRadius;
     public bool hasAttacked;
 
@@ -24,7 +23,7 @@ public class Turret : Placeable
 
     void OnEnable()
     {
-        Invoke(nameof(TurnOff), despawnTime);
+        Invoke(nameof(Despawn), despawnTime);
     }
     public void FixedUpdate()
     {

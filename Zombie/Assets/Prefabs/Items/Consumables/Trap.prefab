@@ -174,5 +174,6 @@ MonoBehaviour:
   layerToAvoid:
     serializedVersion: 2
     m_Bits: 64
-  damage: 1
+  despawnTime: 20
+  damage: 80
   stopMovement: 1

@@ -157,6 +157,6 @@ public class BuffsHandler : MonoBehaviour
         if (totalBuff <= 0)
             return 100f / (Mathf.Abs(totalBuff) + 100f);
         else 
-            return totalBuff / 100f;
+            return (totalBuff + 100) / 100f;
     }
 }

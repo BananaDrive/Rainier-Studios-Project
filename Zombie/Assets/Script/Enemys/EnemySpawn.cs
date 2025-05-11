@@ -59,6 +59,7 @@ public class EnemySpawn : MonoBehaviour
         temp.SetActive(true);
 
         EnemyBehavior enemyBehavior = temp.GetComponent<EnemyBehavior>();
+        Debug.Log(enemyBehavior);
         enemyBehavior.InitializeStats(UnityEngine.Random.Range(3f, 6f), UnityEngine.Random.Range(5f, 8f));
         enemyBehavior.hasAttacked = false;
         

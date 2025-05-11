@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -6,6 +5,11 @@ public class Traps : Placeable
 {
     public float damage;
     public bool stopMovement;
+
+    void OnEnable()
+    {
+        Invoke(nameof(Despawn), despawnTime);
+    }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,7 +19,7 @@ public class Traps : Placeable
         {
             health.TakeDamage(damage);
             if (stopMovement)
-                StartCoroutine(StopMovement(movement));
+                CoroutineHandler.Instance.StartCoroutine(StopMovement(movement));
         }
     }
 

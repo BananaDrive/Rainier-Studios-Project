@@ -23,6 +23,9 @@ public abstract class Health : MonoBehaviour
         float finalDamage = damage / damageReduc;
         currentHealth -= finalDamage;
 
+        if (hurt != null)
+            hurt.Play();
+
         OtherDamageLogic(finalDamage);
 
         if (currentHealth <= 0)

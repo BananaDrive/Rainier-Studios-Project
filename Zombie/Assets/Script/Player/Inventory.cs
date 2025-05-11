@@ -101,7 +101,7 @@ public class Inventory : MonoBehaviour
         if (enhancer == null)
             GameManager.Instance.UIManager.itemStatsPanel.SetActive(false);
         else
-            GameManager.Instance.UIManager.ChangeItemPanel(enhancer.itemName, enhancer.itemStats);
+            GameManager.Instance.UIManager.ChangeItemPanel(enhancer);
     }
 
     public int CheckInventory()

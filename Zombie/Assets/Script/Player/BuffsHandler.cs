@@ -113,8 +113,6 @@ public class BuffsHandler : MonoBehaviour
         accuracyEnhance += enhancer.accuracy;
         shotAmountEnhance += enhancer.shotAmount;
 
-        bulletSpeedEnhance = Mathf.Clamp(bulletSpeedEnhance, -80, 1000);
-
         allowAuto = !enhancer.disableAuto && (enhancer.allowAuto || allowAuto);
         allowPiercing = !enhancer.disablePiercing && (enhancer.allowPiercing || allowPiercing);
         allowRaycast = !enhancer.disableRaycast && (enhancer.allowRaycast || allowRaycast);

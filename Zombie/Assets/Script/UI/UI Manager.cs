@@ -12,7 +12,8 @@ public class UIManager : MonoBehaviour
     public Image hurtOverlay;
     public Image[] inventorySlots;
     public GameObject itemStatsPanel;
-    public TMP_Text itemName, itemStats;
+    public TMP_Text[] statAmounts;
+    public TMP_Text itemName;
     public TMP_Text scoreText;
 
     public float score;
@@ -31,11 +32,25 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void ChangeItemPanel(string name, string stats)
+    public void ChangeItemPanel(Enhancers enhancer)
     {
         itemStatsPanel.SetActive(true);
-        itemName.SetText(name);
-        itemStats.SetText(stats);
+        itemName.SetText(enhancer.itemName);
+
+        statAmounts[0].SetText(CheckStat(enhancer.damage) + enhancer.damage + "%");
+        statAmounts[1].SetText(CheckStat(enhancer.fireRate) + enhancer.fireRate + "%");
+        statAmounts[2].SetText(CheckStat(enhancer.clipSize) + enhancer.clipSize);
+        statAmounts[3].SetText(CheckStat(enhancer.bulletSpeed) + enhancer.bulletSpeed + "%");
+        statAmounts[4].SetText(CheckStat(enhancer.reloadSpeed) + enhancer.reloadSpeed + "%");
+        statAmounts[5].SetText(CheckStat(enhancer.accuracy) + enhancer.accuracy + "%");
+        statAmounts[6].SetText(CheckStat(enhancer.shotAmount) + enhancer.shotAmount);
+    }
+
+    string CheckStat(float stat)
+    {
+        if (stat < 0)
+            return "";
+        return "+";
     }
 
     public void DisplayInv(BaseItem[] items)

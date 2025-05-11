@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,6 +8,7 @@ public class Weapon : MonoBehaviour
 {
     public GameObject bullet;
     public Transform shootPoint;
+    public LineRenderer lineRenderer;
 
     [Header("Stats")]
     public float damage;
@@ -24,7 +27,7 @@ public class Weapon : MonoBehaviour
     int bulletPoolIndex;
     bool isReloading;
     bool shootCooldown;
-    public LayerMask playerLayer, enemyLayer;
+    public LayerMask raycastLayer, enemyLayer;
 
     void Start()
     {
@@ -90,16 +93,23 @@ public class Weapon : MonoBehaviour
     {
         int pierceAmount = allowPiercing ? 30 : 1;
         Vector2 spread = DetermineSpread();
-        RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, spread, 30f, enemyLayer);
+        RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, spread, 50f, raycastLayer);
         float decayDamage = damage * damageBuff;
 
+        List<Vector3> transforms = new()
+        {
+            shootPoint.position,
+            hit[^1].point
+        };
+
+        lineRenderer.SetPositions(transforms.ToArray());
         for (int i = 0; i < pierceAmount && i < hit.Length; i++)
         {
             if (hit[i].collider != null)
             {
-                if (hit[i].transform.TryGetComponent(out Health hitHealth))
+                if (hit[i].transform.TryGetComponent(out Health hitHealth) && Vector2.Distance(hit[i].transform.position, transform.position) < 30f)
                 {
-                    decayDamage *= 0.75f;
+                    decayDamage *= 0.75f + Mathf.Clamp(accuracy * accuracyBuff / 100f, 0, 0.2f);
                     hitHealth.TakeDamage(decayDamage);
                 }
             }

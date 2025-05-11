@@ -809,7 +809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: zombies.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: zombies.Array.data[2].zombie
@@ -2075,34 +2075,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZombieSpawn (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: zombie
-      value: 
-      objectReference: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: spawnMax
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: zombies.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: zombies.Array.data[2].zombie
-      value: 
-      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: zombies.Array.data[3].zombie
-      value: 
-      objectReference: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: zombies.Array.data[2].spawnWeight
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: zombies.Array.data[3].spawnWeight
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.599999
@@ -2316,7 +2288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: zombies.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: zombies.Array.data[2].zombie
@@ -6120,7 +6092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: zombies.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: zombies.Array.data[2].zombie
@@ -33253,34 +33225,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZombieSpawn (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: zombie
-      value: 
-      objectReference: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: spawnMax
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: zombies.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: zombies.Array.data[2].zombie
-      value: 
-      objectReference: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: zombies.Array.data[3].zombie
-      value: 
-      objectReference: {fileID: 300085864175242042, guid: d73729877bcba594dbab182c38ceaa98, type: 3}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: zombies.Array.data[2].spawnWeight
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
-      propertyPath: zombies.Array.data[3].spawnWeight
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 8826887489213973431, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.049999237
@@ -33748,7 +33692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: zombies.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: zombies.Array.data[2].zombie
@@ -34056,7 +34000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: zombies.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: zombies.Array.data[2].zombie
@@ -35845,7 +35789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: zombies.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5703623736754125774, guid: 28c3786336b7469489dea4a834e87e26, type: 3}
       propertyPath: zombies.Array.data[2].zombie

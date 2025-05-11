@@ -102,7 +102,6 @@ public class Weapon : MonoBehaviour
                     decayDamage *= 0.75f;
                     hitHealth.TakeDamage(decayDamage);
                 }
-              
             }
         }
         StartCoroutine(ShootCD());
@@ -110,17 +109,18 @@ public class Weapon : MonoBehaviour
 
     public Vector2 DetermineSpread()
     {
-        float spread = 100f - (accuracy + accuracyBuff);
+        float spread = Mathf.Clamp((100f - accuracy) / accuracyBuff, 0f, 100f);
+        Debug.Log(100f - spread);
         Vector2 spreadAngle = Quaternion.Euler(0, 0, Random.Range(-spread, spread)) * transform.right;
         return spreadAngle;
     }
 
     public IEnumerator ShootCD()
     {
-        yield return new WaitForSeconds(1f / (fireRate * fireRateBuff * 2f));
-        Debug.Log(1f / (fireRate * fireRateBuff * 2f));
+        yield return new WaitForSeconds(1f / (fireRate * fireRateBuff));
         shootCooldown = false;
     }
+    
 
     public IEnumerator Reload()
     {

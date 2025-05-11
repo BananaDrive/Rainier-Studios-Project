@@ -224,7 +224,7 @@ MonoBehaviour:
   bullet: {fileID: 5090919567473301052, guid: f689d4ddf1967254382ab1746bcf6e1c, type: 3}
   shootPoint: {fileID: 887863789576784340}
   damage: 32
-  fireRate: 3
+  fireRate: 5
   bulletSpeed: 10
   shotAmount: 1
   clipSize: 20

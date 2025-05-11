@@ -18,9 +18,10 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         if ((Instance != null && Instance != this) || SceneManager.GetActiveScene().buildIndex == 0)
-            Destroy(this);
+            Destroy(gameObject);
         else
             Instance = this;
+        DontDestroyOnLoad(Instance);
     }
 
     public void Update()

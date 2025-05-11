@@ -22,15 +22,26 @@ public class BuffsHandler : MonoBehaviour
     public bool allowAuto;
 
 
-    void Start()
+    void Awake()
     {
-        if (GameManager.Instance.buffsHandler != null)
+        if (GameManager.Instance.buffsHandler == null)
+        {
+            GameManager.Instance.buffsHandler = this;
+        }
+        else if (GameManager.Instance.buffsHandler != this)
+        {
             CopyStats(GameManager.Instance.buffsHandler);
-        GameManager.Instance.buffsHandler = this;
+            Destroy(GameManager.Instance.buffsHandler.gameObject);
+            GameManager.Instance.buffsHandler = this;
+            Debug.Log("works");
+        }
+
+        DontDestroyOnLoad(GameManager.Instance.buffsHandler);
     }
 
     public void FixedUpdate()
     {
+        Debug.Log(GameManager.Instance.buffsHandler.fireRateEnhance);
         for (int i = buffList.Count - 1; i >= 0; i--)
         {
             buffList[i].duration -= Time.deltaTime;
@@ -54,12 +65,12 @@ public class BuffsHandler : MonoBehaviour
 
     public void ApplyBuffs()
     {
-        damageBuff = 100;
-        fireRateBuff = 100;
-        moveSpeedBuff = 100;
-        accuracyBuff = 100;
-        bulletSpeedBuff = 100;
-        damageReducBuff = 100;
+        damageBuff = 0;
+        fireRateBuff = 0;
+        moveSpeedBuff = 0;
+        accuracyBuff = 0;
+        bulletSpeedBuff = 0;
+        damageReducBuff = 0;
         regenBuff = 0;
         
         foreach (ItemStats activeBuffs in buffList)
@@ -111,18 +122,19 @@ public class BuffsHandler : MonoBehaviour
 
     public void UpdateStats()
     {
-        weapon.damageBuff = (damageEnhance + damageBuff) / 100;
-        weapon.fireRateBuff = (fireRateEnhance + fireRateBuff) / 100;
-        weapon.accuracyBuff = (accuracyEnhance + accuracyBuff) / 100;
-        weapon.bulletSpeedBuff = (bulletSpeedEnhance + bulletSpeedBuff) / 100;
+        weapon.damageBuff = NormalizeBuff(damageEnhance + damageBuff);
+        weapon.fireRateBuff = NormalizeBuff(fireRateEnhance + fireRateBuff);
+        weapon.accuracyBuff = NormalizeBuff(accuracyEnhance + accuracyBuff);
+        weapon.bulletSpeedBuff = NormalizeBuff(bulletSpeedEnhance + bulletSpeedBuff);
+
         weapon.allowAuto = allowAuto;
         weapon.allowRaycast = allowRaycast;
         weapon.allowPiercing = allowPiercing;
 
-        movement.moveSpeedBuff = moveSpeedBuff / 100;
+        movement.moveSpeedBuff = NormalizeBuff(moveSpeedBuff);
 
         health.regenAmount = regenBuff;
-        health.damageReduc = damageReducBuff / 100;
+        health.damageReduc = NormalizeBuff(damageReducBuff);
     }
 
     public void CopyStats(BuffsHandler buffs)
@@ -138,5 +150,13 @@ public class BuffsHandler : MonoBehaviour
         allowAuto = buffs.allowAuto;
         allowPiercing = buffs.allowPiercing;
         allowRaycast = buffs.allowRaycast;
+    }
+
+    public float NormalizeBuff(float totalBuff)
+    {
+        if (totalBuff <= 0)
+            return 100f / (Mathf.Abs(totalBuff) + 100f);
+        else 
+            return totalBuff / 100f;
     }
 }

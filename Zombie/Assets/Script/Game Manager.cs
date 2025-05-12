@@ -50,7 +50,9 @@ public class GameManager : MonoBehaviour
             score = UIManager.score,
             playerName = nameInput.GetName()
         };
+
         leaderboard.SaveFile(scoreEntry);
+        Destroy(gameObject);
         SceneManager.LoadScene(0);
     }
 

@@ -56,6 +56,7 @@ public class PlayerHealth : Health
         if (death != null)
             death.Play();
         GameManager.Instance.GameOver();
+        Destroy(gameObject);
     }
 
     public IEnumerator OverlayDisplay()

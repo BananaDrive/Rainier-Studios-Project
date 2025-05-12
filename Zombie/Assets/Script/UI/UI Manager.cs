@@ -81,8 +81,6 @@ public class UIManager : MonoBehaviour
             
         for (int i = 0; i < itemStats.Count && slotsTaken < 4; i++)
         {
-            Debug.Log(i);
-            buffPanel.buffSlots[i].image = null;
             buffPanel.buffSlots[i].text.SetText("");
             if (itemStats[i].buffSprite != null)
             {

@@ -104,22 +104,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.75
+  - time: 1
     functionName: SpawnZombies
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.9
+  - time: 1.15
     functionName: EndAttack
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.9166667
-    functionName: 
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

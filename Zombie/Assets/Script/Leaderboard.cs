@@ -63,8 +63,24 @@ public class Leaderboard : MonoBehaviour
     {
         List<ScoreEntry> scores = LoadFiles();
 
+        SortLeaderboard();
+
         for (int i = 0; i < scores.Count && i < leaderBoard.childCount; i++)
             playerStats[i].SetText(scores[i].playerName + ": " + scores[i].score);
         
+    }
+
+    public void SortLeaderboard()
+    {
+        for (int i = 0; i < scoreList.scores.Count - 1; i++)
+        {
+            for (int j = 0; j < scoreList.scores.Count - 1; j++)
+            {
+                if (scoreList.scores[j].score < scoreList.scores[j + 1].score)
+                {
+                    (scoreList.scores[j + 1].score, scoreList.scores[j].score) = (scoreList.scores[j].score, scoreList.scores[j + 1].score);
+                }
+            }
+        }
     }
 }

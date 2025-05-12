@@ -51,7 +51,7 @@ public class MilitaryGeneral : EnemyBehavior
                 if (!inRangedCD)
                 {
                     Vector3 direction = enemyMovement.player.position - transform.position;
-                    anchorPoint.rotation = Quaternion.AngleAxis(Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg, Vector3.forward);
+                    anchorPoint.rotation = Quaternion.AngleAxis(Mathf.Atan2(direction.y - 2f, direction.x) * Mathf.Rad2Deg, Vector3.forward);
                     animator.SetInteger("State", 3);
                     return;
                 }
@@ -106,7 +106,7 @@ public class MilitaryGeneral : EnemyBehavior
             grenadeObj.SetActive(true);
 
             grenadeObj.GetComponent<Grenade>().Intitialize(damage, enemyMovement.playerLayer);
-            grenadeObj.transform.position = transform.position;
+            grenadeObj.transform.position = throwPoint.position;
 
             Vector2 randomized = new(Random.Range(throwDirection.x * 0.75f, throwDirection.x * 1.25f), Random.Range(throwDirection.y * 0.75f, throwDirection.y * 1.25f));
             float randomizedPower = Random.Range(throwPower * 0.75f, throwPower * 1.25f);

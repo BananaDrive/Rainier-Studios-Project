@@ -33,7 +33,6 @@ public class BuffsHandler : MonoBehaviour
             CopyStats(GameManager.Instance.buffsHandler);
             Destroy(GameManager.Instance.buffsHandler.gameObject);
             GameManager.Instance.buffsHandler = this;
-            Debug.Log("works");
         }
 
         DontDestroyOnLoad(GameManager.Instance.buffsHandler);

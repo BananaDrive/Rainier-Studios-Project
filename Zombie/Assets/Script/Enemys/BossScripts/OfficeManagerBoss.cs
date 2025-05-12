@@ -1,10 +1,10 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class OfficeManagerBoss : EnemyBehavior
 {
     public GameObject attackHitBox;
     public GameObject printer;
+    public Transform throwPoint;
     public Transform printerSpawns, zombieSpawns;
 
     public float rangedCD, slamCD, summonCD;
@@ -54,7 +54,7 @@ public class OfficeManagerBoss : EnemyBehavior
         GameObject thrownObj = Instantiate(printer);
         Vector2 throwDirection = (enemyMovement.player.position - transform.position).normalized;
         throwDirection.y += 0.75f;
-        thrownObj.transform.position = transform.position;
+        thrownObj.transform.position = throwPoint.position;
         thrownObj.GetComponent<Rigidbody2D>().AddForce(55f * throwPower * throwDirection, ForceMode2D.Force);
 
         Destroy(thrownObj, 4f);

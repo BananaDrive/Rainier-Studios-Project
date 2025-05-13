@@ -14,6 +14,7 @@ public class EndGame : MonoBehaviour
     {
         if (collision.CompareTag("Player") && Input.GetKey(KeyCode.F))
         {
+            Debug.Log("Colliding");
             EndMenu.SetActive(true);
             GameOver.SetActive(false);
             Pause.SetActive(false);
@@ -27,18 +28,13 @@ public class EndGame : MonoBehaviour
 
 
         EndMenu.SetActive(false);
-        GameOver.SetActive(true);
-        Pause.SetActive(true);
+        
         UI.SetActive(true);
     }
 
     public void Menu()
     {
-        SceneManager.LoadScene(0);
-
         EndMenu.SetActive(false);
         GameOver.SetActive(true);
-        Pause.SetActive(true);
-        UI.SetActive(true);
     }
 }

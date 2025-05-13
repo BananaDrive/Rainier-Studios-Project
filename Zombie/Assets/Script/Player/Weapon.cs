@@ -42,7 +42,7 @@ public class Weapon : MonoBehaviour
         if (gamepad != null)
             controller = true;
         Debug.DrawRay(transform.position, transform.right);
-        if ((allowAuto && Input.GetKey(KeyCode.E) || (!allowAuto && Input.GetKeyDown(KeyCode.E) || (controller && gamepad.buttonWest.wasPressedThisFrame))) && !shootCooldown)
+        if ((allowAuto && Input.GetKey(KeyCode.E) || !allowAuto && Input.GetKeyDown(KeyCode.E) || (controller && gamepad.buttonWest.wasPressedThisFrame) || (allowAuto && controller && gamepad.buttonWest.isPressed)) && !shootCooldown)
         {
             if (clipAmount > 0)
             {

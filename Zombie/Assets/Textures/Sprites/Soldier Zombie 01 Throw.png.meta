@@ -169,10 +169,10 @@ TextureImporter:
       name: Soldier Zombie 01 Throw_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 31
         y: 384
-        width: 96
-        height: 84
+        width: 31
+        height: 81
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,12 +191,12 @@ TextureImporter:
       name: Soldier Zombie 01 Throw_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 127
         y: 384
-        width: 96
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 33
+        height: 81
+      alignment: 9
+      pivot: {x: 0.475, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,12 +213,12 @@ TextureImporter:
       name: Soldier Zombie 01 Throw_2
       rect:
         serializedVersion: 2
-        x: 192
+        x: 223
         y: 384
-        width: 96
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 34
+        height: 81
+      alignment: 9
+      pivot: {x: 0.45, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,12 +235,12 @@ TextureImporter:
       name: Soldier Zombie 01 Throw_3
       rect:
         serializedVersion: 2
-        x: 288
+        x: 319
         y: 384
-        width: 96
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 42
+        height: 81
+      alignment: 9
+      pivot: {x: 0.38, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: Soldier Zombie 01 Throw_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 31
         y: 192
-        width: 96
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 45
+        height: 81
+      alignment: 9
+      pivot: {x: 0.35, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -279,12 +279,12 @@ TextureImporter:
       name: Soldier Zombie 01 Throw_5
       rect:
         serializedVersion: 2
-        x: 96
+        x: 129
         y: 192
-        width: 96
+        width: 27
         height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.53, y: 0.48}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -301,12 +301,12 @@ TextureImporter:
       name: Soldier Zombie 01 Throw_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 219
         y: 192
-        width: 96
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 33
+        height: 81
+      alignment: 9
+      pivot: {x: 0.6, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -323,11 +323,11 @@ TextureImporter:
       name: Soldier Zombie 01 Throw_7
       rect:
         serializedVersion: 2
-        x: 288
+        x: 321
         y: 192
-        width: 96
-        height: 84
-      alignment: 0
+        width: 27
+        height: 81
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -345,10 +345,10 @@ TextureImporter:
       name: Soldier Zombie 01 Throw_8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 33
         y: 0
-        width: 96
-        height: 84
+        width: 27
+        height: 81
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,10 +367,10 @@ TextureImporter:
       name: Soldier Zombie 01 Throw_9
       rect:
         serializedVersion: 2
-        x: 96
+        x: 127
         y: 0
-        width: 96
-        height: 84
+        width: 31
+        height: 81
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,6 +381,28 @@ TextureImporter:
       bones: []
       spriteID: 9b7b5c08034632746863e448d3352383
       internalID: 369597782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier Zombie 01 Throw_10
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 515
+        width: 28
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8a653a05d4dfe43a2aa245bb329265
+      internalID: 533130822
       vertices: []
       indices: 
       edges: []
@@ -401,6 +423,7 @@ TextureImporter:
     nameFileIdTable:
       Soldier Zombie 01 Throw_0: -2110788469
       Soldier Zombie 01 Throw_1: -534931740
+      Soldier Zombie 01 Throw_10: 533130822
       Soldier Zombie 01 Throw_2: -410585771
       Soldier Zombie 01 Throw_3: -1869389879
       Soldier Zombie 01 Throw_4: -323661356

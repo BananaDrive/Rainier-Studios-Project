@@ -9,6 +9,9 @@ public class Aiming : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.Instance.isPaused)
+            return;
+
         float aimSide = transform.eulerAngles.y == 180f? -1 : 1;
         aimDirection = Input.GetAxisRaw("Vertical") / 1f;
 

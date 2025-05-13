@@ -10,6 +10,9 @@ public class PlayerMovement : Movement
     
     public void Update()
     {
+        if (GameManager.Instance.isPaused)
+            return;
+
         animator.SetInteger("State", 0);
         
         moveDirection = 0;

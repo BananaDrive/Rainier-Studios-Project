@@ -26,10 +26,10 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))  
+        if (Input.GetKeyDown(KeyCode.Escape) || (Input.GetKeyDown(KeyCode.Joystick1Button0) && Input.GetKeyDown(KeyCode.Joystick1Button1) && Input.GetKeyDown(KeyCode.Joystick1Button2)))  
         {
             PauseScreen(pauseScreen);
-        } 
+        }
     }
 
     public void GameOver()

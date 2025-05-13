@@ -10,12 +10,10 @@ public class PlayerMovement : Movement
     
     public void Update()
     {
-        animator.SetInteger("State", 0);
+        if (GameManager.Instance.isPaused)
+            return;
 
-        var gamepad = Gamepad.current;
-        bool controller = false;
-        if (gamepad != null)
-            controller = true;
+        animator.SetInteger("State", 0);
         
         moveDirection = 0;
         
@@ -25,13 +23,13 @@ public class PlayerMovement : Movement
         if (Mathf.Abs(moveDirection) >= aimDistance)
             animator.SetInteger("State", 1);
 
-        if (((controller && gamepad.buttonSouth.wasPressedThisFrame) || Input.GetKeyDown(KeyCode.Space)) && Grounded)
+        if ((Input.GetKeyDown(KeyCode.Joystick1Button0) || Input.GetKeyDown(KeyCode.Space)) && Grounded)
         {
             Jump();
             jump.Play();
         }
 
-        if (((controller && gamepad.buttonSouth.wasPressedThisFrame) || Input.GetKeyUp(KeyCode.Space)) && rb.linearVelocityY > 0f)
+        if ((Input.GetKeyUp(KeyCode.Joystick1Button0) || Input.GetKeyUp(KeyCode.Space)) && rb.linearVelocityY > 0f)
         {
             rb.linearVelocityY = 0f;
             rb.AddForceY(-jumpPower, ForceMode2D.Force);

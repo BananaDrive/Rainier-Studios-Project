@@ -1,17 +1,19 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Farmer : EnemyBehavior
 {
     public GameObject attackHitbox;
     public GameObject bullet;
+    public GameObject freezeArea;
     public Transform shotPoint;
 
-    public float rangedCD;
+    public float rangedCD, freezeCD;
 
     public int shotAmount;
 
     int bulletPoolIndex;
-    bool inRangedCD;
+    bool inRangedCD, inFreezeCD;
 
     public void Start()
     {
@@ -35,9 +37,15 @@ public class Farmer : EnemyBehavior
         {
             if (!hasAttacked)
             {
+                if (!inFreezeCD)
+                {
+                    animator.SetInteger("State", 4);
+                    return;
+                }
                 if (!inRangedCD)
                 {
                     animator.SetInteger("State", 3);
+                    return;
                 }
                 if (Vector2.Distance(transform.position, enemyMovement.player.position) <= enemyMovement.distanceToStop)
                     animator.SetInteger("State", 2);
@@ -53,6 +61,13 @@ public class Farmer : EnemyBehavior
 
         Shoot();
         Invoke(nameof(ResetRangedCD), rangedCD);
+    }
+
+    public void AreaAttack()
+    {
+        freezeArea.SetActive(!freezeArea.activeSelf);
+
+        Invoke(nameof(ResetFreezeCD), freezeCD);
     }
 
     public void Shoot()
@@ -82,6 +97,7 @@ public class Farmer : EnemyBehavior
         return spreadAngle;
     }
 
+    public void ResetFreezeCD() => inFreezeCD = false;
     public void ResetRangedCD() => inRangedCD = false;
     public void EnableHitbox() => attackHitbox.SetActive(true);
     public void DisableHitbox() => attackHitbox.SetActive(false);

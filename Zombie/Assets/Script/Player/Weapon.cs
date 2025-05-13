@@ -37,7 +37,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        if (allowAuto && Input.GetKey(KeyCode.E) || !allowAuto && Input.GetKeyDown(KeyCode.E) || (Input.GetKeyDown(KeyCode.Joystick1Button1) || (allowAuto && Input.GetKey(KeyCode.Joystick1Button1))) && !shootCooldown)
+        if ((allowAuto && Input.GetKey(KeyCode.E) || !allowAuto && Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick1Button1) || (allowAuto && Input.GetKey(KeyCode.Joystick1Button1))) && !shootCooldown)
         {
             if (clipAmount > 0)
             {
@@ -94,7 +94,7 @@ public class Weapon : MonoBehaviour
         List<Vector3> transforms = new()
         {
             shootPoint.position,
-            hit[^1].point
+            hit[allowPiercing ? ^1 : 0].point
         };
 
         lineRenderer.SetPositions(transforms.ToArray());

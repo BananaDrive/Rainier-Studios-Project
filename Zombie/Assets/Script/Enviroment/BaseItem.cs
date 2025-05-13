@@ -23,6 +23,21 @@ public enum ItemType
         public float potency;
         public float duration;
         public bool isStackable;
+        private ItemStats newBuff;
+
+        public ItemStats(ItemStats newBuff)
+        {
+            this.newBuff = newBuff;
+        }
+
+        public void CopyStats(ItemStats buffs)
+        {
+            itemType = buffs.itemType;
+            buffSprite = buffs.buffSprite;
+            potency = buffs.potency;
+            duration = buffs.duration;
+            isStackable = buffs.isStackable;
+        }
     }
 
 public class BaseItem : MonoBehaviour

@@ -33,6 +33,7 @@ public class PlayerHealth : Health
 
     void Start()
     {
+        GameManager.Instance.player = gameObject;
         GameManager.Instance.UIManager.playerHealthBar.InitializeSlider(maxHealth);
     }
 
@@ -56,7 +57,6 @@ public class PlayerHealth : Health
         if (death != null)
             death.Play();
         GameManager.Instance.GameOver();
-        Destroy(gameObject);
     }
 
     public IEnumerator OverlayDisplay()

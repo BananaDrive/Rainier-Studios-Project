@@ -25,6 +25,9 @@ public class Leaderboard : MonoBehaviour
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        
         filePath = Application.persistentDataPath + "/leaderboard.json";
 
         if (leaderBoard != null)

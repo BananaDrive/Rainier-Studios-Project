@@ -54,11 +54,14 @@ public class BuffsHandler : MonoBehaviour
 
     public void AddBuff(ItemStats newBuff)
     {
-        if (!newBuff.isStackable)
+        ItemStats _newBuff = new(newBuff);
+        _newBuff.CopyStats(newBuff);
+        
+        if (!_newBuff.isStackable)
         {
-            buffList.RemoveAll(ItemStats => ItemStats.itemType == newBuff.itemType);
+            buffList.RemoveAll(ItemStats => ItemStats.itemType == _newBuff.itemType);
         }
-        buffList.Add(newBuff);
+        buffList.Add(_newBuff);
         ApplyBuffs();
     }
 

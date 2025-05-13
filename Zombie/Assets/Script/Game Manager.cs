@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -15,8 +16,12 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverButton, pauseButton;
     public EventSystemAcess eventSystemAcess;
     public bool isPaused, gameOver;
+
+    internal GameObject player;
     void Awake()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         if ((Instance != null && Instance != this) || SceneManager.GetActiveScene().buildIndex == 0)
             Destroy(gameObject);
         else
@@ -53,6 +58,7 @@ public class GameManager : MonoBehaviour
 
         leaderboard.SaveFile(scoreEntry);
         Destroy(gameObject);
+        Destroy(player);
         SceneManager.LoadScene(0);
     }
 

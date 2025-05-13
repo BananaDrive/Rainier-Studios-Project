@@ -3,12 +3,15 @@ using UnityEngine;
 
 public class Traps : Placeable
 {
-    public float damage;
-    public bool stopMovement;
+    public ItemStats itemStats;
+
+    public float damage, stopTime;
+    public bool stopMovement, persists;
 
     void OnEnable()
     {
-        Invoke(nameof(Despawn), despawnTime);
+        if (!persists)
+            Invoke(nameof(Despawn), despawnTime);
     }
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -18,8 +21,16 @@ public class Traps : Placeable
         if (other.TryGetComponent<Health>(out var health) && other.TryGetComponent<Movement>(out var movement))
         {
             health.TakeDamage(damage);
+
             if (stopMovement)
+            {
+                if (other.TryGetComponent<BuffsHandler>(out var buffs))
+                {
+                    buffs.AddBuff(itemStats);
+                    return;
+                }
                 CoroutineHandler.Instance.StartCoroutine(StopMovement(movement));
+            }
         }
     }
 
@@ -28,7 +39,7 @@ public class Traps : Placeable
         yield return new WaitForSeconds(0.1f);
         movement.canMove = false;
         movement.rb.linearVelocityX = 0;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(stopTime);
         movement.canMove = true;
     }
 }

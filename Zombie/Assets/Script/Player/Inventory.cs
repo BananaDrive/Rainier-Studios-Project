@@ -30,12 +30,7 @@ public class Inventory : MonoBehaviour
 
     public void Update()
     {
-        var gamepad = Gamepad.current;
-        bool controller = false;
-        if (gamepad != null)
-            controller = true;
-
-        if (Input.GetKeyDown(KeyCode.F) || (controller && gamepad.buttonEast.wasPressedThisFrame))
+        if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.Joystick1Button2))
         {
             if (gate != null && gate.canOpen)
             {

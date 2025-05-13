@@ -37,12 +37,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        var gamepad = Gamepad.current;
-        bool controller = false;
-        if (gamepad != null)
-            controller = true;
-        Debug.DrawRay(transform.position, transform.right);
-        if ((allowAuto && Input.GetKey(KeyCode.E) || !allowAuto && Input.GetKeyDown(KeyCode.E) || (controller && gamepad.buttonWest.wasPressedThisFrame) || (allowAuto && controller && gamepad.buttonWest.isPressed)) && !shootCooldown)
+        if (allowAuto && Input.GetKey(KeyCode.E) || !allowAuto && Input.GetKeyDown(KeyCode.E) || (Input.GetKeyDown(KeyCode.Joystick1Button1) || (allowAuto && Input.GetKey(KeyCode.Joystick1Button1))) && !shootCooldown)
         {
             if (clipAmount > 0)
             {

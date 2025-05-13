@@ -628,7 +628,7 @@ MonoBehaviour:
   damage: 10
   attackRate: 1
   rangeToAttack: 20
-  scoreOnDeath: 0
+  scoreOnDeath: 3000
   canJump: 0
   canSprint: 0
   explodeOnDeath: 0
@@ -639,8 +639,8 @@ MonoBehaviour:
   freezeArea: {fileID: 7868122179097207375}
   shotPoint: {fileID: 3254534254291374863}
   rangedCD: 1
-  freezeCD: 0
-  shotAmount: 10
+  freezeCD: 15
+  shotAmount: 8
 --- !u!95 &8456091859378450609
 Animator:
   serializedVersion: 7

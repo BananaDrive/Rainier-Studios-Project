@@ -582,12 +582,12 @@
                 },
                 {
                     "name": "JoyStickSubmit",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "09667f4d-f740-40d6-a77a-77c3cc83abb0",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -858,7 +858,7 @@
                 {
                     "name": "",
                     "id": "adf2dee6-dd42-41e1-a102-9646e53a1e64",
-                    "path": "<Joystick>/trigger",
+                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick  >/button3",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Joystick",

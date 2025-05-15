@@ -5014,7 +5014,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.100002, y: -56.5, z: -10}
+  m_LocalPosition: {x: -18.3, y: -2.2999997, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10860,6 +10860,10 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 5256327215516169877}
+    - target: {fileID: 3579911929951915769, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
+      propertyPath: lootTableName
+      value: BOSS3
+      objectReference: {fileID: 0}
     - target: {fileID: 3618550359852107573, guid: ed54d547fafe10645aadb14d93241d08, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.50224
@@ -60043,7 +60047,7 @@ Transform:
   m_GameObject: {fileID: 1351151517}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.1, y: -56.5, z: -10}
+  m_LocalPosition: {x: -18.3, y: -2.2999997, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68543,6 +68547,70 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].tableName
+      value: Crawler
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].tableMaxWeight
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].lootTableObjects.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].lootTableObjects.Array.data[0].tableObj
+      value: 
+      objectReference: {fileID: 8991184985484401020, guid: be6a202872ec08144ac72032635dad4d, type: 3}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].lootTableObjects.Array.data[1].tableObj
+      value: 
+      objectReference: {fileID: 1805296775574028141, guid: f228d280b640f104fa0146d513d38e94, type: 3}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].lootTableObjects.Array.data[2].tableObj
+      value: 
+      objectReference: {fileID: 8991184985484401020, guid: 54e5f4c935745eb4cb2fbfba63058056, type: 3}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].lootTableObjects.Array.data[3].tableObj
+      value: 
+      objectReference: {fileID: 8991184985484401020, guid: 13222b1578579f34ca872538f9c3db4e, type: 3}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].lootTableObjects.Array.data[0].objWeight
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].lootTableObjects.Array.data[1].objWeight
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].lootTableObjects.Array.data[2].objWeight
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].lootTableObjects.Array.data[3].objWeight
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].lootTableObjects.Array.data[0].scoreMilestone
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].lootTableObjects.Array.data[1].scoreMilestone
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].lootTableObjects.Array.data[2].scoreMilestone
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201885364386645244, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+      propertyPath: lootTables.Array.data[3].lootTableObjects.Array.data[3].scoreMilestone
+      value: 5000
+      objectReference: {fileID: 0}
     - target: {fileID: 3249594665053532918, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
       propertyPath: eventSystem
       value: 
@@ -68835,6 +68903,17 @@ PrefabInstance:
       addedObject: {fileID: 866322753}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+--- !u!114 &1704980309549350523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2536547564717854300, guid: 853a6c439d088114b8f7d1bb76314efb, type: 3}
+  m_PrefabInstance: {fileID: 1704980309549350522}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5256327215516169874
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68845,11 +68924,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 296464217773923605, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.1
+      value: -18.3
       objectReference: {fileID: 0}
     - target: {fileID: 296464217773923605, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -57
+      value: -2.8
       objectReference: {fileID: 0}
     - target: {fileID: 296464217773923605, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -68883,6 +68962,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 866155178673462549, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: AmmoImg
+      value: 
+      objectReference: {fileID: 1704980309549350523}
     - target: {fileID: 1110444582308449918, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_Layer
       value: 6

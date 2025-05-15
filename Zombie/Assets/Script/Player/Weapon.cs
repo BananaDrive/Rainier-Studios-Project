@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
     public GameObject bullet;
     public Transform shootPoint;
     public LineRenderer lineRenderer;
+
+    public Image AmmoImg;
 
     [Header("Stats")]
     public float damage;
@@ -20,6 +23,8 @@ public class Weapon : MonoBehaviour
     public float accuracy;
     public float clipAmount;
     public AudioSource gun;
+    public Animator animator;
+    public bool weaponReload = false;
 
     internal float damageBuff, fireRateBuff, bulletSpeedBuff, shotAmountBuff, clipSizeBuff, reloadTimeBuff, accuracyBuff;
 
@@ -57,10 +62,13 @@ public class Weapon : MonoBehaviour
             }
             else if (!isReloading)
             {
+                weaponReload = true;
                 isReloading = true;
                 StartCoroutine(Reload());
             }
         }
+
+        AmmoImg.fillAmount = (float)clipAmount / (float)clipSize;
     }
 
     public void ProjectileShoot()
@@ -129,6 +137,7 @@ public class Weapon : MonoBehaviour
 
     public IEnumerator Reload()
     {
+        
         yield return new WaitForSeconds(reloadTime);
         clipAmount = clipSize;
         isReloading = false;

@@ -113,7 +113,7 @@ MonoBehaviour:
   allowRaycast: 0
   allowPiercing: 0
   allowAuto: 1
-  disableRaycast: 0
+  disableRaycast: 1
   disablePiercing: 0
   disableAuto: 0
 --- !u!61 &1303115378088178963

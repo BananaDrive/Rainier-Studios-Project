@@ -76780,10 +76780,6 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 60501bc2303f83643ad9a80ba657b94c, type: 2}
-    - target: {fileID: 8172515586023748523, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
-      propertyPath: allowRaycast
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8243942417990441310, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -76796,6 +76792,14 @@ PrefabInstance:
       propertyPath: Speaker
       value: 
       objectReference: {fileID: 560528361}
+    - target: {fileID: 8766366281630932251, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.446
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766366281630932251, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.012
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5146715617024659985, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
     m_RemovedGameObjects:

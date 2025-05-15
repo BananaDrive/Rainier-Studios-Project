@@ -65,6 +65,7 @@ public class Farmer : EnemyBehavior
 
     public void AreaAttack()
     {
+        inFreezeCD = true;
         freezeArea.SetActive(!freezeArea.activeSelf);
 
         Invoke(nameof(ResetFreezeCD), freezeCD);

@@ -115,7 +115,7 @@ MonoBehaviour:
   allowAuto: 0
   disableRaycast: 0
   disablePiercing: 0
-  disableAuto: 0
+  disableAuto: 1
 --- !u!61 &1864558409523094153
 BoxCollider2D:
   m_ObjectHideFlags: 0

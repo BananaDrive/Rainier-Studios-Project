@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -34,20 +35,20 @@ public class Weapon : MonoBehaviour
     {
         bulletPoolIndex = ObjectPool.SharedInstance.GetObjectPoolNum(bullet);
         clipAmount = clipSize;
-        GameManager.Instance.UIManager.ammoText.SetText(clipAmount + " / " + clipSize);
+        GameManager.Instance.UIManager.ammoText.SetText(clipAmount + " / " + clipSize + clipSizeBuff);
     }
 
     void Update()
     {
         if ((allowAuto && Input.GetKey(KeyCode.E) || !allowAuto && Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick1Button1) || (allowAuto && Input.GetKey(KeyCode.Joystick1Button1))) && !shootCooldown)
         {
-            if (clipAmount > 0)
+            if (clipAmount + clipSizeBuff > 0)
             {
                 shootCooldown = true;
                 for (int i = 0; i < shotAmount; i++)
                 {
                     clipAmount--;
-                    GameManager.Instance.UIManager.ammoText.SetText(clipAmount + " / " + clipSize);
+                    GameManager.Instance.UIManager.ammoText.SetText(clipAmount + " / " + (clipSize + clipSizeBuff));
                     if (allowRaycast)
                         RaycastShoot();
                     else
@@ -66,7 +67,7 @@ public class Weapon : MonoBehaviour
             }
         }
 
-        GameManager.Instance.UIManager.ammoImage.fillAmount = (float)clipAmount / (float)clipSize;
+        GameManager.Instance.UIManager.ammoImage.fillAmount = (float)clipAmount / (float)(clipSize + clipSizeBuff);
     }
 
     public void ProjectileShoot()
@@ -92,15 +93,23 @@ public class Weapon : MonoBehaviour
 
     public void RaycastShoot()
     {
+        Vector3 tempHit;
         int pierceAmount = allowPiercing ? 30 : 1;
+        float decayDamage = damage * damageBuff;
+
         Vector2 spread = DetermineSpread();
         RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, spread, 50f, raycastLayer);
-        float decayDamage = damage * damageBuff;
+
+        if (hit.Length == 0)
+            tempHit = shootPoint.position;
+        
+        else
+            tempHit = hit[0].point;
 
         List<Vector3> transforms = new()
         {
             shootPoint.position,
-            hit[allowPiercing ? ^1 : 0].point
+            tempHit
         };
 
         lineRenderer.positionCount = 2;
@@ -141,7 +150,7 @@ public class Weapon : MonoBehaviour
     public IEnumerator Reload()
     {
         yield return new WaitForSeconds(reloadTime);
-        clipAmount = clipSize;
+        clipAmount = clipSize + clipSizeBuff;
         isReloading = false;
     }
 

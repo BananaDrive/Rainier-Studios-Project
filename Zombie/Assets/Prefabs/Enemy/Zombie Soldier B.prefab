@@ -381,8 +381,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -0.04}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.96, y: 0.9}
+    pivot: {x: 0.7, y: 0.5}
+    oldSize: {x: 0.6282051, y: 1.0384616}
     newSize: {x: 0.96, y: 0.9}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -473,8 +473,8 @@ MonoBehaviour:
   death: {fileID: 3725169612846875542}
   hurt: {fileID: 2963775721343802762}
   damageReduc: 0
-  maxHealth: 200
-  currentHealth: 200
+  maxHealth: 400
+  currentHealth: 400
   invincibltyTime: 0
   invincible: 0
   knockbackRes: 0

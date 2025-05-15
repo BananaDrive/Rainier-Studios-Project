@@ -12,7 +12,7 @@ public class EndGame : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && Input.GetKey(KeyCode.F))
+        if (collision.CompareTag("Player") && Input.GetKeyDown(KeyCode.Joystick1Button2))
         {
             Debug.Log("Colliding");
             EndMenu.SetActive(true);

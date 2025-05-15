@@ -254,8 +254,8 @@ MonoBehaviour:
   death: {fileID: 8104419803079820022}
   hurt: {fileID: 6864576098947849691}
   damageReduc: 0
-  maxHealth: 200
-  currentHealth: 200
+  maxHealth: 400
+  currentHealth: 400
   invincibltyTime: 0
   invincible: 0
   knockbackRes: 0

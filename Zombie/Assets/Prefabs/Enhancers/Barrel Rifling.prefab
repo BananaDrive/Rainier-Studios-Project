@@ -111,7 +111,7 @@ MonoBehaviour:
   shotAmount: 0
   clipSize: 0
   allowRaycast: 0
-  allowPiercing: 0
+  allowPiercing: 1
   allowAuto: 0
   disableRaycast: 0
   disablePiercing: 0

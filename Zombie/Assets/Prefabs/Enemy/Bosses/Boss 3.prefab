@@ -567,7 +567,7 @@ MonoBehaviour:
   currentHealth: 7500
   invincibltyTime: 0
   invincible: 0
-  knockbackRes: 0
+  knockbackRes: 100
   enemyBehavior: {fileID: 2609526859544953815}
   healthbar: {fileID: 1038708854106046488}
   lootTableName: 3

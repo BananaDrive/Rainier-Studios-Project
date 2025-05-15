@@ -911,11 +911,11 @@ MonoBehaviour:
   death: {fileID: 0}
   hurt: {fileID: 0}
   damageReduc: 0
-  maxHealth: 1000
-  currentHealth: 1000
+  maxHealth: 2000
+  currentHealth: 2000
   invincibltyTime: 0
   invincible: 0
-  knockbackRes: 0
+  knockbackRes: 100
   enemyBehavior: {fileID: 8206883953357117639}
   healthbar: {fileID: 2189327683797384112}
   lootTableName: BOSS1

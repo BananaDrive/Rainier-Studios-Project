@@ -15,6 +15,8 @@ public class UIManager : MonoBehaviour
     public TMP_Text[] statAmounts;
     public TMP_Text itemName;
     public TMP_Text scoreText;
+    public TMP_Text ammoText;
+    public Image ammoImage;
 
     public float score;
 

@@ -1,9 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
@@ -11,7 +8,6 @@ public class Weapon : MonoBehaviour
     public Transform shootPoint;
     public LineRenderer lineRenderer;
 
-    public Image AmmoImg;
 
     [Header("Stats")]
     public float damage;
@@ -38,6 +34,7 @@ public class Weapon : MonoBehaviour
     {
         bulletPoolIndex = ObjectPool.SharedInstance.GetObjectPoolNum(bullet);
         clipAmount = clipSize;
+        GameManager.Instance.UIManager.ammoText.SetText(clipAmount + " / " + clipSize);
     }
 
     void Update()
@@ -50,6 +47,7 @@ public class Weapon : MonoBehaviour
                 for (int i = 0; i < shotAmount; i++)
                 {
                     clipAmount--;
+                    GameManager.Instance.UIManager.ammoText.SetText(clipAmount + " / " + clipSize);
                     if (allowRaycast)
                         RaycastShoot();
                     else
@@ -68,7 +66,7 @@ public class Weapon : MonoBehaviour
             }
         }
 
-        AmmoImg.fillAmount = (float)clipAmount / (float)clipSize;
+        GameManager.Instance.UIManager.ammoImage.fillAmount = (float)clipAmount / (float)clipSize;
     }
 
     public void ProjectileShoot()
@@ -104,7 +102,7 @@ public class Weapon : MonoBehaviour
             shootPoint.position,
             hit[allowPiercing ? ^1 : 0].point
         };
-        
+
         lineRenderer.positionCount = 2;
         lineRenderer.SetPositions(transforms.ToArray());
 

@@ -599,11 +599,11 @@ MonoBehaviour:
   death: {fileID: 0}
   hurt: {fileID: 0}
   damageReduc: 0
-  maxHealth: 1500
-  currentHealth: 1500
+  maxHealth: 4000
+  currentHealth: 4000
   invincibltyTime: 0
   invincible: 0
-  knockbackRes: 1
+  knockbackRes: 100
   enemyBehavior: {fileID: 4124941435690190472}
   healthbar: {fileID: 0}
   lootTableName: 3

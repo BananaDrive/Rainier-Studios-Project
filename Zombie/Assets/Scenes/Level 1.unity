@@ -2827,7 +2827,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.71868, y: -2.67502, z: -10}
+  m_LocalPosition: {x: -17.720387, y: -2.67502, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29708,68 +29708,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1624104754449970155, guid: 2e0a77f9e1abd3d4aab99eff4efe2b77, type: 3}
   m_PrefabInstance: {fileID: 1244361678}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1264533531
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 428861404853458720, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_Name
-      value: Zombie Policemen
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164287992251503653, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -18.508198
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164287992251503653, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.7401447
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164287992251503653, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164287992251503653, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164287992251503653, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164287992251503653, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164287992251503653, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164287992251503653, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164287992251503653, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164287992251503653, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: aab25800b908c69498d8308560d4ad44, type: 3}
---- !u!82 &1264533532 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6853596456830577340, guid: aab25800b908c69498d8308560d4ad44, type: 3}
-  m_PrefabInstance: {fileID: 1264533531}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1289951473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34692,7 +34630,7 @@ PrefabInstance:
     - target: {fileID: 7884367272656035696, guid: 6f20f069255915e4d94a62a70d70591d, type: 3}
       propertyPath: death
       value: 
-      objectReference: {fileID: 1264533532}
+      objectReference: {fileID: 0}
     - target: {fileID: 7884367272656035696, guid: 6f20f069255915e4d94a62a70d70591d, type: 3}
       propertyPath: health
       value: 
@@ -36428,7 +36366,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 876ed135095138a47bc7d20f212eda18, type: 2}
     - target: {fileID: 8172515586023748523, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: allowRaycast
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -36541,4 +36479,3 @@ SceneRoots:
   - {fileID: 286332931}
   - {fileID: 2147078255}
   - {fileID: 1202051861}
-  - {fileID: 1264533531}

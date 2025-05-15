@@ -104,8 +104,13 @@ public class Weapon : MonoBehaviour
             shootPoint.position,
             hit[allowPiercing ? ^1 : 0].point
         };
-
+        
+        lineRenderer.positionCount = 2;
         lineRenderer.SetPositions(transforms.ToArray());
+
+        CancelInvoke(nameof(ClearLine));
+        Invoke(nameof(ClearLine), 1.5f);
+
         for (int i = 0; i < pierceAmount && i < hit.Length; i++)
         {
             if (hit[i].collider != null)
@@ -137,9 +142,10 @@ public class Weapon : MonoBehaviour
 
     public IEnumerator Reload()
     {
-        
         yield return new WaitForSeconds(reloadTime);
         clipAmount = clipSize;
         isReloading = false;
     }
+
+    public void ClearLine() => lineRenderer.positionCount = 0;
 }

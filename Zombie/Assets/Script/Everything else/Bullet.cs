@@ -1,6 +1,6 @@
+using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.LowLevelPhysics;
 
 public class Bullet : MonoBehaviour
 {
@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
 
             if (!isPiercing)
                 TurnOffObj();
-            damage *= 0.75f;
+            damage *= 0.85f;
         }
 
         if ((layerToDespawn & (1 << other.gameObject.layer)) != 0)
@@ -49,7 +49,7 @@ public class Bullet : MonoBehaviour
                 yield break;
 
             timer += Time.deltaTime;
-            yield return Time.deltaTime;
+            yield return null;
         }
         TurnOffObj();
     }

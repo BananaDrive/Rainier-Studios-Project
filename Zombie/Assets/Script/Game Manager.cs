@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
     public Leaderboard leaderboard;
     public GameObject gameOverButton, pauseButton;
     public EventSystemAcess eventSystemAcess;
+    public TMP_Text gameOverText;
     public bool isPaused, gameOver;
 
     internal GameObject player;
@@ -27,6 +29,7 @@ public class GameManager : MonoBehaviour
         else
             Instance = this;
         DontDestroyOnLoad(Instance);
+        gameOverText.SetText("Game Over");
     }
 
     public void Update()
@@ -39,6 +42,8 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        if (isPaused)
+            PauseScreen(pauseScreen);
         gameOver = true;
         Time.timeScale = 0;
         Toggle(gameOverScreen);

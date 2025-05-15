@@ -29,6 +29,7 @@ public class Leaderboard : MonoBehaviour
         Cursor.visible = false;
         
         filePath = Application.persistentDataPath + "/leaderboard.json";
+        Debug.Log(filePath);
 
         if (leaderBoard != null)
         {

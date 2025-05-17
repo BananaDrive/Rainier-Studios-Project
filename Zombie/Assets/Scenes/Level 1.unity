@@ -2561,22 +2561,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2791561042572361558, guid: b020c87128f6c0848b391845a86fca57, type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2791561042572361558, guid: b020c87128f6c0848b391845a86fca57, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 0.82051283
-      objectReference: {fileID: 0}
-    - target: {fileID: 2791561042572361558, guid: b020c87128f6c0848b391845a86fca57, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2791561042572361558, guid: b020c87128f6c0848b391845a86fca57, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.82051283
-      objectReference: {fileID: 0}
     - target: {fileID: 5125834075557533559, guid: b020c87128f6c0848b391845a86fca57, type: 3}
       propertyPath: m_Name
       value: Zombie Civilian
@@ -36384,6 +36368,10 @@ PrefabInstance:
     - target: {fileID: 6128789282989544106, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6513123515107871197, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
+      propertyPath: m_Size.y
+      value: 1.48
       objectReference: {fileID: 0}
     - target: {fileID: 6513123515107871197, guid: e328ed4b3df729a40985ae45366693bb, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x

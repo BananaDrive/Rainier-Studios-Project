@@ -19,12 +19,12 @@ public class Destroyable : MonoBehaviour
             Destroy(gameObject);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
-        if (collision.gameObject.tag == "PlayerBullets")
+        if (other.gameObject.tag == "PlayerBullets")
         {
             health -= damageRecieved;
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
         }
     }
 }

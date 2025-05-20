@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: addca58b29578cf42ba0f6df234fdcab
+guid: 302b5d7c34a2f5f48b7a8a5fb7a72216
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3218240360861585884
-    second: ShieldBar_0
+      213: -8648092666976416365
+    second: TESTING EASTON IS RACIST-Recovered_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ShieldBar_0
+      name: TESTING EASTON IS RACIST-Recovered_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 246
-        height: 24
+        x: 0
+        y: 0
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 42e250951738653d0800000000000000
-      internalID: -3218240360861585884
+      spriteID: 39dc538f98dcbf780800000000000000
+      internalID: -8648092666976416365
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ShieldBar_0: -3218240360861585884
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

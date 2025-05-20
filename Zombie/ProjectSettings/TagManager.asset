@@ -20,12 +20,12 @@ TagManager:
   - Interactable
   - Attack
   - Platform
+  - Breakable
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Weather Parallax
+  - Foreground Parallax
+  - Midground Parallax
+  - Background Parallax
   - 
   - 
   - 

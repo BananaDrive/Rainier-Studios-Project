@@ -82,7 +82,7 @@ public class Leaderboard : MonoBehaviour
             {
                 if (scoreList.scores[j].score < scoreList.scores[j + 1].score)
                 {
-                    (scoreList.scores[j + 1].score, scoreList.scores[j].score) = (scoreList.scores[j].score, scoreList.scores[j + 1].score);
+                    (scoreList.scores[j + 1], scoreList.scores[j]) = (scoreList.scores[j], scoreList.scores[j + 1]);
                 }
             }
         }

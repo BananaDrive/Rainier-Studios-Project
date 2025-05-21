@@ -1,10 +1,19 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Zombie/Assets/Textures/Images/MS Paint _ Microsoft Paint Online.png.meta
 guid: 625cd83af32cf0b4d99bffbd9cf27b8f
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 7329652649315490350
     second: MS Paint _ Microsoft Paint Online_0
+========
+guid: 0d48ec8af5bb5f9468d3aacd633a645e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3707155165537152723
+    second: Lvl 3 Player (1)-1.png_0
+>>>>>>>> JaidenHopeIsLost:Zombie/Assets/Textures/Sprites/Markqualius.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,36 +105,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:Zombie/Assets/Textures/Images/MS Paint _ Microsoft Paint Online.png.meta
       name: MS Paint _ Microsoft Paint Online_0
       rect:
         serializedVersion: 2
@@ -133,6 +117,15 @@ TextureImporter:
         y: 0
         width: 226
         height: 122
+========
+      name: Lvl 3 Player (1)-1.png_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 36
+        height: 87
+>>>>>>>> JaidenHopeIsLost:Zombie/Assets/Textures/Sprites/Markqualius.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +134,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<<< HEAD:Zombie/Assets/Textures/Images/MS Paint _ Microsoft Paint Online.png.meta
       spriteID: e2a5379104828b560800000000000000
       internalID: 7329652649315490350
+========
+      spriteID: 3dea8115bf5727330800000000000000
+      internalID: 3707155165537152723
+>>>>>>>> JaidenHopeIsLost:Zombie/Assets/Textures/Sprites/Markqualius.png.meta
       vertices: []
       indices: 
       edges: []
@@ -161,7 +159,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<<< HEAD:Zombie/Assets/Textures/Images/MS Paint _ Microsoft Paint Online.png.meta
       MS Paint _ Microsoft Paint Online_0: 7329652649315490350
+========
+      Lvl 3 Player (1)-1.png_0: 3707155165537152723
+>>>>>>>> JaidenHopeIsLost:Zombie/Assets/Textures/Sprites/Markqualius.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

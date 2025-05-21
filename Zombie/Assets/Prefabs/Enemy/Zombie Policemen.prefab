@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 8164287992251503653}
   - component: {fileID: 3436430349203109555}
   - component: {fileID: 670258356885377820}
-  - component: {fileID: 1089826229460718061}
   - component: {fileID: 561915107828566534}
   - component: {fileID: 2819984677176277959}
   - component: {fileID: 5787172711028390073}
   - component: {fileID: 151590895543552110}
+  - component: {fileID: -8283258850144363686}
   m_Layer: 7
   m_Name: Zombie Policemen
   m_TagString: Untagged
@@ -124,52 +124,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &1089826229460718061
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428861404853458720}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64102566, y: 1.0256411}
-    newSize: {x: 1.2307693, y: 1.0769231}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.5, y: 1}
-  m_EdgeRadius: 0
 --- !u!114 &561915107828566534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b371dbeee7b2a45b4fbd0e15db7181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collider: {fileID: 1089826229460718061}
+  _collider: {fileID: -8283258850144363686}
   sprite: {fileID: 3436430349203109555}
   rb: {fileID: 670258356885377820}
   ground:
@@ -224,7 +178,7 @@ MonoBehaviour:
   enemyMovement: {fileID: 561915107828566534}
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 8320
   spr: {fileID: 3436430349203109555}
   damage: 10
   attackRate: 3
@@ -284,6 +238,43 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &-8283258850144363686
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428861404853458720}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.09993744, y: 0}
+  m_Size: {x: 0.3631541, y: 0.95}
+  m_Direction: 0
 --- !u!1 &913674144731701482
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,7 +490,7 @@ Transform:
   m_GameObject: {fileID: 5253862336294681762}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.291, y: 0.12, z: 0}
+  m_LocalPosition: {x: 0.377, y: 0.144, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -552,7 +543,7 @@ SpriteRenderer:
   m_Sprite: {fileID: 21300000, guid: b7ee508604b81524fb7cad3f92dcaba8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5

@@ -113,11 +113,11 @@ GameObject:
   - component: {fileID: 4061426184721876345}
   - component: {fileID: 7627851325256127879}
   - component: {fileID: 1243954359294630970}
-  - component: {fileID: 1401230590320024136}
   - component: {fileID: 5362036708392070465}
   - component: {fileID: 2786928428061324114}
   - component: {fileID: 3320467673719802856}
   - component: {fileID: 1111738854305531241}
+  - component: {fileID: 2408637086498427329}
   m_Layer: 7
   m_Name: Zombie Crawly
   m_TagString: Untagged
@@ -226,52 +226,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &1401230590320024136
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300085864175242042}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: d1741eeb9c5de534cbda89883b9394bd, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.06}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.48936167, y: 0.64}
-    oldSize: {x: 1.2051282, y: 0.64102566}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.1, y: 0.7}
-  m_EdgeRadius: 0
 --- !u!114 &5362036708392070465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b371dbeee7b2a45b4fbd0e15db7181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collider: {fileID: 1401230590320024136}
+  _collider: {fileID: 2408637086498427329}
   sprite: {fileID: 7627851325256127879}
   rb: {fileID: 1243954359294630970}
   ground:
@@ -385,6 +339,43 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &2408637086498427329
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300085864175242042}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.03972846, y: -0.078090474}
+  m_Size: {x: 1.3102375, y: 0.6754424}
+  m_Direction: 1
 --- !u!1 &6328183470331543896
 GameObject:
   m_ObjectHideFlags: 0

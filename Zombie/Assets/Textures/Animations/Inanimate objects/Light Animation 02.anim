@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Light Animation
+  m_Name: Light Animation 02
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -24,15 +24,15 @@ AnimationClip:
       value: {fileID: 187495252, guid: 47212868c701d0c4dbf166ce327af339, type: 3}
     - time: 0.36666667
       value: {fileID: 122353959, guid: 47212868c701d0c4dbf166ce327af339, type: 3}
-    - time: 0.6666667
+    - time: 0.5833333
       value: {fileID: 902620610, guid: 47212868c701d0c4dbf166ce327af339, type: 3}
-    - time: 0.98333335
+    - time: 0.9
       value: {fileID: -933538342, guid: 47212868c701d0c4dbf166ce327af339, type: 3}
-    - time: 1.3333334
+    - time: 1.1666666
       value: {fileID: 930083717, guid: 47212868c701d0c4dbf166ce327af339, type: 3}
-    - time: 1.6333333
+    - time: 1.4666667
       value: {fileID: 755449442, guid: 47212868c701d0c4dbf166ce327af339, type: 3}
-    - time: 2
+    - time: 1.8333334
       value: {fileID: -230556441, guid: 47212868c701d0c4dbf166ce327af339, type: 3}
     attribute: m_Sprite
     path: 
@@ -68,7 +68,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.0166667
+    m_StopTime: 1.85
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

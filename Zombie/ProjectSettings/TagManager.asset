@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - EnemyAttack
+  - PlayerBullets
   layers:
   - Default
   - TransparentFX
@@ -19,12 +20,12 @@ TagManager:
   - Interactable
   - Attack
   - Platform
+  - Breakable
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Weather Parallax
+  - Foreground Parallax
+  - Midground Parallax
+  - Background Parallax
   - 
   - 
   - 

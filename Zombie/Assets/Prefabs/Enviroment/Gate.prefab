@@ -307,7 +307,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5fda5b6df6e42de4b9a2c29c165f2795, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f90364a6e257e6e4aa9d49cb0c01423a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -333,8 +333,8 @@ MonoBehaviour:
   openObject: {fileID: 483898892557318893}
   highest: {fileID: 92191611722594067}
   lowest: {fileID: 7970788819708926620}
-  before: {fileID: 21300000, guid: 5fda5b6df6e42de4b9a2c29c165f2795, type: 3}
-  after: {fileID: 21300000, guid: 19a4dd60dbd8b4f4a857e8e1e4617939, type: 3}
+  before: {fileID: 21300000, guid: f90364a6e257e6e4aa9d49cb0c01423a, type: 3}
+  after: {fileID: 21300000, guid: 78b1d5b56d7b5a1448727316b2c51e55, type: 3}
   spr: {fileID: 1311659681122083921}
   duration: 2
   canOpen: 1

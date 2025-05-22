@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Zombie/Assets/Textures/Sprites/pineapple.png.meta
 guid: 4f7f282344fe3834eb9e3447d41891f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5931842347579807508
-    second: New Piskel-1.png_0
-========
-guid: 0d48ec8af5bb5f9468d3aacd633a645e
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 3707155165537152723
-    second: Lvl 3 Player (1)-1.png_0
->>>>>>>> b1b0846 (This May Destroy A Lot):Zombie/Assets/Textures/Sprites/Markqualius.png.meta
+      213: -724105580326358498
+    second: pineapple_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,23 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Zombie/Assets/Textures/Sprites/pineapple.png.meta
-      name: New Piskel-1.png_0
+      name: pineapple_0
       rect:
         serializedVersion: 2
         x: 9
         y: 5
         width: 13
         height: 21
-========
-      name: Lvl 3 Player (1)-1.png_0
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 0
-        width: 36
-        height: 87
->>>>>>>> b1b0846 (This May Destroy A Lot):Zombie/Assets/Textures/Sprites/Markqualius.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,13 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Zombie/Assets/Textures/Sprites/pineapple.png.meta
-      spriteID: 4171d17df23225250800000000000000
-      internalID: 5931842347579807508
-========
-      spriteID: 3dea8115bf5727330800000000000000
-      internalID: 3707155165537152723
->>>>>>>> b1b0846 (This May Destroy A Lot):Zombie/Assets/Textures/Sprites/Markqualius.png.meta
+      spriteID: e12f4c8afc573f5f0800000000000000
+      internalID: -724105580326358498
       vertices: []
       indices: 
       edges: []
@@ -158,12 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-<<<<<<<< HEAD:Zombie/Assets/Textures/Sprites/pineapple.png.meta
-      New Piskel-1.png_0: 5931842347579807508
-========
-      Lvl 3 Player (1)-1.png_0: 3707155165537152723
->>>>>>>> b1b0846 (This May Destroy A Lot):Zombie/Assets/Textures/Sprites/Markqualius.png.meta
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

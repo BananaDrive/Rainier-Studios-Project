@@ -21,7 +21,7 @@ TagManager:
   - Attack
   - Platform
   - Breakable
-  - 
+  - Destroyable
   - Weather Parallax
   - Foreground Parallax
   - Midground Parallax
